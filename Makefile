@@ -8,9 +8,6 @@ CTAGS_FILE=`gcc -M *.c -Iinclude | sed "s/ /\n/g" | grep -v "[:\\]"`
 PREFIX = /home/patrick/local
 MANPREFIX = ${PREFIX}/share/man
 DYNPREFIX = ${PREFIX}/dynamic
-DATAFILE  = "\"${DYNPREFIX}/data.dat\""
-PARAMFILE = "\"${DYNPREFIX}/param.dat\""
-TDATAFILE = "\"${DYNPREFIX}/tdata.dat\""
 
 # compile settings
 INCS = -I. -Iinclude
@@ -22,10 +19,6 @@ FFLAGS = -c -pipe -march=native -O2
 F90 = gfortran
 
 FSRC=$(wildcard *.f90)
-
-# pull in variable parameters
-include config.mk
-DEF:=$(DEF) -DPARAMFILE=$(PARAMFILE) -DDATAFILE=$(DATAFILE) -DTDATAFILE=$(TDATAFILE)
 
 SRC = ${wildcard *.c}
 OBJ = ${FSRC:.f90=.o} ${SRC:.c=.o}
@@ -97,7 +90,10 @@ uninstall:
 	@echo uninstalling
 	@rm -fr $(PREFIX)/bin/magic $(DYNPREFIX)
 
+push:
+	git add *
+	git commit -m "commit"
+	git push -u origin master
 
 
-
-.PHONY: all options setup clean dist install uninstall optimize tags
+.PHONY: all options setup clean dist install uninstall optimize tags push
