@@ -1,0 +1,1008 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIG_ENDIAN	/usr/include/endian.h	46;"	d	language:C
+BUFSIZ	/usr/include/stdio.h	127;"	d	language:C
+BYTE_ORDER	/usr/include/endian.h	48;"	d	language:C
+CLK_TCK	/usr/include/bits/time.h	56;"	d	language:C
+CLK_TCK	/usr/include/time.h	46;"	d	language:C
+CLOCKS_PER_SEC	/usr/include/bits/time.h	48;"	d	language:C
+CLOCK_BOOTTIME	/usr/include/bits/time.h	75;"	d	language:C
+CLOCK_BOOTTIME_ALARM	/usr/include/bits/time.h	79;"	d	language:C
+CLOCK_MONOTONIC	/usr/include/bits/time.h	63;"	d	language:C
+CLOCK_MONOTONIC_COARSE	/usr/include/bits/time.h	73;"	d	language:C
+CLOCK_MONOTONIC_RAW	/usr/include/bits/time.h	69;"	d	language:C
+CLOCK_PROCESS_CPUTIME_ID	/usr/include/bits/time.h	65;"	d	language:C
+CLOCK_REALTIME	/usr/include/bits/time.h	61;"	d	language:C
+CLOCK_REALTIME_ALARM	/usr/include/bits/time.h	77;"	d	language:C
+CLOCK_REALTIME_COARSE	/usr/include/bits/time.h	71;"	d	language:C
+CLOCK_THREAD_CPUTIME_ID	/usr/include/bits/time.h	67;"	d	language:C
+CUBATURE_H	include/cubature.h	30;"	d	language:C
+D	magic.h	/^    double D;$/;"	m	language:C	struct:params_basis_set
+DEFAULT_MAX_NBUF	pcubature.c	381;"	d	language:C	file:
+DERIV_MAX	magic.h	22;"	d	language:C
+DOMAIN	/usr/include/math.h	345;"	d	language:C
+EOF	/usr/include/libio.h	62;"	d	language:C
+EOF	/usr/include/stdio.h	134;"	d	language:C
+ERR	pcubature.c	279;"	d	language:C	file:
+ERROR_INDIVIDUAL	include/cubature.h	/^     ERROR_INDIVIDUAL = 0, \/* individual relerr criteria in each component *\/$/;"	e	language:C	enum:__anon35
+ERROR_INDIVIDUAL	include/cubature.h	/^     ERROR_INDIVIDUAL = 0, \/* individual relerr criteria in each component *\/$/;"	e	language:C	enum:__anon61
+ERROR_L1	include/cubature.h	/^     ERROR_L1, \/* abserr is L_1 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
+ERROR_L1	include/cubature.h	/^     ERROR_L1, \/* abserr is L_1 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_L2	include/cubature.h	/^     ERROR_L2, \/* abserr is L_2 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
+ERROR_L2	include/cubature.h	/^     ERROR_L2, \/* abserr is L_2 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_LINF	include/cubature.h	/^     ERROR_LINF \/* abserr is L_\\infty norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
+ERROR_LINF	include/cubature.h	/^     ERROR_LINF \/* abserr is L_\\infty norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_PAIRED	include/cubature.h	/^     ERROR_PAIRED, \/* paired L2 norms of errors in each component,$/;"	e	language:C	enum:__anon35
+ERROR_PAIRED	include/cubature.h	/^     ERROR_PAIRED, \/* paired L2 norms of errors in each component,$/;"	e	language:C	enum:__anon61
+EXIT_FAILURE	/usr/include/stdlib.h	133;"	d	language:C
+EXIT_SUCCESS	/usr/include/stdlib.h	134;"	d	language:C
+FAILURE	pcubature.c	35;"	d	language:C	file:
+FD_CLR	/usr/include/sys/select.h	91;"	d	language:C
+FD_ISSET	/usr/include/sys/select.h	92;"	d	language:C
+FD_SET	/usr/include/sys/select.h	90;"	d	language:C
+FD_SETSIZE	/usr/include/sys/select.h	78;"	d	language:C
+FD_ZERO	/usr/include/sys/select.h	93;"	d	language:C
+FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE FILE;$/;"	t	language:C	typeref:struct:_IO_FILE
+FILENAME_MAX	/usr/include/bits/stdio_lim.h	25;"	d	language:C
+FOPEN_MAX	/usr/include/bits/stdio_lim.h	36;"	d	language:C
+FOPEN_MAX	/usr/include/bits/stdio_lim.h	37;"	d	language:C
+FP_FAST_FMA	/usr/include/bits/mathdef.h	48;"	d	language:C
+FP_FAST_FMAF	/usr/include/bits/mathdef.h	52;"	d	language:C
+FP_FAST_FMAL	/usr/include/bits/mathdef.h	56;"	d	language:C
+FP_ILOGB0	/usr/include/bits/mathdef.h	42;"	d	language:C
+FP_ILOGBNAN	/usr/include/bits/mathdef.h	43;"	d	language:C
+FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	language:C	enum:__anon28
+FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	language:C	enum:__anon56
+FP_INFINITE	/usr/include/math.h	195;"	d	language:C
+FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	language:C	enum:__anon28
+FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	language:C	enum:__anon56
+FP_NAN	/usr/include/math.h	192;"	d	language:C
+FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	language:C	enum:__anon28
+FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	language:C	enum:__anon56
+FP_NORMAL	/usr/include/math.h	204;"	d	language:C
+FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	language:C	enum:__anon28
+FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	language:C	enum:__anon56
+FP_SUBNORMAL	/usr/include/math.h	201;"	d	language:C
+FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	language:C	enum:__anon28
+FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	language:C	enum:__anon56
+FP_ZERO	/usr/include/math.h	198;"	d	language:C
+GEOMETRIC_SHIFT	main.c	28;"	d	language:C	file:
+H	magic.h	/^    af_leaf ***H; \/\/Function to calculate energy expectant. <f_i|H|f_j>$/;"	m	language:C	struct:params_variational_master
+HUGE	/usr/include/math.h	353;"	d	language:C
+HUGE_VAL	/usr/include/bits/huge_val.h	27;"	d	language:C
+HUGE_VAL	/usr/include/bits/huge_val.h	29;"	d	language:C
+HUGE_VAL	/usr/include/bits/huge_val.h	32;"	d	language:C
+HUGE_VAL	/usr/include/bits/huge_val.h	51;"	d	language:C
+HUGE_VALF	/usr/include/bits/huge_valf.h	27;"	d	language:C
+HUGE_VALF	/usr/include/bits/huge_valf.h	29;"	d	language:C
+HUGE_VALF	/usr/include/bits/huge_valf.h	32;"	d	language:C
+HUGE_VALF	/usr/include/bits/huge_valf.h	49;"	d	language:C
+HUGE_VALL	/usr/include/bits/huge_vall.h	25;"	d	language:C
+HUGE_VALL	/usr/include/bits/huge_vall.h	27;"	d	language:C
+HUGE_VALL	/usr/include/bits/huge_vall.h	34;"	d	language:C
+HUGE_VALL	/usr/include/bits/huge_vall.h	38;"	d	language:C
+H_val	magic.h	/^    double *H_val; \/\/Energy eigenvalues.$/;"	m	language:C	struct:params_variational_master
+INFINITY	/usr/include/bits/inf.h	26;"	d	language:C
+INFINITY	/usr/include/bits/inf.h	28;"	d	language:C
+IOV_MAX	/usr/include/bits/stdio_lim.h	41;"	d	language:C
+LITTLE_ENDIAN	/usr/include/endian.h	45;"	d	language:C
+L_ctermid	/usr/include/bits/stdio_lim.h	28;"	d	language:C
+L_cuserid	/usr/include/bits/stdio_lim.h	30;"	d	language:C
+L_tmpnam	/usr/include/bits/stdio_lim.h	23;"	d	language:C
+MATH_ERREXCEPT	/usr/include/math.h	274;"	d	language:C
+MATH_ERRNO	/usr/include/math.h	273;"	d	language:C
+MAXDIM	pcubature.c	41;"	d	language:C	file:
+MAXFLOAT	/usr/include/math.h	359;"	d	language:C
+MB_CUR_MAX	/usr/include/stdlib.h	138;"	d	language:C
+MIN_ALGORITHM	main.c	22;"	d	language:C	file:
+MIN_BOUND	main.c	21;"	d	language:C	file:
+M_1_PI	/usr/include/math.h	375;"	d	language:C
+M_1_PIl	/usr/include/math.h	394;"	d	language:C
+M_2_PI	/usr/include/math.h	376;"	d	language:C
+M_2_PIl	/usr/include/math.h	395;"	d	language:C
+M_2_SQRTPI	/usr/include/math.h	377;"	d	language:C
+M_2_SQRTPIl	/usr/include/math.h	396;"	d	language:C
+M_E	/usr/include/math.h	367;"	d	language:C
+M_El	/usr/include/math.h	386;"	d	language:C
+M_LN10	/usr/include/math.h	371;"	d	language:C
+M_LN10l	/usr/include/math.h	390;"	d	language:C
+M_LN2	/usr/include/math.h	370;"	d	language:C
+M_LN2l	/usr/include/math.h	389;"	d	language:C
+M_LOG10E	/usr/include/math.h	369;"	d	language:C
+M_LOG10El	/usr/include/math.h	388;"	d	language:C
+M_LOG2E	/usr/include/math.h	368;"	d	language:C
+M_LOG2El	/usr/include/math.h	387;"	d	language:C
+M_PI	/usr/include/math.h	372;"	d	language:C
+M_PI_2	/usr/include/math.h	373;"	d	language:C
+M_PI_2l	/usr/include/math.h	392;"	d	language:C
+M_PI_4	/usr/include/math.h	374;"	d	language:C
+M_PI_4l	/usr/include/math.h	393;"	d	language:C
+M_PIl	/usr/include/math.h	391;"	d	language:C
+M_SQRT1_2	/usr/include/math.h	379;"	d	language:C
+M_SQRT1_2l	/usr/include/math.h	398;"	d	language:C
+M_SQRT2	/usr/include/math.h	378;"	d	language:C
+M_SQRT2l	/usr/include/math.h	397;"	d	language:C
+NAN	/usr/include/bits/nan.h	28;"	d	language:C
+NAN	/usr/include/bits/nan.h	32;"	d	language:C
+NAN	/usr/include/bits/nan.h	50;"	d	language:C
+NFDBITS	/usr/include/sys/select.h	85;"	d	language:C
+NLOPT_AUGLAG	/usr/include/nlopt.h	/^     NLOPT_AUGLAG,$/;"	e	language:C	enum:__anon33
+NLOPT_AUGLAG_EQ	/usr/include/nlopt.h	/^     NLOPT_AUGLAG_EQ,$/;"	e	language:C	enum:__anon33
+NLOPT_DEPRECATED	/usr/include/nlopt.h	300;"	d	language:C
+NLOPT_DEPRECATED	/usr/include/nlopt.h	302;"	d	language:C
+NLOPT_EXTERN	/usr/include/nlopt.h	49;"	d	language:C
+NLOPT_EXTERN	/usr/include/nlopt.h	51;"	d	language:C
+NLOPT_EXTERN	/usr/include/nlopt.h	54;"	d	language:C
+NLOPT_FAILURE	/usr/include/nlopt.h	/^     NLOPT_FAILURE = -1, \/* generic failure code *\/$/;"	e	language:C	enum:__anon34
+NLOPT_FORCED_STOP	/usr/include/nlopt.h	/^     NLOPT_FORCED_STOP = -5,$/;"	e	language:C	enum:__anon34
+NLOPT_FTOL_REACHED	/usr/include/nlopt.h	/^     NLOPT_FTOL_REACHED = 3,$/;"	e	language:C	enum:__anon34
+NLOPT_GD_MLSL	/usr/include/nlopt.h	/^     NLOPT_GD_MLSL,$/;"	e	language:C	enum:__anon33
+NLOPT_GD_MLSL_LDS	/usr/include/nlopt.h	/^     NLOPT_GD_MLSL_LDS,$/;"	e	language:C	enum:__anon33
+NLOPT_GD_STOGO	/usr/include/nlopt.h	/^     NLOPT_GD_STOGO,$/;"	e	language:C	enum:__anon33
+NLOPT_GD_STOGO_RAND	/usr/include/nlopt.h	/^     NLOPT_GD_STOGO_RAND,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_CRS2_LM	/usr/include/nlopt.h	/^     NLOPT_GN_CRS2_LM,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT = 0,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT_L	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT_L,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT_L_NOSCAL	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT_L_NOSCAL,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT_L_RAND	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT_L_RAND,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT_L_RAND_NOSCAL	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT_L_RAND_NOSCAL,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_DIRECT_NOSCAL	/usr/include/nlopt.h	/^     NLOPT_GN_DIRECT_NOSCAL,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_ISRES	/usr/include/nlopt.h	/^     NLOPT_GN_ISRES,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_MLSL	/usr/include/nlopt.h	/^     NLOPT_GN_MLSL,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_MLSL_LDS	/usr/include/nlopt.h	/^     NLOPT_GN_MLSL_LDS,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_ORIG_DIRECT	/usr/include/nlopt.h	/^     NLOPT_GN_ORIG_DIRECT,$/;"	e	language:C	enum:__anon33
+NLOPT_GN_ORIG_DIRECT_L	/usr/include/nlopt.h	/^     NLOPT_GN_ORIG_DIRECT_L,$/;"	e	language:C	enum:__anon33
+NLOPT_G_MLSL	/usr/include/nlopt.h	/^     NLOPT_G_MLSL,$/;"	e	language:C	enum:__anon33
+NLOPT_G_MLSL_LDS	/usr/include/nlopt.h	/^     NLOPT_G_MLSL_LDS,$/;"	e	language:C	enum:__anon33
+NLOPT_H	/usr/include/nlopt.h	24;"	d	language:C
+NLOPT_INVALID_ARGS	/usr/include/nlopt.h	/^     NLOPT_INVALID_ARGS = -2,$/;"	e	language:C	enum:__anon34
+NLOPT_LD_AUGLAG	/usr/include/nlopt.h	/^     NLOPT_LD_AUGLAG,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_AUGLAG_EQ	/usr/include/nlopt.h	/^     NLOPT_LD_AUGLAG_EQ,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_LBFGS	/usr/include/nlopt.h	/^     NLOPT_LD_LBFGS,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_LBFGS_NOCEDAL	/usr/include/nlopt.h	/^     NLOPT_LD_LBFGS_NOCEDAL,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_MMA	/usr/include/nlopt.h	/^     NLOPT_LD_MMA,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_SLSQP	/usr/include/nlopt.h	/^     NLOPT_LD_SLSQP,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_TNEWTON	/usr/include/nlopt.h	/^     NLOPT_LD_TNEWTON,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_TNEWTON_PRECOND	/usr/include/nlopt.h	/^     NLOPT_LD_TNEWTON_PRECOND,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_TNEWTON_PRECOND_RESTART	/usr/include/nlopt.h	/^     NLOPT_LD_TNEWTON_PRECOND_RESTART,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_TNEWTON_RESTART	/usr/include/nlopt.h	/^     NLOPT_LD_TNEWTON_RESTART,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_VAR1	/usr/include/nlopt.h	/^     NLOPT_LD_VAR1,$/;"	e	language:C	enum:__anon33
+NLOPT_LD_VAR2	/usr/include/nlopt.h	/^     NLOPT_LD_VAR2,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_AUGLAG	/usr/include/nlopt.h	/^     NLOPT_LN_AUGLAG,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_AUGLAG_EQ	/usr/include/nlopt.h	/^     NLOPT_LN_AUGLAG_EQ,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_BOBYQA	/usr/include/nlopt.h	/^     NLOPT_LN_BOBYQA,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_COBYLA	/usr/include/nlopt.h	/^     NLOPT_LN_COBYLA,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_NELDERMEAD	/usr/include/nlopt.h	/^     NLOPT_LN_NELDERMEAD,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_NEWUOA	/usr/include/nlopt.h	/^     NLOPT_LN_NEWUOA,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_NEWUOA_BOUND	/usr/include/nlopt.h	/^     NLOPT_LN_NEWUOA_BOUND,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_PRAXIS	/usr/include/nlopt.h	/^     NLOPT_LN_PRAXIS,$/;"	e	language:C	enum:__anon33
+NLOPT_LN_SBPLX	/usr/include/nlopt.h	/^     NLOPT_LN_SBPLX,$/;"	e	language:C	enum:__anon33
+NLOPT_MAXEVAL_REACHED	/usr/include/nlopt.h	/^     NLOPT_MAXEVAL_REACHED = 5,$/;"	e	language:C	enum:__anon34
+NLOPT_MAXTIME_REACHED	/usr/include/nlopt.h	/^     NLOPT_MAXTIME_REACHED = 6$/;"	e	language:C	enum:__anon34
+NLOPT_MINF_MAX_REACHED	/usr/include/nlopt.h	165;"	d	language:C
+NLOPT_NUM_ALGORITHMS	/usr/include/nlopt.h	/^     NLOPT_NUM_ALGORITHMS \/* not an algorithm, just the number of them *\/$/;"	e	language:C	enum:__anon33
+NLOPT_OUT_OF_MEMORY	/usr/include/nlopt.h	/^     NLOPT_OUT_OF_MEMORY = -3,$/;"	e	language:C	enum:__anon34
+NLOPT_ROUNDOFF_LIMITED	/usr/include/nlopt.h	/^     NLOPT_ROUNDOFF_LIMITED = -4,$/;"	e	language:C	enum:__anon34
+NLOPT_STDCALL	/usr/include/nlopt.h	32;"	d	language:C
+NLOPT_STDCALL	/usr/include/nlopt.h	34;"	d	language:C
+NLOPT_STDCALL	/usr/include/nlopt.h	36;"	d	language:C
+NLOPT_STDCALL	/usr/include/nlopt.h	39;"	d	language:C
+NLOPT_STOPVAL_REACHED	/usr/include/nlopt.h	/^     NLOPT_STOPVAL_REACHED = 2,$/;"	e	language:C	enum:__anon34
+NLOPT_SUCCESS	/usr/include/nlopt.h	/^     NLOPT_SUCCESS = 1, \/* generic success code *\/$/;"	e	language:C	enum:__anon34
+NLOPT_XTOL_REACHED	/usr/include/nlopt.h	/^     NLOPT_XTOL_REACHED = 4,$/;"	e	language:C	enum:__anon34
+NO_ERROR	magic.h	91;"	d	language:C
+NO_ERROR	main.c	26;"	d	language:C	file:
+NULL	/usr/include/libio.h	67;"	d	language:C
+NULL	/usr/include/libio.h	70;"	d	language:C
+NULL	/usr/include/libio.h	72;"	d	language:C
+NULL	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	397;"	d	language:C
+NULL	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	399;"	d	language:C
+NULL	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	402;"	d	language:C
+NULL	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	404;"	d	language:C
+OVERFLOW	/usr/include/math.h	347;"	d	language:C
+PDP_ENDIAN	/usr/include/endian.h	47;"	d	language:C
+PLOSS	/usr/include/math.h	350;"	d	language:C
+P_tmpdir	/usr/include/stdio.h	151;"	d	language:C
+RAND_MAX	/usr/include/stdlib.h	128;"	d	language:C
+RM_CALCULATION	magic.h	/^    RM_CALCULATION = 1,$/;"	e	language:C	enum:run_mode
+RM_EXPERIMENTAL	magic.h	/^    RM_EXPERIMENTAL,$/;"	e	language:C	enum:run_mode
+RM_RUN	magic.h	/^    RM_RUN$/;"	e	language:C	enum:run_mode
+R_val	magic.h	/^    double **R_val; \/\/Function overlaps used in the Grahm-Schmidt process. <f_i|e_j>$/;"	m	language:C	struct:params_variational_master
+S	magic.h	/^    af_leaf ***S; \/\/Function to calculate overlap. <f_i|f_j>$/;"	m	language:C	struct:params_variational_master
+SC_BOTH	main.c	31;"	d	language:C	file:
+SC_NONE	main.c	30;"	d	language:C	file:
+SC_ONLY_GEO	main.c	33;"	d	language:C	file:
+SC_ONLY_TRANS	main.c	32;"	d	language:C	file:
+SEEK_CUR	/usr/include/stdio.h	141;"	d	language:C
+SEEK_DATA	/usr/include/stdio.h	144;"	d	language:C
+SEEK_END	/usr/include/stdio.h	142;"	d	language:C
+SEEK_HOLE	/usr/include/stdio.h	145;"	d	language:C
+SEEK_SET	/usr/include/stdio.h	140;"	d	language:C
+SING	/usr/include/math.h	346;"	d	language:C
+SQR	include/converged.h	8;"	d	language:C
+SUCCESS	pcubature.c	34;"	d	language:C	file:
+S_val	magic.h	/^    double *S_val; \/\/Overlap coefficients. As the diagonal is one, the diagonal is set here as the norm const.$/;"	m	language:C	struct:params_variational_master
+TIMER_ABSTIME	/usr/include/bits/time.h	82;"	d	language:C
+TIME_UTC	/usr/include/time.h	182;"	d	language:C
+TLOSS	/usr/include/math.h	349;"	d	language:C
+TMP_MAX	/usr/include/bits/stdio_lim.h	24;"	d	language:C
+TRANSLATION_SHIFT	main.c	27;"	d	language:C	file:
+UNDERFLOW	/usr/include/math.h	348;"	d	language:C
+USAGE	main.c	565;"	d	language:C	file:
+VAL	pcubature.c	280;"	d	language:C	file:
+WCHAR_MAX	/usr/include/wchar.h	118;"	d	language:C
+WCHAR_MIN	/usr/include/wchar.h	117;"	d	language:C
+WCONTINUED	/usr/include/bits/waitflags.h	31;"	d	language:C
+WEOF	/usr/include/wchar.h	122;"	d	language:C
+WEXITED	/usr/include/bits/waitflags.h	30;"	d	language:C
+WEXITSTATUS	/usr/include/stdlib.h	84;"	d	language:C
+WIFCONTINUED	/usr/include/stdlib.h	91;"	d	language:C
+WIFEXITED	/usr/include/stdlib.h	87;"	d	language:C
+WIFSIGNALED	/usr/include/stdlib.h	88;"	d	language:C
+WIFSTOPPED	/usr/include/stdlib.h	89;"	d	language:C
+WNOHANG	/usr/include/bits/waitflags.h	25;"	d	language:C
+WNOWAIT	/usr/include/bits/waitflags.h	32;"	d	language:C
+WSTOPPED	/usr/include/bits/waitflags.h	29;"	d	language:C
+WSTOPSIG	/usr/include/stdlib.h	86;"	d	language:C
+WTERMSIG	/usr/include/stdlib.h	85;"	d	language:C
+WUNTRACED	/usr/include/bits/waitflags.h	26;"	d	language:C
+X_TLOSS	/usr/include/math.h	342;"	d	language:C
+ZEROTOL	main.c	20;"	d	language:C	file:
+ZERO_OVERLAP	magic.h	92;"	d	language:C
+_4VDGFDQT35GE5HR5B32FYDDODQ	include/c_fornberg.h	2;"	d	language:C
+_ALLOCA_H	/usr/include/alloca.h	19;"	d	language:C
+_ANSI_STDARG_H_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	32;"	d	language:C
+_ANSI_STDDEF_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	42;"	d	language:C
+_ATFILE_SOURCE	/usr/include/features.h	173;"	d	language:C
+_ATFILE_SOURCE	/usr/include/features.h	174;"	d	language:C
+_ATFILE_SOURCE	/usr/include/features.h	273;"	d	language:C
+_ATFILE_SOURCE	/usr/include/features.h	274;"	d	language:C
+_BITS_BYTESWAP_H	/usr/include/bits/byteswap.h	24;"	d	language:C
+_BITS_PTHREADTYPES_H	/usr/include/bits/pthreadtypes.h	19;"	d	language:C
+_BITS_TIME_H	/usr/include/bits/time.h	40;"	d	language:C
+_BITS_TYPESIZES_H	/usr/include/bits/typesizes.h	24;"	d	language:C
+_BITS_TYPES_H	/usr/include/bits/types.h	24;"	d	language:C
+_BSD_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	141;"	d	language:C
+_BSD_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	367;"	d	language:C
+_BSD_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	380;"	d	language:C
+_BSD_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	80;"	d	language:C
+_BSD_RUNE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	301;"	d	language:C
+_BSD_RUNE_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	295;"	d	language:C
+_BSD_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	192;"	d	language:C
+_BSD_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	371;"	d	language:C
+_BSD_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	384;"	d	language:C
+_BSD_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	84;"	d	language:C
+_BSD_SIZE_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	195;"	d	language:C
+_BSD_SOURCE	/usr/include/features.h	169;"	d	language:C
+_BSD_SOURCE	/usr/include/features.h	170;"	d	language:C
+_BSD_SOURCE	/usr/include/features.h	187;"	d	language:C
+_BSD_SOURCE	/usr/include/features.h	188;"	d	language:C
+_BSD_VA_LIST	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	63;"	d	language:C
+_BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	270;"	d	language:C
+_BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	290;"	d	language:C
+_BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	375;"	d	language:C
+_BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	388;"	d	language:C
+_BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	88;"	d	language:C
+_BSD_WCHAR_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	294;"	d	language:C
+_DEFAULT_SOURCE	/usr/include/features.h	167;"	d	language:C
+_DEFAULT_SOURCE	/usr/include/features.h	168;"	d	language:C
+_DEFAULT_SOURCE	/usr/include/features.h	185;"	d	language:C
+_DEFAULT_SOURCE	/usr/include/features.h	186;"	d	language:C
+_ENDIAN_H	/usr/include/endian.h	19;"	d	language:C
+_EXTERN_INLINE	/usr/include/bits/sigset.h	45;"	d	language:C
+_FEATURES_H	/usr/include/features.h	19;"	d	language:C
+_FORTIFY_SOURCE	/usr/include/features.h	340;"	d	language:C
+_GCC_MAX_ALIGN_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	418;"	d	language:C
+_GCC_PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	143;"	d	language:C
+_GCC_SIZE_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	198;"	d	language:C
+_GCC_WCHAR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	276;"	d	language:C
+_GXX_NULLPTR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	431;"	d	language:C
+_G_BUFSIZ	/usr/include/_G_config.h	56;"	d	language:C
+_G_HAVE_MMAP	/usr/include/_G_config.h	48;"	d	language:C
+_G_HAVE_MREMAP	/usr/include/_G_config.h	49;"	d	language:C
+_G_HAVE_ST_BLKSIZE	/usr/include/_G_config.h	54;"	d	language:C
+_G_IO_IO_FILE_VERSION	/usr/include/_G_config.h	51;"	d	language:C
+_G_config_h	/usr/include/_G_config.h	5;"	d	language:C
+_G_fpos64_t	/usr/include/_G_config.h	/^} _G_fpos64_t;$/;"	t	language:C	typeref:struct:__anon4
+_G_fpos_t	/usr/include/_G_config.h	/^} _G_fpos_t;$/;"	t	language:C	typeref:struct:__anon3
+_G_iconv_t	/usr/include/_G_config.h	/^} _G_iconv_t;$/;"	t	language:C	typeref:union:__anon5
+_G_va_list	/usr/include/_G_config.h	46;"	d	language:C
+_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	language:C	enum:__anon29
+_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	language:C	enum:__anon57
+_IOFBF	/usr/include/stdio.h	120;"	d	language:C
+_IOLBF	/usr/include/stdio.h	121;"	d	language:C
+_IONBF	/usr/include/stdio.h	122;"	d	language:C
+_IOS_APPEND	/usr/include/libio.h	80;"	d	language:C
+_IOS_ATEND	/usr/include/libio.h	79;"	d	language:C
+_IOS_BIN	/usr/include/libio.h	84;"	d	language:C
+_IOS_INPUT	/usr/include/libio.h	77;"	d	language:C
+_IOS_NOCREATE	/usr/include/libio.h	82;"	d	language:C
+_IOS_NOREPLACE	/usr/include/libio.h	83;"	d	language:C
+_IOS_OUTPUT	/usr/include/libio.h	78;"	d	language:C
+_IOS_TRUNC	/usr/include/libio.h	81;"	d	language:C
+_IO_BAD_SEEN	/usr/include/libio.h	109;"	d	language:C
+_IO_BE	/usr/include/libio.h	400;"	d	language:C
+_IO_BE	/usr/include/libio.h	402;"	d	language:C
+_IO_BOOLALPHA	/usr/include/libio.h	141;"	d	language:C
+_IO_BUFSIZ	/usr/include/libio.h	43;"	d	language:C
+_IO_CURRENTLY_PUTTING	/usr/include/libio.h	106;"	d	language:C
+_IO_DEC	/usr/include/libio.h	129;"	d	language:C
+_IO_DELETE_DONT_CLOSE	/usr/include/libio.h	101;"	d	language:C
+_IO_DONT_CLOSE	/usr/include/libio.h	140;"	d	language:C
+_IO_EOF_SEEN	/usr/include/libio.h	99;"	d	language:C
+_IO_ERR_SEEN	/usr/include/libio.h	100;"	d	language:C
+_IO_FILE	/usr/include/libio.h	/^struct _IO_FILE {$/;"	s	language:C
+_IO_FILE	/usr/include/libio.h	/^typedef struct _IO_FILE _IO_FILE;$/;"	t	language:C	typeref:struct:_IO_FILE
+_IO_FILE_complete	/usr/include/libio.h	/^struct _IO_FILE_complete$/;"	s	language:C
+_IO_FIXED	/usr/include/libio.h	137;"	d	language:C
+_IO_FLAGS2_CLOEXEC	/usr/include/libio.h	121;"	d	language:C
+_IO_FLAGS2_FORTIFY	/usr/include/libio.h	115;"	d	language:C
+_IO_FLAGS2_MMAP	/usr/include/libio.h	112;"	d	language:C
+_IO_FLAGS2_NOCLOSE	/usr/include/libio.h	120;"	d	language:C
+_IO_FLAGS2_NOTCANCEL	/usr/include/libio.h	113;"	d	language:C
+_IO_FLAGS2_SCANF_STD	/usr/include/libio.h	119;"	d	language:C
+_IO_FLAGS2_USER_WBUF	/usr/include/libio.h	117;"	d	language:C
+_IO_HAVE_ST_BLKSIZE	/usr/include/libio.h	42;"	d	language:C
+_IO_HEX	/usr/include/libio.h	131;"	d	language:C
+_IO_INTERNAL	/usr/include/libio.h	128;"	d	language:C
+_IO_IN_BACKUP	/usr/include/libio.h	103;"	d	language:C
+_IO_IS_APPENDING	/usr/include/libio.h	107;"	d	language:C
+_IO_IS_FILEBUF	/usr/include/libio.h	108;"	d	language:C
+_IO_LEFT	/usr/include/libio.h	126;"	d	language:C
+_IO_LINE_BUF	/usr/include/libio.h	104;"	d	language:C
+_IO_LINKED	/usr/include/libio.h	102;"	d	language:C
+_IO_MAGIC	/usr/include/libio.h	92;"	d	language:C
+_IO_MAGIC_MASK	/usr/include/libio.h	94;"	d	language:C
+_IO_NO_READS	/usr/include/libio.h	97;"	d	language:C
+_IO_NO_WRITES	/usr/include/libio.h	98;"	d	language:C
+_IO_OCT	/usr/include/libio.h	130;"	d	language:C
+_IO_PENDING_OUTPUT_COUNT	/usr/include/libio.h	442;"	d	language:C
+_IO_RIGHT	/usr/include/libio.h	127;"	d	language:C
+_IO_SCIENTIFIC	/usr/include/libio.h	136;"	d	language:C
+_IO_SHOWBASE	/usr/include/libio.h	132;"	d	language:C
+_IO_SHOWPOINT	/usr/include/libio.h	133;"	d	language:C
+_IO_SHOWPOS	/usr/include/libio.h	135;"	d	language:C
+_IO_SKIPWS	/usr/include/libio.h	125;"	d	language:C
+_IO_STDIO	/usr/include/libio.h	139;"	d	language:C
+_IO_STDIO_H	/usr/include/libio.h	29;"	d	language:C
+_IO_TIED_PUT_GET	/usr/include/libio.h	105;"	d	language:C
+_IO_UNBUFFERED	/usr/include/libio.h	96;"	d	language:C
+_IO_UNIFIED_JUMPTABLES	/usr/include/libio.h	59;"	d	language:C
+_IO_UNITBUF	/usr/include/libio.h	138;"	d	language:C
+_IO_UPPERCASE	/usr/include/libio.h	134;"	d	language:C
+_IO_USER_BUF	/usr/include/libio.h	95;"	d	language:C
+_IO_USER_LOCK	/usr/include/libio.h	110;"	d	language:C
+_IO_backup_base	/usr/include/libio.h	/^  char *_IO_backup_base;  \/* Pointer to first valid character of backup area *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_backup_base	/usr/include/libio.h	/^  wchar_t *_IO_backup_base;	\/* Pointer to first valid character of$/;"	m	language:C	struct:_IO_wide_data
+_IO_buf_base	/usr/include/libio.h	/^  char* _IO_buf_base;	\/* Start of reserve area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_buf_base	/usr/include/libio.h	/^  wchar_t *_IO_buf_base;	\/* Start of reserve area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_buf_end	/usr/include/libio.h	/^  char* _IO_buf_end;	\/* End of reserve area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_buf_end	/usr/include/libio.h	/^  wchar_t *_IO_buf_end;		\/* End of reserve area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_cleanup_region_end	/usr/include/libio.h	461;"	d	language:C
+_IO_cleanup_region_start	/usr/include/libio.h	460;"	d	language:C
+_IO_codecvt	/usr/include/libio.h	/^struct _IO_codecvt$/;"	s	language:C
+_IO_cookie_io_functions_t	/usr/include/libio.h	/^} _IO_cookie_io_functions_t;$/;"	t	language:C	typeref:struct:__anon2
+_IO_feof_unlocked	/usr/include/libio.h	431;"	d	language:C
+_IO_ferror_unlocked	/usr/include/libio.h	432;"	d	language:C
+_IO_file_flags	/usr/include/libio.h	247;"	d	language:C
+_IO_flockfile	/usr/include/libio.h	451;"	d	language:C
+_IO_flockfile	/usr/include/libio.h	457;"	d	language:C
+_IO_fpos64_t	/usr/include/libio.h	34;"	d	language:C
+_IO_fpos_t	/usr/include/libio.h	33;"	d	language:C
+_IO_ftrylockfile	/usr/include/libio.h	459;"	d	language:C
+_IO_funlockfile	/usr/include/libio.h	453;"	d	language:C
+_IO_funlockfile	/usr/include/libio.h	458;"	d	language:C
+_IO_fwide	/usr/include/libio.h	497;"	d	language:C
+_IO_fwide_maybe_incompatible	/usr/include/libio.h	486;"	d	language:C
+_IO_fwide_maybe_incompatible	/usr/include/libio.h	493;"	d	language:C
+_IO_getc_unlocked	/usr/include/libio.h	405;"	d	language:C
+_IO_getwc_unlocked	/usr/include/libio.h	418;"	d	language:C
+_IO_iconv_t	/usr/include/libio.h	41;"	d	language:C
+_IO_last_state	/usr/include/libio.h	/^  __mbstate_t _IO_last_state;$/;"	m	language:C	struct:_IO_wide_data
+_IO_lock_t	/usr/include/libio.h	/^typedef void _IO_lock_t;$/;"	t	language:C
+_IO_marker	/usr/include/libio.h	/^struct _IO_marker {$/;"	s	language:C
+_IO_off64_t	/usr/include/libio.h	38;"	d	language:C
+_IO_off_t	/usr/include/libio.h	37;"	d	language:C
+_IO_peekc	/usr/include/libio.h	450;"	d	language:C
+_IO_peekc	/usr/include/libio.h	456;"	d	language:C
+_IO_peekc_unlocked	/usr/include/libio.h	408;"	d	language:C
+_IO_pid_t	/usr/include/libio.h	39;"	d	language:C
+_IO_putc_unlocked	/usr/include/libio.h	412;"	d	language:C
+_IO_putwc_unlocked	/usr/include/libio.h	423;"	d	language:C
+_IO_read_base	/usr/include/libio.h	/^  char* _IO_read_base;	\/* Start of putback+get area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_read_base	/usr/include/libio.h	/^  wchar_t *_IO_read_base;	\/* Start of putback+get area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_read_end	/usr/include/libio.h	/^  char* _IO_read_end;	\/* End of get area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_read_end	/usr/include/libio.h	/^  wchar_t *_IO_read_end;	\/* End of get area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_read_ptr	/usr/include/libio.h	/^  char* _IO_read_ptr;	\/* Current read pointer *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_read_ptr	/usr/include/libio.h	/^  wchar_t *_IO_read_ptr;	\/* Current read pointer *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_save_base	/usr/include/libio.h	/^  char *_IO_save_base; \/* Pointer to start of non-current get area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_save_base	/usr/include/libio.h	/^  wchar_t *_IO_save_base;	\/* Pointer to start of non-current get area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_save_end	/usr/include/libio.h	/^  char *_IO_save_end; \/* Pointer to end of non-current get area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_save_end	/usr/include/libio.h	/^  wchar_t *_IO_save_end;	\/* Pointer to end of non-current get area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_size_t	/usr/include/libio.h	35;"	d	language:C
+_IO_ssize_t	/usr/include/libio.h	36;"	d	language:C
+_IO_state	/usr/include/libio.h	/^  __mbstate_t _IO_state;$/;"	m	language:C	struct:_IO_wide_data
+_IO_stderr	/usr/include/libio.h	326;"	d	language:C
+_IO_stdin	/usr/include/libio.h	324;"	d	language:C
+_IO_stdin_used	/usr/include/libio.h	/^weak_extern (_IO_stdin_used);$/;"	v	language:C
+_IO_stdout	/usr/include/libio.h	325;"	d	language:C
+_IO_uid_t	/usr/include/libio.h	40;"	d	language:C
+_IO_va_list	/usr/include/libio.h	44;"	d	language:C
+_IO_va_list	/usr/include/libio.h	51;"	d	language:C
+_IO_va_list	/usr/include/libio.h	52;"	d	language:C
+_IO_wide_data	/usr/include/libio.h	/^struct _IO_wide_data$/;"	s	language:C
+_IO_wint_t	/usr/include/libio.h	45;"	d	language:C
+_IO_write_base	/usr/include/libio.h	/^  char* _IO_write_base;	\/* Start of put area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_write_base	/usr/include/libio.h	/^  wchar_t *_IO_write_base;	\/* Start of put area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_write_end	/usr/include/libio.h	/^  char* _IO_write_end;	\/* End of put area. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_write_end	/usr/include/libio.h	/^  wchar_t *_IO_write_end;	\/* End of put area. *\/$/;"	m	language:C	struct:_IO_wide_data
+_IO_write_ptr	/usr/include/libio.h	/^  char* _IO_write_ptr;	\/* Current put pointer. *\/$/;"	m	language:C	struct:_IO_FILE
+_IO_write_ptr	/usr/include/libio.h	/^  wchar_t *_IO_write_ptr;	\/* Current put pointer. *\/$/;"	m	language:C	struct:_IO_wide_data
+_ISOC11_SOURCE	/usr/include/features.h	155;"	d	language:C
+_ISOC11_SOURCE	/usr/include/features.h	156;"	d	language:C
+_ISOC95_SOURCE	/usr/include/features.h	151;"	d	language:C
+_ISOC95_SOURCE	/usr/include/features.h	152;"	d	language:C
+_ISOC99_SOURCE	/usr/include/features.h	153;"	d	language:C
+_ISOC99_SOURCE	/usr/include/features.h	154;"	d	language:C
+_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	language:C	enum:__anon29
+_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	language:C	enum:__anon57
+_LARGEFILE64_SOURCE	/usr/include/features.h	165;"	d	language:C
+_LARGEFILE64_SOURCE	/usr/include/features.h	166;"	d	language:C
+_LARGEFILE_SOURCE	/usr/include/features.h	282;"	d	language:C
+_LARGEFILE_SOURCE	/usr/include/features.h	283;"	d	language:C
+_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	language:C	typeref:enum:__anon29
+_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	language:C	typeref:enum:__anon57
+_MATH_H	/usr/include/math.h	24;"	d	language:C
+_MATH_H_MATHDEF	/usr/include/bits/mathdef.h	23;"	d	language:C
+_Mdouble_	/usr/include/math.h	127;"	d	language:C
+_Mdouble_	/usr/include/math.h	133;"	d	language:C
+_Mdouble_	/usr/include/math.h	65;"	d	language:C
+_Mdouble_	/usr/include/math.h	70;"	d	language:C
+_Mdouble_	/usr/include/math.h	84;"	d	language:C
+_Mdouble_	/usr/include/math.h	89;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	129;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	134;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	67;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	71;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	86;"	d	language:C
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	90;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	130;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	135;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	68;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	72;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	87;"	d	language:C
+_Mdouble_END_NAMESPACE	/usr/include/math.h	91;"	d	language:C
+_Mfloat_	/usr/include/math.h	82;"	d	language:C
+_Mlong_double_	/usr/include/math.h	125;"	d	language:C
+_OLD_STDIO_MAGIC	/usr/include/libio.h	93;"	d	language:C
+_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	language:C	enum:__anon29
+_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	language:C	enum:__anon57
+_POSIX_C_SOURCE	/usr/include/features.h	159;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	160;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	229;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	230;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	236;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	238;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	240;"	d	language:C
+_POSIX_C_SOURCE	/usr/include/features.h	242;"	d	language:C
+_POSIX_SOURCE	/usr/include/features.h	157;"	d	language:C
+_POSIX_SOURCE	/usr/include/features.h	158;"	d	language:C
+_POSIX_SOURCE	/usr/include/features.h	227;"	d	language:C
+_POSIX_SOURCE	/usr/include/features.h	228;"	d	language:C
+_POSIX_SOURCE	/usr/include/features.h	234;"	d	language:C
+_PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	136;"	d	language:C
+_PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	68;"	d	language:C
+_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	140;"	d	language:C
+_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	366;"	d	language:C
+_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	379;"	d	language:C
+_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	79;"	d	language:C
+_PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	95;"	d	language:C
+_RUNE_T_DECLARED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	314;"	d	language:C
+_SIGSET_H_fns	/usr/include/bits/sigset.h	42;"	d	language:C
+_SIGSET_H_types	/usr/include/bits/sigset.h	20;"	d	language:C
+_SIGSET_NWORDS	/usr/include/bits/sigset.h	26;"	d	language:C
+_SIZET_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	199;"	d	language:C
+_SIZE_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	186;"	d	language:C
+_SIZE_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	65;"	d	language:C
+_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	191;"	d	language:C
+_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	370;"	d	language:C
+_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	383;"	d	language:C
+_SIZE_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	83;"	d	language:C
+_SIZE_T_DECLARED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	196;"	d	language:C
+_SIZE_T_DEFINED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	194;"	d	language:C
+_SIZE_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	193;"	d	language:C
+_STDARG_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	31;"	d	language:C
+_STDC_PREDEF_H	/usr/include/stdc-predef.h	19;"	d	language:C
+_STDDEF_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	39;"	d	language:C
+_STDDEF_H_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	40;"	d	language:C
+_STDIO_H	/usr/include/stdio.h	26;"	d	language:C
+_STDIO_USES_IOSTREAM	/usr/include/stdio.h	72;"	d	language:C
+_STDLIB_H	/usr/include/stdlib.h	37;"	d	language:C
+_STRING_H	/usr/include/string.h	23;"	d	language:C
+_STRUCT_TIMEVAL	/usr/include/bits/time.h	25;"	d	language:C
+_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	language:C	enum:__anon29
+_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	language:C	enum:__anon57
+_SVID_SOURCE	/usr/include/features.h	171;"	d	language:C
+_SVID_SOURCE	/usr/include/features.h	172;"	d	language:C
+_SVID_SOURCE	/usr/include/features.h	189;"	d	language:C
+_SVID_SOURCE	/usr/include/features.h	190;"	d	language:C
+_SYS_CDEFS_H	/usr/include/sys/cdefs.h	19;"	d	language:C
+_SYS_SELECT_H	/usr/include/sys/select.h	22;"	d	language:C
+_SYS_SIZE_T_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	187;"	d	language:C
+_SYS_SYSMACROS_H	/usr/include/sys/sysmacros.h	20;"	d	language:C
+_SYS_TYPES_H	/usr/include/sys/types.h	23;"	d	language:C
+_TIME_H	/usr/include/time.h	26;"	d	language:C
+_TYPE_ptrdiff_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	106;"	d	language:C
+_TYPE_size_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	110;"	d	language:C
+_TYPE_wchar_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	114;"	d	language:C
+_T_PTRDIFF	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	138;"	d	language:C
+_T_PTRDIFF_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	137;"	d	language:C
+_T_SIZE	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	189;"	d	language:C
+_T_SIZE_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	188;"	d	language:C
+_T_WCHAR	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	267;"	d	language:C
+_T_WCHAR_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	266;"	d	language:C
+_VA_LIST	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	107;"	d	language:C
+_VA_LIST	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	75;"	d	language:C
+_VA_LIST_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	104;"	d	language:C
+_VA_LIST_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	72;"	d	language:C
+_VA_LIST_DEFINED	/usr/include/stdio.h	80;"	d	language:C
+_VA_LIST_DEFINED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	110;"	d	language:C
+_VA_LIST_T_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	113;"	d	language:C
+_WCHAR_H	/usr/include/wchar.h	26;"	d	language:C
+_WCHAR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	265;"	d	language:C
+_WCHAR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	74;"	d	language:C
+_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	269;"	d	language:C
+_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	374;"	d	language:C
+_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	387;"	d	language:C
+_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	87;"	d	language:C
+_WCHAR_T_DECLARED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	277;"	d	language:C
+_WCHAR_T_DEFINED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	272;"	d	language:C
+_WCHAR_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	271;"	d	language:C
+_WCHAR_T_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	273;"	d	language:C
+_WINT_T	/usr/include/wchar.h	60;"	d	language:C
+_WINT_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	348;"	d	language:C
+_XLOCALE_H	/usr/include/xlocale.h	21;"	d	language:C
+_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	language:C	enum:__anon29
+_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	language:C	enum:__anon57
+_XOPEN_SOURCE	/usr/include/features.h	161;"	d	language:C
+_XOPEN_SOURCE	/usr/include/features.h	162;"	d	language:C
+_XOPEN_SOURCE_EXTENDED	/usr/include/features.h	163;"	d	language:C
+_XOPEN_SOURCE_EXTENDED	/usr/include/features.h	164;"	d	language:C
+_chain	/usr/include/libio.h	/^  struct _IO_FILE *_chain;$/;"	m	language:C	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_FILE
+_codecvt	/usr/include/libio.h	/^  struct _IO_codecvt *_codecvt;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_codecvt
+_codecvt	/usr/include/libio.h	/^  struct _IO_codecvt _codecvt;$/;"	m	language:C	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_codecvt
+_cur_column	/usr/include/libio.h	/^  unsigned short _cur_column;$/;"	m	language:C	struct:_IO_FILE
+_file	/usr/include/libio.h	/^  struct _IO_FILE _file;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_FILE
+_fileno	/usr/include/libio.h	/^  int _fileno;$/;"	m	language:C	struct:_IO_FILE
+_flags	/usr/include/libio.h	/^  int _flags;		\/* High-order word is _IO_MAGIC; rest is flags. *\/$/;"	m	language:C	struct:_IO_FILE
+_flags2	/usr/include/libio.h	/^  int _flags2;$/;"	m	language:C	struct:_IO_FILE
+_freeres_buf	/usr/include/libio.h	/^  void *_freeres_buf;$/;"	m	language:C	struct:_IO_FILE_complete
+_freeres_list	/usr/include/libio.h	/^  struct _IO_FILE *_freeres_list;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_FILE
+_freeres_size	/usr/include/libio.h	/^  size_t _freeres_size;$/;"	m	language:C	struct:_IO_FILE_complete
+_lock	/usr/include/libio.h	/^  _IO_lock_t *_lock;$/;"	m	language:C	struct:_IO_FILE
+_markers	/usr/include/libio.h	/^  struct _IO_marker *_markers;$/;"	m	language:C	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_marker
+_mode	/usr/include/libio.h	/^  int _mode;$/;"	m	language:C	struct:_IO_FILE_complete
+_next	/usr/include/libio.h	/^  struct _IO_marker *_next;$/;"	m	language:C	struct:_IO_marker	typeref:struct:_IO_marker::_IO_marker
+_offset	/usr/include/libio.h	/^  _IO_off64_t _offset;$/;"	m	language:C	struct:_IO_FILE_complete
+_old_offset	/usr/include/libio.h	/^  _IO_off_t _old_offset; \/* This used to be _offset but it's too small.  *\/$/;"	m	language:C	struct:_IO_FILE
+_pos	/usr/include/libio.h	/^  int _pos;$/;"	m	language:C	struct:_IO_marker
+_sbuf	/usr/include/libio.h	/^  struct _IO_FILE *_sbuf;$/;"	m	language:C	struct:_IO_marker	typeref:struct:_IO_marker::_IO_FILE
+_shortbuf	/usr/include/libio.h	/^  char _shortbuf[1];$/;"	m	language:C	struct:_IO_FILE
+_shortbuf	/usr/include/libio.h	/^  wchar_t _shortbuf[1];$/;"	m	language:C	struct:_IO_wide_data
+_unused2	/usr/include/libio.h	/^  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];$/;"	m	language:C	struct:_IO_FILE_complete
+_vtable_offset	/usr/include/libio.h	/^  signed char _vtable_offset;$/;"	m	language:C	struct:_IO_FILE
+_wide_data	/usr/include/libio.h	/^  struct _IO_wide_data *_wide_data;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_wide_data
+_wide_vtable	/usr/include/libio.h	/^  const struct _IO_jump_t *_wide_vtable;$/;"	m	language:C	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_jump_t
+a	/usr/include/nlopt.h	/^NLOPT_EXTERN(const char *) nlopt_algorithm_name(nlopt_algorithm a);$/;"	v	language:C
+add_cacheval	pcubature.c	/^static int add_cacheval(valcache *vc,$/;"	f	language:C	file:
+af_compile	main.c	/^af_compile(size_t num, ...)$/;"	f	language:C	file:
+af_eval	main.c	/^af_eval(const double *x, af_leaf *p, double *ret)$/;"	f	language:C	file:
+af_eval_integration_wrapper	main.c	/^af_eval_integration_wrapper(unsigned ndim, const double *x, af_leaf *fdata, unsigned fdim, double *fval)$/;"	f	language:C
+af_free	main.c	/^af_free(af_leaf *tree)$/;"	f	language:C
+af_free_t	magic.h	/^typedef void af_free_t(void *);$/;"	t	language:C
+af_init_t	magic.h	/^typedef int af_init_t(void *, void *);$/;"	t	language:C
+af_leaf	magic.h	/^typedef struct af_leaf$/;"	s	language:C
+af_leaf	magic.h	/^} af_leaf;$/;"	t	language:C	typeref:struct:af_leaf
+af_t	magic.h	/^typedef void af_t(const double *, void *, double *);$/;"	t	language:C
+af_write_t	magic.h	/^typedef void af_write_t(void *);$/;"	t	language:C
+alloca	/usr/include/alloca.h	29;"	d	language:C
+alloca	/usr/include/alloca.h	35;"	d	language:C
+arg1	/usr/include/math.h	/^    double arg1;$/;"	m	language:C	struct:__exception
+arg2	/usr/include/math.h	/^    double arg2;$/;"	m	language:C	struct:__exception
+atof	/usr/include/bits/stdlib-float.h	/^__NTH (atof (const char *__nptr))$/;"	f	language:C
+atoi	/usr/include/stdlib.h	/^__NTH (atoi (const char *__nptr))$/;"	f	language:C
+atol	/usr/include/stdlib.h	/^__NTH (atol (const char *__nptr))$/;"	f	language:C
+atoll	/usr/include/stdlib.h	/^__NTH (atoll (const char *__nptr))$/;"	f	language:C
+b	magic.h	/^    double b;\/\/parameters of the basis set$/;"	m	language:C	struct:params_basis_set
+be16toh	/usr/include/endian.h	65;"	d	language:C
+be16toh	/usr/include/endian.h	81;"	d	language:C
+be32toh	/usr/include/endian.h	70;"	d	language:C
+be32toh	/usr/include/endian.h	86;"	d	language:C
+be64toh	/usr/include/endian.h	75;"	d	language:C
+be64toh	/usr/include/endian.h	91;"	d	language:C
+blkcnt64_t	/usr/include/sys/types.h	/^typedef __blkcnt64_t blkcnt64_t;     \/* Type to count number of disk blocks. *\/$/;"	t	language:C
+blkcnt_t	/usr/include/sys/types.h	/^typedef __blkcnt64_t blkcnt_t;	   \/* Type to count number of disk blocks.  *\/$/;"	t	language:C
+blkcnt_t	/usr/include/sys/types.h	/^typedef __blkcnt_t blkcnt_t;	 \/* Type to count number of disk blocks.  *\/$/;"	t	language:C
+blksize_t	/usr/include/sys/types.h	/^typedef __blksize_t blksize_t;$/;"	t	language:C
+braket	main.c	/^braket(struct params_basis_set *pbs, af_leaf *t, double *ret)$/;"	f	language:C
+btowc	/usr/include/wchar.h	/^__NTH (btowc (int __c))$/;"	f	language:C
+c	pcubature.c	/^     cacheval *c;$/;"	m	language:C	struct:valcache_s	file:
+cacheval	pcubature.c	/^} cacheval;$/;"	t	language:C	typeref:struct:cacheval_s	file:
+cacheval_s	pcubature.c	/^typedef struct cacheval_s {$/;"	s	language:C	file:
+caddr_t	/usr/include/sys/types.h	/^typedef __caddr_t caddr_t;$/;"	t	language:C
+clencurt_M	include/clencurt.h	/^static const int clencurt_M = 19;$/;"	v	language:C
+clencurt_w	include/clencurt.h	/^static const double clencurt_w[1048595] = { \/* length M+2^(M+1) *\/$/;"	v	language:C
+clencurt_x	include/clencurt.h	/^static const double clencurt_x[524288] = { \/* length 2^M *\/$/;"	v	language:C
+clock_t	/usr/include/time.h	/^typedef __clock_t clock_t;$/;"	t	language:C
+clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t	language:C
+close	/usr/include/libio.h	/^  __io_close_fn *close;		\/* Close file.  *\/$/;"	m	language:C	struct:__anon2
+comparison_fn_t	/usr/include/stdlib.h	/^typedef __compar_fn_t comparison_fn_t;$/;"	t	language:C
+compute_cacheval	pcubature.c	/^static int compute_cacheval(const unsigned *m, unsigned mi, $/;"	f	language:C	file:
+cookie_close_function_t	/usr/include/libio.h	/^typedef __io_close_fn cookie_close_function_t;$/;"	t	language:C
+cookie_io_functions_t	/usr/include/libio.h	/^typedef _IO_cookie_io_functions_t cookie_io_functions_t;$/;"	t	language:C
+cookie_read_function_t	/usr/include/libio.h	/^typedef __io_read_fn cookie_read_function_t;$/;"	t	language:C
+cookie_seek_function_t	/usr/include/libio.h	/^typedef __io_seek_fn cookie_seek_function_t;$/;"	t	language:C
+cookie_write_function_t	/usr/include/libio.h	/^typedef __io_write_fn cookie_write_function_t;$/;"	t	language:C
+d	/usr/include/bits/pthreadtypes.h	/^      } d;$/;"	m	language:C	union:__anon16::__pthread_mutex_s::__anon17	typeref:struct:__anon16::__pthread_mutex_s::__anon17::__anon18
+d	/usr/include/bits/pthreadtypes.h	/^      } d;$/;"	m	language:C	union:__anon44::__pthread_mutex_s::__anon45	typeref:struct:__anon44::__pthread_mutex_s::__anon45::__anon46
+daddr_t	/usr/include/sys/types.h	/^typedef __daddr_t daddr_t;$/;"	t	language:C
+data_file	magic.h	/^    char data_file[256];\/\/plot data$/;"	m	language:C	struct:params_basis_set
+deriv_accuracy	magic.h	/^    size_t deriv_accuracy;\/\/points of integration, for derivative function$/;"	m	language:C	struct:params_basis_set
+deriv_step	magic.h	/^    double deriv_step;\/\/distance between sampling points$/;"	m	language:C	struct:params_basis_set
+deriv_weights	magic.h	/^    double *deriv_weights;\/\/where we store the weights.$/;"	m	language:C	struct:params_basis_set
+destroy	magic.h	/^    af_free_t *destroy;$/;"	m	language:C	struct:params_basis_set
+destroy	magic.h	/^    af_free_t *destroy;$/;"	m	language:C	struct:params_variational_master
+dev_t	/usr/include/sys/types.h	/^typedef __dev_t dev_t;$/;"	t	language:C
+div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	language:C	typeref:struct:__anon36
+div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	language:C	typeref:struct:__anon9
+double_t	/usr/include/bits/mathdef.h	/^typedef double double_t;	\/* `double' expressions are evaluated$/;"	t	language:C
+double_t	/usr/include/bits/mathdef.h	/^typedef long double double_t;	\/* `double' expressions are evaluated as$/;"	t	language:C
+drand48_data	/usr/include/stdlib.h	/^struct drand48_data$/;"	s	language:C
+end_ptr	/usr/include/stdlib.h	/^    int32_t *end_ptr;		\/* Pointer behind state table.  *\/$/;"	m	language:C	struct:random_data
+epsrel	magic.h	/^    double epsrel;$/;"	m	language:C	struct:params_basis_set
+error	magic.h	/^    char error; \/\/Catching special conditions.$/;"	m	language:C	struct:params_variational_master_mask
+error_norm	include/cubature.h	/^} error_norm;$/;"	t	language:C	typeref:enum:__anon35
+error_norm	include/cubature.h	/^} error_norm;$/;"	t	language:C	typeref:enum:__anon61
+eval	pcubature.c	/^static unsigned eval(const unsigned *cm, unsigned cmi, double *cval,$/;"	f	language:C	file:
+eval_integral	pcubature.c	/^static void eval_integral(valcache vc, const unsigned *m, $/;"	f	language:C	file:
+evals	pcubature.c	/^static void evals(valcache vc, const unsigned *m, unsigned md,$/;"	f	language:C	file:
+f	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	m	language:C	struct:fv_data_s
+f	magic.h	/^    af_t *f;$/;"	m	language:C	struct:af_leaf
+fd_mask	/usr/include/sys/select.h	/^typedef __fd_mask fd_mask;$/;"	t	language:C
+fd_set	/usr/include/sys/select.h	/^  } fd_set;$/;"	t	language:C	typeref:struct:__anon14
+fd_set	/usr/include/sys/select.h	/^  } fd_set;$/;"	t	language:C	typeref:struct:__anon42
+fdata	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	m	language:C	struct:fv_data_s
+fds_bits	/usr/include/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	language:C	struct:__anon14
+fds_bits	/usr/include/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	language:C	struct:__anon42
+float_t	/usr/include/bits/mathdef.h	/^typedef float float_t;		\/* `float' expressions are evaluated as `float'.  *\/$/;"	t	language:C
+float_t	/usr/include/bits/mathdef.h	/^typedef long double float_t;	\/* `float' expressions are evaluated as$/;"	t	language:C
+fpclassify	/usr/include/math.h	210;"	d	language:C
+fpclassify	/usr/include/math.h	213;"	d	language:C
+fpos64_t	/usr/include/stdio.h	/^typedef _G_fpos64_t fpos64_t;$/;"	t	language:C
+fpos_t	/usr/include/stdio.h	/^typedef _G_fpos_t fpos_t;$/;"	t	language:C
+fptr	/usr/include/stdlib.h	/^    int32_t *fptr;		\/* Front pointer.  *\/$/;"	m	language:C	struct:random_data
+free_cachevals	pcubature.c	/^static void free_cachevals(valcache *v)$/;"	f	language:C	file:
+fsblkcnt64_t	/usr/include/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt64_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
+fsblkcnt_t	/usr/include/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
+fsblkcnt_t	/usr/include/sys/types.h	/^typedef __fsblkcnt_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
+fscanf	/usr/include/stdio.h	457;"	d	language:C
+fsfilcnt64_t	/usr/include/sys/types.h	/^typedef __fsfilcnt64_t fsfilcnt64_t; \/* Type to count file system inodes.  *\/$/;"	t	language:C
+fsfilcnt_t	/usr/include/sys/types.h	/^typedef __fsfilcnt64_t fsfilcnt_t; \/* Type to count file system inodes.  *\/$/;"	t	language:C
+fsfilcnt_t	/usr/include/sys/types.h	/^typedef __fsfilcnt_t fsfilcnt_t; \/* Type to count file system inodes.  *\/$/;"	t	language:C
+fsid_t	/usr/include/sys/types.h	/^typedef __fsid_t fsid_t;$/;"	t	language:C
+fv	include/vwrapper.h	/^static int fv(unsigned ndim, size_t npt,$/;"	f	language:C
+fv_data	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	t	language:C	typeref:struct:fv_data_s
+fv_data_s	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	s	language:C
+fwscanf	/usr/include/wchar.h	674;"	d	language:C
+getc	/usr/include/stdio.h	543;"	d	language:C
+gid_t	/usr/include/sys/types.h	/^typedef __gid_t gid_t;$/;"	t	language:C
+global_pbs	main.c	/^struct params_basis_set global_pbs = {$/;"	v	language:C	typeref:struct:params_basis_set
+global_pvm	main.c	/^struct params_variational_master global_pvm = {$/;"	v	language:C	typeref:struct:params_variational_master
+gnu_dev_major	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_major (unsigned long long int __dev))$/;"	f	language:C
+gnu_dev_makedev	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_makedev (unsigned int __major, unsigned int __minor))$/;"	f	language:C
+gnu_dev_minor	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_minor (unsigned long long int __dev))$/;"	f	language:C
+gs_known	main.c	/^gs_known(const double *x, pvmm *p, double *ret)$/;"	f	language:C
+gs_learn	main.c	/^gs_learn(pvmm *p)$/;"	f	language:C
+htobe16	/usr/include/endian.h	63;"	d	language:C
+htobe16	/usr/include/endian.h	79;"	d	language:C
+htobe32	/usr/include/endian.h	68;"	d	language:C
+htobe32	/usr/include/endian.h	84;"	d	language:C
+htobe64	/usr/include/endian.h	73;"	d	language:C
+htobe64	/usr/include/endian.h	89;"	d	language:C
+htole16	/usr/include/endian.h	64;"	d	language:C
+htole16	/usr/include/endian.h	80;"	d	language:C
+htole32	/usr/include/endian.h	69;"	d	language:C
+htole32	/usr/include/endian.h	85;"	d	language:C
+htole64	/usr/include/endian.h	74;"	d	language:C
+htole64	/usr/include/endian.h	90;"	d	language:C
+id_t	/usr/include/sys/types.h	/^typedef __id_t id_t;$/;"	t	language:C
+init	magic.h	/^    af_init_t *init;$/;"	m	language:C	struct:params_basis_set
+init	magic.h	/^    af_init_t *init;$/;"	m	language:C	struct:params_variational_master
+ino64_t	/usr/include/sys/types.h	/^typedef __ino64_t ino64_t;$/;"	t	language:C
+ino_t	/usr/include/sys/types.h	/^typedef __ino64_t ino_t;$/;"	t	language:C
+ino_t	/usr/include/sys/types.h	/^typedef __ino_t ino_t;$/;"	t	language:C
+input_parser	main.c	/^input_parser(int argc, char **argv, struct params_basis_set *pbs)$/;"	f	language:C	file:
+int16_t	/usr/include/sys/types.h	/^typedef	short int int16_t;$/;"	t	language:C
+int32_t	/usr/include/sys/types.h	/^typedef	int int32_t;$/;"	t	language:C
+int64_t	/usr/include/sys/types.h	/^__extension__ typedef long long int int64_t;$/;"	t	language:C
+int64_t	/usr/include/sys/types.h	/^typedef long int int64_t;$/;"	t	language:C
+int8_t	/usr/include/sys/types.h	/^typedef	char int8_t;$/;"	t	language:C
+integrand	include/cubature.h	/^typedef int (*integrand) (unsigned ndim, const double *x, void *,$/;"	t	language:C
+integrand_v	include/cubature.h	/^typedef int (*integrand_v) (unsigned ndim, size_t npt,$/;"	t	language:C
+isfinite	/usr/include/math.h	234;"	d	language:C
+isfinite	/usr/include/math.h	237;"	d	language:C
+isgreater	/usr/include/math.h	416;"	d	language:C
+isgreater	/usr/include/math.h	440;"	d	language:C
+isgreaterequal	/usr/include/math.h	417;"	d	language:C
+isgreaterequal	/usr/include/math.h	448;"	d	language:C
+isinf	/usr/include/math.h	262;"	d	language:C
+isinf	/usr/include/math.h	265;"	d	language:C
+isless	/usr/include/math.h	418;"	d	language:C
+isless	/usr/include/math.h	456;"	d	language:C
+islessequal	/usr/include/math.h	419;"	d	language:C
+islessequal	/usr/include/math.h	464;"	d	language:C
+islessgreater	/usr/include/math.h	420;"	d	language:C
+islessgreater	/usr/include/math.h	472;"	d	language:C
+isnan	/usr/include/math.h	250;"	d	language:C
+isnan	/usr/include/math.h	253;"	d	language:C
+isnormal	/usr/include/math.h	245;"	d	language:C
+issignaling	/usr/include/math.h	288;"	d	language:C
+issignaling	/usr/include/math.h	291;"	d	language:C
+isunordered	/usr/include/math.h	421;"	d	language:C
+isunordered	/usr/include/math.h	480;"	d	language:C
+it_interval	/usr/include/time.h	/^    struct timespec it_interval;$/;"	m	language:C	struct:itimerspec	typeref:struct:itimerspec::timespec
+it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	language:C	struct:itimerspec	typeref:struct:itimerspec::timespec
+itimerspec	/usr/include/time.h	/^struct itimerspec$/;"	s	language:C
+ket_hamiltonian_wave	main.c	/^ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)$/;"	f	language:C
+key_t	/usr/include/sys/types.h	/^typedef __key_t key_t;$/;"	t	language:C
+lbounds	main.c	/^    double *lbounds;$/;"	m	language:C	struct:params_variational_workspace	file:
+ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon10
+ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon37
+le16toh	/usr/include/endian.h	66;"	d	language:C
+le16toh	/usr/include/endian.h	82;"	d	language:C
+le32toh	/usr/include/endian.h	71;"	d	language:C
+le32toh	/usr/include/endian.h	87;"	d	language:C
+le64toh	/usr/include/endian.h	76;"	d	language:C
+le64toh	/usr/include/endian.h	92;"	d	language:C
+lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	language:C	typeref:struct:__anon11
+lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	language:C	typeref:struct:__anon38
+locale_t	/usr/include/xlocale.h	/^typedef __locale_t locale_t;$/;"	t	language:C
+loff_t	/usr/include/sys/types.h	/^typedef __loff_t loff_t;$/;"	t	language:C
+m	pcubature.c	/^     unsigned m[MAXDIM];$/;"	m	language:C	struct:cacheval_s	file:
+main	main.c	/^main(int argc, char **argv)$/;"	f	language:C
+major	/usr/include/sys/sysmacros.h	61;"	d	language:C
+makedev	/usr/include/sys/sysmacros.h	63;"	d	language:C
+masks	magic.h	/^    double **masks; \/\/Parameters to the basis set.$/;"	m	language:C	struct:params_variational_master
+master	main.c	/^master(unsigned n, const double *x, double *grad, pvmm *p)$/;"	f	language:C
+math_errhandling	/usr/include/math.h	280;"	d	language:C
+max_align_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^} max_align_t;$/;"	t	language:C	typeref:struct:__anon1
+max_align_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^} max_align_t;$/;"	t	language:C	typeref:struct:__anon39
+maxn	magic.h	/^    size_t maxn;$/;"	m	language:C	struct:params_basis_set
+mbrlen	/usr/include/wchar.h	/^__NTH (mbrlen (const char *__restrict __s, size_t __n,$/;"	f	language:C
+mbstate_t	/usr/include/wchar.h	/^typedef __mbstate_t mbstate_t;$/;"	t	language:C
+method_calculation	main.c	/^method_calculation(struct params_variational_master *pvm)$/;"	f	language:C
+method_rugid	main.c	/^method_rugid(void)$/;"	f	language:C
+mi	pcubature.c	/^     unsigned mi;$/;"	m	language:C	struct:cacheval_s	file:
+minor	/usr/include/sys/sysmacros.h	62;"	d	language:C
+mkostemp	/usr/include/stdlib.h	680;"	d	language:C
+mkostemps	/usr/include/stdlib.h	702;"	d	language:C
+mkstemp	/usr/include/stdlib.h	626;"	d	language:C
+mkstemps	/usr/include/stdlib.h	648;"	d	language:C
+mode_t	/usr/include/sys/types.h	/^typedef __mode_t mode_t;$/;"	t	language:C
+morse_potential	main.c	/^morse_potential(const double *x, pvmm *p, double *ret)$/;"	f	language:C
+n	magic.h	/^    size_t n;$/;"	m	language:C	struct:params_variational_master_mask
+n_exp	magic.h	/^    size_t n_exp;\/\/terms of the exponential expansion$/;"	m	language:C	struct:params_basis_set
+n_pol	magic.h	/^    size_t n_pol;\/\/terms of the polynomial expansion$/;"	m	language:C	struct:params_basis_set
+name	/usr/include/math.h	/^    char *name;$/;"	m	language:C	struct:__exception
+name	magic.h	/^    char name[256];\/\/name of basis set$/;"	m	language:C	struct:params_basis_set
+ncache	pcubature.c	/^     size_t ncache;$/;"	m	language:C	struct:valcache_s	file:
+next	magic.h	/^    struct af_leaf *next;$/;"	m	language:C	struct:af_leaf	typeref:struct:af_leaf::af_leaf
+nlink_t	/usr/include/sys/types.h	/^typedef __nlink_t nlink_t;$/;"	t	language:C
+nlopt_algorithm	/usr/include/nlopt.h	/^} nlopt_algorithm;$/;"	t	language:C	typeref:enum:__anon33
+nlopt_func	/usr/include/nlopt.h	/^typedef double (*nlopt_func)(unsigned n, const double *x,$/;"	t	language:C
+nlopt_func_old	/usr/include/nlopt.h	/^typedef double (*nlopt_func_old)(int n, const double *x,$/;"	t	language:C
+nlopt_mfunc	/usr/include/nlopt.h	/^typedef void (*nlopt_mfunc)(unsigned m, double *result,$/;"	t	language:C
+nlopt_munge	/usr/include/nlopt.h	/^typedef void* (*nlopt_munge)(void *p);$/;"	t	language:C
+nlopt_opt	/usr/include/nlopt.h	/^typedef struct nlopt_opt_s *nlopt_opt;$/;"	t	language:C	typeref:struct:nlopt_opt_s
+nlopt_result	/usr/include/nlopt.h	/^} nlopt_result;$/;"	t	language:C	typeref:enum:__anon34
+nullptr_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^  typedef decltype(nullptr) nullptr_t;$/;"	t	language:C
+num_cacheval	pcubature.c	/^static size_t num_cacheval(const unsigned *m, unsigned mi, unsigned dim)$/;"	f	language:C	file:
+off64_t	/usr/include/stdio.h	/^typedef __off64_t off64_t;$/;"	t	language:C
+off64_t	/usr/include/sys/types.h	/^typedef __off64_t off64_t;$/;"	t	language:C
+off_t	/usr/include/stdio.h	/^typedef __off64_t off_t;$/;"	t	language:C
+off_t	/usr/include/stdio.h	/^typedef __off_t off_t;$/;"	t	language:C
+off_t	/usr/include/sys/types.h	/^typedef __off64_t off_t;$/;"	t	language:C
+off_t	/usr/include/sys/types.h	/^typedef __off_t off_t;$/;"	t	language:C
+offsetof	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	413;"	d	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_ftol_abs(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_ftol_rel(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_maxtime(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_stopval(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_xtol_rel(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(int) nlopt_get_force_stop(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(int) nlopt_get_maxeval(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(nlopt_algorithm) nlopt_get_algorithm(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(nlopt_opt) nlopt_copy(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(nlopt_result) nlopt_force_stop(nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(nlopt_result) nlopt_remove_equality_constraints(nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(nlopt_result) nlopt_remove_inequality_constraints(nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_dimension(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_population(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_vector_storage(const nlopt_opt opt);$/;"	v	language:C
+opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(void) nlopt_destroy(nlopt_opt opt);$/;"	v	language:C
+opt	main.c	/^    nlopt_opt opt;$/;"	m	language:C	struct:params_variational_workspace	file:
+p	magic.h	/^    void *p;$/;"	m	language:C	struct:af_leaf
+p	main.c	/^    pvmm *p;$/;"	m	language:C	struct:params_variational_workspace	file:
+params_basis_set	magic.h	/^struct params_basis_set$/;"	s	language:C
+params_basis_set_free	main.c	/^params_basis_set_free(struct params_basis_set *pbs)$/;"	f	language:C
+params_basis_set_init	main.c	/^params_basis_set_init(struct params_basis_set *pbs, char *file)$/;"	f	language:C
+params_file	magic.h	/^    char params_file[256];\/\/save paramaters after variation$/;"	m	language:C	struct:params_basis_set
+params_variational_master	magic.h	/^struct params_variational_master$/;"	s	language:C
+params_variational_master_free	main.c	/^params_variational_master_free(struct params_variational_master *pvm)$/;"	f	language:C
+params_variational_master_init	main.c	/^params_variational_master_init(struct params_basis_set *pbs, struct params_variational_master *pvm)$/;"	f	language:C
+params_variational_master_mask	magic.h	/^typedef struct params_variational_master_mask$/;"	s	language:C
+params_variational_workspace	main.c	/^struct params_variational_workspace$/;"	s	language:C	file:
+params_variational_workspace_free	main.c	/^params_variational_workspace_free(struct params_variational_workspace *pvw)$/;"	f	language:C
+params_variational_workspace_init	main.c	/^params_variational_workspace_init(struct params_variational_workspace *pvw, struct params_variational_master *pvm)$/;"	f	language:C
+pbs	magic.h	/^    struct params_basis_set *pbs;$/;"	m	language:C	struct:params_variational_master	typeref:struct:params_variational_master::params_basis_set
+pcubature	pcubature.c	/^int pcubature(unsigned fdim, integrand f, void *fdata,$/;"	f	language:C
+pcubature_v	pcubature.c	/^int pcubature_v(unsigned fdim, integrand_v f, void *fdata,$/;"	f	language:C
+pcubature_v_buf	pcubature.c	/^int pcubature_v_buf(unsigned fdim, integrand_v f, void *fdata,$/;"	f	language:C
+pid_t	/usr/include/sys/types.h	/^typedef __pid_t pid_t;$/;"	t	language:C
+pid_t	/usr/include/time.h	/^typedef __pid_t pid_t;$/;"	t	language:C
+print_data	main.c	/^print_data(struct params_variational_master *pvm)$/;"	f	language:C
+print_params	main.c	/^print_params(struct params_variational_master *pvm)$/;"	f	language:C
+print_summary	main.c	/^print_summary(pvmm *p)$/;"	f	language:C
+print_variational_params	main.c	/^print_variational_params(pvmm *p)$/;"	f	language:C
+progress	magic.h	/^    size_t progress; \/\/Count iterations within a calculation.$/;"	m	language:C	struct:params_variational_master
+pthread_attr_t	/usr/include/bits/pthreadtypes.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	language:C	typeref:union:pthread_attr_t
+pthread_attr_t	/usr/include/bits/pthreadtypes.h	/^union pthread_attr_t$/;"	u	language:C
+pthread_barrier_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	language:C	typeref:union:__anon26
+pthread_barrier_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	language:C	typeref:union:__anon54
+pthread_barrierattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	language:C	typeref:union:__anon27
+pthread_barrierattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	language:C	typeref:union:__anon55
+pthread_cond_t	/usr/include/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	language:C	typeref:union:__anon20
+pthread_cond_t	/usr/include/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	language:C	typeref:union:__anon48
+pthread_condattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_condattr_t;$/;"	t	language:C	typeref:union:__anon22
+pthread_condattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_condattr_t;$/;"	t	language:C	typeref:union:__anon50
+pthread_key_t	/usr/include/bits/pthreadtypes.h	/^typedef unsigned int pthread_key_t;$/;"	t	language:C
+pthread_mutex_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutex_t;$/;"	t	language:C	typeref:union:__anon16
+pthread_mutex_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutex_t;$/;"	t	language:C	typeref:union:__anon44
+pthread_mutexattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutexattr_t;$/;"	t	language:C	typeref:union:__anon19
+pthread_mutexattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutexattr_t;$/;"	t	language:C	typeref:union:__anon47
+pthread_once_t	/usr/include/bits/pthreadtypes.h	/^typedef int pthread_once_t;$/;"	t	language:C
+pthread_rwlock_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlock_t;$/;"	t	language:C	typeref:union:__anon23
+pthread_rwlock_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlock_t;$/;"	t	language:C	typeref:union:__anon51
+pthread_rwlockattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlockattr_t;$/;"	t	language:C	typeref:union:__anon25
+pthread_rwlockattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlockattr_t;$/;"	t	language:C	typeref:union:__anon53
+pthread_spinlock_t	/usr/include/bits/pthreadtypes.h	/^typedef volatile int pthread_spinlock_t;$/;"	t	language:C
+pthread_t	/usr/include/bits/pthreadtypes.h	/^typedef unsigned long int pthread_t;$/;"	t	language:C
+ptrdiff_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __PTRDIFF_TYPE__ ptrdiff_t;$/;"	t	language:C
+putc	/usr/include/stdio.h	585;"	d	language:C
+pvm	magic.h	/^    struct params_variational_master *pvm;$/;"	m	language:C	struct:params_variational_master_mask	typeref:struct:params_variational_master_mask::params_variational_master
+pvmm	magic.h	/^    struct params_variational_master_mask *pvmm;$/;"	m	language:C	struct:params_variational_master	typeref:struct:params_variational_master::params_variational_master_mask
+pvmm	magic.h	/^} pvmm;$/;"	t	language:C	typeref:struct:params_variational_master_mask
+quad_t	/usr/include/sys/types.h	/^typedef __quad_t quad_t;$/;"	t	language:C
+quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	language:C	struct:__anon36
+quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	language:C	struct:__anon9
+quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon10
+quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon37
+quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon11
+quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon38
+rand_deg	/usr/include/stdlib.h	/^    int rand_deg;		\/* Degree of random number generator.  *\/$/;"	m	language:C	struct:random_data
+rand_sep	/usr/include/stdlib.h	/^    int rand_sep;		\/* Distance between front and rear.  *\/$/;"	m	language:C	struct:random_data
+rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number generator.  *\/$/;"	m	language:C	struct:random_data
+random_data	/usr/include/stdlib.h	/^struct random_data$/;"	s	language:C
+read	/usr/include/libio.h	/^  __io_read_fn *read;		\/* Read bytes.  *\/$/;"	m	language:C	struct:__anon2
+read_params	main.c	/^read_params(struct params_variational_master *pvm)$/;"	f	language:C
+register_t	/usr/include/sys/types.h	/^typedef int register_t __attribute__ ((__mode__ (__word__)));$/;"	t	language:C
+register_t	/usr/include/sys/types.h	/^typedef int register_t;$/;"	t	language:C
+rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon36
+rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon9
+rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon10
+rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon37
+rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon11
+rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon38
+reserved_vars	magic.h	/^    size_t reserved_vars;\/\/The number of vars of the basis set. Set at runtime?$/;"	m	language:C	struct:params_basis_set
+retval	/usr/include/math.h	/^    double retval;$/;"	m	language:C	struct:__exception
+rptr	/usr/include/stdlib.h	/^    int32_t *rptr;		\/* Rear pointer.  *\/$/;"	m	language:C	struct:random_data
+run_mode	magic.h	/^    enum run_mode run_mode;\/\/what are we doing$/;"	m	language:C	struct:params_basis_set	typeref:enum:params_basis_set::run_mode
+run_mode	magic.h	/^enum run_mode$/;"	g	language:C
+rune_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef _BSD_RUNE_T_ rune_t;$/;"	t	language:C
+rune_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __rune_t        rune_t;$/;"	t	language:C
+scaling_code	magic.h	/^    char scaling_code;\/\/for use in determing variable scaling schemes$/;"	m	language:C	struct:params_basis_set
+scanf	/usr/include/stdio.h	458;"	d	language:C
+seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	language:C	struct:__anon2
+signbit	/usr/include/math.h	222;"	d	language:C
+signbit	/usr/include/math.h	225;"	d	language:C
+sigset_t	/usr/include/sys/select.h	/^typedef __sigset_t sigset_t;$/;"	t	language:C
+size_of_mask	main.c	/^size_of_mask(size_t n, size_t reserved_vars)$/;"	f	language:C	file:
+size_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __SIZE_TYPE__ size_t;$/;"	t	language:C
+sscanf	/usr/include/stdio.h	459;"	d	language:C
+ssize_t	/usr/include/stdio.h	/^typedef __ssize_t ssize_t;$/;"	t	language:C
+ssize_t	/usr/include/sys/types.h	/^typedef __ssize_t ssize_t;$/;"	t	language:C
+ssize_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef long ssize_t;$/;"	t	language:C
+state	/usr/include/stdlib.h	/^    int32_t *state;		\/* Array of state values.  *\/$/;"	m	language:C	struct:random_data
+stderr	/usr/include/stdio.h	174;"	d	language:C
+stdin	/usr/include/stdio.h	172;"	d	language:C
+stdout	/usr/include/stdio.h	173;"	d	language:C
+strdupa	/usr/include/string.h	190;"	d	language:C
+strndupa	/usr/include/string.h	200;"	d	language:C
+suseconds_t	/usr/include/sys/select.h	/^typedef __suseconds_t suseconds_t;$/;"	t	language:C
+suseconds_t	/usr/include/sys/types.h	/^typedef __suseconds_t suseconds_t;$/;"	t	language:C
+swscanf	/usr/include/wchar.h	676;"	d	language:C
+time_t	/usr/include/time.h	/^typedef __time_t time_t;$/;"	t	language:C
+timer_t	/usr/include/time.h	/^typedef __timer_t timer_t;$/;"	t	language:C
+timespec	/usr/include/time.h	/^struct timespec$/;"	s	language:C
+timeval	/usr/include/bits/time.h	/^struct timeval$/;"	s	language:C
+tm	/usr/include/time.h	/^struct tm$/;"	s	language:C
+tm_gmtoff	/usr/include/time.h	/^  long int tm_gmtoff;		\/* Seconds east of UTC.  *\/$/;"	m	language:C	struct:tm
+tm_hour	/usr/include/time.h	/^  int tm_hour;			\/* Hours.	[0-23] *\/$/;"	m	language:C	struct:tm
+tm_isdst	/usr/include/time.h	/^  int tm_isdst;			\/* DST.		[-1\/0\/1]*\/$/;"	m	language:C	struct:tm
+tm_mday	/usr/include/time.h	/^  int tm_mday;			\/* Day.		[1-31] *\/$/;"	m	language:C	struct:tm
+tm_min	/usr/include/time.h	/^  int tm_min;			\/* Minutes.	[0-59] *\/$/;"	m	language:C	struct:tm
+tm_mon	/usr/include/time.h	/^  int tm_mon;			\/* Month.	[0-11] *\/$/;"	m	language:C	struct:tm
+tm_sec	/usr/include/time.h	/^  int tm_sec;			\/* Seconds.	[0-60] (1 leap second) *\/$/;"	m	language:C	struct:tm
+tm_wday	/usr/include/time.h	/^  int tm_wday;			\/* Day of week.	[0-6] *\/$/;"	m	language:C	struct:tm
+tm_yday	/usr/include/time.h	/^  int tm_yday;			\/* Days in year.[0-365]	*\/$/;"	m	language:C	struct:tm
+tm_year	/usr/include/time.h	/^  int tm_year;			\/* Year	- 1900.  *\/$/;"	m	language:C	struct:tm
+tm_zone	/usr/include/time.h	/^  const char *tm_zone;		\/* Timezone abbreviation.  *\/$/;"	m	language:C	struct:tm
+tv_nsec	/usr/include/time.h	/^    __syscall_slong_t tv_nsec;	\/* Nanoseconds.  *\/$/;"	m	language:C	struct:timespec
+tv_sec	/usr/include/bits/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	language:C	struct:timeval
+tv_sec	/usr/include/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	language:C	struct:timespec
+tv_usec	/usr/include/bits/time.h	/^    __suseconds_t tv_usec;	\/* Microseconds.  *\/$/;"	m	language:C	struct:timeval
+type	/usr/include/math.h	/^    int type;$/;"	m	language:C	struct:__exception
+u_char	/usr/include/sys/types.h	/^typedef __u_char u_char;$/;"	t	language:C
+u_int	/usr/include/sys/types.h	/^typedef __u_int u_int;$/;"	t	language:C
+u_int16_t	/usr/include/sys/types.h	/^typedef	unsigned short int u_int16_t;$/;"	t	language:C
+u_int32_t	/usr/include/sys/types.h	/^typedef	unsigned int u_int32_t;$/;"	t	language:C
+u_int64_t	/usr/include/sys/types.h	/^__extension__ typedef unsigned long long int u_int64_t;$/;"	t	language:C
+u_int64_t	/usr/include/sys/types.h	/^typedef unsigned long int u_int64_t;$/;"	t	language:C
+u_int8_t	/usr/include/sys/types.h	/^typedef	unsigned char u_int8_t;$/;"	t	language:C
+u_long	/usr/include/sys/types.h	/^typedef __u_long u_long;$/;"	t	language:C
+u_quad_t	/usr/include/sys/types.h	/^typedef __u_quad_t u_quad_t;$/;"	t	language:C
+u_short	/usr/include/sys/types.h	/^typedef __u_short u_short;$/;"	t	language:C
+uid_t	/usr/include/sys/types.h	/^typedef __uid_t uid_t;$/;"	t	language:C
+uint	/usr/include/sys/types.h	/^typedef unsigned int uint;$/;"	t	language:C
+ulong	/usr/include/sys/types.h	/^typedef unsigned long int ulong;$/;"	t	language:C
+useconds_t	/usr/include/sys/types.h	/^typedef __useconds_t useconds_t;$/;"	t	language:C
+ushort	/usr/include/sys/types.h	/^typedef unsigned short int ushort;$/;"	t	language:C
+va_arg	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	49;"	d	language:C
+va_copy	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	51;"	d	language:C
+va_end	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	48;"	d	language:C
+va_list	/usr/include/stdio.h	/^typedef _G_va_list va_list;$/;"	t	language:C
+va_list	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	/^typedef __gnuc_va_list va_list;$/;"	t	language:C
+va_start	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	47;"	d	language:C
+val	pcubature.c	/^     double *val;$/;"	m	language:C	struct:cacheval_s	file:
+valcache	pcubature.c	/^} valcache;$/;"	t	language:C	typeref:struct:valcache_s	file:
+valcache_s	pcubature.c	/^typedef struct valcache_s {$/;"	s	language:C	file:
+var_get	main.c	/^var_get(pvmm *p, size_t j)$/;"	f	language:C
+var_getsize	main.c	/^size_t var_getsize(pvmm *p)$/;"	f	language:C
+var_push	main.c	/^var_push(pvmm *p, size_t j, double x)$/;"	f	language:C
+variate_pvmm	main.c	/^variate_pvmm(pvmm *p, struct params_variational_workspace *pvw)$/;"	f	language:C
+vfscanf	/usr/include/stdio.h	516;"	d	language:C
+vfwscanf	/usr/include/wchar.h	730;"	d	language:C
+vscanf	/usr/include/stdio.h	517;"	d	language:C
+vsscanf	/usr/include/stdio.h	518;"	d	language:C
+vswscanf	/usr/include/wchar.h	732;"	d	language:C
+vwscanf	/usr/include/wchar.h	731;"	d	language:C
+w_coredump	/usr/include/bits/waitstatus.h	100;"	d	language:C
+w_retcode	/usr/include/bits/waitstatus.h	101;"	d	language:C
+w_status	/usr/include/bits/waitstatus.h	/^    int w_status;$/;"	m	language:C	union:wait
+w_stopsig	/usr/include/bits/waitstatus.h	102;"	d	language:C
+w_stopval	/usr/include/bits/waitstatus.h	103;"	d	language:C
+w_termsig	/usr/include/bits/waitstatus.h	99;"	d	language:C
+wait	/usr/include/bits/waitstatus.h	/^union wait$/;"	u	language:C
+wave	main.c	/^wave(const double *x, pvmm *p, double *ret)$/;"	f	language:C
+wctob	/usr/include/wchar.h	/^__NTH (wctob (wint_t __wc))$/;"	f	language:C
+wint_t	/usr/include/wchar.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t	language:C
+wint_t	/usr/include/wchar.h	/^typedef unsigned int wint_t;$/;"	t	language:C
+wint_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __WINT_TYPE__ wint_t;$/;"	t	language:C
+write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	m	language:C	struct:__anon2
+wscanf	/usr/include/wchar.h	675;"	d	language:C
+xmax	magic.h	/^    double xmax;$/;"	m	language:C	struct:params_basis_set
+xmin	magic.h	/^    double xmin;\/\/box boundries$/;"	m	language:C	struct:params_basis_set

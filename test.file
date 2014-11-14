@@ -1,0 +1,7 @@
+morse_60_1_symmetric
+3
+60 1
+10 10 1
+dynamic/data.dat dynamic/params.dat
+24 1e-7
+-10.0 10.0
