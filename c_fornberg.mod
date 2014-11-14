@@ -1,4 +1,4 @@
-GFORTRAN module version '10' created from /usr/local/src/magic_new/optimize/c_fornberg.f90
+GFORTRAN module version '10' created from c_fornberg.f90
 MD5:3f38a78cfd85a0d3e11a01cc092bfe4a -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () ()

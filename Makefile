@@ -40,8 +40,6 @@ options:
 
 setup: cubature finitediff
 	@echo setting up build enviroment
-	$(MAKE) -C optimize/
-	ln -sf optimize/weights.h
 
 clean:
 	rm -f ${OBJ}

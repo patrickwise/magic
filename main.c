@@ -244,7 +244,7 @@ af_free(af_leaf *tree)
 //var_getsize(pvmm *p)
 
 size_t var_getsize(pvmm *p)
-{/*return the number of variables this excitation state requires in the pvm->mask array**
+{/*return the number of variables this excitation state requires in the pvm->mask array**/
 //    size_t ret = p->pvm->pbs->reserved_vars;
 //    ret += p->pvm->pbs->n_pol;
 //    ret += p->pvm->pbs->n_exp;
