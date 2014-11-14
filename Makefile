@@ -46,6 +46,11 @@ setup: cubature finitediff
 clean:
 	rm -f ${OBJ}
 
+dist: clean
+	rm -f $(wildcard *.f90)
+	rm -f $(wildcard *.mod)
+	rm -f pcubature.c
+
 fortran_code:
 	$(F90) $(FSRC) $(FFLAGS)
 
@@ -96,4 +101,4 @@ push:
 	git push -u origin master
 
 
-.PHONY: all options setup clean dist install uninstall optimize tags push
+.PHONY: all options setup clean dist install uninstall optimize tags push dist
