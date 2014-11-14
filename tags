@@ -194,7 +194,7 @@ NLOPT_STDCALL	/usr/include/nlopt.h	39;"	d	language:C
 NLOPT_STOPVAL_REACHED	/usr/include/nlopt.h	/^     NLOPT_STOPVAL_REACHED = 2,$/;"	e	language:C	enum:__anon34
 NLOPT_SUCCESS	/usr/include/nlopt.h	/^     NLOPT_SUCCESS = 1, \/* generic success code *\/$/;"	e	language:C	enum:__anon34
 NLOPT_XTOL_REACHED	/usr/include/nlopt.h	/^     NLOPT_XTOL_REACHED = 4,$/;"	e	language:C	enum:__anon34
-NO_ERROR	magic.h	91;"	d	language:C
+NO_ERROR	magic.h	99;"	d	language:C
 NO_ERROR	main.c	26;"	d	language:C	file:
 NULL	/usr/include/libio.h	67;"	d	language:C
 NULL	/usr/include/libio.h	70;"	d	language:C
@@ -232,7 +232,7 @@ TLOSS	/usr/include/math.h	349;"	d	language:C
 TMP_MAX	/usr/include/bits/stdio_lim.h	24;"	d	language:C
 TRANSLATION_SHIFT	main.c	27;"	d	language:C	file:
 UNDERFLOW	/usr/include/math.h	348;"	d	language:C
-USAGE	main.c	565;"	d	language:C	file:
+USAGE	main.c	669;"	d	language:C	file:
 VAL	pcubature.c	280;"	d	language:C	file:
 WCHAR_MAX	/usr/include/wchar.h	118;"	d	language:C
 WCHAR_MIN	/usr/include/wchar.h	117;"	d	language:C
@@ -252,7 +252,7 @@ WTERMSIG	/usr/include/stdlib.h	85;"	d	language:C
 WUNTRACED	/usr/include/bits/waitflags.h	26;"	d	language:C
 X_TLOSS	/usr/include/math.h	342;"	d	language:C
 ZEROTOL	main.c	20;"	d	language:C	file:
-ZERO_OVERLAP	magic.h	92;"	d	language:C
+ZERO_OVERLAP	magic.h	100;"	d	language:C
 _4VDGFDQT35GE5HR5B32FYDDODQ	include/c_fornberg.h	2;"	d	language:C
 _ALLOCA_H	/usr/include/alloca.h	19;"	d	language:C
 _ANSI_STDARG_H_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	32;"	d	language:C
@@ -759,7 +759,7 @@ it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	language:C	st
 itimerspec	/usr/include/time.h	/^struct itimerspec$/;"	s	language:C
 ket_hamiltonian_wave	main.c	/^ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)$/;"	f	language:C
 key_t	/usr/include/sys/types.h	/^typedef __key_t key_t;$/;"	t	language:C
-lbounds	main.c	/^    double *lbounds;$/;"	m	language:C	struct:params_variational_workspace	file:
+lbounds	magic.h	/^    double *lbounds;$/;"	m	language:C	struct:params_variational_workspace
 ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon10
 ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon37
 le16toh	/usr/include/endian.h	66;"	d	language:C
@@ -785,6 +785,7 @@ maxn	magic.h	/^    size_t maxn;$/;"	m	language:C	struct:params_basis_set
 mbrlen	/usr/include/wchar.h	/^__NTH (mbrlen (const char *__restrict __s, size_t __n,$/;"	f	language:C
 mbstate_t	/usr/include/wchar.h	/^typedef __mbstate_t mbstate_t;$/;"	t	language:C
 method_calculation	main.c	/^method_calculation(struct params_variational_master *pvm)$/;"	f	language:C
+method_experimental	main.c	/^method_experimental(struct params_variational_master *pvm)$/;"	f	language:C
 method_rugid	main.c	/^method_rugid(void)$/;"	f	language:C
 mi	pcubature.c	/^     unsigned mi;$/;"	m	language:C	struct:cacheval_s	file:
 minor	/usr/include/sys/sysmacros.h	62;"	d	language:C
@@ -834,9 +835,9 @@ opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_dimension(const nlop
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_population(const nlopt_opt opt);$/;"	v	language:C
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_vector_storage(const nlopt_opt opt);$/;"	v	language:C
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(void) nlopt_destroy(nlopt_opt opt);$/;"	v	language:C
-opt	main.c	/^    nlopt_opt opt;$/;"	m	language:C	struct:params_variational_workspace	file:
+opt	magic.h	/^    nlopt_opt opt;$/;"	m	language:C	struct:params_variational_workspace
+p	magic.h	/^    pvmm *p;$/;"	m	language:C	struct:params_variational_workspace
 p	magic.h	/^    void *p;$/;"	m	language:C	struct:af_leaf
-p	main.c	/^    pvmm *p;$/;"	m	language:C	struct:params_variational_workspace	file:
 params_basis_set	magic.h	/^struct params_basis_set$/;"	s	language:C
 params_basis_set_free	main.c	/^params_basis_set_free(struct params_basis_set *pbs)$/;"	f	language:C
 params_basis_set_init	main.c	/^params_basis_set_init(struct params_basis_set *pbs, char *file)$/;"	f	language:C
@@ -845,9 +846,9 @@ params_variational_master	magic.h	/^struct params_variational_master$/;"	s	langu
 params_variational_master_free	main.c	/^params_variational_master_free(struct params_variational_master *pvm)$/;"	f	language:C
 params_variational_master_init	main.c	/^params_variational_master_init(struct params_basis_set *pbs, struct params_variational_master *pvm)$/;"	f	language:C
 params_variational_master_mask	magic.h	/^typedef struct params_variational_master_mask$/;"	s	language:C
-params_variational_workspace	main.c	/^struct params_variational_workspace$/;"	s	language:C	file:
-params_variational_workspace_free	main.c	/^params_variational_workspace_free(struct params_variational_workspace *pvw)$/;"	f	language:C
-params_variational_workspace_init	main.c	/^params_variational_workspace_init(struct params_variational_workspace *pvw, struct params_variational_master *pvm)$/;"	f	language:C
+params_variational_workspace	magic.h	/^struct params_variational_workspace$/;"	s	language:C
+params_variational_workspace_free	main.c	/^params_variational_workspace_free(struct params_variational_workspace *pvw)$/;"	f	language:C	file:
+params_variational_workspace_init	main.c	/^params_variational_workspace_init(struct params_variational_workspace *pvw, struct params_variational_master *pvm)$/;"	f	language:C	file:
 pbs	magic.h	/^    struct params_basis_set *pbs;$/;"	m	language:C	struct:params_variational_master	typeref:struct:params_variational_master::params_basis_set
 pcubature	pcubature.c	/^int pcubature(unsigned fdim, integrand f, void *fdata,$/;"	f	language:C
 pcubature_v	pcubature.c	/^int pcubature_v(unsigned fdim, integrand_v f, void *fdata,$/;"	f	language:C
@@ -899,6 +900,7 @@ rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number 
 random_data	/usr/include/stdlib.h	/^struct random_data$/;"	s	language:C
 read	/usr/include/libio.h	/^  __io_read_fn *read;		\/* Read bytes.  *\/$/;"	m	language:C	struct:__anon2
 read_params	main.c	/^read_params(struct params_variational_master *pvm)$/;"	f	language:C
+real_deriv_second	main.c	/^real_deriv_second(af_t *f, const double *x, pvmm *p)$/;"	f	language:C
 register_t	/usr/include/sys/types.h	/^typedef int register_t __attribute__ ((__mode__ (__word__)));$/;"	t	language:C
 register_t	/usr/include/sys/types.h	/^typedef int register_t;$/;"	t	language:C
 rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon36

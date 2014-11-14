@@ -50,9 +50,6 @@ setup: cubature finitediff
 	$(MAKE) -C optimize/
 	ln -sf optimize/weights.h
 
-optimize:
-	$(MAKE) -C optimize/
-
 clean:
 	rm -f ${OBJ}
 
