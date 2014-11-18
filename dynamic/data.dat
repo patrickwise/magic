@@ -1,1000 +1,1000 @@
--2 2449.2 -nan nan nan nan 
--1.99 2393.16 -nan nan nan nan 
--1.98 2338.31 -nan nan nan nan 
--1.97 2284.63 -nan nan nan nan 
--1.96 2232.11 -nan nan nan nan 
--1.95 2180.7 -nan nan nan nan 
--1.94 2130.4 -nan nan nan nan 
--1.93 2081.18 -nan nan nan nan 
--1.92 2033.01 -nan nan nan nan 
--1.91 1985.88 -nan nan nan nan 
--1.9 1939.76 -nan nan nan nan 
--1.89 1894.64 -nan nan nan nan 
--1.88 1850.48 -nan nan nan nan 
--1.87 1807.28 -nan nan nan nan 
--1.86 1765.02 -nan nan nan nan 
--1.85 1723.66 -nan nan nan nan 
--1.84 1683.2 -nan nan nan nan 
--1.83 1643.61 -nan nan nan nan 
--1.82 1604.89 -nan nan nan nan 
--1.81 1567 -nan nan nan nan 
--1.8 1529.94 -nan nan nan nan 
--1.79 1493.68 -nan nan nan nan 
--1.78 1458.21 -nan nan nan nan 
--1.77 1423.51 -nan nan nan nan 
--1.76 1389.57 -nan nan nan nan 
--1.75 1356.37 -nan nan nan nan 
--1.74 1323.9 -nan nan nan nan 
--1.73 1292.14 -nan nan nan nan 
--1.72 1261.07 -nan nan nan nan 
--1.71 1230.69 -nan nan nan nan 
--1.7 1200.97 -nan nan nan nan 
--1.69 1171.91 -nan nan nan nan 
--1.68 1143.48 -nan nan nan nan 
--1.67 1115.69 -nan nan nan nan 
--1.66 1088.5 -nan nan nan nan 
--1.65 1061.92 -nan nan nan nan 
--1.64 1035.93 -nan nan nan nan 
--1.63 1010.51 -nan nan nan nan 
--1.62 985.652 -nan nan nan nan 
--1.61 961.35 -nan nan nan nan 
--1.6 937.588 -nan nan nan nan 
--1.59 914.355 -nan nan nan nan 
--1.58 891.641 -nan nan nan nan 
--1.57 869.434 -nan nan nan nan 
--1.56 847.724 -nan nan nan nan 
--1.55 826.501 -nan nan nan nan 
--1.54 805.753 -nan nan nan nan 
--1.53 785.472 -nan nan nan nan 
--1.52 765.648 -nan nan nan nan 
--1.51 746.27 -nan nan nan nan 
--1.5 727.33 -nan nan nan nan 
--1.49 708.818 -nan nan nan nan 
--1.48 690.725 -nan nan nan nan 
--1.47 673.043 -nan nan nan nan 
--1.46 655.762 -nan nan nan nan 
--1.45 638.875 -nan nan nan nan 
--1.44 622.373 -nan nan nan nan 
--1.43 606.248 -nan nan nan nan 
--1.42 590.491 -nan nan nan nan 
--1.41 575.096 -nan nan nan nan 
--1.4 560.055 -nan nan nan nan 
--1.39 545.359 -nan nan nan nan 
--1.38 531.002 -nan nan nan nan 
--1.37 516.977 -nan nan nan nan 
--1.36 503.276 -nan nan nan nan 
--1.35 489.893 -nan nan nan nan 
--1.34 476.82 -nan nan nan nan 
--1.33 464.052 -nan nan nan nan 
--1.32 451.582 -nan nan nan nan 
--1.31 439.403 -nan nan nan nan 
--1.3 427.509 -nan nan nan nan 
--1.29 415.894 -nan nan nan nan 
--1.28 404.552 -nan nan nan nan 
--1.27 393.478 -nan nan nan nan 
--1.26 382.665 -nan nan nan nan 
--1.25 372.108 -nan nan nan nan 
--1.24 361.802 -nan nan nan nan 
--1.23 351.741 -nan nan nan nan 
--1.22 341.92 -nan nan nan nan 
--1.21 332.333 -nan nan nan nan 
--1.2 322.977 -nan nan nan nan 
--1.19 313.844 -nan nan nan nan 
--1.18 304.932 -nan nan nan nan 
--1.17 296.235 -nan nan nan nan 
--1.16 287.748 -nan nan nan nan 
--1.15 279.468 -nan nan nan nan 
--1.14 271.389 -nan nan nan nan 
--1.13 263.507 -nan nan nan nan 
--1.12 255.817 -nan nan nan nan 
--1.11 248.317 -nan nan nan nan 
--1.1 241.001 -nan nan nan nan 
--1.09 233.865 -nan nan nan nan 
--1.08 226.907 -nan nan nan nan 
--1.07 220.121 -nan nan nan nan 
--1.06 213.504 -nan nan nan nan 
--1.05 207.052 -nan nan nan nan 
--1.04 200.762 -nan nan nan nan 
--1.03 194.63 -nan nan nan nan 
--1.02 188.653 -nan nan nan nan 
--1.01 182.827 -nan nan nan nan 
--1 177.15 -nan nan nan nan 
--0.99 171.616 -nan nan nan nan 
--0.98 166.225 -nan nan nan nan 
--0.97 160.972 -nan nan nan nan 
--0.96 155.854 -nan nan nan nan 
--0.95 150.869 -nan nan nan nan 
--0.94 146.013 -nan nan nan nan 
--0.93 141.283 -nan nan nan nan 
--0.92 136.677 -nan nan nan nan 
--0.91 132.193 -nan nan nan nan 
--0.9 127.826 -nan nan nan nan 
--0.89 123.576 -nan nan nan nan 
--0.88 119.438 -nan nan nan nan 
--0.87 115.411 -nan nan nan nan 
--0.86 111.492 -nan nan nan nan 
--0.85 107.679 -nan nan nan nan 
--0.84 103.969 -nan nan nan nan 
--0.83 100.36 -nan nan nan nan 
--0.82 96.8502 -nan nan nan nan 
--0.81 93.4365 -nan nan nan nan 
--0.8 90.117 -nan nan nan nan 
--0.79 86.8898 -nan nan nan nan 
--0.78 83.7526 -nan nan nan nan 
--0.77 80.7035 -nan nan nan nan 
--0.76 77.7404 -nan nan nan nan 
--0.75 74.8613 -nan nan nan nan 
--0.74 72.0645 -nan nan nan nan 
--0.73 69.3479 -nan nan nan nan 
--0.72 66.7098 -nan nan nan nan 
--0.71 64.1483 -nan nan nan nan 
--0.7 61.6617 -nan nan nan nan 
--0.69 59.2482 -nan nan nan nan 
--0.68 56.9063 -nan nan nan nan 
--0.67 54.6341 -nan nan nan nan 
--0.66 52.4302 -nan nan nan nan 
--0.65 50.2929 -nan nan nan nan 
--0.64 48.2207 -nan nan nan nan 
--0.63 46.212 -nan nan nan nan 
--0.62 44.2654 -nan nan nan nan 
--0.61 42.3795 -nan nan nan nan 
--0.6 40.5528 -nan nan nan nan 
--0.59 38.7838 -nan nan nan nan 
--0.58 37.0714 -nan nan nan nan 
--0.57 35.4141 -nan nan nan nan 
--0.56 33.8106 -nan nan nan nan 
--0.55 32.2596 -nan nan nan nan 
--0.54 30.7599 -nan nan nan nan 
--0.53 29.3104 -nan nan nan nan 
--0.52 27.9097 -nan nan nan nan 
--0.51 26.5567 -nan nan nan nan 
--0.5 25.2504 -nan nan nan nan 
--0.49 23.9894 -nan nan nan nan 
--0.48 22.7729 -nan nan nan nan 
--0.47 21.5996 -nan nan nan nan 
--0.46 20.4685 -nan nan nan nan 
--0.45 19.3787 -nan nan nan nan 
--0.44 18.3291 -nan nan nan nan 
--0.43 17.3187 -nan nan nan nan 
--0.42 16.3466 -nan nan nan nan 
--0.41 15.4119 -nan nan nan nan 
--0.4 14.5135 -nan nan nan nan 
--0.39 13.6506 -nan nan nan nan 
--0.38 12.8224 -nan nan nan nan 
--0.37 12.028 -nan nan nan nan 
--0.36 11.2665 -nan nan nan nan 
--0.35 10.5371 -nan nan nan nan 
--0.34 9.83895 -nan nan nan nan 
--0.33 9.17136 -nan nan nan nan 
--0.32 8.53352 -nan nan nan nan 
--0.31 7.92467 -nan nan nan nan 
--0.3 7.34407 -nan nan nan nan 
--0.29 6.79101 -nan nan nan nan 
--0.28 6.26477 -nan nan nan nan 
--0.27 5.76468 -nan nan nan nan 
--0.26 5.29005 -nan nan nan nan 
--0.25 4.84023 -nan nan nan nan 
--0.24 4.41457 -nan nan nan nan 
--0.23 4.01244 -nan nan nan nan 
--0.22 3.63323 -nan nan nan nan 
--0.21 3.27633 -nan nan nan nan 
--0.2 2.94115 -nan nan nan nan 
--0.19 2.62712 -nan nan nan nan 
--0.18 2.33368 -nan nan nan nan 
--0.17 2.06027 -nan nan nan nan 
--0.16 1.80636 -nan nan nan nan 
--0.15 1.57142 -nan nan nan nan 
--0.14 1.35493 -nan nan nan nan 
--0.13 1.1564 -nan nan nan nan 
--0.12 0.975327 -nan nan nan nan 
--0.11 0.811235 -nan nan nan nan 
--0.1 0.663655 -nan nan nan nan 
--0.09 0.532128 -nan nan nan nan 
--0.08 0.416204 -nan nan nan nan 
--0.07 0.315446 -nan nan nan nan 
--0.06 0.229426 -nan nan nan nan 
--0.05 0.157724 -nan nan nan nan 
--0.04 0.0999312 -nan nan nan nan 
--0.03 0.0556487 -nan nan nan nan 
--0.02 0.0244856 -nan nan nan nan 
--0.01 0.00606035 -nan nan nan nan 
-0 0 -nan nan nan nan 
-0.01 0.00594035 -nan nan nan nan 
-0.02 0.0235256 -nan nan nan nan 
-0.03 0.052408 -nan nan nan nan 
-0.04 0.0922481 -nan nan nan nan 
-0.05 0.142714 -nan nan nan nan 
-0.06 0.203482 -nan nan nan nan 
-0.07 0.274236 -nan nan nan nan 
-0.08 0.354666 -nan nan nan nan 
-0.09 0.44447 -nan nan nan nan 
-0.1 0.543355 -nan nan nan nan 
-0.11 0.651032 -nan nan nan nan 
-0.12 0.767219 -nan nan nan nan 
-0.13 0.891643 -nan nan nan nan 
-0.14 1.02404 -nan nan nan nan 
-0.15 1.16414 -nan nan nan nan 
-0.16 1.31169 -nan nan nan nan 
-0.17 1.46644 -nan nan nan nan 
-0.18 1.62815 -nan nan nan nan 
-0.19 1.79659 -nan nan nan nan 
-0.2 1.97151 -nan nan nan nan 
-0.21 2.1527 -nan nan nan nan 
-0.22 2.33993 -nan nan nan nan 
-0.23 2.53299 -nan nan nan nan 
-0.24 2.73166 -nan nan nan nan 
-0.25 2.93575 -nan nan nan nan 
-0.26 3.14504 -nan nan nan nan 
-0.27 3.35936 -nan nan nan nan 
-0.28 3.57849 -nan nan nan nan 
-0.29 3.80227 -nan nan nan nan 
-0.3 4.03051 -nan nan nan nan 
-0.31 4.26303 -nan nan nan nan 
-0.32 4.49966 -nan nan nan nan 
-0.33 4.74023 -nan nan nan nan 
-0.34 4.98458 -nan nan nan nan 
-0.35 5.23255 -nan nan nan nan 
-0.36 5.48398 -nan nan nan nan 
-0.37 5.73872 -nan nan nan nan 
-0.38 5.99662 -nan nan nan nan 
-0.39 6.25754 -nan nan nan nan 
-0.4 6.52133 -nan nan nan nan 
-0.41 6.78787 -nan nan nan nan 
-0.42 7.05701 -nan nan nan nan 
-0.43 7.32863 -nan nan nan nan 
-0.44 7.6026 -nan nan nan nan 
-0.45 7.8788 -nan nan nan nan 
-0.46 8.15711 -nan nan nan nan 
-0.47 8.4374 -nan nan nan nan 
-0.48 8.71957 -nan nan nan nan 
-0.49 9.0035 -nan nan nan nan 
-0.5 9.28909 -nan nan nan nan 
-0.51 9.57623 -nan nan nan nan 
-0.52 9.86482 -nan nan nan nan 
-0.53 10.1548 -nan nan nan nan 
-0.54 10.4459 -nan nan nan nan 
-0.55 10.7383 -nan nan nan nan 
-0.56 11.0317 -nan nan nan nan 
-0.57 11.3261 -nan nan nan nan 
-0.58 11.6214 -nan nan nan nan 
-0.59 11.9175 -nan nan nan nan 
-0.6 12.2143 -nan nan nan nan 
-0.61 12.5117 -nan nan nan nan 
-0.62 12.8097 -nan nan nan nan 
-0.63 13.1082 -nan nan nan nan 
-0.64 13.4071 -nan nan nan nan 
-0.65 13.7064 -nan nan nan nan 
-0.66 14.006 -nan nan nan nan 
-0.67 14.3057 -nan nan nan nan 
-0.68 14.6056 -nan nan nan nan 
-0.69 14.9056 -nan nan nan nan 
-0.7 15.2056 -nan nan nan nan 
-0.71 15.5055 -nan nan nan nan 
-0.72 15.8054 -nan nan nan nan 
-0.73 16.1051 -nan nan nan nan 
-0.74 16.4046 -nan nan nan nan 
-0.75 16.7038 -nan nan nan nan 
-0.76 17.0027 -nan nan nan nan 
-0.77 17.3013 -nan nan nan nan 
-0.78 17.5994 -nan nan nan nan 
-0.79 17.8971 -nan nan nan nan 
-0.8 18.1943 -nan nan nan nan 
-0.81 18.491 -nan nan nan nan 
-0.82 18.787 -nan nan nan nan 
-0.83 19.0824 -nan nan nan nan 
-0.84 19.3772 -nan nan nan nan 
-0.85 19.6712 -nan nan nan nan 
-0.86 19.9645 -nan nan nan nan 
-0.87 20.257 -nan nan nan nan 
-0.88 20.5487 -nan nan nan nan 
-0.89 20.8396 -nan nan nan nan 
-0.9 21.1296 -nan nan nan nan 
-0.91 21.4186 -nan nan nan nan 
-0.92 21.7068 -nan nan nan nan 
-0.93 21.9939 -nan nan nan nan 
-0.94 22.2801 -nan nan nan nan 
-0.95 22.5652 -nan nan nan nan 
-0.96 22.8493 -nan nan nan nan 
-0.97 23.1323 -nan nan nan nan 
-0.98 23.4142 -nan nan nan nan 
-0.99 23.695 -nan nan nan nan 
-1 23.9746 -nan nan nan nan 
-1.01 24.2531 -nan nan nan nan 
-1.02 24.5303 -nan nan nan nan 
-1.03 24.8064 -nan nan nan nan 
-1.04 25.0813 -nan nan nan nan 
-1.05 25.3549 -nan nan nan nan 
-1.06 25.6272 -nan nan nan nan 
-1.07 25.8983 -nan nan nan nan 
-1.08 26.168 -nan nan nan nan 
-1.09 26.4365 -nan nan nan nan 
-1.1 26.7037 -nan nan nan nan 
-1.11 26.9695 -nan nan nan nan 
-1.12 27.2339 -nan nan nan nan 
-1.13 27.497 -nan nan nan nan 
-1.14 27.7588 -nan nan nan nan 
-1.15 28.0191 -nan nan nan nan 
-1.16 28.2781 -nan nan nan nan 
-1.17 28.5356 -nan nan nan nan 
-1.18 28.7918 -nan nan nan nan 
-1.19 29.0465 -nan nan nan nan 
-1.2 29.2998 -nan nan nan nan 
-1.21 29.5516 -nan nan nan nan 
-1.22 29.802 -nan nan nan nan 
-1.23 30.051 -nan nan nan nan 
-1.24 30.2985 -nan nan nan nan 
-1.25 30.5445 -nan nan nan nan 
-1.26 30.7891 -nan nan nan nan 
-1.27 31.0322 -nan nan nan nan 
-1.28 31.2738 -nan nan nan nan 
-1.29 31.5139 -nan nan nan nan 
-1.3 31.7526 -nan nan nan nan 
-1.31 31.9898 -nan nan nan nan 
-1.32 32.2254 -nan nan nan nan 
-1.33 32.4596 -nan nan nan nan 
-1.34 32.6923 -nan nan nan nan 
-1.35 32.9235 -nan nan nan nan 
-1.36 33.1532 -nan nan nan nan 
-1.37 33.3814 -nan nan nan nan 
-1.38 33.6081 -nan nan nan nan 
-1.39 33.8333 -nan nan nan nan 
-1.4 34.057 -nan nan nan nan 
-1.41 34.2792 -nan nan nan nan 
-1.42 34.4999 -nan nan nan nan 
-1.43 34.7191 -nan nan nan nan 
-1.44 34.9368 -nan nan nan nan 
-1.45 35.153 -nan nan nan nan 
-1.46 35.3677 -nan nan nan nan 
-1.47 35.5809 -nan nan nan nan 
-1.48 35.7926 -nan nan nan nan 
-1.49 36.0029 -nan nan nan nan 
-1.5 36.2116 -nan nan nan nan 
-1.51 36.4189 -nan nan nan nan 
-1.52 36.6247 -nan nan nan nan 
-1.53 36.829 -nan nan nan nan 
-1.54 37.0318 -nan nan nan nan 
-1.55 37.2332 -nan nan nan nan 
-1.56 37.4331 -nan nan nan nan 
-1.57 37.6315 -nan nan nan nan 
-1.58 37.8285 -nan nan nan nan 
-1.59 38.0241 -nan nan nan nan 
-1.6 38.2182 -nan nan nan nan 
-1.61 38.4108 -nan nan nan nan 
-1.62 38.602 -nan nan nan nan 
-1.63 38.7918 -nan nan nan nan 
-1.64 38.9801 -nan nan nan nan 
-1.65 39.167 -nan nan nan nan 
-1.66 39.3525 -nan nan nan nan 
-1.67 39.5366 -nan nan nan nan 
-1.68 39.7192 -nan nan nan nan 
-1.69 39.9005 -nan nan nan nan 
-1.7 40.0804 -nan nan nan nan 
-1.71 40.2589 -nan nan nan nan 
-1.72 40.4359 -nan nan nan nan 
-1.73 40.6117 -nan nan nan nan 
-1.74 40.786 -nan nan nan nan 
-1.75 40.959 -nan nan nan nan 
-1.76 41.1306 -nan nan nan nan 
-1.77 41.3008 -nan nan nan nan 
-1.78 41.4698 -nan nan nan nan 
-1.79 41.6373 -nan nan nan nan 
-1.8 41.8036 -nan nan nan nan 
-1.81 41.9685 -nan nan nan nan 
-1.82 42.1321 -nan nan nan nan 
-1.83 42.2943 -nan nan nan nan 
-1.84 42.4553 -nan nan nan nan 
-1.85 42.615 -nan nan nan nan 
-1.86 42.7733 -nan nan nan nan 
-1.87 42.9304 -nan nan nan nan 
-1.88 43.0862 -nan nan nan nan 
-1.89 43.2407 -nan nan nan nan 
-1.9 43.394 -nan nan nan nan 
-1.91 43.546 -nan nan nan nan 
-1.92 43.6968 -nan nan nan nan 
-1.93 43.8463 -nan nan nan nan 
-1.94 43.9946 -nan nan nan nan 
-1.95 44.1416 -nan nan nan nan 
-1.96 44.2875 -nan nan nan nan 
-1.97 44.4321 -nan nan nan nan 
-1.98 44.5755 -nan nan nan nan 
-1.99 44.7177 -nan nan nan nan 
-2 44.8587 -nan nan nan nan 
-2.01 44.9985 -nan nan nan nan 
-2.02 45.1372 -nan nan nan nan 
-2.03 45.2747 -nan nan nan nan 
-2.04 45.411 -nan nan nan nan 
-2.05 45.5462 -nan nan nan nan 
-2.06 45.6802 -nan nan nan nan 
-2.07 45.8131 -nan nan nan nan 
-2.08 45.9448 -nan nan nan nan 
-2.09 46.0755 -nan nan nan nan 
-2.1 46.205 -nan nan nan nan 
-2.11 46.3334 -nan nan nan nan 
-2.12 46.4607 -nan nan nan nan 
-2.13 46.5869 -nan nan nan nan 
-2.14 46.712 -nan nan nan nan 
-2.15 46.836 -nan nan nan nan 
-2.16 46.959 -nan nan nan nan 
-2.17 47.0809 -nan nan nan nan 
-2.18 47.2017 -nan nan nan nan 
-2.19 47.3215 -nan nan nan nan 
-2.2 47.4403 -nan nan nan nan 
-2.21 47.558 -nan nan nan nan 
-2.22 47.6747 -nan nan nan nan 
-2.23 47.7903 -nan nan nan nan 
-2.24 47.905 -nan nan nan nan 
-2.25 48.0186 -nan nan nan nan 
-2.26 48.1313 -nan nan nan nan 
-2.27 48.2429 -nan nan nan nan 
-2.28 48.3536 -nan nan nan nan 
-2.29 48.4633 -nan nan nan nan 
-2.3 48.572 -nan nan nan nan 
-2.31 48.6798 -nan nan nan nan 
-2.32 48.7866 -nan nan nan nan 
-2.33 48.8925 -nan nan nan nan 
-2.34 48.9974 -nan nan nan nan 
-2.35 49.1014 -nan nan nan nan 
-2.36 49.2045 -nan nan nan nan 
-2.37 49.3066 -nan nan nan nan 
-2.38 49.4079 -nan nan nan nan 
-2.39 49.5082 -nan nan nan nan 
-2.4 49.6076 -nan nan nan nan 
-2.41 49.7062 -nan nan nan nan 
-2.42 49.8038 -nan nan nan nan 
-2.43 49.9006 -nan nan nan nan 
-2.44 49.9965 -nan nan nan nan 
-2.45 50.0916 -nan nan nan nan 
-2.46 50.1858 -nan nan nan nan 
-2.47 50.2791 -nan nan nan nan 
-2.48 50.3716 -nan nan nan nan 
-2.49 50.4632 -nan nan nan nan 
-2.5 50.5541 -nan nan nan nan 
-2.51 50.6441 -nan nan nan nan 
-2.52 50.7333 -nan nan nan nan 
-2.53 50.8217 -nan nan nan nan 
-2.54 50.9092 -nan nan nan nan 
-2.55 50.996 -nan nan nan nan 
-2.56 51.082 -nan nan nan nan 
-2.57 51.1672 -nan nan nan nan 
-2.58 51.2516 -nan nan nan nan 
-2.59 51.3353 -nan nan nan nan 
-2.6 51.4182 -nan nan nan nan 
-2.61 51.5003 -nan nan nan nan 
-2.62 51.5817 -nan nan nan nan 
-2.63 51.6623 -nan nan nan nan 
-2.64 51.7422 -nan nan nan nan 
-2.65 51.8214 -nan nan nan nan 
-2.66 51.8998 -nan nan nan nan 
-2.67 51.9775 -nan nan nan nan 
-2.68 52.0545 -nan nan nan nan 
-2.69 52.1308 -nan nan nan nan 
-2.7 52.2063 -nan nan nan nan 
-2.71 52.2812 -nan nan nan nan 
-2.72 52.3554 -nan nan nan nan 
-2.73 52.4289 -nan nan nan nan 
-2.74 52.5017 -nan nan nan nan 
-2.75 52.5739 -nan nan nan nan 
-2.76 52.6453 -nan nan nan nan 
-2.77 52.7162 -nan nan nan nan 
-2.78 52.7863 -nan nan nan nan 
-2.79 52.8558 -nan nan nan nan 
-2.8 52.9247 -nan nan nan nan 
-2.81 52.9929 -nan nan nan nan 
-2.82 53.0605 -nan nan nan nan 
-2.83 53.1274 -nan nan nan nan 
-2.84 53.1937 -nan nan nan nan 
-2.85 53.2594 -nan nan nan nan 
-2.86 53.3245 -nan nan nan nan 
-2.87 53.389 -nan nan nan nan 
-2.88 53.4529 -nan nan nan nan 
-2.89 53.5162 -nan nan nan nan 
-2.9 53.5789 -nan nan nan nan 
-2.91 53.641 -nan nan nan nan 
-2.92 53.7025 -nan nan nan nan 
-2.93 53.7634 -nan nan nan nan 
-2.94 53.8238 -nan nan nan nan 
-2.95 53.8836 -nan nan nan nan 
-2.96 53.9428 -nan nan nan nan 
-2.97 54.0015 -nan nan nan nan 
-2.98 54.0597 -nan nan nan nan 
-2.99 54.1172 -nan nan nan nan 
-3 54.1743 -nan nan nan nan 
-3.01 54.2308 -nan nan nan nan 
-3.02 54.2867 -nan nan nan nan 
-3.03 54.3422 -nan nan nan nan 
-3.04 54.3971 -nan nan nan nan 
-3.05 54.4515 -nan nan nan nan 
-3.06 54.5054 -nan nan nan nan 
-3.07 54.5588 -nan nan nan nan 
-3.08 54.6116 -nan nan nan nan 
-3.09 54.664 -nan nan nan nan 
-3.1 54.7159 -nan nan nan nan 
-3.11 54.7672 -nan nan nan nan 
-3.12 54.8181 -nan nan nan nan 
-3.13 54.8685 -nan nan nan nan 
-3.14 54.9185 -nan nan nan nan 
-3.15 54.9679 -nan nan nan nan 
-3.16 55.0169 -nan nan nan nan 
-3.17 55.0654 -nan nan nan nan 
-3.18 55.1135 -nan nan nan nan 
-3.19 55.1611 -nan nan nan nan 
-3.2 55.2082 -nan nan nan nan 
-3.21 55.2549 -nan nan nan nan 
-3.22 55.3012 -nan nan nan nan 
-3.23 55.347 -nan nan nan nan 
-3.24 55.3924 -nan nan nan nan 
-3.25 55.4373 -nan nan nan nan 
-3.26 55.4818 -nan nan nan nan 
-3.27 55.5259 -nan nan nan nan 
-3.28 55.5696 -nan nan nan nan 
-3.29 55.6128 -nan nan nan nan 
-3.3 55.6556 -nan nan nan nan 
-3.31 55.6981 -nan nan nan nan 
-3.32 55.7401 -nan nan nan nan 
-3.33 55.7817 -nan nan nan nan 
-3.34 55.8229 -nan nan nan nan 
-3.35 55.8637 -nan nan nan nan 
-3.36 55.9042 -nan nan nan nan 
-3.37 55.9442 -nan nan nan nan 
-3.38 55.9839 -nan nan nan nan 
-3.39 56.0231 -nan nan nan nan 
-3.4 56.062 -nan nan nan nan 
-3.41 56.1006 -nan nan nan nan 
-3.42 56.1387 -nan nan nan nan 
-3.43 56.1765 -nan nan nan nan 
-3.44 56.2139 -nan nan nan nan 
-3.45 56.251 -nan nan nan nan 
-3.46 56.2877 -nan nan nan nan 
-3.47 56.3241 -nan nan nan nan 
-3.48 56.3601 -nan nan nan nan 
-3.49 56.3957 -nan nan nan nan 
-3.5 56.431 -nan nan nan nan 
-3.51 56.466 -nan nan nan nan 
-3.52 56.5006 -nan nan nan nan 
-3.53 56.5349 -nan nan nan nan 
-3.54 56.5689 -nan nan nan nan 
-3.55 56.6025 -nan nan nan nan 
-3.56 56.6359 -nan nan nan nan 
-3.57 56.6689 -nan nan nan nan 
-3.58 56.7015 -nan nan nan nan 
-3.59 56.7339 -nan nan nan nan 
-3.6 56.7659 -nan nan nan nan 
-3.61 56.7977 -nan nan nan nan 
-3.62 56.8291 -nan nan nan nan 
-3.63 56.8602 -nan nan nan nan 
-3.64 56.8911 -nan nan nan nan 
-3.65 56.9216 -nan nan nan nan 
-3.66 56.9518 -nan nan nan nan 
-3.67 56.9818 -nan nan nan nan 
-3.68 57.0114 -nan nan nan nan 
-3.69 57.0408 -nan nan nan nan 
-3.7 57.0699 -nan nan nan nan 
-3.71 57.0986 -nan nan nan nan 
-3.72 57.1272 -nan nan nan nan 
-3.73 57.1554 -nan nan nan nan 
-3.74 57.1834 -nan nan nan nan 
-3.75 57.2111 -nan nan nan nan 
-3.76 57.2385 -nan nan nan nan 
-3.77 57.2656 -nan nan nan nan 
-3.78 57.2925 -nan nan nan nan 
-3.79 57.3192 -nan nan nan nan 
-3.8 57.3455 -nan nan nan nan 
-3.81 57.3717 -nan nan nan nan 
-3.82 57.3975 -nan nan nan nan 
-3.83 57.4231 -nan nan nan nan 
-3.84 57.4485 -nan nan nan nan 
-3.85 57.4736 -nan nan nan nan 
-3.86 57.4985 -nan nan nan nan 
-3.87 57.5231 -nan nan nan nan 
-3.88 57.5475 -nan nan nan nan 
-3.89 57.5716 -nan nan nan nan 
-3.9 57.5956 -nan nan nan nan 
-3.91 57.6192 -nan nan nan nan 
-3.92 57.6427 -nan nan nan nan 
-3.93 57.6659 -nan nan nan nan 
-3.94 57.6889 -nan nan nan nan 
-3.95 57.7117 -nan nan nan nan 
-3.96 57.7342 -nan nan nan nan 
-3.97 57.7566 -nan nan nan nan 
-3.98 57.7787 -nan nan nan nan 
-3.99 57.8006 -nan nan nan nan 
-4 57.8223 -nan nan nan nan 
-4.01 57.8437 -nan nan nan nan 
-4.02 57.865 -nan nan nan nan 
-4.03 57.886 -nan nan nan nan 
-4.04 57.9069 -nan nan nan nan 
-4.05 57.9275 -nan nan nan nan 
-4.06 57.948 -nan nan nan nan 
-4.07 57.9682 -nan nan nan nan 
-4.08 57.9883 -nan nan nan nan 
-4.09 58.0081 -nan nan nan nan 
-4.1 58.0278 -nan nan nan nan 
-4.11 58.0472 -nan nan nan nan 
-4.12 58.0665 -nan nan nan nan 
-4.13 58.0856 -nan nan nan nan 
-4.14 58.1045 -nan nan nan nan 
-4.15 58.1232 -nan nan nan nan 
-4.16 58.1417 -nan nan nan nan 
-4.17 58.1601 -nan nan nan nan 
-4.18 58.1782 -nan nan nan nan 
-4.19 58.1962 -nan nan nan nan 
-4.2 58.214 -nan nan nan nan 
-4.21 58.2317 -nan nan nan nan 
-4.22 58.2491 -nan nan nan nan 
-4.23 58.2664 -nan nan nan nan 
-4.24 58.2835 -nan nan nan nan 
-4.25 58.3005 -nan nan nan nan 
-4.26 58.3173 -nan nan nan nan 
-4.27 58.3339 -nan nan nan nan 
-4.28 58.3504 -nan nan nan nan 
-4.29 58.3667 -nan nan nan nan 
-4.3 58.3828 -nan nan nan nan 
-4.31 58.3988 -nan nan nan nan 
-4.32 58.4146 -nan nan nan nan 
-4.33 58.4303 -nan nan nan nan 
-4.34 58.4458 -nan nan nan nan 
-4.35 58.4612 -nan nan nan nan 
-4.36 58.4764 -nan nan nan nan 
-4.37 58.4915 -nan nan nan nan 
-4.38 58.5064 -nan nan nan nan 
-4.39 58.5211 -nan nan nan nan 
-4.4 58.5358 -nan nan nan nan 
-4.41 58.5502 -nan nan nan nan 
-4.42 58.5646 -nan nan nan nan 
-4.43 58.5788 -nan nan nan nan 
-4.44 58.5928 -nan nan nan nan 
-4.45 58.6068 -nan nan nan nan 
-4.46 58.6205 -nan nan nan nan 
-4.47 58.6342 -nan nan nan nan 
-4.48 58.6477 -nan nan nan nan 
-4.49 58.6611 -nan nan nan nan 
-4.5 58.6743 -nan nan nan nan 
-4.51 58.6874 -nan nan nan nan 
-4.52 58.7004 -nan nan nan nan 
-4.53 58.7133 -nan nan nan nan 
-4.54 58.726 -nan nan nan nan 
-4.55 58.7386 -nan nan nan nan 
-4.56 58.7511 -nan nan nan nan 
-4.57 58.7635 -nan nan nan nan 
-4.58 58.7757 -nan nan nan nan 
-4.59 58.7878 -nan nan nan nan 
-4.6 58.7998 -nan nan nan nan 
-4.61 58.8117 -nan nan nan nan 
-4.62 58.8235 -nan nan nan nan 
-4.63 58.8351 -nan nan nan nan 
-4.64 58.8467 -nan nan nan nan 
-4.65 58.8581 -nan nan nan nan 
-4.66 58.8694 -nan nan nan nan 
-4.67 58.8806 -nan nan nan nan 
-4.68 58.8917 -nan nan nan nan 
-4.69 58.9027 -nan nan nan nan 
-4.7 58.9135 -nan nan nan nan 
-4.71 58.9243 -nan nan nan nan 
-4.72 58.9349 -nan nan nan nan 
-4.73 58.9455 -nan nan nan nan 
-4.74 58.9559 -nan nan nan nan 
-4.75 58.9663 -nan nan nan nan 
-4.76 58.9765 -nan nan nan nan 
-4.77 58.9867 -nan nan nan nan 
-4.78 58.9967 -nan nan nan nan 
-4.79 59.0067 -nan nan nan nan 
-4.8 59.0165 -nan nan nan nan 
-4.81 59.0262 -nan nan nan nan 
-4.82 59.0359 -nan nan nan nan 
-4.83 59.0454 -nan nan nan nan 
-4.84 59.0549 -nan nan nan nan 
-4.85 59.0643 -nan nan nan nan 
-4.86 59.0735 -nan nan nan nan 
-4.87 59.0827 -nan nan nan nan 
-4.88 59.0918 -nan nan nan nan 
-4.89 59.1008 -nan nan nan nan 
-4.9 59.1097 -nan nan nan nan 
-4.91 59.1186 -nan nan nan nan 
-4.92 59.1273 -nan nan nan nan 
-4.93 59.136 -nan nan nan nan 
-4.94 59.1445 -nan nan nan nan 
-4.95 59.153 -nan nan nan nan 
-4.96 59.1614 -nan nan nan nan 
-4.97 59.1697 -nan nan nan nan 
-4.98 59.1779 -nan nan nan nan 
-4.99 59.1861 -nan nan nan nan 
-5 59.1942 -nan nan nan nan 
-5.01 59.2022 -nan nan nan nan 
-5.02 59.2101 -nan nan nan nan 
-5.03 59.2179 -nan nan nan nan 
-5.04 59.2257 -nan nan nan nan 
-5.05 59.2333 -nan nan nan nan 
-5.06 59.2409 -nan nan nan nan 
-5.07 59.2485 -nan nan nan nan 
-5.08 59.2559 -nan nan nan nan 
-5.09 59.2633 -nan nan nan nan 
-5.1 59.2706 -nan nan nan nan 
-5.11 59.2779 -nan nan nan nan 
-5.12 59.285 -nan nan nan nan 
-5.13 59.2921 -nan nan nan nan 
-5.14 59.2991 -nan nan nan nan 
-5.15 59.3061 -nan nan nan nan 
-5.16 59.313 -nan nan nan nan 
-5.17 59.3198 -nan nan nan nan 
-5.18 59.3265 -nan nan nan nan 
-5.19 59.3332 -nan nan nan nan 
-5.2 59.3398 -nan nan nan nan 
-5.21 59.3464 -nan nan nan nan 
-5.22 59.3529 -nan nan nan nan 
-5.23 59.3593 -nan nan nan nan 
-5.24 59.3657 -nan nan nan nan 
-5.25 59.3719 -nan nan nan nan 
-5.26 59.3782 -nan nan nan nan 
-5.27 59.3844 -nan nan nan nan 
-5.28 59.3905 -nan nan nan nan 
-5.29 59.3965 -nan nan nan nan 
-5.3 59.4025 -nan nan nan nan 
-5.31 59.4084 -nan nan nan nan 
-5.32 59.4143 -nan nan nan nan 
-5.33 59.4201 -nan nan nan nan 
-5.34 59.4259 -nan nan nan nan 
-5.35 59.4316 -nan nan nan nan 
-5.36 59.4372 -nan nan nan nan 
-5.37 59.4428 -nan nan nan nan 
-5.38 59.4483 -nan nan nan nan 
-5.39 59.4538 -nan nan nan nan 
-5.4 59.4592 -nan nan nan nan 
-5.41 59.4646 -nan nan nan nan 
-5.42 59.4699 -nan nan nan nan 
-5.43 59.4752 -nan nan nan nan 
-5.44 59.4804 -nan nan nan nan 
-5.45 59.4856 -nan nan nan nan 
-5.46 59.4907 -nan nan nan nan 
-5.47 59.4957 -nan nan nan nan 
-5.48 59.5007 -nan nan nan nan 
-5.49 59.5057 -nan nan nan nan 
-5.5 59.5106 -nan nan nan nan 
-5.51 59.5154 -nan nan nan nan 
-5.52 59.5203 -nan nan nan nan 
-5.53 59.525 -nan nan nan nan 
-5.54 59.5297 -nan nan nan nan 
-5.55 59.5344 -nan nan nan nan 
-5.56 59.539 -nan nan nan nan 
-5.57 59.5436 -nan nan nan nan 
-5.58 59.5481 -nan nan nan nan 
-5.59 59.5526 -nan nan nan nan 
-5.6 59.5571 -nan nan nan nan 
-5.61 59.5615 -nan nan nan nan 
-5.62 59.5658 -nan nan nan nan 
-5.63 59.5701 -nan nan nan nan 
-5.64 59.5744 -nan nan nan nan 
-5.65 59.5786 -nan nan nan nan 
-5.66 59.5828 -nan nan nan nan 
-5.67 59.587 -nan nan nan nan 
-5.68 59.5911 -nan nan nan nan 
-5.69 59.5951 -nan nan nan nan 
-5.7 59.5992 -nan nan nan nan 
-5.71 59.6031 -nan nan nan nan 
-5.72 59.6071 -nan nan nan nan 
-5.73 59.611 -nan nan nan nan 
-5.74 59.6148 -nan nan nan nan 
-5.75 59.6187 -nan nan nan nan 
-5.76 59.6225 -nan nan nan nan 
-5.77 59.6262 -nan nan nan nan 
-5.78 59.6299 -nan nan nan nan 
-5.79 59.6336 -nan nan nan nan 
-5.8 59.6372 -nan nan nan nan 
-5.81 59.6408 -nan nan nan nan 
-5.82 59.6444 -nan nan nan nan 
-5.83 59.6479 -nan nan nan nan 
-5.84 59.6514 -nan nan nan nan 
-5.85 59.6549 -nan nan nan nan 
-5.86 59.6583 -nan nan nan nan 
-5.87 59.6617 -nan nan nan nan 
-5.88 59.6651 -nan nan nan nan 
-5.89 59.6684 -nan nan nan nan 
-5.9 59.6717 -nan nan nan nan 
-5.91 59.675 -nan nan nan nan 
-5.92 59.6782 -nan nan nan nan 
-5.93 59.6814 -nan nan nan nan 
-5.94 59.6846 -nan nan nan nan 
-5.95 59.6877 -nan nan nan nan 
-5.96 59.6908 -nan nan nan nan 
-5.97 59.6939 -nan nan nan nan 
-5.98 59.6969 -nan nan nan nan 
-5.99 59.6999 -nan nan nan nan 
-6 59.7029 -nan nan nan nan 
-6.01 59.7059 -nan nan nan nan 
-6.02 59.7088 -nan nan nan nan 
-6.03 59.7117 -nan nan nan nan 
-6.04 59.7146 -nan nan nan nan 
-6.05 59.7174 -nan nan nan nan 
-6.06 59.7202 -nan nan nan nan 
-6.07 59.723 -nan nan nan nan 
-6.08 59.7257 -nan nan nan nan 
-6.09 59.7285 -nan nan nan nan 
-6.1 59.7312 -nan nan nan nan 
-6.11 59.7338 -nan nan nan nan 
-6.12 59.7365 -nan nan nan nan 
-6.13 59.7391 -nan nan nan nan 
-6.14 59.7417 -nan nan nan nan 
-6.15 59.7443 -nan nan nan nan 
-6.16 59.7468 -nan nan nan nan 
-6.17 59.7493 -nan nan nan nan 
-6.18 59.7518 -nan nan nan nan 
-6.19 59.7543 -nan nan nan nan 
-6.2 59.7567 -nan nan nan nan 
-6.21 59.7591 -nan nan nan nan 
-6.22 59.7615 -nan nan nan nan 
-6.23 59.7639 -nan nan nan nan 
-6.24 59.7662 -nan nan nan nan 
-6.25 59.7686 -nan nan nan nan 
-6.26 59.7709 -nan nan nan nan 
-6.27 59.7731 -nan nan nan nan 
-6.28 59.7754 -nan nan nan nan 
-6.29 59.7776 -nan nan nan nan 
-6.3 59.7798 -nan nan nan nan 
-6.31 59.782 -nan nan nan nan 
-6.32 59.7842 -nan nan nan nan 
-6.33 59.7863 -nan nan nan nan 
-6.34 59.7885 -nan nan nan nan 
-6.35 59.7906 -nan nan nan nan 
-6.36 59.7927 -nan nan nan nan 
-6.37 59.7947 -nan nan nan nan 
-6.38 59.7968 -nan nan nan nan 
-6.39 59.7988 -nan nan nan nan 
-6.4 59.8008 -nan nan nan nan 
-6.41 59.8028 -nan nan nan nan 
-6.42 59.8047 -nan nan nan nan 
-6.43 59.8067 -nan nan nan nan 
-6.44 59.8086 -nan nan nan nan 
-6.45 59.8105 -nan nan nan nan 
-6.46 59.8124 -nan nan nan nan 
-6.47 59.8142 -nan nan nan nan 
-6.48 59.8161 -nan nan nan nan 
-6.49 59.8179 -nan nan nan nan 
-6.5 59.8197 -nan nan nan nan 
-6.51 59.8215 -nan nan nan nan 
-6.52 59.8233 -nan nan nan nan 
-6.53 59.825 -nan nan nan nan 
-6.54 59.8268 -nan nan nan nan 
-6.55 59.8285 -nan nan nan nan 
-6.56 59.8302 -nan nan nan nan 
-6.57 59.8319 -nan nan nan nan 
-6.58 59.8336 -nan nan nan nan 
-6.59 59.8352 -nan nan nan nan 
-6.6 59.8369 -nan nan nan nan 
-6.61 59.8385 -nan nan nan nan 
-6.62 59.8401 -nan nan nan nan 
-6.63 59.8417 -nan nan nan nan 
-6.64 59.8433 -nan nan nan nan 
-6.65 59.8448 -nan nan nan nan 
-6.66 59.8464 -nan nan nan nan 
-6.67 59.8479 -nan nan nan nan 
-6.68 59.8494 -nan nan nan nan 
-6.69 59.8509 -nan nan nan nan 
-6.7 59.8524 -nan nan nan nan 
-6.71 59.8538 -nan nan nan nan 
-6.72 59.8553 -nan nan nan nan 
-6.73 59.8567 -nan nan nan nan 
-6.74 59.8582 -nan nan nan nan 
-6.75 59.8596 -nan nan nan nan 
-6.76 59.861 -nan nan nan nan 
-6.77 59.8624 -nan nan nan nan 
-6.78 59.8637 -nan nan nan nan 
-6.79 59.8651 -nan nan nan nan 
-6.8 59.8664 -nan nan nan nan 
-6.81 59.8677 -nan nan nan nan 
-6.82 59.8691 -nan nan nan nan 
-6.83 59.8704 -nan nan nan nan 
-6.84 59.8717 -nan nan nan nan 
-6.85 59.8729 -nan nan nan nan 
-6.86 59.8742 -nan nan nan nan 
-6.87 59.8754 -nan nan nan nan 
-6.88 59.8767 -nan nan nan nan 
-6.89 59.8779 -nan nan nan nan 
-6.9 59.8791 -nan nan nan nan 
-6.91 59.8803 -nan nan nan nan 
-6.92 59.8815 -nan nan nan nan 
-6.93 59.8827 -nan nan nan nan 
-6.94 59.8839 -nan nan nan nan 
-6.95 59.885 -nan nan nan nan 
-6.96 59.8862 -nan nan nan nan 
-6.97 59.8873 -nan nan nan nan 
-6.98 59.8884 -nan nan nan nan 
-6.99 59.8895 -nan nan nan nan 
-7 59.8906 -nan nan nan nan 
-7.01 59.8917 -nan nan nan nan 
-7.02 59.8928 -nan nan nan nan 
-7.03 59.8939 -nan nan nan nan 
-7.04 59.8949 -nan nan nan nan 
-7.05 59.896 -nan nan nan nan 
-7.06 59.897 -nan nan nan nan 
-7.07 59.898 -nan nan nan nan 
-7.08 59.899 -nan nan nan nan 
-7.09 59.9 -nan nan nan nan 
-7.1 59.901 -nan nan nan nan 
-7.11 59.902 -nan nan nan nan 
-7.12 59.903 -nan nan nan nan 
-7.13 59.904 -nan nan nan nan 
-7.14 59.9049 -nan nan nan nan 
-7.15 59.9059 -nan nan nan nan 
-7.16 59.9068 -nan nan nan nan 
-7.17 59.9077 -nan nan nan nan 
-7.18 59.9086 -nan nan nan nan 
-7.19 59.9095 -nan nan nan nan 
-7.2 59.9104 -nan nan nan nan 
-7.21 59.9113 -nan nan nan nan 
-7.22 59.9122 -nan nan nan nan 
-7.23 59.9131 -nan nan nan nan 
-7.24 59.914 -nan nan nan nan 
-7.25 59.9148 -nan nan nan nan 
-7.26 59.9157 -nan nan nan nan 
-7.27 59.9165 -nan nan nan nan 
-7.28 59.9173 -nan nan nan nan 
-7.29 59.9181 -nan nan nan nan 
-7.3 59.919 -nan nan nan nan 
-7.31 59.9198 -nan nan nan nan 
-7.32 59.9206 -nan nan nan nan 
-7.33 59.9214 -nan nan nan nan 
-7.34 59.9221 -nan nan nan nan 
-7.35 59.9229 -nan nan nan nan 
-7.36 59.9237 -nan nan nan nan 
-7.37 59.9244 -nan nan nan nan 
-7.38 59.9252 -nan nan nan nan 
-7.39 59.9259 -nan nan nan nan 
-7.4 59.9267 -nan nan nan nan 
-7.41 59.9274 -nan nan nan nan 
-7.42 59.9281 -nan nan nan nan 
-7.43 59.9288 -nan nan nan nan 
-7.44 59.9295 -nan nan nan nan 
-7.45 59.9302 -nan nan nan nan 
-7.46 59.9309 -nan nan nan nan 
-7.47 59.9316 -nan nan nan nan 
-7.48 59.9323 -nan nan nan nan 
-7.49 59.933 -nan nan nan nan 
-7.5 59.9336 -nan nan nan nan 
-7.51 59.9343 -nan nan nan nan 
-7.52 59.935 -nan nan nan nan 
-7.53 59.9356 -nan nan nan nan 
-7.54 59.9362 -nan nan nan nan 
-7.55 59.9369 -nan nan nan nan 
-7.56 59.9375 -nan nan nan nan 
-7.57 59.9381 -nan nan nan nan 
-7.58 59.9387 -nan nan nan nan 
-7.59 59.9394 -nan nan nan nan 
-7.6 59.94 -nan nan nan nan 
-7.61 59.9406 -nan nan nan nan 
-7.62 59.9411 -nan nan nan nan 
-7.63 59.9417 -nan nan nan nan 
-7.64 59.9423 -nan nan nan nan 
-7.65 59.9429 -nan nan nan nan 
-7.66 59.9435 -nan nan nan nan 
-7.67 59.944 -nan nan nan nan 
-7.68 59.9446 -nan nan nan nan 
-7.69 59.9451 -nan nan nan nan 
-7.7 59.9457 -nan nan nan nan 
-7.71 59.9462 -nan nan nan nan 
-7.72 59.9467 -nan nan nan nan 
-7.73 59.9473 -nan nan nan nan 
-7.74 59.9478 -nan nan nan nan 
-7.75 59.9483 -nan nan nan nan 
-7.76 59.9488 -nan nan nan nan 
-7.77 59.9493 -nan nan nan nan 
-7.78 59.9498 -nan nan nan nan 
-7.79 59.9503 -nan nan nan nan 
-7.8 59.9508 -nan nan nan nan 
-7.81 59.9513 -nan nan nan nan 
-7.82 59.9518 -nan nan nan nan 
-7.83 59.9523 -nan nan nan nan 
-7.84 59.9528 -nan nan nan nan 
-7.85 59.9532 -nan nan nan nan 
-7.86 59.9537 -nan nan nan nan 
-7.87 59.9542 -nan nan nan nan 
-7.88 59.9546 -nan nan nan nan 
-7.89 59.9551 -nan nan nan nan 
-7.9 59.9555 -nan nan nan nan 
-7.91 59.956 -nan nan nan nan 
-7.92 59.9564 -nan nan nan nan 
-7.93 59.9568 -nan nan nan nan 
-7.94 59.9573 -nan nan nan nan 
-7.95 59.9577 -nan nan nan nan 
-7.96 59.9581 -nan nan nan nan 
-7.97 59.9585 -nan nan nan nan 
-7.98 59.9589 -nan nan nan nan 
-7.99 59.9593 -nan nan nan nan 
+-2 2449.2 nan nan 
+-1.99 2393.16 nan nan 
+-1.98 2338.31 nan nan 
+-1.97 2284.63 nan nan 
+-1.96 2232.11 nan nan 
+-1.95 2180.7 nan nan 
+-1.94 2130.4 nan nan 
+-1.93 2081.18 nan nan 
+-1.92 2033.01 nan nan 
+-1.91 1985.88 nan nan 
+-1.9 1939.76 nan nan 
+-1.89 1894.64 nan nan 
+-1.88 1850.48 nan nan 
+-1.87 1807.28 nan nan 
+-1.86 1765.02 nan nan 
+-1.85 1723.66 nan nan 
+-1.84 1683.2 nan nan 
+-1.83 1643.61 nan nan 
+-1.82 1604.89 nan nan 
+-1.81 1567 nan nan 
+-1.8 1529.94 nan nan 
+-1.79 1493.68 nan nan 
+-1.78 1458.21 nan nan 
+-1.77 1423.51 nan nan 
+-1.76 1389.57 nan nan 
+-1.75 1356.37 nan nan 
+-1.74 1323.9 nan nan 
+-1.73 1292.14 nan nan 
+-1.72 1261.07 nan nan 
+-1.71 1230.69 nan nan 
+-1.7 1200.97 nan nan 
+-1.69 1171.91 nan nan 
+-1.68 1143.48 nan nan 
+-1.67 1115.69 nan nan 
+-1.66 1088.5 nan nan 
+-1.65 1061.92 nan nan 
+-1.64 1035.93 nan nan 
+-1.63 1010.51 nan nan 
+-1.62 985.652 nan nan 
+-1.61 961.35 nan nan 
+-1.6 937.588 nan nan 
+-1.59 914.355 nan nan 
+-1.58 891.641 nan nan 
+-1.57 869.434 nan nan 
+-1.56 847.724 nan nan 
+-1.55 826.501 nan nan 
+-1.54 805.753 nan nan 
+-1.53 785.472 nan nan 
+-1.52 765.648 nan nan 
+-1.51 746.27 nan nan 
+-1.5 727.33 nan nan 
+-1.49 708.818 nan nan 
+-1.48 690.725 nan nan 
+-1.47 673.043 nan nan 
+-1.46 655.762 nan nan 
+-1.45 638.875 nan nan 
+-1.44 622.373 nan nan 
+-1.43 606.248 nan nan 
+-1.42 590.491 nan nan 
+-1.41 575.096 nan nan 
+-1.4 560.055 nan nan 
+-1.39 545.359 nan nan 
+-1.38 531.002 nan nan 
+-1.37 516.977 nan nan 
+-1.36 503.276 nan nan 
+-1.35 489.893 nan nan 
+-1.34 476.82 nan nan 
+-1.33 464.052 nan nan 
+-1.32 451.582 nan nan 
+-1.31 439.403 nan nan 
+-1.3 427.509 nan nan 
+-1.29 415.894 nan nan 
+-1.28 404.552 nan nan 
+-1.27 393.478 nan nan 
+-1.26 382.665 nan nan 
+-1.25 372.108 nan nan 
+-1.24 361.802 nan nan 
+-1.23 351.741 nan nan 
+-1.22 341.92 nan nan 
+-1.21 332.333 nan nan 
+-1.2 322.977 nan nan 
+-1.19 313.844 nan nan 
+-1.18 304.932 nan nan 
+-1.17 296.235 nan nan 
+-1.16 287.748 nan nan 
+-1.15 279.468 nan nan 
+-1.14 271.389 nan nan 
+-1.13 263.507 nan nan 
+-1.12 255.817 nan nan 
+-1.11 248.317 nan nan 
+-1.1 241.001 nan nan 
+-1.09 233.865 nan nan 
+-1.08 226.907 nan nan 
+-1.07 220.121 nan nan 
+-1.06 213.504 nan nan 
+-1.05 207.052 nan nan 
+-1.04 200.762 nan nan 
+-1.03 194.63 nan nan 
+-1.02 188.653 nan nan 
+-1.01 182.827 nan nan 
+-1 177.15 nan nan 
+-0.99 171.616 nan nan 
+-0.98 166.225 nan nan 
+-0.97 160.972 nan nan 
+-0.96 155.854 nan nan 
+-0.95 150.869 nan nan 
+-0.94 146.013 nan nan 
+-0.93 141.283 nan nan 
+-0.92 136.677 nan nan 
+-0.91 132.193 nan nan 
+-0.9 127.826 nan nan 
+-0.89 123.576 nan nan 
+-0.88 119.438 nan nan 
+-0.87 115.411 nan nan 
+-0.86 111.492 nan nan 
+-0.85 107.679 nan nan 
+-0.84 103.969 nan nan 
+-0.83 100.36 nan nan 
+-0.82 96.8502 nan nan 
+-0.81 93.4365 nan nan 
+-0.8 90.117 nan nan 
+-0.79 86.8898 nan nan 
+-0.78 83.7526 nan nan 
+-0.77 80.7035 nan nan 
+-0.76 77.7404 nan nan 
+-0.75 74.8613 nan nan 
+-0.74 72.0645 nan nan 
+-0.73 69.3479 nan nan 
+-0.72 66.7098 nan nan 
+-0.71 64.1483 nan nan 
+-0.7 61.6617 nan nan 
+-0.69 59.2482 nan nan 
+-0.68 56.9063 nan nan 
+-0.67 54.6341 nan nan 
+-0.66 52.4302 nan nan 
+-0.65 50.2929 nan nan 
+-0.64 48.2207 nan nan 
+-0.63 46.212 nan nan 
+-0.62 44.2654 nan nan 
+-0.61 42.3795 nan nan 
+-0.6 40.5528 nan nan 
+-0.59 38.7838 nan nan 
+-0.58 37.0714 nan nan 
+-0.57 35.4141 nan nan 
+-0.56 33.8106 nan nan 
+-0.55 32.2596 nan nan 
+-0.54 30.7599 nan nan 
+-0.53 29.3104 nan nan 
+-0.52 27.9097 nan nan 
+-0.51 26.5567 nan nan 
+-0.5 25.2504 nan nan 
+-0.49 23.9894 nan nan 
+-0.48 22.7729 nan nan 
+-0.47 21.5996 nan nan 
+-0.46 20.4685 nan nan 
+-0.45 19.3787 nan nan 
+-0.44 18.3291 nan nan 
+-0.43 17.3187 nan nan 
+-0.42 16.3466 nan nan 
+-0.41 15.4119 nan nan 
+-0.4 14.5135 nan nan 
+-0.39 13.6506 nan nan 
+-0.38 12.8224 nan nan 
+-0.37 12.028 nan nan 
+-0.36 11.2665 nan nan 
+-0.35 10.5371 nan nan 
+-0.34 9.83895 nan nan 
+-0.33 9.17136 nan nan 
+-0.32 8.53352 nan nan 
+-0.31 7.92467 nan nan 
+-0.3 7.34407 nan nan 
+-0.29 6.79101 nan nan 
+-0.28 6.26477 nan nan 
+-0.27 5.76468 nan nan 
+-0.26 5.29005 nan nan 
+-0.25 4.84023 nan nan 
+-0.24 4.41457 nan nan 
+-0.23 4.01244 nan nan 
+-0.22 3.63323 nan nan 
+-0.21 3.27633 nan nan 
+-0.2 2.94115 nan nan 
+-0.19 2.62712 nan nan 
+-0.18 2.33368 nan nan 
+-0.17 2.06027 nan nan 
+-0.16 1.80636 nan nan 
+-0.15 1.57142 nan nan 
+-0.14 1.35493 nan nan 
+-0.13 1.1564 nan nan 
+-0.12 0.975327 nan nan 
+-0.11 0.811235 nan nan 
+-0.1 0.663655 nan nan 
+-0.09 0.532128 nan nan 
+-0.08 0.416204 nan nan 
+-0.07 0.315446 nan nan 
+-0.06 0.229426 nan nan 
+-0.05 0.157724 nan nan 
+-0.04 0.0999312 nan nan 
+-0.03 0.0556487 nan nan 
+-0.02 0.0244856 nan nan 
+-0.01 0.00606035 nan nan 
+0 0 nan nan 
+0.01 0.00594035 nan nan 
+0.02 0.0235256 nan nan 
+0.03 0.052408 nan nan 
+0.04 0.0922481 nan nan 
+0.05 0.142714 nan nan 
+0.06 0.203482 nan nan 
+0.07 0.274236 nan nan 
+0.08 0.354666 nan nan 
+0.09 0.44447 nan nan 
+0.1 0.543355 nan nan 
+0.11 0.651032 nan nan 
+0.12 0.767219 nan nan 
+0.13 0.891643 nan nan 
+0.14 1.02404 nan nan 
+0.15 1.16414 nan nan 
+0.16 1.31169 nan nan 
+0.17 1.46644 nan nan 
+0.18 1.62815 nan nan 
+0.19 1.79659 nan nan 
+0.2 1.97151 nan nan 
+0.21 2.1527 nan nan 
+0.22 2.33993 nan nan 
+0.23 2.53299 nan nan 
+0.24 2.73166 nan nan 
+0.25 2.93575 nan nan 
+0.26 3.14504 nan nan 
+0.27 3.35936 nan nan 
+0.28 3.57849 nan nan 
+0.29 3.80227 nan nan 
+0.3 4.03051 nan nan 
+0.31 4.26303 nan nan 
+0.32 4.49966 nan nan 
+0.33 4.74023 nan nan 
+0.34 4.98458 nan nan 
+0.35 5.23255 nan nan 
+0.36 5.48398 nan nan 
+0.37 5.73872 nan nan 
+0.38 5.99662 nan nan 
+0.39 6.25754 nan nan 
+0.4 6.52133 nan nan 
+0.41 6.78787 nan nan 
+0.42 7.05701 nan nan 
+0.43 7.32863 nan nan 
+0.44 7.6026 nan nan 
+0.45 7.8788 nan nan 
+0.46 8.15711 nan nan 
+0.47 8.4374 nan nan 
+0.48 8.71957 nan nan 
+0.49 9.0035 nan nan 
+0.5 9.28909 nan nan 
+0.51 9.57623 nan nan 
+0.52 9.86482 nan nan 
+0.53 10.1548 nan nan 
+0.54 10.4459 nan nan 
+0.55 10.7383 nan nan 
+0.56 11.0317 nan nan 
+0.57 11.3261 nan nan 
+0.58 11.6214 nan nan 
+0.59 11.9175 nan nan 
+0.6 12.2143 nan nan 
+0.61 12.5117 nan nan 
+0.62 12.8097 nan nan 
+0.63 13.1082 nan nan 
+0.64 13.4071 nan nan 
+0.65 13.7064 nan nan 
+0.66 14.006 nan nan 
+0.67 14.3057 nan nan 
+0.68 14.6056 nan nan 
+0.69 14.9056 nan nan 
+0.7 15.2056 nan nan 
+0.71 15.5055 nan nan 
+0.72 15.8054 nan nan 
+0.73 16.1051 nan nan 
+0.74 16.4046 nan nan 
+0.75 16.7038 nan nan 
+0.76 17.0027 nan nan 
+0.77 17.3013 nan nan 
+0.78 17.5994 nan nan 
+0.79 17.8971 nan nan 
+0.8 18.1943 nan nan 
+0.81 18.491 nan nan 
+0.82 18.787 nan nan 
+0.83 19.0824 nan nan 
+0.84 19.3772 nan nan 
+0.85 19.6712 nan nan 
+0.86 19.9645 nan nan 
+0.87 20.257 nan nan 
+0.88 20.5487 nan nan 
+0.89 20.8396 nan nan 
+0.9 21.1296 nan nan 
+0.91 21.4186 nan nan 
+0.92 21.7068 nan nan 
+0.93 21.9939 nan nan 
+0.94 22.2801 nan nan 
+0.95 22.5652 nan nan 
+0.96 22.8493 nan nan 
+0.97 23.1323 nan nan 
+0.98 23.4142 nan nan 
+0.99 23.695 nan nan 
+1 23.9746 nan nan 
+1.01 24.2531 nan nan 
+1.02 24.5303 nan nan 
+1.03 24.8064 nan nan 
+1.04 25.0813 nan nan 
+1.05 25.3549 nan nan 
+1.06 25.6272 nan nan 
+1.07 25.8983 nan nan 
+1.08 26.168 nan nan 
+1.09 26.4365 nan nan 
+1.1 26.7037 nan nan 
+1.11 26.9695 nan nan 
+1.12 27.2339 nan nan 
+1.13 27.497 nan nan 
+1.14 27.7588 nan nan 
+1.15 28.0191 nan nan 
+1.16 28.2781 nan nan 
+1.17 28.5356 nan nan 
+1.18 28.7918 nan nan 
+1.19 29.0465 nan nan 
+1.2 29.2998 nan nan 
+1.21 29.5516 nan nan 
+1.22 29.802 nan nan 
+1.23 30.051 nan nan 
+1.24 30.2985 nan nan 
+1.25 30.5445 nan nan 
+1.26 30.7891 nan nan 
+1.27 31.0322 nan nan 
+1.28 31.2738 nan nan 
+1.29 31.5139 nan nan 
+1.3 31.7526 nan nan 
+1.31 31.9898 nan nan 
+1.32 32.2254 nan nan 
+1.33 32.4596 nan nan 
+1.34 32.6923 nan nan 
+1.35 32.9235 nan nan 
+1.36 33.1532 nan nan 
+1.37 33.3814 nan nan 
+1.38 33.6081 nan nan 
+1.39 33.8333 nan nan 
+1.4 34.057 nan nan 
+1.41 34.2792 nan nan 
+1.42 34.4999 nan nan 
+1.43 34.7191 nan nan 
+1.44 34.9368 nan nan 
+1.45 35.153 nan nan 
+1.46 35.3677 nan nan 
+1.47 35.5809 nan nan 
+1.48 35.7926 nan nan 
+1.49 36.0029 nan nan 
+1.5 36.2116 nan nan 
+1.51 36.4189 nan nan 
+1.52 36.6247 nan nan 
+1.53 36.829 nan nan 
+1.54 37.0318 nan nan 
+1.55 37.2332 nan nan 
+1.56 37.4331 nan nan 
+1.57 37.6315 nan nan 
+1.58 37.8285 nan nan 
+1.59 38.0241 nan nan 
+1.6 38.2182 nan nan 
+1.61 38.4108 nan nan 
+1.62 38.602 nan nan 
+1.63 38.7918 nan nan 
+1.64 38.9801 nan nan 
+1.65 39.167 nan nan 
+1.66 39.3525 nan nan 
+1.67 39.5366 nan nan 
+1.68 39.7192 nan nan 
+1.69 39.9005 nan nan 
+1.7 40.0804 nan nan 
+1.71 40.2589 nan nan 
+1.72 40.4359 nan nan 
+1.73 40.6117 nan nan 
+1.74 40.786 nan nan 
+1.75 40.959 nan nan 
+1.76 41.1306 nan nan 
+1.77 41.3008 nan nan 
+1.78 41.4698 nan nan 
+1.79 41.6373 nan nan 
+1.8 41.8036 nan nan 
+1.81 41.9685 nan nan 
+1.82 42.1321 nan nan 
+1.83 42.2943 nan nan 
+1.84 42.4553 nan nan 
+1.85 42.615 nan nan 
+1.86 42.7733 nan nan 
+1.87 42.9304 nan nan 
+1.88 43.0862 nan nan 
+1.89 43.2407 nan nan 
+1.9 43.394 nan nan 
+1.91 43.546 nan nan 
+1.92 43.6968 nan nan 
+1.93 43.8463 nan nan 
+1.94 43.9946 nan nan 
+1.95 44.1416 nan nan 
+1.96 44.2875 nan nan 
+1.97 44.4321 nan nan 
+1.98 44.5755 nan nan 
+1.99 44.7177 nan nan 
+2 44.8587 nan nan 
+2.01 44.9985 nan nan 
+2.02 45.1372 nan nan 
+2.03 45.2747 nan nan 
+2.04 45.411 nan nan 
+2.05 45.5462 nan nan 
+2.06 45.6802 nan nan 
+2.07 45.8131 nan nan 
+2.08 45.9448 nan nan 
+2.09 46.0755 nan nan 
+2.1 46.205 nan nan 
+2.11 46.3334 nan nan 
+2.12 46.4607 nan nan 
+2.13 46.5869 nan nan 
+2.14 46.712 nan nan 
+2.15 46.836 nan nan 
+2.16 46.959 nan nan 
+2.17 47.0809 nan nan 
+2.18 47.2017 nan nan 
+2.19 47.3215 nan nan 
+2.2 47.4403 nan nan 
+2.21 47.558 nan nan 
+2.22 47.6747 nan nan 
+2.23 47.7903 nan nan 
+2.24 47.905 nan nan 
+2.25 48.0186 nan nan 
+2.26 48.1313 nan nan 
+2.27 48.2429 nan nan 
+2.28 48.3536 nan nan 
+2.29 48.4633 nan nan 
+2.3 48.572 nan nan 
+2.31 48.6798 nan nan 
+2.32 48.7866 nan nan 
+2.33 48.8925 nan nan 
+2.34 48.9974 nan nan 
+2.35 49.1014 nan nan 
+2.36 49.2045 nan nan 
+2.37 49.3066 nan nan 
+2.38 49.4079 nan nan 
+2.39 49.5082 nan nan 
+2.4 49.6076 nan nan 
+2.41 49.7062 nan nan 
+2.42 49.8038 nan nan 
+2.43 49.9006 nan nan 
+2.44 49.9965 nan nan 
+2.45 50.0916 nan nan 
+2.46 50.1858 nan nan 
+2.47 50.2791 nan nan 
+2.48 50.3716 nan nan 
+2.49 50.4632 nan nan 
+2.5 50.5541 nan nan 
+2.51 50.6441 nan nan 
+2.52 50.7333 nan nan 
+2.53 50.8217 nan nan 
+2.54 50.9092 nan nan 
+2.55 50.996 nan nan 
+2.56 51.082 nan nan 
+2.57 51.1672 nan nan 
+2.58 51.2516 nan nan 
+2.59 51.3353 nan nan 
+2.6 51.4182 nan nan 
+2.61 51.5003 nan nan 
+2.62 51.5817 nan nan 
+2.63 51.6623 nan nan 
+2.64 51.7422 nan nan 
+2.65 51.8214 nan nan 
+2.66 51.8998 nan nan 
+2.67 51.9775 nan nan 
+2.68 52.0545 nan nan 
+2.69 52.1308 nan nan 
+2.7 52.2063 nan nan 
+2.71 52.2812 nan nan 
+2.72 52.3554 nan nan 
+2.73 52.4289 nan nan 
+2.74 52.5017 nan nan 
+2.75 52.5739 nan nan 
+2.76 52.6453 nan nan 
+2.77 52.7162 nan nan 
+2.78 52.7863 nan nan 
+2.79 52.8558 nan nan 
+2.8 52.9247 nan nan 
+2.81 52.9929 nan nan 
+2.82 53.0605 nan nan 
+2.83 53.1274 nan nan 
+2.84 53.1937 nan nan 
+2.85 53.2594 nan nan 
+2.86 53.3245 nan nan 
+2.87 53.389 nan nan 
+2.88 53.4529 nan nan 
+2.89 53.5162 nan nan 
+2.9 53.5789 nan nan 
+2.91 53.641 nan nan 
+2.92 53.7025 nan nan 
+2.93 53.7634 nan nan 
+2.94 53.8238 nan nan 
+2.95 53.8836 nan nan 
+2.96 53.9428 nan nan 
+2.97 54.0015 nan nan 
+2.98 54.0597 nan nan 
+2.99 54.1172 nan nan 
+3 54.1743 nan nan 
+3.01 54.2308 nan nan 
+3.02 54.2867 nan nan 
+3.03 54.3422 nan nan 
+3.04 54.3971 nan nan 
+3.05 54.4515 nan nan 
+3.06 54.5054 nan nan 
+3.07 54.5588 nan nan 
+3.08 54.6116 nan nan 
+3.09 54.664 nan nan 
+3.1 54.7159 nan nan 
+3.11 54.7672 nan nan 
+3.12 54.8181 nan nan 
+3.13 54.8685 nan nan 
+3.14 54.9185 nan nan 
+3.15 54.9679 nan nan 
+3.16 55.0169 nan nan 
+3.17 55.0654 nan nan 
+3.18 55.1135 nan nan 
+3.19 55.1611 nan nan 
+3.2 55.2082 nan nan 
+3.21 55.2549 nan nan 
+3.22 55.3012 nan nan 
+3.23 55.347 nan nan 
+3.24 55.3924 nan nan 
+3.25 55.4373 nan nan 
+3.26 55.4818 nan nan 
+3.27 55.5259 nan nan 
+3.28 55.5696 nan nan 
+3.29 55.6128 nan nan 
+3.3 55.6556 nan nan 
+3.31 55.6981 nan nan 
+3.32 55.7401 nan nan 
+3.33 55.7817 nan nan 
+3.34 55.8229 nan nan 
+3.35 55.8637 nan nan 
+3.36 55.9042 nan nan 
+3.37 55.9442 nan nan 
+3.38 55.9839 nan nan 
+3.39 56.0231 nan nan 
+3.4 56.062 nan nan 
+3.41 56.1006 nan nan 
+3.42 56.1387 nan nan 
+3.43 56.1765 nan nan 
+3.44 56.2139 nan nan 
+3.45 56.251 nan nan 
+3.46 56.2877 nan nan 
+3.47 56.3241 nan nan 
+3.48 56.3601 nan nan 
+3.49 56.3957 nan nan 
+3.5 56.431 nan nan 
+3.51 56.466 nan nan 
+3.52 56.5006 nan nan 
+3.53 56.5349 nan nan 
+3.54 56.5689 nan nan 
+3.55 56.6025 nan nan 
+3.56 56.6359 nan nan 
+3.57 56.6689 nan nan 
+3.58 56.7015 nan nan 
+3.59 56.7339 nan nan 
+3.6 56.7659 nan nan 
+3.61 56.7977 nan nan 
+3.62 56.8291 nan nan 
+3.63 56.8602 nan nan 
+3.64 56.8911 nan nan 
+3.65 56.9216 nan nan 
+3.66 56.9518 nan nan 
+3.67 56.9818 nan nan 
+3.68 57.0114 nan nan 
+3.69 57.0408 nan nan 
+3.7 57.0699 nan nan 
+3.71 57.0986 nan nan 
+3.72 57.1272 nan nan 
+3.73 57.1554 nan nan 
+3.74 57.1834 nan nan 
+3.75 57.2111 nan nan 
+3.76 57.2385 nan nan 
+3.77 57.2656 nan nan 
+3.78 57.2925 nan nan 
+3.79 57.3192 nan nan 
+3.8 57.3455 nan nan 
+3.81 57.3717 nan nan 
+3.82 57.3975 nan nan 
+3.83 57.4231 nan nan 
+3.84 57.4485 nan nan 
+3.85 57.4736 nan nan 
+3.86 57.4985 nan nan 
+3.87 57.5231 nan nan 
+3.88 57.5475 nan nan 
+3.89 57.5716 nan nan 
+3.9 57.5956 nan nan 
+3.91 57.6192 nan nan 
+3.92 57.6427 nan nan 
+3.93 57.6659 nan nan 
+3.94 57.6889 nan nan 
+3.95 57.7117 nan nan 
+3.96 57.7342 nan nan 
+3.97 57.7566 nan nan 
+3.98 57.7787 nan nan 
+3.99 57.8006 nan nan 
+4 57.8223 nan nan 
+4.01 57.8437 nan nan 
+4.02 57.865 nan nan 
+4.03 57.886 nan nan 
+4.04 57.9069 nan nan 
+4.05 57.9275 nan nan 
+4.06 57.948 nan nan 
+4.07 57.9682 nan nan 
+4.08 57.9883 nan nan 
+4.09 58.0081 nan nan 
+4.1 58.0278 nan nan 
+4.11 58.0472 nan nan 
+4.12 58.0665 nan nan 
+4.13 58.0856 nan nan 
+4.14 58.1045 nan nan 
+4.15 58.1232 nan nan 
+4.16 58.1417 nan nan 
+4.17 58.1601 nan nan 
+4.18 58.1782 nan nan 
+4.19 58.1962 nan nan 
+4.2 58.214 nan nan 
+4.21 58.2317 nan nan 
+4.22 58.2491 nan nan 
+4.23 58.2664 nan nan 
+4.24 58.2835 nan nan 
+4.25 58.3005 nan nan 
+4.26 58.3173 nan nan 
+4.27 58.3339 nan nan 
+4.28 58.3504 nan nan 
+4.29 58.3667 nan nan 
+4.3 58.3828 nan nan 
+4.31 58.3988 nan nan 
+4.32 58.4146 nan nan 
+4.33 58.4303 nan nan 
+4.34 58.4458 nan nan 
+4.35 58.4612 nan nan 
+4.36 58.4764 nan nan 
+4.37 58.4915 nan nan 
+4.38 58.5064 nan nan 
+4.39 58.5211 nan nan 
+4.4 58.5358 nan nan 
+4.41 58.5502 nan nan 
+4.42 58.5646 nan nan 
+4.43 58.5788 nan nan 
+4.44 58.5928 nan nan 
+4.45 58.6068 nan nan 
+4.46 58.6205 nan nan 
+4.47 58.6342 nan nan 
+4.48 58.6477 nan nan 
+4.49 58.6611 nan nan 
+4.5 58.6743 nan nan 
+4.51 58.6874 nan nan 
+4.52 58.7004 nan nan 
+4.53 58.7133 nan nan 
+4.54 58.726 nan nan 
+4.55 58.7386 nan nan 
+4.56 58.7511 nan nan 
+4.57 58.7635 nan nan 
+4.58 58.7757 nan nan 
+4.59 58.7878 nan nan 
+4.6 58.7998 nan nan 
+4.61 58.8117 nan nan 
+4.62 58.8235 nan nan 
+4.63 58.8351 nan nan 
+4.64 58.8467 nan nan 
+4.65 58.8581 nan nan 
+4.66 58.8694 nan nan 
+4.67 58.8806 nan nan 
+4.68 58.8917 nan nan 
+4.69 58.9027 nan nan 
+4.7 58.9135 nan nan 
+4.71 58.9243 nan nan 
+4.72 58.9349 nan nan 
+4.73 58.9455 nan nan 
+4.74 58.9559 nan nan 
+4.75 58.9663 nan nan 
+4.76 58.9765 nan nan 
+4.77 58.9867 nan nan 
+4.78 58.9967 nan nan 
+4.79 59.0067 nan nan 
+4.8 59.0165 nan nan 
+4.81 59.0262 nan nan 
+4.82 59.0359 nan nan 
+4.83 59.0454 nan nan 
+4.84 59.0549 nan nan 
+4.85 59.0643 nan nan 
+4.86 59.0735 nan nan 
+4.87 59.0827 nan nan 
+4.88 59.0918 nan nan 
+4.89 59.1008 nan nan 
+4.9 59.1097 nan nan 
+4.91 59.1186 nan nan 
+4.92 59.1273 nan nan 
+4.93 59.136 nan nan 
+4.94 59.1445 nan nan 
+4.95 59.153 nan nan 
+4.96 59.1614 nan nan 
+4.97 59.1697 nan nan 
+4.98 59.1779 nan nan 
+4.99 59.1861 nan nan 
+5 59.1942 nan nan 
+5.01 59.2022 nan nan 
+5.02 59.2101 nan nan 
+5.03 59.2179 nan nan 
+5.04 59.2257 nan nan 
+5.05 59.2333 nan nan 
+5.06 59.2409 nan nan 
+5.07 59.2485 nan nan 
+5.08 59.2559 nan nan 
+5.09 59.2633 nan nan 
+5.1 59.2706 nan nan 
+5.11 59.2779 nan nan 
+5.12 59.285 nan nan 
+5.13 59.2921 nan nan 
+5.14 59.2991 nan nan 
+5.15 59.3061 nan nan 
+5.16 59.313 nan nan 
+5.17 59.3198 nan nan 
+5.18 59.3265 nan nan 
+5.19 59.3332 nan nan 
+5.2 59.3398 nan nan 
+5.21 59.3464 nan nan 
+5.22 59.3529 nan nan 
+5.23 59.3593 nan nan 
+5.24 59.3657 nan nan 
+5.25 59.3719 nan nan 
+5.26 59.3782 nan nan 
+5.27 59.3844 nan nan 
+5.28 59.3905 nan nan 
+5.29 59.3965 nan nan 
+5.3 59.4025 nan nan 
+5.31 59.4084 nan nan 
+5.32 59.4143 nan nan 
+5.33 59.4201 nan nan 
+5.34 59.4259 nan nan 
+5.35 59.4316 nan nan 
+5.36 59.4372 nan nan 
+5.37 59.4428 nan nan 
+5.38 59.4483 nan nan 
+5.39 59.4538 nan nan 
+5.4 59.4592 nan nan 
+5.41 59.4646 nan nan 
+5.42 59.4699 nan nan 
+5.43 59.4752 nan nan 
+5.44 59.4804 nan nan 
+5.45 59.4856 nan nan 
+5.46 59.4907 nan nan 
+5.47 59.4957 nan nan 
+5.48 59.5007 nan nan 
+5.49 59.5057 nan nan 
+5.5 59.5106 nan nan 
+5.51 59.5154 nan nan 
+5.52 59.5203 nan nan 
+5.53 59.525 nan nan 
+5.54 59.5297 nan nan 
+5.55 59.5344 nan nan 
+5.56 59.539 nan nan 
+5.57 59.5436 nan nan 
+5.58 59.5481 nan nan 
+5.59 59.5526 nan nan 
+5.6 59.5571 nan nan 
+5.61 59.5615 nan nan 
+5.62 59.5658 nan nan 
+5.63 59.5701 nan nan 
+5.64 59.5744 nan nan 
+5.65 59.5786 nan nan 
+5.66 59.5828 nan nan 
+5.67 59.587 nan nan 
+5.68 59.5911 nan nan 
+5.69 59.5951 nan nan 
+5.7 59.5992 nan nan 
+5.71 59.6031 nan nan 
+5.72 59.6071 nan nan 
+5.73 59.611 nan nan 
+5.74 59.6148 nan nan 
+5.75 59.6187 nan nan 
+5.76 59.6225 nan nan 
+5.77 59.6262 nan nan 
+5.78 59.6299 nan nan 
+5.79 59.6336 nan nan 
+5.8 59.6372 nan nan 
+5.81 59.6408 nan nan 
+5.82 59.6444 nan nan 
+5.83 59.6479 nan nan 
+5.84 59.6514 nan nan 
+5.85 59.6549 nan nan 
+5.86 59.6583 nan nan 
+5.87 59.6617 nan nan 
+5.88 59.6651 nan nan 
+5.89 59.6684 nan nan 
+5.9 59.6717 nan nan 
+5.91 59.675 nan nan 
+5.92 59.6782 nan nan 
+5.93 59.6814 nan nan 
+5.94 59.6846 nan nan 
+5.95 59.6877 nan nan 
+5.96 59.6908 nan nan 
+5.97 59.6939 nan nan 
+5.98 59.6969 nan nan 
+5.99 59.6999 nan nan 
+6 59.7029 nan nan 
+6.01 59.7059 nan nan 
+6.02 59.7088 nan nan 
+6.03 59.7117 nan nan 
+6.04 59.7146 nan nan 
+6.05 59.7174 nan nan 
+6.06 59.7202 nan nan 
+6.07 59.723 nan nan 
+6.08 59.7257 nan nan 
+6.09 59.7285 nan nan 
+6.1 59.7312 nan nan 
+6.11 59.7338 nan nan 
+6.12 59.7365 nan nan 
+6.13 59.7391 nan nan 
+6.14 59.7417 nan nan 
+6.15 59.7443 nan nan 
+6.16 59.7468 nan nan 
+6.17 59.7493 nan nan 
+6.18 59.7518 nan nan 
+6.19 59.7543 nan nan 
+6.2 59.7567 nan nan 
+6.21 59.7591 nan nan 
+6.22 59.7615 nan nan 
+6.23 59.7639 nan nan 
+6.24 59.7662 nan nan 
+6.25 59.7686 nan nan 
+6.26 59.7709 nan nan 
+6.27 59.7731 nan nan 
+6.28 59.7754 nan nan 
+6.29 59.7776 nan nan 
+6.3 59.7798 nan nan 
+6.31 59.782 nan nan 
+6.32 59.7842 nan nan 
+6.33 59.7863 nan nan 
+6.34 59.7885 nan nan 
+6.35 59.7906 nan nan 
+6.36 59.7927 nan nan 
+6.37 59.7947 nan nan 
+6.38 59.7968 nan nan 
+6.39 59.7988 nan nan 
+6.4 59.8008 nan nan 
+6.41 59.8028 nan nan 
+6.42 59.8047 nan nan 
+6.43 59.8067 nan nan 
+6.44 59.8086 nan nan 
+6.45 59.8105 nan nan 
+6.46 59.8124 nan nan 
+6.47 59.8142 nan nan 
+6.48 59.8161 nan nan 
+6.49 59.8179 nan nan 
+6.5 59.8197 nan nan 
+6.51 59.8215 nan nan 
+6.52 59.8233 nan nan 
+6.53 59.825 nan nan 
+6.54 59.8268 nan nan 
+6.55 59.8285 nan nan 
+6.56 59.8302 nan nan 
+6.57 59.8319 nan nan 
+6.58 59.8336 nan nan 
+6.59 59.8352 nan nan 
+6.6 59.8369 nan nan 
+6.61 59.8385 nan nan 
+6.62 59.8401 nan nan 
+6.63 59.8417 nan nan 
+6.64 59.8433 nan nan 
+6.65 59.8448 nan nan 
+6.66 59.8464 nan nan 
+6.67 59.8479 nan nan 
+6.68 59.8494 nan nan 
+6.69 59.8509 nan nan 
+6.7 59.8524 nan nan 
+6.71 59.8538 nan nan 
+6.72 59.8553 nan nan 
+6.73 59.8567 nan nan 
+6.74 59.8582 nan nan 
+6.75 59.8596 nan nan 
+6.76 59.861 nan nan 
+6.77 59.8624 nan nan 
+6.78 59.8637 nan nan 
+6.79 59.8651 nan nan 
+6.8 59.8664 nan nan 
+6.81 59.8677 nan nan 
+6.82 59.8691 nan nan 
+6.83 59.8704 nan nan 
+6.84 59.8717 nan nan 
+6.85 59.8729 nan nan 
+6.86 59.8742 nan nan 
+6.87 59.8754 nan nan 
+6.88 59.8767 nan nan 
+6.89 59.8779 nan nan 
+6.9 59.8791 nan nan 
+6.91 59.8803 nan nan 
+6.92 59.8815 nan nan 
+6.93 59.8827 nan nan 
+6.94 59.8839 nan nan 
+6.95 59.885 nan nan 
+6.96 59.8862 nan nan 
+6.97 59.8873 nan nan 
+6.98 59.8884 nan nan 
+6.99 59.8895 nan nan 
+7 59.8906 nan nan 
+7.01 59.8917 nan nan 
+7.02 59.8928 nan nan 
+7.03 59.8939 nan nan 
+7.04 59.8949 nan nan 
+7.05 59.896 nan nan 
+7.06 59.897 nan nan 
+7.07 59.898 nan nan 
+7.08 59.899 nan nan 
+7.09 59.9 nan nan 
+7.1 59.901 nan nan 
+7.11 59.902 nan nan 
+7.12 59.903 nan nan 
+7.13 59.904 nan nan 
+7.14 59.9049 nan nan 
+7.15 59.9059 nan nan 
+7.16 59.9068 nan nan 
+7.17 59.9077 nan nan 
+7.18 59.9086 nan nan 
+7.19 59.9095 nan nan 
+7.2 59.9104 nan nan 
+7.21 59.9113 nan nan 
+7.22 59.9122 nan nan 
+7.23 59.9131 nan nan 
+7.24 59.914 nan nan 
+7.25 59.9148 nan nan 
+7.26 59.9157 nan nan 
+7.27 59.9165 nan nan 
+7.28 59.9173 nan nan 
+7.29 59.9181 nan nan 
+7.3 59.919 nan nan 
+7.31 59.9198 nan nan 
+7.32 59.9206 nan nan 
+7.33 59.9214 nan nan 
+7.34 59.9221 nan nan 
+7.35 59.9229 nan nan 
+7.36 59.9237 nan nan 
+7.37 59.9244 nan nan 
+7.38 59.9252 nan nan 
+7.39 59.9259 nan nan 
+7.4 59.9267 nan nan 
+7.41 59.9274 nan nan 
+7.42 59.9281 nan nan 
+7.43 59.9288 nan nan 
+7.44 59.9295 nan nan 
+7.45 59.9302 nan nan 
+7.46 59.9309 nan nan 
+7.47 59.9316 nan nan 
+7.48 59.9323 nan nan 
+7.49 59.933 nan nan 
+7.5 59.9336 nan nan 
+7.51 59.9343 nan nan 
+7.52 59.935 nan nan 
+7.53 59.9356 nan nan 
+7.54 59.9362 nan nan 
+7.55 59.9369 nan nan 
+7.56 59.9375 nan nan 
+7.57 59.9381 nan nan 
+7.58 59.9387 nan nan 
+7.59 59.9394 nan nan 
+7.6 59.94 nan nan 
+7.61 59.9406 nan nan 
+7.62 59.9411 nan nan 
+7.63 59.9417 nan nan 
+7.64 59.9423 nan nan 
+7.65 59.9429 nan nan 
+7.66 59.9435 nan nan 
+7.67 59.944 nan nan 
+7.68 59.9446 nan nan 
+7.69 59.9451 nan nan 
+7.7 59.9457 nan nan 
+7.71 59.9462 nan nan 
+7.72 59.9467 nan nan 
+7.73 59.9473 nan nan 
+7.74 59.9478 nan nan 
+7.75 59.9483 nan nan 
+7.76 59.9488 nan nan 
+7.77 59.9493 nan nan 
+7.78 59.9498 nan nan 
+7.79 59.9503 nan nan 
+7.8 59.9508 nan nan 
+7.81 59.9513 nan nan 
+7.82 59.9518 nan nan 
+7.83 59.9523 nan nan 
+7.84 59.9528 nan nan 
+7.85 59.9532 nan nan 
+7.86 59.9537 nan nan 
+7.87 59.9542 nan nan 
+7.88 59.9546 nan nan 
+7.89 59.9551 nan nan 
+7.9 59.9555 nan nan 
+7.91 59.956 nan nan 
+7.92 59.9564 nan nan 
+7.93 59.9568 nan nan 
+7.94 59.9573 nan nan 
+7.95 59.9577 nan nan 
+7.96 59.9581 nan nan 
+7.97 59.9585 nan nan 
+7.98 59.9589 nan nan 
+7.99 59.9593 nan nan 

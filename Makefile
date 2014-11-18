@@ -47,6 +47,7 @@ clean:
 dist: clean
 	rm -f $(wildcard *.f90)
 	rm -f $(wildcard *.mod)
+	rm -f $(wildcard *.tgz)
 	rm -f pcubature.c
 
 fortran_code:
@@ -95,7 +96,7 @@ uninstall:
 
 push:
 	git add *
-	git commit -m "commit"
+	git commit
 	git push -u origin master
 
 

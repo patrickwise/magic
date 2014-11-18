@@ -20,6 +20,8 @@ enum run_mode
 };
 
 #define DERIV_MAX 2 //second order derivation is the most that we need.
+#include <nlopt.h> //for nlopt_algorithm type
+
 
 /*Basis set implementation.*/
 struct params_basis_set
@@ -42,6 +44,7 @@ struct params_basis_set
     double xmin;//box boundries
     double xmax;
     double epsrel;
+    nlopt_algorithm algorithm;
 
     af_init_t *init;
     af_free_t *destroy;
@@ -99,11 +102,14 @@ struct params_variational_workspace
 #define NO_ERROR 0
 #define ZERO_OVERLAP 1
 
+char * report_algorithm(struct params_basis_set *pbs);
 int variate_pvmm(pvmm *p, struct params_variational_workspace *pvw);
+int translate_algorithm(char *name, struct params_basis_set *pbs);
 int params_basis_set_init(struct params_basis_set *pbs, char *file);
 double var_get(pvmm *p, size_t j);
 double real_deriv_second(af_t *f, const double *x, pvmm *p);
 double master(unsigned n, const double *x, double *grad, pvmm *p);
+double safe_doubles[100]; ;
 void print_data(struct params_variational_master *pvm);
 void print_variational_params(pvmm *p);
 void print_summary(pvmm *p);
@@ -124,4 +130,5 @@ void method_experimental(struct params_variational_master *pvm);
 void params_basis_set_free(struct params_basis_set *pbs);
 void method_calculation(struct params_variational_master *pvm);
 void method_rugid(void);
-size_t var_getsize(pvmm *p);
+void variational_basis_set(pvmm *p);
+size_t var_getsize(pvmm *p)  /*return the number of variables this excitation state requires in the pvm->mask array**/;

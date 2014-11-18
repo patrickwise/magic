@@ -19,7 +19,8 @@
 //This must be changed!
 #define ZEROTOL 1e-7 //TODO: definitely change this
 #define MIN_BOUND ZEROTOL
-#define MIN_ALGORITHM NLOPT_LN_SBPLX //absolutely make this variable
+//#define MIN_ALGORITHM NLOPT_LN_SBPLX //absolutely make this variable
+#define MIN_ALGORITHM NLOPT_LN_COBYLA
 //TODO: arrays of timestamps and iterations to analyse.
 
 /*Constants that should have no baring on behavior outside of this file.*/
@@ -87,15 +88,20 @@ print_variational_params(pvmm *p)
     return;
 }
 
+#define QUOTE(A) #A
+#define STR(A) QUOTE(A)
+
 void
 print_summary(pvmm *p)
 {
     /*Give an update on the state of the calculation.*/
     printf("////////Summary///////////////////////////\n");
-    printf("f(%.2zu) overlap\t=\t%g\n", p->n, p->pvm->S_val[p->n]);
-    printf("Iterations\t=\t%zu\n", p->pvm->progress);
-    printf("Energy eigenvalue\t=\t%g\n",  p->pvm->H_val[p->n]);
+    printf("f(%.2zu) overlap\t=\t%g\n"      , p->n, p->pvm->S_val[p->n]);
+    printf("Iterations\t=\t%zu\n"           , p->pvm->progress);
+    printf("Energy eigenvalue\t=\t%g\n"     , p->pvm->H_val[p->n]);
     printf("Normalization Constant\t=\t%g\n", 1.0/sqrt(fabs(p->pvm->R_val[p->n][p->n])));
+    printf("Number of variables\t=\t%zu\n"  , p->pvm->pbs->reserved_vars);
+    printf("Minimization algorithm\t=\t%s\n", report_algorithm(p->pvm->pbs));
     printf("//////////////////////////////////////////\n");
 
     return;
@@ -384,7 +390,6 @@ wave(const double *x, pvmm *p, double *ret)
     size_t i;
     double poly, expr = 0.0;
 
-//    printf("Wave\n");
     /*shift axis if necessary*/
     switch(p->pvm->pbs->scaling_code)
     {
@@ -421,7 +426,8 @@ wave(const double *x, pvmm *p, double *ret)
     expr = exp(expr);
 
     *ret = poly * expr;
-
+    printf("f(%g)= %g * %g = %g\n", y, poly, expr, *ret);
+    return;
 
 //jk drop back to the old system
 /*Modified basis set from Koch, Schuck and Wacker*/
@@ -436,7 +442,7 @@ wave(const double *x, pvmm *p, double *ret)
     for(i=1;i<p->n/2;i++)
         poly += pow(-1.0, i+1.0) * var_get(p, i+3) * pow(y, (2.0 * i + (p->n% 2)));
     *ret = poly * (exp(- var_get(p, 2) * pow(y, 2.0) - var_get(p, 3) * pow(y, 4.0)));
-//    printf("%g\n", *ret);
+    printf("f(%g)=%g\n", y, *ret);
     return;
 
 
@@ -557,9 +563,6 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
     double ret;
     size_t i;
 
-    printf("%g %g\n", var_get(p, 0), *x);
-
-    printf("master!\n");
     p->pvm->progress++;//keep count of how many iterations we make; TODO: make an array to keep check of each state!
     gs_learn(p);//orthonormalize the new variables.
     braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &ret);
@@ -574,7 +577,7 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
         p->error = NO_ERROR;
     }
 //    print_variational_params(p);
-
+    printf("ret = %g\n");
     return ret;
 }
 
@@ -587,14 +590,14 @@ params_variational_workspace_init(struct params_variational_workspace *pvw, stru
     size_t i;
     double max;
     pvw->opt = nlopt_create(MIN_ALGORITHM, pvm->pbs->reserved_vars);//TODO: make this interchangable
-    nlopt_set_min_objective(pvw->opt, (nlopt_func)&master, pvm->pvmm);
+//    nlopt_set_min_objective(pvw->opt, (nlopt_func)&master, pvm->pvmm);
     nlopt_set_ftol_rel(pvw->opt, pvm->pbs->epsrel);
-    pvw->lbounds = malloc(sizeof(*pvw->lbounds) * var_getsize(&pvm->pvmm[pvm->pbs->maxn]));
-    max = var_getsize(&pvm->pvmm[pvm->pbs->maxn]);
-    for(i=0;i<max;i++)
-        pvw->lbounds[i] = MIN_BOUND;
-    pvw->lbounds[0] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
-    nlopt_set_lower_bounds(pvw->opt, pvw->lbounds);
+//    pvw->lbounds = malloc(sizeof(*pvw->lbounds) * var_getsize(&pvm->pvmm[pvm->pbs->maxn]));
+//    max = var_getsize(&pvm->pvmm[pvm->pbs->maxn]);
+//    for(i=0;i<max;i++)
+//        pvw->lbounds[i] = MIN_BOUND;
+//    pvw->lbounds[0] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
+//    nlopt_set_lower_bounds(pvw->opt, pvw->lbounds);
 
     return;
 }
@@ -681,10 +684,67 @@ Exit Status:\n\
     1\t\t\tprogram was aborted early because of a value handed to it.\n\
     2\t\t\tan internal error occured.\n"
 
+
+//TODO: move this to header
+struct algorithm_dict
+{
+    char *name;
+    nlopt_algorithm algorithm;
+};
+
+struct algorithm_dict algorithm_dict[] =
+{
+    { "NLOPT_GN_DIRECT_L" , NLOPT_GN_DIRECT_L },
+    { "NLOPT_GN_ORIG_DIRECT_L", NLOPT_GN_DIRECT_L },
+    { "NLOPT_LN_NELDERMEAD", NLOPT_LN_NELDERMEAD },
+    { "NLOPT_LN_SBPLX", NLOPT_LN_SBPLX },
+    { "NLOPT_LN_PRAXIS", NLOPT_LN_PRAXIS },
+    { "NLOPT_GN_CRS2_LM", NLOPT_GN_CRS2_LM },
+    { "NLOPT_GN_ISRES", NLOPT_GN_ISRES },
+    { "NLOPT_LN_COBYLA", NLOPT_LN_COBYLA },
+    { "NLOPT_LN_NEWUOA", NLOPT_LN_NEWUOA },
+    { "NLOPT_LN_BOBYQA", NLOPT_LN_BOBYQA },
+};
+
+int
+translate_algorithm(char *name, struct params_basis_set *pbs)
+{//Take the string version of the algorithm and
+ //set the struct params_basis_set algorithm field
+
+    size_t i;
+    for(i=0; algorithm_dict[i].algorithm ; i++)
+    {
+        if(!strcmp(algorithm_dict[i].name, name))
+        {
+            pbs->algorithm = algorithm_dict[i].algorithm;
+            return 0;
+        }
+    }
+
+    fprintf(stderr, "Minimization algorithm %s not found.\n", name);
+    return 1;
+}
+
+char *
+report_algorithm(struct params_basis_set *pbs)
+{ /*Return a pointer to the heap algoithm_dict string corresponding to the algorithm.*/
+    size_t i;
+    for(i=0; algorithm_dict[i].algorithm ; i++)
+    {
+        if(algorithm_dict[i].algorithm == pbs->algorithm)
+        {
+            return algorithm_dict[i].name;
+        }
+    }
+
+    return NULL;
+}
+
 int
 params_basis_set_init(struct params_basis_set *pbs, char *file)
 {
     FILE *fp = fopen(file, "r");
+    char buf[256]; //For translating nlopt_algorithm
     if(!fp)
         return 1;
 
@@ -693,6 +753,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
             name\n
         excitation states:
             maxn\n
+        minimization algotihm:
+            algorithm\n
         morse parameters:
             D b\n
         basis set parameters:
@@ -705,6 +767,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
     if(1 != fscanf(fp,"%s\n", pbs->name))
         goto error;
     if(1 != fscanf(fp,"%zu\n", &pbs->maxn))
+        goto error;
+    if(1 != fscanf(fp, "%s\n", buf))
         goto error;
     if(2 != fscanf(fp,"%lf %lf\n", &pbs->D, &pbs->b))
         goto error;
@@ -719,6 +783,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
 
     fclose(fp);
 
+
+    translate_algorithm(buf, pbs);
     //count the vars
     pbs->reserved_vars = pbs->n_pol + pbs->n_exp + 2;
 
@@ -831,6 +897,35 @@ method_rugid(void)
 
 //}}}
 
+double safe_doubles[100];
+
+
+void
+variational_basis_set(pvmm *p)
+{
+    size_t i;
+    p->pvm->progress = 0;
+    nlopt_opt opt = nlopt_create(MIN_ALGORITHM, (unsigned int)var_getsize(p));
+    nlopt_set_min_objective(opt, master, p);
+    nlopt_set_ftol_rel(opt, p->pvm->pbs->epsrel);
+    double *lbounds = malloc(sizeof(*lbounds)*var_getsize(p));
+    for(i=0;i<var_getsize(p);i++)
+        lbounds[i] = MIN_BOUND;
+    lbounds[0] = -HUGE_VAL;
+//    nlopt_set_lower_bounds(opt, lbounds);
+    fprintf(stderr, "nlopt returned %d.\n", nlopt_optimize(opt, p->pvm->masks[p->n], &p->pvm->H_val[p->n]));
+    /*Sync variables!*/
+    /*TODO: I should not have to do this!*/
+    for(i = 0; i<var_getsize(p);i++)
+        var_push(p, i, safe_doubles[i]);
+
+
+  //  print_summary(&global_pvm.pvmm[0]);
+    nlopt_destroy(opt);
+    free(lbounds);
+    return;
+}
+
 int
 main(int argc, char **argv)
 {
@@ -850,7 +945,7 @@ main(int argc, char **argv)
 
 
 
-
+    print_summary(&global_pvm.pvmm[0]);
     switch(global_pbs.run_mode)
     {
         case RM_CALCULATION:
@@ -859,7 +954,8 @@ main(int argc, char **argv)
         case RM_RUN:
             break;
         case RM_EXPERIMENTAL:
-            method_experimental(&global_pvm);
+            variational_basis_set(global_pvm.pvmm);
+//            method_experimental(&global_pvm);
 //            method_rugid();
             break;
     }
