@@ -900,6 +900,44 @@ method_rugid(void)
 double safe_doubles[100];
 
 
+#include<stdio.h>
+#include<signal.h>
+#include<unistd.h>
+
+void sig_handler(int signo)
+{
+    if (signo == SIGUSR1)
+        printf("received SIGUSR1\n");
+    else if (signo == SIGKILL)
+        printf("received SIGKILL\n");
+    else if (signo == SIGSTOP)
+        printf("received SIGSTOP\n");
+
+
+    fprintf(stderr, "Caught signal and aborting run.\nA second signal will abot unconditionally.\n");
+    /*save data and exit*/
+    print_data(&global_pvm);
+    print_params(&global_pvm);
+
+    return;
+}
+
+void
+sig_init(void)
+{
+    if (signal(SIGUSR1, sig_handler) == SIG_ERR)
+        fprintf(stderr, "\ncan't catch SIGUSR1\n");
+    if (signal(SIGKILL, sig_handler) == SIG_ERR)
+        fprintf(stderr, "\ncan't catch SIGKILL\n");
+    if (signal(SIGSTOP, sig_handler) == SIG_ERR)
+        fprintf(stderr, "\ncan't catch SIGSTOP\n");
+    if (signal(SIGINT, sig_handler) == SIG_ERR)
+        fprintf(stderr, "Cannot catch 'SIGINT.'\n");
+    // A long long wait so that we can easily issue a signal to this process
+
+    return;
+}
+
 void
 variational_basis_set(pvmm *p)
 {
@@ -946,6 +984,7 @@ main(int argc, char **argv)
 
 
     print_summary(&global_pvm.pvmm[0]);
+    sig_init(); //gracefully hadle signals
     switch(global_pbs.run_mode)
     {
         case RM_CALCULATION:
