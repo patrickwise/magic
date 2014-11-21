@@ -40,6 +40,8 @@ options:
 
 setup: cubature finitediff
 	@echo setting up build enviroment
+#build .mod files
+	@gfortran ${FSRC} 2> /dev/null || return 0
 
 clean:
 	rm -f ${OBJ}
@@ -49,6 +51,8 @@ dist: clean
 	rm -f $(wildcard *.mod)
 	rm -f $(wildcard *.tgz)
 	rm -f pcubature.c
+	rm -rf finitediff cubature-1.0
+	rm -rf $(wildcard dynamic/*)
 
 fortran_code:
 	$(F90) $(FSRC) $(FFLAGS)
