@@ -44,15 +44,15 @@ setup: cubature finitediff
 	@gfortran ${FSRC} 2> /dev/null
 
 clean:
-	rm -f ${OBJ}
+	git rm -f ${OBJ}
 
 dist: clean
-	rm -f $(wildcard *.f90)
-	rm -f $(wildcard *.mod)
-	rm -f $(wildcard *.tgz)
-	rm -f pcubature.c
-	rm -rf finitediff cubature-1.0
-	rm -rf $(wildcard dynamic/*)
+	git rm -f $(wildcard *.f90)
+	git rm -f $(wildcard *.mod)
+	git rm -f $(wildcard *.tgz)
+	git rm -f pcubature.c
+	git rm -rf finitediff cubature-1.0
+	git rm -rf $(wildcard dynamic/*)
 
 fortran_code:
 	@$(F90) $(FSRC) $(FFLAGS) || true #|| echo "Did you run 'make setup'?" && false
