@@ -44,6 +44,7 @@ struct params_basis_set
     double xmin;//box boundries
     double xmax;
     double epsrel;
+    double zerotol;
     nlopt_algorithm algorithm;
 
     af_init_t *init;
@@ -64,7 +65,16 @@ struct params_basis_set
 //    char z:1;
 //} options;
 
+
+#define __USE_POSIX199309 7
+#include <time.h>
 /*Main data block.*/
+union time_data
+{
+    time_t t;
+    double d;
+};
+
 struct params_variational_master
 {
     struct params_basis_set *pbs;
@@ -81,6 +91,10 @@ struct params_variational_master
     size_t progress; //Count iterations within a calculation.
     struct params_variational_master_mask *pvmm;
 
+    /*diagnostic arrays*/
+    size_t *iter;//count the iterations of each eigenstate calculation
+    union time_data *time;//count s of each eigenstate calculation
+
     /*function objects*/
     af_leaf ***H; //Function to calculate energy expectant. <f_i|H|f_j>
     af_leaf ***S; //Function to calculate overlap. <f_i|f_j>
@@ -95,6 +109,7 @@ typedef struct params_variational_master_mask
     size_t n;
     char error; //Catching special conditions.
     struct params_variational_master *pvm;
+
     /*shape of the mask*/
     size_t n_vars;
     size_t n_pol;

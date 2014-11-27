@@ -41,7 +41,7 @@ options:
 setup: cubature finitediff
 	@echo setting up build enviroment
 #build .mod files
-	@gfortran ${FSRC} 2> /dev/null || return 0
+	@gfortran ${FSRC} 2> /dev/null
 
 clean:
 	rm -f ${OBJ}
@@ -55,7 +55,7 @@ dist: clean
 	rm -rf $(wildcard dynamic/*)
 
 fortran_code:
-	$(F90) $(FSRC) $(FFLAGS)
+	@$(F90) $(FSRC) $(FFLAGS) || true #|| echo "Did you run 'make setup'?" && false
 
 cubature:
 	@echo ">>> Downloading cubature library."

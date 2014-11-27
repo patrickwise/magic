@@ -16,9 +16,6 @@
 /*Optimized weights for operations.*/
 //#include "weights.h"
 
-//This must be changed!
-#define ZEROTOL 1e-5 //TODO: definitely change this
-#define MIN_BOUND ZEROTOL
 //TODO: arrays of timestamps and iterations to analyse.
 
 /*Constants that should have no baring on behavior outside of this file.*/
@@ -32,6 +29,11 @@
 #define SC_ONLY_GEO '3'
 
 #define INITIAL_VAR 1.00 //initial value of variables.
+#define STRSIZ 256
+
+/*For internal time*/
+#include <time.h>
+#define CLOCKTYPE CLOCK_MONOTONIC
 
 double safe_doubles[100];
 
@@ -88,9 +90,9 @@ print_variational_params(pvmm *p)
 
     braket(p->pvm->pbs, p->pvm->S[p->n][p->n], &p->pvm->S_val[p->n]);
     braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &p->pvm->H_val[p->n]);
-    printf("f(%.2zu)[%.4zu]=%.4E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
+    printf("f(%.2zu)[%.4zu]=%#.4E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
     for(j=0;j<var_nvars(p);j++)
-        printf("%.4G\t", var_get_blind(p,j));
+        printf("%#.4G\t", var_get_blind(p,j));
     printf("\n");
 
     return;
@@ -111,11 +113,12 @@ print_summary(pvmm *p)
     printf("Number of variables\t=\t%zu\n"  , var_nvars(p));
     printf("Minimization algorithm\t=\t%s\n", report_algorithm(p->pvm->pbs));
     printf("Scaling code\t\t=\t%c\n"        , p->pvm->pbs->scaling_code);
+    printf("Last iter count\t\t=\t%zu\n"    , p->pvm->iter[p->n]);
+    printf("Time of calculation\t=\t%g s\n" , p->pvm->time[p->n].d);
     printf("//////////////////////////////////////////\n");
 
     return;
 }
-
 
 void
 print_params(struct params_variational_master *pvm)
@@ -173,6 +176,40 @@ read_params(struct params_variational_master *pvm)
         gs_learn(&pvm->pvmm[i]);
 
 }
+
+void
+snapshot_init(pvmm *p)
+{/*Prepare the pvm->iter and pvm->time variables for use*/
+    if(p->pvm->iter[p->n])
+    {
+        fprintf(stderr, "pvm was not cleared before calculation.\n");
+        return;
+    }
+    p->pvm->iter[p->n] = p->pvm->progress;
+
+
+    struct timespec ts;
+    clock_gettime(CLOCKTYPE, &ts);
+
+    p->pvm->time[p->n].t = ts.tv_sec;
+
+
+    return;
+}
+
+void
+snapshot_take(pvmm *p)
+{/*Use the current value as the initial values.*/
+
+    p->pvm->iter[p->n] = p->pvm->progress - p->pvm->iter[p->n];
+
+    struct timespec ts;
+    clock_gettime(CLOCKTYPE, &ts);
+    p->pvm->time[p->n].d = difftime(ts.tv_sec, p->pvm->time[p->n].t);
+
+    return;
+}
+
 
 //}}}
 //{{{ anonymous functions
@@ -338,6 +375,11 @@ params_variational_master_init(struct params_basis_set *pbs, struct params_varia
     pvm->H         = malloc(sizeof(*pvm->H)*(1+pbs->maxn));
     pvm->S         = malloc(sizeof(*pvm->S)*(1+pbs->maxn));
 
+    /*diagnostic*/
+    pvm->iter      = calloc(sizeof(*pvm->iter), (1+pbs->maxn));
+    pvm->time      = calloc(sizeof(*pvm->time), (1+pbs->maxn));
+
+
     /*initiate the pvm masks and create space for wave function parameters*/
     for(i=0;i<=pbs->maxn;i++)
     {
@@ -353,11 +395,11 @@ params_variational_master_init(struct params_basis_set *pbs, struct params_varia
         pvm->masks[i]      = malloc(sizeof(**pvm->masks) * var_nvars(&pvm->pvmm[i]));
         /*Let's initialize these so that we have some shape to our
          * functions to begin with. */
-        for(j=2;j<=var_nvars(&pvm->pvmm[i]);j++)
+        for(j=0;j<=var_nvars(&pvm->pvmm[i]);j++)
             pvm->masks[i][j] = INITIAL_VAR;
         /*The default skews should have reasonable values.*/
-        pvm->masks[i][TRANSLATION_SHIFT] = 0.0;
-        pvm->masks[i][GEOMETRIC_SHIFT]   = 1.0;
+//        pvm->masks[i][TRANSLATION_SHIFT] = 0.0;
+//        pvm->masks[i][GEOMETRIC_SHIFT]   = 1.0;
     }
 
     /*initiate function pointers*/
@@ -406,8 +448,8 @@ params_variational_master_free(struct params_variational_master *pvm)
     free(pvm->S_val);
     free(pvm->H_val);
     free(pvm->pvmm );
-
-//    free(pvm);
+    free(pvm->iter );
+    free(pvm->time );
 
     return;
 }
@@ -433,65 +475,9 @@ real_deriv_second(af_t *f, const double *x, pvmm *p)
 }
 
 
-//  void
-//  wave(const double *x, pvmm *p, double *ret)
-//  { /*The basis set implementation.*/
-//      /*Based of the basis sets shown in Koch, Schuck and Wacker*/
-//      double y = *x;
-//      size_t i;
-//      double poly, expr = 0.0;
-//
-//      /*shift axis if necessary*/
-//      switch(p->pvm->pbs->scaling_code)
-//      {
-//          case SC_NONE:
-//              break;
-//          case SC_BOTH:
-//              y -= var_get(p, TRANSLATION_SHIFT);
-//              y *= var_get(p, GEOMETRIC_SHIFT);
-//              break;
-//          case SC_ONLY_TRANS:
-//              y -= var_get(p, TRANSLATION_SHIFT);
-//              break;
-//          case SC_ONLY_GEO:
-//              y *= var_get(p, GEOMETRIC_SHIFT);
-//              break;
-//          default:
-//              fprintf(stderr, "The scaling code is invalid. Aborting.\n");
-//              exit(1);
-//      }
-//
-//      /*Set polynomial first term*/
-//      if(!(p->n%2))
-//          poly = 1.0;
-//      else
-//          poly = y;
-//
-//
-//      /*calculate polynomial term*/
-//      for(i=1;i<=p->pvm->pbs->n_pol;i++)
-//      {
-//          double A = pow(-1.0, i+1.0);
-//          double k = var_get(p, i+1);
-//          double po = pow(y, 2.0 * i + (p->n%2));
-//
-//          poly += pow(-1.0, i+1.0) * var_get(p, i+1) * pow(y, 2.0 * i + (p->n%2));
-//      }
-//      /*calculate exponential term*/
-//      for(i=1;i<=p->pvm->pbs->n_exp;i++)
-//      {
-//          expr -= var_get(p, i+1+p->pvm->pbs->n_pol) * pow(y, 2.0 * i);
-//  //        printf("var_get =%g\n", var_get(p, i+1+p->pvm->pbs->n_pol));
-//      }
-//
-//      *ret = poly * exp(expr);
-//
-//      return;
-//  }
-
 void
 wave(const double *x, pvmm *p, double *ret)
-{
+{   /*Based off of the familiy of wavefunctions put forth by Koch, Schuck and Wacker*/
     double y, poly, expr = 0.0;
     size_t i;
 
@@ -524,11 +510,23 @@ wave(const double *x, pvmm *p, double *ret)
     for(i=0; i<p->n_pol; i++) //TODO: clean this up
         poly += pow(-1.0, i+2.0) * var_get(p, POL, i) * pow(y, (2.0 * (i+1.0)+(p->n%2)));
     for(i=0; i<p->n_exp; i++)
+    {
         expr -= var_get(p, EXP, i) * pow(y, (i+1.0)*2.0);
-
+//        printf("EXP_var = %g\n", var_get(p, EXP, i));
+//        printf("k = %g\n", pow(y, (i+1.0)*2.0));
+    }
 
     *ret = poly * exp(expr);
-    /**/
+
+//    for(i=0;i<var_nvars(p);i++)
+//        printf("%.4G\t", var_get_blind(p,i));
+//    printf("\n");
+//
+//    printf("x=%g;y=%g\n", *x, y);
+//    printf("poly = %g\n", poly);
+//    printf("exp = %g\n", expr);
+//    printf("wave is returning %g\n", *ret);
+//    exit(5);
 
     return;
 }
@@ -659,10 +657,6 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
     }
     print_variational_params(p);
 
-
-    if(p->pvm->progress==98)
-        print_summary(p);
-
     return ret;
 }
 
@@ -672,15 +666,18 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
 static void
 params_variational_workspace_init(struct params_variational_workspace *pvw, pvmm *p)
 {
+    /*Set the variables to variate*/
     pvw->opt = nlopt_create(p->pvm->pbs->algorithm, var_nvars(p));
+    /**/
     nlopt_set_min_objective(pvw->opt, (nlopt_func)&master, p);
     nlopt_set_ftol_rel(pvw->opt, p->pvm->pbs->epsrel);
     pvw->lbounds = malloc(sizeof(*pvw->lbounds) * var_nvars(p));
 
     size_t i;
     for(i=0;i<var_nvars(p);i++)
-        pvw->lbounds[i] = MIN_BOUND;
-    pvw->lbounds[0] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
+        pvw->lbounds[i] = p->pvm->pbs->zerotol;
+//    pvw->lbounds[GEOMETRIC_SHIFT] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
+//    pvw->lbounds[1] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
     nlopt_set_lower_bounds(pvw->opt, pvw->lbounds);
 
     pvw->p = p;
@@ -699,8 +696,8 @@ params_variational_workspace_free(struct params_variational_workspace *pvw)
 
 int
 variate_pvmm(struct params_variational_workspace *pvw)
-{ /*Minimize a single energy level*/
-    pvw->p->pvm->progress++;
+{   /*Minimize a single energy level using nlopt.*/
+    snapshot_init(pvw->p); //make a timestamp of time and iterations
 
     nlopt_optimize(pvw->opt, pvw->p->pvm->masks[pvw->p->n], &pvw->p->pvm->H_val[pvw->p->n]);
     printf("Convergence met for p->n==%zu.\n", pvw->p->n);
@@ -709,6 +706,7 @@ variate_pvmm(struct params_variational_workspace *pvw)
     for(i = 0; i<var_nvars(pvw->p);i++)
         var_push_blind(pvw->p, i, safe_doubles[i]);
 
+    snapshot_take(pvw->p); //read the timestamp and calculate elapsed time
 
     return 0;
 }
@@ -823,7 +821,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
         goto error;
     if(2 != fscanf(fp, "%zu %lf\n", &pbs->deriv_accuracy, &pbs->deriv_step))
         goto error;
-    if(3 != fscanf(fp, "%lf %lf %lf\n", &pbs->xmin, &pbs->xmax, &pbs->epsrel))
+    if(4 != fscanf(fp, "%lf %lf %lf %lf\n",
+        &pbs->xmin, &pbs->xmax, &pbs->epsrel, &pbs->zerotol))
         goto error;
     if(4 != fscanf(fp, "%zu %zu %zu %c", &pbs->var_growth, &pbs->var_npol_base,
             &pbs->var_nexp_base, &pbs->scaling_code))
@@ -857,6 +856,24 @@ error:
 }
 
 void
+params_basis_set_init_weights(struct params_basis_set *pbs)
+{
+    /*setup weights*/
+    /*the abscissa*/
+    size_t i;
+    double *x = malloc(sizeof(*x) * pbs->deriv_accuracy);
+    for(i = 0; i < pbs->deriv_accuracy; i++)
+        x[i] = -(pbs->deriv_accuracy*pbs->deriv_step)/2 + i * pbs->deriv_step + pbs->deriv_step/2.0;
+    /*the actual weights*/
+    pbs->deriv_weights = malloc(sizeof(*pbs->deriv_weights)*pbs->deriv_accuracy*(DERIV_MAX+1));
+    fornberg_populate_weights(0.0, x, pbs->deriv_accuracy - 1, DERIV_MAX, pbs->deriv_weights);
+    free(x);
+
+    return;
+}
+
+
+void
 params_basis_set_free(struct params_basis_set *pbs)
 {
     free(pbs->deriv_weights);
@@ -867,7 +884,7 @@ params_basis_set_free(struct params_basis_set *pbs)
 static inline int
 input_parser(int argc, char **argv, struct params_basis_set *pbs)
 {
-    if(2 >= argc)
+    if(2 >= argc||(1 >= argc && 'r' == argv[1][0]))
     {
         fprintf(stderr, USAGE("%s"), argv[0]);
         return 1;
@@ -889,8 +906,9 @@ input_parser(int argc, char **argv, struct params_basis_set *pbs)
             return 1;
     }
 
-    if(pbs->init(pbs, argv[2]))
-        return 1;
+    if('r' != argv[1][0])
+        if(pbs->init(pbs, argv[2]))
+            return 1;
 
     return 0;
 }
@@ -900,7 +918,7 @@ method_calculation(struct params_variational_master *pvm)
 {
     struct params_variational_workspace pvw;
 
-    size_t i, j;
+    size_t i;
     for(i=0; i<=pvm->pbs->maxn; i++)
     {
         params_variational_workspace_init(&pvw, &pvm->pvmm[i]);
@@ -916,14 +934,72 @@ method_calculation(struct params_variational_master *pvm)
     return;
 }
 
+/*Ruggedness testing.*/
+/*It'll be done like an onion, where each type will vay everything
+ * under it.*/
+
+
+
+
+#define rugged_write_defaults(pvm) \
+    pvm->pbs->maxn            = 4; \
+    pvm->pbs->scaling_code    = '1'; \
+    pvm->pbs->D               = 60.0; \
+    pvm->pbs->b               = 1.00; \
+    pvm->pbs->deriv_accuracy  = 24; \
+    pvm->pbs->deriv_step      = 1e-5; \
+    pvm->pbs->deriv_weights   = NULL; \
+    pvm->pbs->xmin            = -2.0; \
+    pvm->pbs->xmax            = 6.0; \
+    pvm->pbs->epsrel          = 1e-4; \
+    pvm->pbs->algorithm       = NLOPT_LN_PRAXIS; \
+    pvm->pbs->var_growth      = 1; \
+    pvm->pbs->var_npol_base   = 2; \
+    pvm->pbs->var_nexp_base   = 2
+
+
 void
-method_rugid(void)
+method_rugged(struct params_variational_master *pvm)
 {
-    /*Defaults*/
-//    double D, step_D;
-//    double b, step_b;
-//    double a;
-    /**/
+    size_t i;
+    char *default_base_name = malloc(STRSIZ);
+
+    sprintf(default_base_name, "rugged");
+
+
+    pvm->destroy(pvm);
+    printf("BEGIN\n");
+    /*vary min_algorithm*/
+    for(i=1;i<10;i++)
+    {
+        pvm->pbs->algorithm = algorithm_dict[i].algorithm;                    //These are the only lines
+        /*create base name*/
+        sprintf(pvm->pbs->name, "%s_%s", default_base_name, algorithm_dict[i].name); //that change.
+
+        /*concatenate the output file names*/
+        sprintf(pvm->pbs->data_file,   "dynamic/data_%s.dat",   pvm->pbs->name);
+        sprintf(pvm->pbs->params_file, "dynamic/params_%s.dat", pvm->pbs->name);
+
+        /*write default variables to pbs*/
+        rugged_write_defaults(pvm);
+
+        /*write variable variables to pbs*/
+        pvm->pbs->algorithm = algorithm_dict[i].algorithm;                    //These are the only lines
+        params_basis_set_init_weights(pvm->pbs);
+        pvm->init(pvm->pbs, pvm);
+
+        /*Clean pvm*/
+//        pvm->destroy(pvm);
+//        pvm->init(pvm->pbs, pvm);
+
+        /*Calculate basis set*/
+        method_calculation(pvm);
+
+        params_basis_set_free(pvm->pbs);
+        pvm->destroy(pvm);
+    }
+
+    free(default_base_name);
 
     return;
 }
@@ -961,46 +1037,10 @@ sig_init(void)
         fprintf(stderr, "Cannot catch 'SIGUSR1.'\n");
     if (signal(SIGINT, sig_handler) == SIG_ERR)
         fprintf(stderr, "Cannot catch 'SIGINT.'\n");
-    // A long long wait so that we can easily issue a signal to this process
 
     return;
 }
 
-
-void
-test_1(const double *x, void *kek, double *ret)
-{
-    *ret = 5.0* *x;
-}
-
-void
-test_2(const double *x, void *kek, double *ret)
-{
-    *ret = 2.5* *x;
-}
-
-void
-method_kek(struct params_basis_set *pbs)
-{
-    af_leaf *t = af_compile(2, &test_1, NULL, &test_2, NULL);
-    size_t i;
-    double x[1];
-    double ret;
-
-    for(i=0;i<10;i++)
-    {
-        x[0] = i/10.0;
-        af_eval(x, t, &ret);
-        printf("%g %g\n", *x, ret);
-    }
-
-    braket(pbs, t, &ret);
-    printf("integral = %g\n", ret);
-
-    af_free(t);
-
-    return;
-}
 
 int
 main(int argc, char **argv)
@@ -1030,9 +1070,9 @@ main(int argc, char **argv)
             method_calculation(&global_pvm);
             break;
         case RM_RUN:
+            method_rugged(&global_pvm);
             break;
         case RM_EXPERIMENTAL:
-            method_kek(&global_pbs);
 //            variational_basis_set(global_pvm.pvmm);
 //            method_experimental(&global_pvm);
 //            method_rugid();
