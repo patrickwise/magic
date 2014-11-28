@@ -1,14 +1,14 @@
 INSTALL
 =======================================
 Run:
-```
+``` bash
     # make setup
 ```
 in order to pull in dependency libraries.
 
 Run:
-```
-    "# make all"
+``` bash
+    # make all
 ```
 in order to build binary.
 
@@ -20,8 +20,9 @@ the run.file, r - run a ruggedness test with hard coded parameters, z -
 run an experimental calculation that is hard coded into the binary.
 
 The format of the run.file is:
-|c primitive      | Description                                                         |
-|:----------------|:--------------------------------------------------------------------|
+
+|C Primitive      | Description                                                         |
+|:--------------- |:------------------------------------------------------------------- |
 |%s               | name of basis set                                                   |
 |%zu              | number of excitation states                                         |
 |%s               | name of nlopt algorithm to use for minimization                     |
