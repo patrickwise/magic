@@ -22,7 +22,6 @@ enum run_mode
 #define DERIV_MAX 2 //second order derivation is the most that we need.
 #include <nlopt.h> //for nlopt_algorithm type
 
-
 /*Basis set implementation.*/
 struct params_basis_set
 {
@@ -132,7 +131,6 @@ struct params_variational_workspace
 /*Create a way to distinguish between POLynomial, EXPonential and SPEcial variables, without turning to complicated addition schemes in situ.*/
 typedef enum { POL, EXP, SPE } var_t;
 
-
 char * report_algorithm(struct params_basis_set *pbs);
 int variate_pvmm(struct params_variational_workspace *pvw);
 int translate_algorithm(char *name, struct params_basis_set *pbs);
@@ -141,12 +139,13 @@ double var_get(pvmm *p, var_t type, size_t j);
 double var_get_blind(pvmm *p, size_t j);
 double real_deriv_second(af_t *f, const double *x, pvmm *p);
 double master(unsigned n, const double *x, double *grad, pvmm *p);
-double safe_doubles[100]; ;
 void print_data(struct params_variational_master *pvm);
 void print_variational_params(pvmm *p);
 void print_summary(pvmm *p);
 void print_params(struct params_variational_master *pvm);
 void read_params(struct params_variational_master *pvm);
+void snapshot_init(pvmm *p);
+void snapshot_take(pvmm *p);
 void af_eval_integration_wrapper(unsigned ndim, const double *x, af_leaf *fdata, unsigned fdim, double *fval);
 void af_free(af_leaf *tree);
 void var_push(pvmm *p, var_t type, size_t j, double x);
@@ -159,10 +158,12 @@ void ket_hamiltonian_wave(const double *x, pvmm *p, double *ret);
 void morse_potential(const double *x, pvmm *p, double *ret);
 void gs_learn(pvmm *p);
 void gs_known(const double *x, pvmm *p, double *ret);
-void method_experimental(struct params_variational_master *pvm);
+void params_basis_set_init_weights(struct params_basis_set *pbs);
 void params_basis_set_free(struct params_basis_set *pbs);
 void method_calculation(struct params_variational_master *pvm);
-void method_rugid(void);
-void sig_handler(int signo)  ;
+void method_rugged(struct params_variational_master *pvm);
+void sig_handler(int signo);
 void sig_init(void);
+void fun(const double *x, void *p, double *ret);
+void method_test(struct params_variational_master *pvm);
 size_t var_nvars(pvmm *p);

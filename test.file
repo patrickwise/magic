@@ -1,8 +1,8 @@
 morse_60_1_symmetric
-2
-NLOPT_LN_SBPLX
+3
+NLOPT_LN_PRAXIS
 60.0 1.0 1.0
 dynamic/data.dat dynamic/params.dat
 24 1e-5
--10.0 10.0 1e-3 1e-5
+-10.0 10.0 1e-4 1e-5
 1 2 2 1

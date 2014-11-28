@@ -13,11 +13,6 @@
 /*Header for this file*/
 #include "magic.h"
 
-/*Optimized weights for operations.*/
-//#include "weights.h"
-
-//TODO: arrays of timestamps and iterations to analyse.
-
 /*Constants that should have no baring on behavior outside of this file.*/
 #define NO_ERROR 0
 #define TRANSLATION_SHIFT 0
@@ -35,7 +30,6 @@
 #include <time.h>
 #define CLOCKTYPE CLOCK_MONOTONIC
 
-double safe_doubles[100];
 
 //make life easy
 struct params_basis_set global_pbs = {
@@ -49,6 +43,25 @@ struct params_variational_master global_pvm = {
 };
 
 //{{{ printing
+
+
+void
+print_elapsed_time(struct params_variational_master *pvm)
+{
+    size_t i;
+    printf("Elapsed times:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+        printf("%.10G\t", pvm->time[i].d);
+    printf("\n");
+
+    printf("Interations:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+        printf("%.10zu\t", pvm->iter[i]);
+    printf("\n");
+
+    return;
+}
+
 void
 print_data(struct params_variational_master *pvm)
 {
@@ -277,9 +290,7 @@ af_free(af_leaf *tree)
 //{{{ utility functions
 /*These functions are meant to clear up the code for wavefunctions.*/
 
-
 /*We are hardcoding in the skew factors. This way parameters can be more easily read if part of the basis set is changed.*/
-
 size_t
 var_nvars(pvmm *p)
 {   /*Return mask size to allocate.*/
@@ -404,7 +415,7 @@ params_variational_master_init(struct params_basis_set *pbs, struct params_varia
         for(j=0;j<=pbs->maxn;j++)
         {
             pvm->H[i][j] = af_compile(2, &gs_known, &pvm->pvmm[i], &ket_hamiltonian_wave, &pvm->pvmm[j]);
-            pvm->S[i][j] = af_compile(2, &gs_known, &pvm->pvmm[i], &gs_known, &pvm->pvmm[j]);
+            pvm->S[i][j] = af_compile(2, &wave, &pvm->pvmm[i], &gs_known, &pvm->pvmm[j]);
         };
 
 
@@ -628,8 +639,8 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
     gs_learn(p);//orthonormalize the new variables.
     braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &ret);
 
-    for(i=0;i<var_nvars(p);i++)
-        safe_doubles[i] = var_get_blind(p, i);
+//    for(i=0;i<var_nvars(p);i++)
+//        safe_doubles[i] = var_get_blind(p, i);
 
     if(ZERO_OVERLAP == p->error)
     { //Handle single point constraints.
@@ -684,8 +695,8 @@ variate_pvmm(struct params_variational_workspace *pvw)
     printf("Convergence met for p->n==%zu.\n", pvw->p->n);
 
     size_t i;
-    for(i = 0; i<var_nvars(pvw->p);i++)
-        var_push_blind(pvw->p, i, safe_doubles[i]);
+//   for(i = 0; i<var_nvars(pvw->p);i++)
+//        var_push_blind(pvw->p, i, safe_doubles[i]);
 
     snapshot_take(pvw->p); //read the timestamp and calculate elapsed time
 
@@ -726,7 +737,8 @@ struct algorithm_dict algorithm_dict[] =
     { "NLOPT_LN_SBPLX",         NLOPT_LN_SBPLX },
     { "NLOPT_LN_PRAXIS",        NLOPT_LN_PRAXIS },
     { "NLOPT_GN_CRS2_LM",       NLOPT_GN_CRS2_LM },
-    { "NLOPT_GN_ISRES",         NLOPT_GN_ISRES },
+//    { "NLOPT_GN_ISRES",         NLOPT_GN_ISRES }, Slow convergence.
+//    Run with low accuracy?
     { "NLOPT_LN_COBYLA",        NLOPT_LN_COBYLA },
     { "NLOPT_LN_NEWUOA",        NLOPT_LN_NEWUOA },
     { "NLOPT_LN_BOBYQA",        NLOPT_LN_BOBYQA },
@@ -929,20 +941,22 @@ method_calculation(struct params_variational_master *pvm)
 
 
 
-#define rugged_write_defaults(pvm) \
-    pvm->pbs->maxn            = 4; \
-    pvm->pbs->scaling_code    = '1'; \
-    pvm->pbs->D               = 60.0; \
-    pvm->pbs->b               = 1.00; \
-    pvm->pbs->deriv_accuracy  = 24; \
-    pvm->pbs->deriv_step      = 1e-5; \
-    pvm->pbs->deriv_weights   = NULL; \
-    pvm->pbs->xmin            = -2.0; \
-    pvm->pbs->xmax            = 6.0; \
-    pvm->pbs->epsrel          = 1e-4; \
-    pvm->pbs->algorithm       = NLOPT_LN_PRAXIS; \
-    pvm->pbs->var_growth      = 1; \
-    pvm->pbs->var_npol_base   = 2; \
+#define rugged_write_defaults(pvm)              \
+    pvm->pbs->maxn            = 4;              \
+    pvm->pbs->scaling_code    = '1';            \
+    pvm->pbs->D               = 60.0;           \
+    pvm->pbs->b               = 1.00;           \
+    pvm->pbs->mu              = 1.00;           \
+    pvm->pbs->deriv_accuracy  = 24;             \
+    pvm->pbs->deriv_step      = 1e-5;           \
+    pvm->pbs->deriv_weights   = NULL;           \
+    pvm->pbs->xmin            = -3.0;           \
+    pvm->pbs->xmax            = 10.0;           \
+    pvm->pbs->epsrel          = 1e-4;           \
+    pvm->pbs->zerotol         = 1e-5;           \
+    pvm->pbs->algorithm       = NLOPT_LN_SBPLX; \
+    pvm->pbs->var_growth      = 1;              \
+    pvm->pbs->var_npol_base   = 2;              \
     pvm->pbs->var_nexp_base   = 2
 
 

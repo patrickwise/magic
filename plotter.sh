@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [[ "$1" == "all" ]]
+    then
+    for i in dynamic/*.dat; do ./plotter.sh $i;done
+    exit 0
+fi
+
+
 fileout="$1"
 fileinp="$1"
 
