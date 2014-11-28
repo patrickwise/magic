@@ -48,11 +48,6 @@ struct params_variational_master global_pvm = {
     .destroy = (af_free_t *)&params_variational_master_free
 };
 
-//{{{ optimization
-//determine the brent fornberg weights
-
-
-//}}}
 //{{{ printing
 void
 print_data(struct params_variational_master *pvm)
@@ -92,7 +87,7 @@ print_variational_params(pvmm *p)
     braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &p->pvm->H_val[p->n]);
     printf("f(%.2zu)[%.4zu]=%#.4E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
     for(j=0;j<var_nvars(p);j++)
-        printf("%#.4G\t", var_get_blind(p,j));
+        printf("%#.4E ", var_get_blind(p,j));
     printf("\n");
 
     return;
@@ -112,6 +107,7 @@ print_summary(pvmm *p)
     printf("Normalization Constant\t=\t%g\n", 1.0/sqrt(fabs(p->pvm->R_val[p->n][p->n])));
     printf("Number of variables\t=\t%zu\n"  , var_nvars(p));
     printf("Minimization algorithm\t=\t%s\n", report_algorithm(p->pvm->pbs));
+    printf("Box bounds\t\t=\t(%g,%g)\n"     , p->pvm->pbs->xmin, p->pvm->pbs->xmax);
     printf("Scaling code\t\t=\t%c\n"        , p->pvm->pbs->scaling_code);
     printf("Last iter count\t\t=\t%zu\n"    , p->pvm->iter[p->n]);
     printf("Time of calculation\t=\t%g s\n" , p->pvm->time[p->n].d);
@@ -186,13 +182,7 @@ snapshot_init(pvmm *p)
         return;
     }
     p->pvm->iter[p->n] = p->pvm->progress;
-
-
-    struct timespec ts;
-    clock_gettime(CLOCKTYPE, &ts);
-
-    p->pvm->time[p->n].t = ts.tv_sec;
-
+    clock_gettime(CLOCKTYPE, &p->pvm->time[p->n].ts);
 
     return;
 }
@@ -205,7 +195,8 @@ snapshot_take(pvmm *p)
 
     struct timespec ts;
     clock_gettime(CLOCKTYPE, &ts);
-    p->pvm->time[p->n].d = difftime(ts.tv_sec, p->pvm->time[p->n].t);
+    p->pvm->time[p->n].d = difftime(ts.tv_sec, p->pvm->time[p->n].ts.tv_sec) +
+                            difftime(ts.tv_nsec, p->pvm->time[p->n].ts.tv_nsec) * 1.0e-9;
 
     return;
 }
@@ -392,7 +383,7 @@ params_variational_master_init(struct params_basis_set *pbs, struct params_varia
         pvm->pvmm[i].n_vars = 2 + pvm->pvmm[i].n_pol + pvm->pvmm[i].n_exp;
 
         pvm->R_val[i]      = calloc(sizeof(**pvm->R_val), (1+pbs->maxn));
-        pvm->masks[i]      = malloc(sizeof(**pvm->masks) * var_nvars(&pvm->pvmm[i]));
+        pvm->masks[i]      = malloc(sizeof(**pvm->masks) * (1+var_nvars(&pvm->pvmm[i])));
         /*Let's initialize these so that we have some shape to our
          * functions to begin with. */
         for(j=0;j<=var_nvars(&pvm->pvmm[i]);j++)
@@ -462,15 +453,16 @@ real_deriv_second(af_t *f, const double *x, pvmm *p)
 {   /*Calculate a linear, equidistant derivative of order 2. //'M'*/
     size_t i;
     double tmp, ret = 0.0, y[1];
+    size_t start_point = 2 * p->pvm->pbs->deriv_accuracy;
 
-    for(i=0;i<p->pvm->pbs->deriv_accuracy;i++)
+    for(i=start_point;i<3*p->pvm->pbs->deriv_accuracy;i++)
     {
-        y[0] = x[0] + i * p->pvm->pbs->deriv_step + p->pvm->pbs->deriv_step/2.0
-             - p->pvm->pbs->deriv_accuracy * p->pvm->pbs->deriv_step/2.0;
+        y[0] = x[0] + (i - start_point)
+            * p->pvm->pbs->deriv_step + p->pvm->pbs->deriv_step/2.0
+            - p->pvm->pbs->deriv_accuracy * p->pvm->pbs->deriv_step/2.0;
         f(y, p, &tmp);
         ret += p->pvm->pbs->deriv_weights[i] * tmp;
     }
-
     return ret;
 }
 
@@ -512,21 +504,10 @@ wave(const double *x, pvmm *p, double *ret)
     for(i=0; i<p->n_exp; i++)
     {
         expr -= var_get(p, EXP, i) * pow(y, (i+1.0)*2.0);
-//        printf("EXP_var = %g\n", var_get(p, EXP, i));
-//        printf("k = %g\n", pow(y, (i+1.0)*2.0));
     }
 
     *ret = poly * exp(expr);
 
-//    for(i=0;i<var_nvars(p);i++)
-//        printf("%.4G\t", var_get_blind(p,i));
-//    printf("\n");
-//
-//    printf("x=%g;y=%g\n", *x, y);
-//    printf("poly = %g\n", poly);
-//    printf("exp = %g\n", expr);
-//    printf("wave is returning %g\n", *ret);
-//    exit(5);
 
     return;
 }
@@ -554,7 +535,7 @@ ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)
     morse_potential(x, p, &V);
     gs_known(x, p, &tmp);
     V *= tmp;
-    T = -real_deriv_second((af_t *)&gs_known, x, p)/2.0;
+    T = - real_deriv_second((af_t *)&gs_known, x, p)/2.0;
     T *= 1.0/(2.0);//input mass
     *ret = T + V;
 
@@ -676,8 +657,8 @@ params_variational_workspace_init(struct params_variational_workspace *pvw, pvmm
     size_t i;
     for(i=0;i<var_nvars(p);i++)
         pvw->lbounds[i] = p->pvm->pbs->zerotol;
-//    pvw->lbounds[GEOMETRIC_SHIFT] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
-//    pvw->lbounds[1] = -HUGE_VAL;//scale_i //TODO: this is dirty, make it good.
+    pvw->lbounds[TRANSLATION_SHIFT] = -HUGE_VAL; //Free this, because it is not symmetric
+
     nlopt_set_lower_bounds(pvw->opt, pvw->lbounds);
 
     pvw->p = p;
@@ -739,16 +720,16 @@ struct algorithm_dict
 
 struct algorithm_dict algorithm_dict[] =
 {
-    { "NLOPT_GN_DIRECT_L" , NLOPT_GN_DIRECT_L },
+    { "NLOPT_GN_DIRECT_L" ,     NLOPT_GN_DIRECT_L },
     { "NLOPT_GN_ORIG_DIRECT_L", NLOPT_GN_DIRECT_L },
-    { "NLOPT_LN_NELDERMEAD", NLOPT_LN_NELDERMEAD },
-    { "NLOPT_LN_SBPLX", NLOPT_LN_SBPLX },
-    { "NLOPT_LN_PRAXIS", NLOPT_LN_PRAXIS },
-    { "NLOPT_GN_CRS2_LM", NLOPT_GN_CRS2_LM },
-    { "NLOPT_GN_ISRES", NLOPT_GN_ISRES },
-    { "NLOPT_LN_COBYLA", NLOPT_LN_COBYLA },
-    { "NLOPT_LN_NEWUOA", NLOPT_LN_NEWUOA },
-    { "NLOPT_LN_BOBYQA", NLOPT_LN_BOBYQA },
+    { "NLOPT_LN_NELDERMEAD",    NLOPT_LN_NELDERMEAD },
+    { "NLOPT_LN_SBPLX",         NLOPT_LN_SBPLX },
+    { "NLOPT_LN_PRAXIS",        NLOPT_LN_PRAXIS },
+    { "NLOPT_GN_CRS2_LM",       NLOPT_GN_CRS2_LM },
+    { "NLOPT_GN_ISRES",         NLOPT_GN_ISRES },
+    { "NLOPT_LN_COBYLA",        NLOPT_LN_COBYLA },
+    { "NLOPT_LN_NEWUOA",        NLOPT_LN_NEWUOA },
+    { "NLOPT_LN_BOBYQA",        NLOPT_LN_BOBYQA },
 };
 
 int
@@ -815,7 +796,7 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
         goto error;
     if(1 != fscanf(fp, "%s\n", buf))
         goto error;
-    if(2 != fscanf(fp,"%lf %lf\n", &pbs->D, &pbs->b))
+    if(3 != fscanf(fp,"%lf %lf %lf\n", &pbs->D, &pbs->b, &pbs->mu))
         goto error;
     if(2 != fscanf(fp,"%s %s\n", pbs->data_file, pbs->params_file))
         goto error;
@@ -931,6 +912,13 @@ method_calculation(struct params_variational_master *pvm)
         params_variational_workspace_free(&pvw);
     }
 
+    printf("Elapsed times:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+    {
+        printf("%.10G\t", pvm->time[i].d);
+    }
+    printf("\n");
+
     return;
 }
 
@@ -1009,12 +997,11 @@ method_rugged(struct params_variational_master *pvm)
 double safe_doubles[100];
 
 
-#include<stdio.h>
 #include<signal.h>
 #include<unistd.h>
 
 void sig_handler(int signo)
-{
+{   /*catch signals*/
     if (signo == SIGUSR1)
         printf("received 'SIGUSR1,' shutting down.\n");
     else if (signo == SIGINT)
@@ -1032,7 +1019,8 @@ void sig_handler(int signo)
 
 void
 sig_init(void)
-{
+{ /*This runs before calculations to allow for graceful shutdowns.*/
+    /*These are the signals we catch.*/
     if (signal(SIGUSR1, sig_handler) == SIG_ERR)
         fprintf(stderr, "Cannot catch 'SIGUSR1.'\n");
     if (signal(SIGINT, sig_handler) == SIG_ERR)
@@ -1041,6 +1029,32 @@ sig_init(void)
     return;
 }
 
+
+void
+fun(const double *x, void *p, double *ret)
+{
+    (void) p;
+    *ret = pow(*x, 3.0);
+    return;
+}
+
+void
+method_test(struct params_variational_master *pvm)
+{
+    size_t i;
+    double y;
+    double x[1];
+    *x = -5.0;
+
+    for(i=0;i<500000;i++)
+    {
+        fun(x, NULL, &y);
+        real_deriv_second(fun, x, pvm->pvmm);
+        *x += pvm->pbs->zerotol*1000.0;
+    }
+
+    return;
+}
 
 int
 main(int argc, char **argv)
@@ -1057,13 +1071,11 @@ main(int argc, char **argv)
         global_pbs.data_file,
         global_pbs.params_file
     );
+
     /*do stuff here*/
-
-
-
-    sig_init(); //gracefully hadle signals
-    print_summary(&global_pvm.pvmm[0]);
-    sig_init(); //gracefully hadle signals
+    sig_init(); //gracefully handle signals
+    print_summary(&global_pvm.pvmm[0]);//print a summary to catch errors
+    sig_init(); //gracefully handle signals
     switch(global_pbs.run_mode)
     {
         case RM_CALCULATION:
@@ -1073,13 +1085,11 @@ main(int argc, char **argv)
             method_rugged(&global_pvm);
             break;
         case RM_EXPERIMENTAL:
-//            variational_basis_set(global_pvm.pvmm);
-//            method_experimental(&global_pvm);
-//            method_rugid();
+            method_test(&global_pvm);
             break;
     }
 
-
+    /*cleanup and go home*/
     global_pvm.destroy(&global_pvm);
     global_pbs.destroy(&global_pbs);
 

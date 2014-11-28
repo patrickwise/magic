@@ -12,5 +12,5 @@ set xrange [-2:8]
 set yrange [-2:75]
 
 set output "${fileout}.png"
-plot "$1" u 1:2 w lines title 'Morse Potential', for [i=3:10] "$1" u 1:i w lines title 'eigenstate '.i
+plot "$1" u 1:2 w lines title 'Morse Potential', for [i=3:10] "$1" u 1:i w lines  title 'eigenstate '.(i-3)
 EOF

@@ -37,6 +37,7 @@ struct params_basis_set
     enum run_mode run_mode;//what are we doing
     double D;
     double b;//parameters of the basis set
+    double mu;//reduced mass of system
     size_t deriv_accuracy;//points of integration, for derivative function
     double deriv_step;//distance between sampling points
     double *deriv_weights;//where we store the weights.
@@ -71,7 +72,7 @@ struct params_basis_set
 /*Main data block.*/
 union time_data
 {
-    time_t t;
+    struct timespec ts;
     double d;
 };
 

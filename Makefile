@@ -12,7 +12,7 @@ DYNPREFIX = ${PREFIX}/dynamic
 # compile settings
 INCS = -I. -Iinclude
 CFLAGS = -std=c99 -Wall -Wextra -g ${INCS}  -pipe -march=native
-LDFLAGS = -lm -g -lnlopt -latlas -lclapack
+LDFLAGS = -lm -lnlopt -latlas -lclapack -g
 CC = gfortran
 
 FFLAGS = -c -pipe -march=native -O2
