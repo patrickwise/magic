@@ -89,10 +89,12 @@ magic: ${OBJ}
 	@echo CC -o $@
 	@${CC} -o $@ ${OBJ} ${LDFLAGS}
 
-install:
+install: all
 	@mkdir -p $(PREFIX)/bin
 	@cp -f magic $(PREFIX)/bin
+	@chmod 755 ${PREFIX}/bin/magic
 	@mkdir -p $(DYNPREFIX)
+	@chmod 755 ${DYNPREFIX}
 
 uninstall:
 	@echo uninstalling

@@ -16,6 +16,8 @@ the run.file, r - run a ruggedness test with hard coded parameters, z -
 run an experimental calculation that is hard coded into the binary.
 
 The format of the run.file is:
+c primitive      | Description
+:----------------|:-------------------------------------------------------------------
 %s               | name of basis set
 %zu              | number of excitation states
 %s               | name of nlopt algorithm to use for minimization

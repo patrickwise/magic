@@ -6,10 +6,33 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 BIG_ENDIAN	/usr/include/endian.h	46;"	d	language:C
 BUFSIZ	/usr/include/stdio.h	127;"	d	language:C
+BUS_ADRALN	/usr/include/bits/siginfo.h	/^  BUS_ADRALN = 1,		\/* Invalid address alignment.  *\/$/;"	e	language:C	enum:__anon50
+BUS_ADRALN	/usr/include/bits/siginfo.h	231;"	d	language:C
+BUS_ADRERR	/usr/include/bits/siginfo.h	/^  BUS_ADRERR,			\/* Non-existant physical address.  *\/$/;"	e	language:C	enum:__anon50
+BUS_ADRERR	/usr/include/bits/siginfo.h	233;"	d	language:C
+BUS_MCEERR_AO	/usr/include/bits/siginfo.h	/^  BUS_MCEERR_AO			\/* Hardware memory error: action optional.  *\/$/;"	e	language:C	enum:__anon50
+BUS_MCEERR_AO	/usr/include/bits/siginfo.h	239;"	d	language:C
+BUS_MCEERR_AR	/usr/include/bits/siginfo.h	/^  BUS_MCEERR_AR,		\/* Hardware memory error: action required.  *\/$/;"	e	language:C	enum:__anon50
+BUS_MCEERR_AR	/usr/include/bits/siginfo.h	237;"	d	language:C
+BUS_OBJERR	/usr/include/bits/siginfo.h	/^  BUS_OBJERR,			\/* Object specific hardware error.  *\/$/;"	e	language:C	enum:__anon50
+BUS_OBJERR	/usr/include/bits/siginfo.h	235;"	d	language:C
 BYTE_ORDER	/usr/include/endian.h	48;"	d	language:C
+CLD_CONTINUED	/usr/include/bits/siginfo.h	/^  CLD_CONTINUED			\/* Stopped child has continued.  *\/$/;"	e	language:C	enum:__anon52
+CLD_CONTINUED	/usr/include/bits/siginfo.h	265;"	d	language:C
+CLD_DUMPED	/usr/include/bits/siginfo.h	/^  CLD_DUMPED,			\/* Child terminated abnormally.  *\/$/;"	e	language:C	enum:__anon52
+CLD_DUMPED	/usr/include/bits/siginfo.h	259;"	d	language:C
+CLD_EXITED	/usr/include/bits/siginfo.h	/^  CLD_EXITED = 1,		\/* Child has exited.  *\/$/;"	e	language:C	enum:__anon52
+CLD_EXITED	/usr/include/bits/siginfo.h	255;"	d	language:C
+CLD_KILLED	/usr/include/bits/siginfo.h	/^  CLD_KILLED,			\/* Child was killed.  *\/$/;"	e	language:C	enum:__anon52
+CLD_KILLED	/usr/include/bits/siginfo.h	257;"	d	language:C
+CLD_STOPPED	/usr/include/bits/siginfo.h	/^  CLD_STOPPED,			\/* Child has stopped.  *\/$/;"	e	language:C	enum:__anon52
+CLD_STOPPED	/usr/include/bits/siginfo.h	263;"	d	language:C
+CLD_TRAPPED	/usr/include/bits/siginfo.h	/^  CLD_TRAPPED,			\/* Traced child has trapped.  *\/$/;"	e	language:C	enum:__anon52
+CLD_TRAPPED	/usr/include/bits/siginfo.h	261;"	d	language:C
 CLK_TCK	/usr/include/bits/time.h	56;"	d	language:C
 CLK_TCK	/usr/include/time.h	46;"	d	language:C
 CLOCKS_PER_SEC	/usr/include/bits/time.h	48;"	d	language:C
+CLOCKTYPE	main.c	31;"	d	language:C	file:
 CLOCK_BOOTTIME	/usr/include/bits/time.h	75;"	d	language:C
 CLOCK_BOOTTIME_ALARM	/usr/include/bits/time.h	79;"	d	language:C
 CLOCK_MONOTONIC	/usr/include/bits/time.h	63;"	d	language:C
@@ -29,17 +52,18 @@ EOF	/usr/include/libio.h	62;"	d	language:C
 EOF	/usr/include/stdio.h	134;"	d	language:C
 ERR	pcubature.c	279;"	d	language:C	file:
 ERROR_INDIVIDUAL	include/cubature.h	/^     ERROR_INDIVIDUAL = 0, \/* individual relerr criteria in each component *\/$/;"	e	language:C	enum:__anon35
-ERROR_INDIVIDUAL	include/cubature.h	/^     ERROR_INDIVIDUAL = 0, \/* individual relerr criteria in each component *\/$/;"	e	language:C	enum:__anon61
+ERROR_INDIVIDUAL	include/cubature.h	/^     ERROR_INDIVIDUAL = 0, \/* individual relerr criteria in each component *\/$/;"	e	language:C	enum:__anon92
 ERROR_L1	include/cubature.h	/^     ERROR_L1, \/* abserr is L_1 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
-ERROR_L1	include/cubature.h	/^     ERROR_L1, \/* abserr is L_1 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_L1	include/cubature.h	/^     ERROR_L1, \/* abserr is L_1 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon92
 ERROR_L2	include/cubature.h	/^     ERROR_L2, \/* abserr is L_2 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
-ERROR_L2	include/cubature.h	/^     ERROR_L2, \/* abserr is L_2 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_L2	include/cubature.h	/^     ERROR_L2, \/* abserr is L_2 norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon92
 ERROR_LINF	include/cubature.h	/^     ERROR_LINF \/* abserr is L_\\infty norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon35
-ERROR_LINF	include/cubature.h	/^     ERROR_LINF \/* abserr is L_\\infty norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon61
+ERROR_LINF	include/cubature.h	/^     ERROR_LINF \/* abserr is L_\\infty norm |e|, and relerr is |e|\/|v| *\/$/;"	e	language:C	enum:__anon92
 ERROR_PAIRED	include/cubature.h	/^     ERROR_PAIRED, \/* paired L2 norms of errors in each component,$/;"	e	language:C	enum:__anon35
-ERROR_PAIRED	include/cubature.h	/^     ERROR_PAIRED, \/* paired L2 norms of errors in each component,$/;"	e	language:C	enum:__anon61
+ERROR_PAIRED	include/cubature.h	/^     ERROR_PAIRED, \/* paired L2 norms of errors in each component,$/;"	e	language:C	enum:__anon92
 EXIT_FAILURE	/usr/include/stdlib.h	133;"	d	language:C
 EXIT_SUCCESS	/usr/include/stdlib.h	134;"	d	language:C
+EXP	magic.h	/^typedef enum { POL, EXP, SPE } var_t;$/;"	e	language:C	enum:__anon36
 FAILURE	pcubature.c	35;"	d	language:C	file:
 FD_CLR	/usr/include/sys/select.h	91;"	d	language:C
 FD_ISSET	/usr/include/sys/select.h	92;"	d	language:C
@@ -50,27 +74,51 @@ FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE FILE;$/;"	t	language:C	typer
 FILENAME_MAX	/usr/include/bits/stdio_lim.h	25;"	d	language:C
 FOPEN_MAX	/usr/include/bits/stdio_lim.h	36;"	d	language:C
 FOPEN_MAX	/usr/include/bits/stdio_lim.h	37;"	d	language:C
+FPE_FLTDIV	/usr/include/bits/siginfo.h	/^  FPE_FLTDIV,			\/* Floating point divide by zero.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTDIV	/usr/include/bits/siginfo.h	205;"	d	language:C
+FPE_FLTINV	/usr/include/bits/siginfo.h	/^  FPE_FLTINV,			\/* Floating point invalid operation.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTINV	/usr/include/bits/siginfo.h	213;"	d	language:C
+FPE_FLTOVF	/usr/include/bits/siginfo.h	/^  FPE_FLTOVF,			\/* Floating point overflow.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTOVF	/usr/include/bits/siginfo.h	207;"	d	language:C
+FPE_FLTRES	/usr/include/bits/siginfo.h	/^  FPE_FLTRES,			\/* Floating point inexact result.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTRES	/usr/include/bits/siginfo.h	211;"	d	language:C
+FPE_FLTSUB	/usr/include/bits/siginfo.h	/^  FPE_FLTSUB			\/* Subscript out of range.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTSUB	/usr/include/bits/siginfo.h	215;"	d	language:C
+FPE_FLTUND	/usr/include/bits/siginfo.h	/^  FPE_FLTUND,			\/* Floating point underflow.  *\/$/;"	e	language:C	enum:__anon48
+FPE_FLTUND	/usr/include/bits/siginfo.h	209;"	d	language:C
+FPE_INTDIV	/usr/include/bits/siginfo.h	/^  FPE_INTDIV = 1,		\/* Integer divide by zero.  *\/$/;"	e	language:C	enum:__anon48
+FPE_INTDIV	/usr/include/bits/siginfo.h	201;"	d	language:C
+FPE_INTOVF	/usr/include/bits/siginfo.h	/^  FPE_INTOVF,			\/* Integer overflow.  *\/$/;"	e	language:C	enum:__anon48
+FPE_INTOVF	/usr/include/bits/siginfo.h	203;"	d	language:C
 FP_FAST_FMA	/usr/include/bits/mathdef.h	48;"	d	language:C
 FP_FAST_FMAF	/usr/include/bits/mathdef.h	52;"	d	language:C
 FP_FAST_FMAL	/usr/include/bits/mathdef.h	56;"	d	language:C
 FP_ILOGB0	/usr/include/bits/mathdef.h	42;"	d	language:C
 FP_ILOGBNAN	/usr/include/bits/mathdef.h	43;"	d	language:C
 FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	language:C	enum:__anon28
-FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	language:C	enum:__anon56
+FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	language:C	enum:__anon87
 FP_INFINITE	/usr/include/math.h	195;"	d	language:C
 FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	language:C	enum:__anon28
-FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	language:C	enum:__anon56
+FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	language:C	enum:__anon87
 FP_NAN	/usr/include/math.h	192;"	d	language:C
 FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	language:C	enum:__anon28
-FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	language:C	enum:__anon56
+FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	language:C	enum:__anon87
 FP_NORMAL	/usr/include/math.h	204;"	d	language:C
 FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	language:C	enum:__anon28
-FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	language:C	enum:__anon56
+FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	language:C	enum:__anon87
 FP_SUBNORMAL	/usr/include/math.h	201;"	d	language:C
+FP_XSTATE_MAGIC1	/usr/include/bits/sigcontext.h	25;"	d	language:C
+FP_XSTATE_MAGIC2	/usr/include/bits/sigcontext.h	26;"	d	language:C
+FP_XSTATE_MAGIC2_SIZE	/usr/include/bits/sigcontext.h	27;"	d	language:C
 FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	language:C	enum:__anon28
-FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	language:C	enum:__anon56
+FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	language:C	enum:__anon87
 FP_ZERO	/usr/include/math.h	198;"	d	language:C
-GEOMETRIC_SHIFT	main.c	28;"	d	language:C	file:
+F_LOCK	/usr/include/unistd.h	1076;"	d	language:C
+F_OK	/usr/include/unistd.h	284;"	d	language:C
+F_TEST	/usr/include/unistd.h	1078;"	d	language:C
+F_TLOCK	/usr/include/unistd.h	1077;"	d	language:C
+F_ULOCK	/usr/include/unistd.h	1075;"	d	language:C
+GEOMETRIC_SHIFT	main.c	19;"	d	language:C	file:
 H	magic.h	/^    af_leaf ***H; \/\/Function to calculate energy expectant. <f_i|H|f_j>$/;"	m	language:C	struct:params_variational_master
 HUGE	/usr/include/math.h	353;"	d	language:C
 HUGE_VAL	/usr/include/bits/huge_val.h	27;"	d	language:C
@@ -86,10 +134,30 @@ HUGE_VALL	/usr/include/bits/huge_vall.h	27;"	d	language:C
 HUGE_VALL	/usr/include/bits/huge_vall.h	34;"	d	language:C
 HUGE_VALL	/usr/include/bits/huge_vall.h	38;"	d	language:C
 H_val	magic.h	/^    double *H_val; \/\/Energy eigenvalues.$/;"	m	language:C	struct:params_variational_master
+ILL_BADSTK	/usr/include/bits/siginfo.h	/^  ILL_BADSTK			\/* Internal stack error.  *\/$/;"	e	language:C	enum:__anon47
+ILL_BADSTK	/usr/include/bits/siginfo.h	194;"	d	language:C
+ILL_COPROC	/usr/include/bits/siginfo.h	/^  ILL_COPROC,			\/* Coprocessor error.  *\/$/;"	e	language:C	enum:__anon47
+ILL_COPROC	/usr/include/bits/siginfo.h	192;"	d	language:C
+ILL_ILLADR	/usr/include/bits/siginfo.h	/^  ILL_ILLADR,			\/* Illegal addressing mode.  *\/$/;"	e	language:C	enum:__anon47
+ILL_ILLADR	/usr/include/bits/siginfo.h	184;"	d	language:C
+ILL_ILLOPC	/usr/include/bits/siginfo.h	/^  ILL_ILLOPC = 1,		\/* Illegal opcode.  *\/$/;"	e	language:C	enum:__anon47
+ILL_ILLOPC	/usr/include/bits/siginfo.h	180;"	d	language:C
+ILL_ILLOPN	/usr/include/bits/siginfo.h	/^  ILL_ILLOPN,			\/* Illegal operand.  *\/$/;"	e	language:C	enum:__anon47
+ILL_ILLOPN	/usr/include/bits/siginfo.h	182;"	d	language:C
+ILL_ILLTRP	/usr/include/bits/siginfo.h	/^  ILL_ILLTRP,			\/* Illegal trap. *\/$/;"	e	language:C	enum:__anon47
+ILL_ILLTRP	/usr/include/bits/siginfo.h	186;"	d	language:C
+ILL_PRVOPC	/usr/include/bits/siginfo.h	/^  ILL_PRVOPC,			\/* Privileged opcode.  *\/$/;"	e	language:C	enum:__anon47
+ILL_PRVOPC	/usr/include/bits/siginfo.h	188;"	d	language:C
+ILL_PRVREG	/usr/include/bits/siginfo.h	/^  ILL_PRVREG,			\/* Privileged register.  *\/$/;"	e	language:C	enum:__anon47
+ILL_PRVREG	/usr/include/bits/siginfo.h	190;"	d	language:C
 INFINITY	/usr/include/bits/inf.h	26;"	d	language:C
 INFINITY	/usr/include/bits/inf.h	28;"	d	language:C
+INITIAL_VAR	main.c	26;"	d	language:C	file:
 IOV_MAX	/usr/include/bits/stdio_lim.h	41;"	d	language:C
 LITTLE_ENDIAN	/usr/include/endian.h	45;"	d	language:C
+L_INCR	/usr/include/unistd.h	323;"	d	language:C
+L_SET	/usr/include/unistd.h	322;"	d	language:C
+L_XTND	/usr/include/unistd.h	324;"	d	language:C
 L_ctermid	/usr/include/bits/stdio_lim.h	28;"	d	language:C
 L_cuserid	/usr/include/bits/stdio_lim.h	30;"	d	language:C
 L_tmpnam	/usr/include/bits/stdio_lim.h	23;"	d	language:C
@@ -98,8 +166,7 @@ MATH_ERRNO	/usr/include/math.h	273;"	d	language:C
 MAXDIM	pcubature.c	41;"	d	language:C	file:
 MAXFLOAT	/usr/include/math.h	359;"	d	language:C
 MB_CUR_MAX	/usr/include/stdlib.h	138;"	d	language:C
-MIN_ALGORITHM	main.c	22;"	d	language:C	file:
-MIN_BOUND	main.c	21;"	d	language:C	file:
+MINSIGSTKSZ	/usr/include/bits/sigstack.h	42;"	d	language:C
 M_1_PI	/usr/include/math.h	375;"	d	language:C
 M_1_PIl	/usr/include/math.h	394;"	d	language:C
 M_2_PI	/usr/include/math.h	376;"	d	language:C
@@ -130,6 +197,8 @@ NAN	/usr/include/bits/nan.h	28;"	d	language:C
 NAN	/usr/include/bits/nan.h	32;"	d	language:C
 NAN	/usr/include/bits/nan.h	50;"	d	language:C
 NFDBITS	/usr/include/sys/select.h	85;"	d	language:C
+NGREG	/usr/include/sys/ucontext.h	149;"	d	language:C
+NGREG	/usr/include/sys/ucontext.h	34;"	d	language:C
 NLOPT_AUGLAG	/usr/include/nlopt.h	/^     NLOPT_AUGLAG,$/;"	e	language:C	enum:__anon33
 NLOPT_AUGLAG_EQ	/usr/include/nlopt.h	/^     NLOPT_AUGLAG_EQ,$/;"	e	language:C	enum:__anon33
 NLOPT_DEPRECATED	/usr/include/nlopt.h	300;"	d	language:C
@@ -194,8 +263,9 @@ NLOPT_STDCALL	/usr/include/nlopt.h	39;"	d	language:C
 NLOPT_STOPVAL_REACHED	/usr/include/nlopt.h	/^     NLOPT_STOPVAL_REACHED = 2,$/;"	e	language:C	enum:__anon34
 NLOPT_SUCCESS	/usr/include/nlopt.h	/^     NLOPT_SUCCESS = 1, \/* generic success code *\/$/;"	e	language:C	enum:__anon34
 NLOPT_XTOL_REACHED	/usr/include/nlopt.h	/^     NLOPT_XTOL_REACHED = 4,$/;"	e	language:C	enum:__anon34
-NO_ERROR	magic.h	99;"	d	language:C
-NO_ERROR	main.c	26;"	d	language:C	file:
+NO_ERROR	magic.h	128;"	d	language:C
+NO_ERROR	main.c	17;"	d	language:C	file:
+NSIG	/usr/include/signal.h	200;"	d	language:C
 NULL	/usr/include/libio.h	67;"	d	language:C
 NULL	/usr/include/libio.h	70;"	d	language:C
 NULL	/usr/include/libio.h	72;"	d	language:C
@@ -206,33 +276,241 @@ NULL	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	404;"	d	language:C
 OVERFLOW	/usr/include/math.h	347;"	d	language:C
 PDP_ENDIAN	/usr/include/endian.h	47;"	d	language:C
 PLOSS	/usr/include/math.h	350;"	d	language:C
+POL	magic.h	/^typedef enum { POL, EXP, SPE } var_t;$/;"	e	language:C	enum:__anon36
+POLL_ERR	/usr/include/bits/siginfo.h	/^  POLL_ERR,			\/* I\/O error.  *\/$/;"	e	language:C	enum:__anon53
+POLL_ERR	/usr/include/bits/siginfo.h	278;"	d	language:C
+POLL_HUP	/usr/include/bits/siginfo.h	/^  POLL_HUP			\/* Device disconnected.  *\/$/;"	e	language:C	enum:__anon53
+POLL_HUP	/usr/include/bits/siginfo.h	282;"	d	language:C
+POLL_IN	/usr/include/bits/siginfo.h	/^  POLL_IN = 1,			\/* Data input available.  *\/$/;"	e	language:C	enum:__anon53
+POLL_IN	/usr/include/bits/siginfo.h	272;"	d	language:C
+POLL_MSG	/usr/include/bits/siginfo.h	/^  POLL_MSG,			\/* Input message available.   *\/$/;"	e	language:C	enum:__anon53
+POLL_MSG	/usr/include/bits/siginfo.h	276;"	d	language:C
+POLL_OUT	/usr/include/bits/siginfo.h	/^  POLL_OUT,			\/* Output buffers available.  *\/$/;"	e	language:C	enum:__anon53
+POLL_OUT	/usr/include/bits/siginfo.h	274;"	d	language:C
+POLL_PRI	/usr/include/bits/siginfo.h	/^  POLL_PRI,			\/* High priority input available.  *\/$/;"	e	language:C	enum:__anon53
+POLL_PRI	/usr/include/bits/siginfo.h	280;"	d	language:C
 P_tmpdir	/usr/include/stdio.h	151;"	d	language:C
+QUOTE	main.c	117;"	d	language:C	file:
 RAND_MAX	/usr/include/stdlib.h	128;"	d	language:C
+REG_CR2	/usr/include/sys/ucontext.h	/^  REG_CR2$/;"	e	language:C	enum:__anon60
+REG_CR2	/usr/include/sys/ucontext.h	88;"	d	language:C
+REG_CS	/usr/include/sys/ucontext.h	/^  REG_CS,$/;"	e	language:C	enum:__anon62
+REG_CS	/usr/include/sys/ucontext.h	189;"	d	language:C
+REG_CSGSFS	/usr/include/sys/ucontext.h	/^  REG_CSGSFS,		\/* Actually short cs, gs, fs, __pad0.  *\/$/;"	e	language:C	enum:__anon60
+REG_CSGSFS	/usr/include/sys/ucontext.h	80;"	d	language:C
+REG_DS	/usr/include/sys/ucontext.h	/^  REG_DS,$/;"	e	language:C	enum:__anon62
+REG_DS	/usr/include/sys/ucontext.h	165;"	d	language:C
+REG_EAX	/usr/include/sys/ucontext.h	/^  REG_EAX,$/;"	e	language:C	enum:__anon62
+REG_EAX	/usr/include/sys/ucontext.h	181;"	d	language:C
+REG_EBP	/usr/include/sys/ucontext.h	/^  REG_EBP,$/;"	e	language:C	enum:__anon62
+REG_EBP	/usr/include/sys/ucontext.h	171;"	d	language:C
+REG_EBX	/usr/include/sys/ucontext.h	/^  REG_EBX,$/;"	e	language:C	enum:__anon62
+REG_EBX	/usr/include/sys/ucontext.h	175;"	d	language:C
+REG_ECX	/usr/include/sys/ucontext.h	/^  REG_ECX,$/;"	e	language:C	enum:__anon62
+REG_ECX	/usr/include/sys/ucontext.h	179;"	d	language:C
+REG_EDI	/usr/include/sys/ucontext.h	/^  REG_EDI,$/;"	e	language:C	enum:__anon62
+REG_EDI	/usr/include/sys/ucontext.h	167;"	d	language:C
+REG_EDX	/usr/include/sys/ucontext.h	/^  REG_EDX,$/;"	e	language:C	enum:__anon62
+REG_EDX	/usr/include/sys/ucontext.h	177;"	d	language:C
+REG_EFL	/usr/include/sys/ucontext.h	/^  REG_EFL,$/;"	e	language:C	enum:__anon60
+REG_EFL	/usr/include/sys/ucontext.h	/^  REG_EFL,$/;"	e	language:C	enum:__anon62
+REG_EFL	/usr/include/sys/ucontext.h	191;"	d	language:C
+REG_EFL	/usr/include/sys/ucontext.h	78;"	d	language:C
+REG_EIP	/usr/include/sys/ucontext.h	/^  REG_EIP,$/;"	e	language:C	enum:__anon62
+REG_EIP	/usr/include/sys/ucontext.h	187;"	d	language:C
+REG_ERR	/usr/include/sys/ucontext.h	/^  REG_ERR,$/;"	e	language:C	enum:__anon60
+REG_ERR	/usr/include/sys/ucontext.h	/^  REG_ERR,$/;"	e	language:C	enum:__anon62
+REG_ERR	/usr/include/sys/ucontext.h	185;"	d	language:C
+REG_ERR	/usr/include/sys/ucontext.h	82;"	d	language:C
+REG_ES	/usr/include/sys/ucontext.h	/^  REG_ES,$/;"	e	language:C	enum:__anon62
+REG_ES	/usr/include/sys/ucontext.h	163;"	d	language:C
+REG_ESI	/usr/include/sys/ucontext.h	/^  REG_ESI,$/;"	e	language:C	enum:__anon62
+REG_ESI	/usr/include/sys/ucontext.h	169;"	d	language:C
+REG_ESP	/usr/include/sys/ucontext.h	/^  REG_ESP,$/;"	e	language:C	enum:__anon62
+REG_ESP	/usr/include/sys/ucontext.h	173;"	d	language:C
+REG_FS	/usr/include/sys/ucontext.h	/^  REG_FS,$/;"	e	language:C	enum:__anon62
+REG_FS	/usr/include/sys/ucontext.h	161;"	d	language:C
+REG_GS	/usr/include/sys/ucontext.h	/^  REG_GS = 0,$/;"	e	language:C	enum:__anon62
+REG_GS	/usr/include/sys/ucontext.h	159;"	d	language:C
+REG_OLDMASK	/usr/include/sys/ucontext.h	/^  REG_OLDMASK,$/;"	e	language:C	enum:__anon60
+REG_OLDMASK	/usr/include/sys/ucontext.h	86;"	d	language:C
+REG_R10	/usr/include/sys/ucontext.h	/^  REG_R10,$/;"	e	language:C	enum:__anon60
+REG_R10	/usr/include/sys/ucontext.h	48;"	d	language:C
+REG_R11	/usr/include/sys/ucontext.h	/^  REG_R11,$/;"	e	language:C	enum:__anon60
+REG_R11	/usr/include/sys/ucontext.h	50;"	d	language:C
+REG_R12	/usr/include/sys/ucontext.h	/^  REG_R12,$/;"	e	language:C	enum:__anon60
+REG_R12	/usr/include/sys/ucontext.h	52;"	d	language:C
+REG_R13	/usr/include/sys/ucontext.h	/^  REG_R13,$/;"	e	language:C	enum:__anon60
+REG_R13	/usr/include/sys/ucontext.h	54;"	d	language:C
+REG_R14	/usr/include/sys/ucontext.h	/^  REG_R14,$/;"	e	language:C	enum:__anon60
+REG_R14	/usr/include/sys/ucontext.h	56;"	d	language:C
+REG_R15	/usr/include/sys/ucontext.h	/^  REG_R15,$/;"	e	language:C	enum:__anon60
+REG_R15	/usr/include/sys/ucontext.h	58;"	d	language:C
+REG_R8	/usr/include/sys/ucontext.h	/^  REG_R8 = 0,$/;"	e	language:C	enum:__anon60
+REG_R8	/usr/include/sys/ucontext.h	44;"	d	language:C
+REG_R9	/usr/include/sys/ucontext.h	/^  REG_R9,$/;"	e	language:C	enum:__anon60
+REG_R9	/usr/include/sys/ucontext.h	46;"	d	language:C
+REG_RAX	/usr/include/sys/ucontext.h	/^  REG_RAX,$/;"	e	language:C	enum:__anon60
+REG_RAX	/usr/include/sys/ucontext.h	70;"	d	language:C
+REG_RBP	/usr/include/sys/ucontext.h	/^  REG_RBP,$/;"	e	language:C	enum:__anon60
+REG_RBP	/usr/include/sys/ucontext.h	64;"	d	language:C
+REG_RBX	/usr/include/sys/ucontext.h	/^  REG_RBX,$/;"	e	language:C	enum:__anon60
+REG_RBX	/usr/include/sys/ucontext.h	66;"	d	language:C
+REG_RCX	/usr/include/sys/ucontext.h	/^  REG_RCX,$/;"	e	language:C	enum:__anon60
+REG_RCX	/usr/include/sys/ucontext.h	72;"	d	language:C
+REG_RDI	/usr/include/sys/ucontext.h	/^  REG_RDI,$/;"	e	language:C	enum:__anon60
+REG_RDI	/usr/include/sys/ucontext.h	60;"	d	language:C
+REG_RDX	/usr/include/sys/ucontext.h	/^  REG_RDX,$/;"	e	language:C	enum:__anon60
+REG_RDX	/usr/include/sys/ucontext.h	68;"	d	language:C
+REG_RIP	/usr/include/sys/ucontext.h	/^  REG_RIP,$/;"	e	language:C	enum:__anon60
+REG_RIP	/usr/include/sys/ucontext.h	76;"	d	language:C
+REG_RSI	/usr/include/sys/ucontext.h	/^  REG_RSI,$/;"	e	language:C	enum:__anon60
+REG_RSI	/usr/include/sys/ucontext.h	62;"	d	language:C
+REG_RSP	/usr/include/sys/ucontext.h	/^  REG_RSP,$/;"	e	language:C	enum:__anon60
+REG_RSP	/usr/include/sys/ucontext.h	74;"	d	language:C
+REG_SS	/usr/include/sys/ucontext.h	/^  REG_SS$/;"	e	language:C	enum:__anon62
+REG_SS	/usr/include/sys/ucontext.h	195;"	d	language:C
+REG_TRAPNO	/usr/include/sys/ucontext.h	/^  REG_TRAPNO,$/;"	e	language:C	enum:__anon60
+REG_TRAPNO	/usr/include/sys/ucontext.h	/^  REG_TRAPNO,$/;"	e	language:C	enum:__anon62
+REG_TRAPNO	/usr/include/sys/ucontext.h	183;"	d	language:C
+REG_TRAPNO	/usr/include/sys/ucontext.h	84;"	d	language:C
+REG_UESP	/usr/include/sys/ucontext.h	/^  REG_UESP,$/;"	e	language:C	enum:__anon62
+REG_UESP	/usr/include/sys/ucontext.h	193;"	d	language:C
 RM_CALCULATION	magic.h	/^    RM_CALCULATION = 1,$/;"	e	language:C	enum:run_mode
 RM_EXPERIMENTAL	magic.h	/^    RM_EXPERIMENTAL,$/;"	e	language:C	enum:run_mode
 RM_RUN	magic.h	/^    RM_RUN$/;"	e	language:C	enum:run_mode
+R_OK	/usr/include/unistd.h	281;"	d	language:C
 R_val	magic.h	/^    double **R_val; \/\/Function overlaps used in the Grahm-Schmidt process. <f_i|e_j>$/;"	m	language:C	struct:params_variational_master
 S	magic.h	/^    af_leaf ***S; \/\/Function to calculate overlap. <f_i|f_j>$/;"	m	language:C	struct:params_variational_master
-SC_BOTH	main.c	31;"	d	language:C	file:
-SC_NONE	main.c	30;"	d	language:C	file:
-SC_ONLY_GEO	main.c	33;"	d	language:C	file:
-SC_ONLY_TRANS	main.c	32;"	d	language:C	file:
+SA_INTERRUPT	/usr/include/bits/sigaction.h	67;"	d	language:C
+SA_NOCLDSTOP	/usr/include/bits/sigaction.h	53;"	d	language:C
+SA_NOCLDWAIT	/usr/include/bits/sigaction.h	54;"	d	language:C
+SA_NODEFER	/usr/include/bits/sigaction.h	62;"	d	language:C
+SA_NOMASK	/usr/include/bits/sigaction.h	70;"	d	language:C
+SA_ONESHOT	/usr/include/bits/sigaction.h	71;"	d	language:C
+SA_ONSTACK	/usr/include/bits/sigaction.h	58;"	d	language:C
+SA_RESETHAND	/usr/include/bits/sigaction.h	64;"	d	language:C
+SA_RESTART	/usr/include/bits/sigaction.h	61;"	d	language:C
+SA_SIGINFO	/usr/include/bits/sigaction.h	55;"	d	language:C
+SA_STACK	/usr/include/bits/sigaction.h	72;"	d	language:C
+SC_BOTH	main.c	22;"	d	language:C	file:
+SC_NONE	main.c	21;"	d	language:C	file:
+SC_ONLY_GEO	main.c	24;"	d	language:C	file:
+SC_ONLY_TRANS	main.c	23;"	d	language:C	file:
 SEEK_CUR	/usr/include/stdio.h	141;"	d	language:C
+SEEK_CUR	/usr/include/unistd.h	312;"	d	language:C
 SEEK_DATA	/usr/include/stdio.h	144;"	d	language:C
+SEEK_DATA	/usr/include/unistd.h	315;"	d	language:C
 SEEK_END	/usr/include/stdio.h	142;"	d	language:C
+SEEK_END	/usr/include/unistd.h	313;"	d	language:C
 SEEK_HOLE	/usr/include/stdio.h	145;"	d	language:C
+SEEK_HOLE	/usr/include/unistd.h	316;"	d	language:C
 SEEK_SET	/usr/include/stdio.h	140;"	d	language:C
+SEEK_SET	/usr/include/unistd.h	311;"	d	language:C
+SEGV_ACCERR	/usr/include/bits/siginfo.h	/^  SEGV_ACCERR			\/* Invalid permissions for mapped object.  *\/$/;"	e	language:C	enum:__anon49
+SEGV_ACCERR	/usr/include/bits/siginfo.h	224;"	d	language:C
+SEGV_MAPERR	/usr/include/bits/siginfo.h	/^  SEGV_MAPERR = 1,		\/* Address not mapped to object.  *\/$/;"	e	language:C	enum:__anon49
+SEGV_MAPERR	/usr/include/bits/siginfo.h	222;"	d	language:C
+SIGABRT	/usr/include/bits/signum.h	37;"	d	language:C
+SIGALRM	/usr/include/bits/signum.h	46;"	d	language:C
+SIGBUS	/usr/include/bits/signum.h	39;"	d	language:C
+SIGCHLD	/usr/include/bits/signum.h	50;"	d	language:C
+SIGCLD	/usr/include/bits/signum.h	49;"	d	language:C
+SIGCONT	/usr/include/bits/signum.h	51;"	d	language:C
+SIGEV_NONE	/usr/include/bits/siginfo.h	/^  SIGEV_NONE,			\/* Other notification: meaningless.  *\/$/;"	e	language:C	enum:__anon56
+SIGEV_NONE	/usr/include/bits/siginfo.h	339;"	d	language:C
+SIGEV_SIGNAL	/usr/include/bits/siginfo.h	/^  SIGEV_SIGNAL = 0,		\/* Notify via signal.  *\/$/;"	e	language:C	enum:__anon56
+SIGEV_SIGNAL	/usr/include/bits/siginfo.h	337;"	d	language:C
+SIGEV_THREAD	/usr/include/bits/siginfo.h	/^  SIGEV_THREAD,			\/* Deliver via thread creation.  *\/$/;"	e	language:C	enum:__anon56
+SIGEV_THREAD	/usr/include/bits/siginfo.h	341;"	d	language:C
+SIGEV_THREAD_ID	/usr/include/bits/siginfo.h	/^  SIGEV_THREAD_ID = 4		\/* Send signal to specific thread.  *\/$/;"	e	language:C	enum:__anon56
+SIGEV_THREAD_ID	/usr/include/bits/siginfo.h	344;"	d	language:C
+SIGFPE	/usr/include/bits/signum.h	40;"	d	language:C
+SIGHUP	/usr/include/bits/signum.h	32;"	d	language:C
+SIGILL	/usr/include/bits/signum.h	35;"	d	language:C
+SIGINT	/usr/include/bits/signum.h	33;"	d	language:C
+SIGIO	/usr/include/bits/signum.h	63;"	d	language:C
+SIGIOT	/usr/include/bits/signum.h	38;"	d	language:C
+SIGKILL	/usr/include/bits/signum.h	41;"	d	language:C
+SIGPIPE	/usr/include/bits/signum.h	45;"	d	language:C
+SIGPOLL	/usr/include/bits/signum.h	62;"	d	language:C
+SIGPROF	/usr/include/bits/signum.h	60;"	d	language:C
+SIGPWR	/usr/include/bits/signum.h	64;"	d	language:C
+SIGQUIT	/usr/include/bits/signum.h	34;"	d	language:C
+SIGRTMAX	/usr/include/bits/signum.h	72;"	d	language:C
+SIGRTMIN	/usr/include/bits/signum.h	71;"	d	language:C
+SIGSEGV	/usr/include/bits/signum.h	43;"	d	language:C
+SIGSTKFLT	/usr/include/bits/signum.h	48;"	d	language:C
+SIGSTKSZ	/usr/include/bits/sigstack.h	45;"	d	language:C
+SIGSTOP	/usr/include/bits/signum.h	52;"	d	language:C
+SIGSYS	/usr/include/bits/signum.h	65;"	d	language:C
+SIGTERM	/usr/include/bits/signum.h	47;"	d	language:C
+SIGTRAP	/usr/include/bits/signum.h	36;"	d	language:C
+SIGTSTP	/usr/include/bits/signum.h	53;"	d	language:C
+SIGTTIN	/usr/include/bits/signum.h	54;"	d	language:C
+SIGTTOU	/usr/include/bits/signum.h	55;"	d	language:C
+SIGUNUSED	/usr/include/bits/signum.h	66;"	d	language:C
+SIGURG	/usr/include/bits/signum.h	56;"	d	language:C
+SIGUSR1	/usr/include/bits/signum.h	42;"	d	language:C
+SIGUSR2	/usr/include/bits/signum.h	44;"	d	language:C
+SIGVTALRM	/usr/include/bits/signum.h	59;"	d	language:C
+SIGWINCH	/usr/include/bits/signum.h	61;"	d	language:C
+SIGXCPU	/usr/include/bits/signum.h	57;"	d	language:C
+SIGXFSZ	/usr/include/bits/signum.h	58;"	d	language:C
+SIG_BLOCK	/usr/include/bits/sigaction.h	76;"	d	language:C
+SIG_DFL	/usr/include/bits/signum.h	23;"	d	language:C
+SIG_ERR	/usr/include/bits/signum.h	22;"	d	language:C
+SIG_HOLD	/usr/include/bits/signum.h	27;"	d	language:C
+SIG_IGN	/usr/include/bits/signum.h	24;"	d	language:C
+SIG_SETMASK	/usr/include/bits/sigaction.h	78;"	d	language:C
+SIG_UNBLOCK	/usr/include/bits/sigaction.h	77;"	d	language:C
 SING	/usr/include/math.h	346;"	d	language:C
+SI_ASYNCIO	/usr/include/bits/siginfo.h	/^  SI_ASYNCIO,			\/* Sent by AIO completion.  *\/$/;"	e	language:C	enum:__anon46
+SI_ASYNCIO	/usr/include/bits/siginfo.h	162;"	d	language:C
+SI_ASYNCNL	/usr/include/bits/siginfo.h	/^  SI_ASYNCNL = -60,		\/* Sent by asynch name lookup completion.  *\/$/;"	e	language:C	enum:__anon46
+SI_ASYNCNL	/usr/include/bits/siginfo.h	156;"	d	language:C
+SI_KERNEL	/usr/include/bits/siginfo.h	/^  SI_KERNEL = 0x80		\/* Send by kernel.  *\/$/;"	e	language:C	enum:__anon46
+SI_KERNEL	/usr/include/bits/siginfo.h	172;"	d	language:C
+SI_MESGQ	/usr/include/bits/siginfo.h	/^  SI_MESGQ,			\/* Sent by real time mesq state change.  *\/$/;"	e	language:C	enum:__anon46
+SI_MESGQ	/usr/include/bits/siginfo.h	164;"	d	language:C
+SI_QUEUE	/usr/include/bits/siginfo.h	/^  SI_QUEUE,			\/* Sent by sigqueue.  *\/$/;"	e	language:C	enum:__anon46
+SI_QUEUE	/usr/include/bits/siginfo.h	168;"	d	language:C
+SI_SIGIO	/usr/include/bits/siginfo.h	/^  SI_SIGIO,			\/* Sent by queued SIGIO. *\/$/;"	e	language:C	enum:__anon46
+SI_SIGIO	/usr/include/bits/siginfo.h	160;"	d	language:C
+SI_TIMER	/usr/include/bits/siginfo.h	/^  SI_TIMER,			\/* Sent by timer expiration.  *\/$/;"	e	language:C	enum:__anon46
+SI_TIMER	/usr/include/bits/siginfo.h	166;"	d	language:C
+SI_TKILL	/usr/include/bits/siginfo.h	/^  SI_TKILL = -6,		\/* Sent by tkill.  *\/$/;"	e	language:C	enum:__anon46
+SI_TKILL	/usr/include/bits/siginfo.h	158;"	d	language:C
+SI_USER	/usr/include/bits/siginfo.h	/^  SI_USER,			\/* Sent by kill, sigsend.  *\/$/;"	e	language:C	enum:__anon46
+SI_USER	/usr/include/bits/siginfo.h	170;"	d	language:C
+SPE	magic.h	/^typedef enum { POL, EXP, SPE } var_t;$/;"	e	language:C	enum:__anon36
 SQR	include/converged.h	8;"	d	language:C
+SS_DISABLE	/usr/include/bits/sigstack.h	/^  SS_DISABLE$/;"	e	language:C	enum:__anon59
+SS_DISABLE	/usr/include/bits/sigstack.h	38;"	d	language:C
+SS_ONSTACK	/usr/include/bits/sigstack.h	/^  SS_ONSTACK = 1,$/;"	e	language:C	enum:__anon59
+SS_ONSTACK	/usr/include/bits/sigstack.h	36;"	d	language:C
+STDERR_FILENO	/usr/include/unistd.h	212;"	d	language:C
+STDIN_FILENO	/usr/include/unistd.h	210;"	d	language:C
+STDOUT_FILENO	/usr/include/unistd.h	211;"	d	language:C
+STR	main.c	118;"	d	language:C	file:
+STRSIZ	main.c	27;"	d	language:C	file:
 SUCCESS	pcubature.c	34;"	d	language:C	file:
+SV_INTERRUPT	/usr/include/signal.h	318;"	d	language:C
+SV_ONSTACK	/usr/include/signal.h	317;"	d	language:C
+SV_RESETHAND	/usr/include/signal.h	319;"	d	language:C
 S_val	magic.h	/^    double *S_val; \/\/Overlap coefficients. As the diagonal is one, the diagonal is set here as the norm const.$/;"	m	language:C	struct:params_variational_master
+TEMP_FAILURE_RETRY	/usr/include/unistd.h	1101;"	d	language:C
 TIMER_ABSTIME	/usr/include/bits/time.h	82;"	d	language:C
 TIME_UTC	/usr/include/time.h	182;"	d	language:C
 TLOSS	/usr/include/math.h	349;"	d	language:C
 TMP_MAX	/usr/include/bits/stdio_lim.h	24;"	d	language:C
-TRANSLATION_SHIFT	main.c	27;"	d	language:C	file:
+TRANSLATION_SHIFT	main.c	18;"	d	language:C	file:
+TRAP_BRKPT	/usr/include/bits/siginfo.h	/^  TRAP_BRKPT = 1,		\/* Process breakpoint.  *\/$/;"	e	language:C	enum:__anon51
+TRAP_BRKPT	/usr/include/bits/siginfo.h	246;"	d	language:C
+TRAP_TRACE	/usr/include/bits/siginfo.h	/^  TRAP_TRACE			\/* Process trace trap.  *\/$/;"	e	language:C	enum:__anon51
+TRAP_TRACE	/usr/include/bits/siginfo.h	248;"	d	language:C
 UNDERFLOW	/usr/include/math.h	348;"	d	language:C
-USAGE	main.c	669;"	d	language:C	file:
+USAGE	main.c	709;"	d	language:C	file:
 VAL	pcubature.c	280;"	d	language:C	file:
 WCHAR_MAX	/usr/include/wchar.h	118;"	d	language:C
 WCHAR_MIN	/usr/include/wchar.h	117;"	d	language:C
@@ -250,9 +528,11 @@ WSTOPPED	/usr/include/bits/waitflags.h	29;"	d	language:C
 WSTOPSIG	/usr/include/stdlib.h	86;"	d	language:C
 WTERMSIG	/usr/include/stdlib.h	85;"	d	language:C
 WUNTRACED	/usr/include/bits/waitflags.h	26;"	d	language:C
+W_OK	/usr/include/unistd.h	282;"	d	language:C
+X86_FXSR_MAGIC	/usr/include/bits/sigcontext.h	91;"	d	language:C
+X_OK	/usr/include/unistd.h	283;"	d	language:C
 X_TLOSS	/usr/include/math.h	342;"	d	language:C
-ZEROTOL	main.c	20;"	d	language:C	file:
-ZERO_OVERLAP	magic.h	100;"	d	language:C
+ZERO_OVERLAP	magic.h	129;"	d	language:C
 _4VDGFDQT35GE5HR5B32FYDDODQ	include/c_fornberg.h	2;"	d	language:C
 _ALLOCA_H	/usr/include/alloca.h	19;"	d	language:C
 _ANSI_STDARG_H_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	32;"	d	language:C
@@ -262,7 +542,10 @@ _ATFILE_SOURCE	/usr/include/features.h	174;"	d	language:C
 _ATFILE_SOURCE	/usr/include/features.h	273;"	d	language:C
 _ATFILE_SOURCE	/usr/include/features.h	274;"	d	language:C
 _BITS_BYTESWAP_H	/usr/include/bits/byteswap.h	24;"	d	language:C
+_BITS_POSIX_OPT_H	/usr/include/bits/posix_opt.h	20;"	d	language:C
 _BITS_PTHREADTYPES_H	/usr/include/bits/pthreadtypes.h	19;"	d	language:C
+_BITS_SIGCONTEXT_H	/usr/include/bits/sigcontext.h	19;"	d	language:C
+_BITS_SIGTHREAD_H	/usr/include/bits/sigthread.h	20;"	d	language:C
 _BITS_TIME_H	/usr/include/bits/time.h	40;"	d	language:C
 _BITS_TYPESIZES_H	/usr/include/bits/typesizes.h	24;"	d	language:C
 _BITS_TYPES_H	/usr/include/bits/types.h	24;"	d	language:C
@@ -288,6 +571,137 @@ _BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	375;"	d	la
 _BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	388;"	d	language:C
 _BSD_WCHAR_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	88;"	d	language:C
 _BSD_WCHAR_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	294;"	d	language:C
+_CS_GNU_LIBC_VERSION	/usr/include/bits/confname.h	/^    _CS_GNU_LIBC_VERSION,$/;"	e	language:C	enum:__anon66
+_CS_GNU_LIBC_VERSION	/usr/include/bits/confname.h	543;"	d	language:C
+_CS_GNU_LIBPTHREAD_VERSION	/usr/include/bits/confname.h	/^    _CS_GNU_LIBPTHREAD_VERSION,$/;"	e	language:C	enum:__anon66
+_CS_GNU_LIBPTHREAD_VERSION	/usr/include/bits/confname.h	545;"	d	language:C
+_CS_LFS64_CFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS64_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_LFS64_CFLAGS	/usr/include/bits/confname.h	564;"	d	language:C
+_CS_LFS64_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS64_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_LFS64_LDFLAGS	/usr/include/bits/confname.h	566;"	d	language:C
+_CS_LFS64_LIBS	/usr/include/bits/confname.h	/^    _CS_LFS64_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_LFS64_LIBS	/usr/include/bits/confname.h	568;"	d	language:C
+_CS_LFS64_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS64_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_LFS64_LINTFLAGS	/usr/include/bits/confname.h	570;"	d	language:C
+_CS_LFS_CFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS_CFLAGS = 1000,$/;"	e	language:C	enum:__anon66
+_CS_LFS_CFLAGS	/usr/include/bits/confname.h	556;"	d	language:C
+_CS_LFS_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_LFS_LDFLAGS	/usr/include/bits/confname.h	558;"	d	language:C
+_CS_LFS_LIBS	/usr/include/bits/confname.h	/^    _CS_LFS_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_LFS_LIBS	/usr/include/bits/confname.h	560;"	d	language:C
+_CS_LFS_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_LFS_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_LFS_LINTFLAGS	/usr/include/bits/confname.h	562;"	d	language:C
+_CS_PATH	/usr/include/bits/confname.h	/^    _CS_PATH,			\/* The default search path.  *\/$/;"	e	language:C	enum:__anon66
+_CS_PATH	/usr/include/bits/confname.h	536;"	d	language:C
+_CS_POSIX_V5_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	549;"	d	language:C
+_CS_POSIX_V6_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFF32_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	606;"	d	language:C
+_CS_POSIX_V6_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFF32_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	608;"	d	language:C
+_CS_POSIX_V6_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFF32_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	610;"	d	language:C
+_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	612;"	d	language:C
+_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	614;"	d	language:C
+_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	616;"	d	language:C
+_CS_POSIX_V6_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	618;"	d	language:C
+_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	620;"	d	language:C
+_CS_POSIX_V6_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LP64_OFF64_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	622;"	d	language:C
+_CS_POSIX_V6_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LP64_OFF64_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	624;"	d	language:C
+_CS_POSIX_V6_LP64_OFF64_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LP64_OFF64_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LP64_OFF64_LIBS	/usr/include/bits/confname.h	626;"	d	language:C
+_CS_POSIX_V6_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LP64_OFF64_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	628;"	d	language:C
+_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	630;"	d	language:C
+_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	632;"	d	language:C
+_CS_POSIX_V6_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LPBIG_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	634;"	d	language:C
+_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	636;"	d	language:C
+_CS_POSIX_V6_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	540;"	d	language:C
+_CS_POSIX_V7_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFF32_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	639;"	d	language:C
+_CS_POSIX_V7_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFF32_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	641;"	d	language:C
+_CS_POSIX_V7_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFF32_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	643;"	d	language:C
+_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	645;"	d	language:C
+_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	647;"	d	language:C
+_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	649;"	d	language:C
+_CS_POSIX_V7_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	651;"	d	language:C
+_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	653;"	d	language:C
+_CS_POSIX_V7_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LP64_OFF64_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	655;"	d	language:C
+_CS_POSIX_V7_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LP64_OFF64_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	657;"	d	language:C
+_CS_POSIX_V7_LP64_OFF64_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LP64_OFF64_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LP64_OFF64_LIBS	/usr/include/bits/confname.h	659;"	d	language:C
+_CS_POSIX_V7_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LP64_OFF64_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	661;"	d	language:C
+_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	663;"	d	language:C
+_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	665;"	d	language:C
+_CS_POSIX_V7_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LPBIG_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	667;"	d	language:C
+_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	669;"	d	language:C
+_CS_POSIX_V7_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	553;"	d	language:C
+_CS_V5_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	/^    _CS_V5_WIDTH_RESTRICTED_ENVS,$/;"	e	language:C	enum:__anon66
+_CS_V5_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	548;"	d	language:C
+_CS_V6_ENV	/usr/include/bits/confname.h	/^    _CS_V6_ENV,$/;"	e	language:C	enum:__anon66
+_CS_V6_ENV	/usr/include/bits/confname.h	672;"	d	language:C
+_CS_V6_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	/^    _CS_V6_WIDTH_RESTRICTED_ENVS,$/;"	e	language:C	enum:__anon66
+_CS_V6_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	539;"	d	language:C
+_CS_V7_ENV	/usr/include/bits/confname.h	/^    _CS_V7_ENV$/;"	e	language:C	enum:__anon66
+_CS_V7_ENV	/usr/include/bits/confname.h	674;"	d	language:C
+_CS_V7_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	/^    _CS_V7_WIDTH_RESTRICTED_ENVS,$/;"	e	language:C	enum:__anon66
+_CS_V7_WIDTH_RESTRICTED_ENVS	/usr/include/bits/confname.h	552;"	d	language:C
+_CS_XBS5_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFF32_CFLAGS = 1100,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFF32_CFLAGS	/usr/include/bits/confname.h	573;"	d	language:C
+_CS_XBS5_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFF32_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFF32_LDFLAGS	/usr/include/bits/confname.h	575;"	d	language:C
+_CS_XBS5_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFF32_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFF32_LIBS	/usr/include/bits/confname.h	577;"	d	language:C
+_CS_XBS5_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFF32_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFF32_LINTFLAGS	/usr/include/bits/confname.h	579;"	d	language:C
+_CS_XBS5_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFFBIG_CFLAGS	/usr/include/bits/confname.h	581;"	d	language:C
+_CS_XBS5_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	583;"	d	language:C
+_CS_XBS5_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFFBIG_LIBS	/usr/include/bits/confname.h	585;"	d	language:C
+_CS_XBS5_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_ILP32_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_ILP32_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	587;"	d	language:C
+_CS_XBS5_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LP64_OFF64_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LP64_OFF64_CFLAGS	/usr/include/bits/confname.h	589;"	d	language:C
+_CS_XBS5_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LP64_OFF64_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LP64_OFF64_LDFLAGS	/usr/include/bits/confname.h	591;"	d	language:C
+_CS_XBS5_LP64_OFF64_LIBS	/usr/include/bits/confname.h	/^    _CS_XBS5_LP64_OFF64_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LP64_OFF64_LIBS	/usr/include/bits/confname.h	593;"	d	language:C
+_CS_XBS5_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LP64_OFF64_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LP64_OFF64_LINTFLAGS	/usr/include/bits/confname.h	595;"	d	language:C
+_CS_XBS5_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LPBIG_OFFBIG_CFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LPBIG_OFFBIG_CFLAGS	/usr/include/bits/confname.h	597;"	d	language:C
+_CS_XBS5_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LPBIG_OFFBIG_LDFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LPBIG_OFFBIG_LDFLAGS	/usr/include/bits/confname.h	599;"	d	language:C
+_CS_XBS5_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	/^    _CS_XBS5_LPBIG_OFFBIG_LIBS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LPBIG_OFFBIG_LIBS	/usr/include/bits/confname.h	601;"	d	language:C
+_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	/^    _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS,$/;"	e	language:C	enum:__anon66
+_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS	/usr/include/bits/confname.h	603;"	d	language:C
 _DEFAULT_SOURCE	/usr/include/features.h	167;"	d	language:C
 _DEFAULT_SOURCE	/usr/include/features.h	168;"	d	language:C
 _DEFAULT_SOURCE	/usr/include/features.h	185;"	d	language:C
@@ -300,6 +714,7 @@ _GCC_MAX_ALIGN_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	418;"	d
 _GCC_PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	143;"	d	language:C
 _GCC_SIZE_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	198;"	d	language:C
 _GCC_WCHAR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	276;"	d	language:C
+_GETOPT_H	/usr/include/getopt.h	22;"	d	language:C
 _GXX_NULLPTR_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	431;"	d	language:C
 _G_BUFSIZ	/usr/include/_G_config.h	56;"	d	language:C
 _G_HAVE_MMAP	/usr/include/_G_config.h	48;"	d	language:C
@@ -312,7 +727,7 @@ _G_fpos_t	/usr/include/_G_config.h	/^} _G_fpos_t;$/;"	t	language:C	typeref:struc
 _G_iconv_t	/usr/include/_G_config.h	/^} _G_iconv_t;$/;"	t	language:C	typeref:union:__anon5
 _G_va_list	/usr/include/_G_config.h	46;"	d	language:C
 _IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	language:C	enum:__anon29
-_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	language:C	enum:__anon57
+_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	language:C	enum:__anon88
 _IOFBF	/usr/include/stdio.h	120;"	d	language:C
 _IOLBF	/usr/include/stdio.h	121;"	d	language:C
 _IONBF	/usr/include/stdio.h	122;"	d	language:C
@@ -449,13 +864,18 @@ _ISOC95_SOURCE	/usr/include/features.h	152;"	d	language:C
 _ISOC99_SOURCE	/usr/include/features.h	153;"	d	language:C
 _ISOC99_SOURCE	/usr/include/features.h	154;"	d	language:C
 _ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	language:C	enum:__anon29
-_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	language:C	enum:__anon57
+_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	language:C	enum:__anon88
 _LARGEFILE64_SOURCE	/usr/include/features.h	165;"	d	language:C
 _LARGEFILE64_SOURCE	/usr/include/features.h	166;"	d	language:C
 _LARGEFILE_SOURCE	/usr/include/features.h	282;"	d	language:C
 _LARGEFILE_SOURCE	/usr/include/features.h	283;"	d	language:C
+_LFS64_ASYNCHRONOUS_IO	/usr/include/bits/posix_opt.h	114;"	d	language:C
+_LFS64_LARGEFILE	/usr/include/bits/posix_opt.h	118;"	d	language:C
+_LFS64_STDIO	/usr/include/bits/posix_opt.h	119;"	d	language:C
+_LFS_ASYNCHRONOUS_IO	/usr/include/bits/posix_opt.h	109;"	d	language:C
+_LFS_LARGEFILE	/usr/include/bits/posix_opt.h	117;"	d	language:C
 _LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	language:C	typeref:enum:__anon29
-_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	language:C	typeref:enum:__anon57
+_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	language:C	typeref:enum:__anon88
 _MATH_H	/usr/include/math.h	24;"	d	language:C
 _MATH_H_MATHDEF	/usr/include/bits/mathdef.h	23;"	d	language:C
 _Mdouble_	/usr/include/math.h	127;"	d	language:C
@@ -478,9 +898,65 @@ _Mdouble_END_NAMESPACE	/usr/include/math.h	87;"	d	language:C
 _Mdouble_END_NAMESPACE	/usr/include/math.h	91;"	d	language:C
 _Mfloat_	/usr/include/math.h	82;"	d	language:C
 _Mlong_double_	/usr/include/math.h	125;"	d	language:C
+_NSIG	/usr/include/bits/signum.h	68;"	d	language:C
 _OLD_STDIO_MAGIC	/usr/include/libio.h	93;"	d	language:C
+_PC_2_SYMLINKS	/usr/include/bits/confname.h	/^    _PC_2_SYMLINKS$/;"	e	language:C	enum:__anon64
+_PC_2_SYMLINKS	/usr/include/bits/confname.h	67;"	d	language:C
+_PC_ALLOC_SIZE_MIN	/usr/include/bits/confname.h	/^    _PC_ALLOC_SIZE_MIN,$/;"	e	language:C	enum:__anon64
+_PC_ALLOC_SIZE_MIN	/usr/include/bits/confname.h	63;"	d	language:C
+_PC_ASYNC_IO	/usr/include/bits/confname.h	/^    _PC_ASYNC_IO,$/;"	e	language:C	enum:__anon64
+_PC_ASYNC_IO	/usr/include/bits/confname.h	47;"	d	language:C
+_PC_CHOWN_RESTRICTED	/usr/include/bits/confname.h	/^    _PC_CHOWN_RESTRICTED,$/;"	e	language:C	enum:__anon64
+_PC_CHOWN_RESTRICTED	/usr/include/bits/confname.h	39;"	d	language:C
+_PC_FILESIZEBITS	/usr/include/bits/confname.h	/^    _PC_FILESIZEBITS,$/;"	e	language:C	enum:__anon64
+_PC_FILESIZEBITS	/usr/include/bits/confname.h	53;"	d	language:C
+_PC_LINK_MAX	/usr/include/bits/confname.h	/^    _PC_LINK_MAX,$/;"	e	language:C	enum:__anon64
+_PC_LINK_MAX	/usr/include/bits/confname.h	27;"	d	language:C
+_PC_MAX_CANON	/usr/include/bits/confname.h	/^    _PC_MAX_CANON,$/;"	e	language:C	enum:__anon64
+_PC_MAX_CANON	/usr/include/bits/confname.h	29;"	d	language:C
+_PC_MAX_INPUT	/usr/include/bits/confname.h	/^    _PC_MAX_INPUT,$/;"	e	language:C	enum:__anon64
+_PC_MAX_INPUT	/usr/include/bits/confname.h	31;"	d	language:C
+_PC_NAME_MAX	/usr/include/bits/confname.h	/^    _PC_NAME_MAX,$/;"	e	language:C	enum:__anon64
+_PC_NAME_MAX	/usr/include/bits/confname.h	33;"	d	language:C
+_PC_NO_TRUNC	/usr/include/bits/confname.h	/^    _PC_NO_TRUNC,$/;"	e	language:C	enum:__anon64
+_PC_NO_TRUNC	/usr/include/bits/confname.h	41;"	d	language:C
+_PC_PATH_MAX	/usr/include/bits/confname.h	/^    _PC_PATH_MAX,$/;"	e	language:C	enum:__anon64
+_PC_PATH_MAX	/usr/include/bits/confname.h	35;"	d	language:C
+_PC_PIPE_BUF	/usr/include/bits/confname.h	/^    _PC_PIPE_BUF,$/;"	e	language:C	enum:__anon64
+_PC_PIPE_BUF	/usr/include/bits/confname.h	37;"	d	language:C
+_PC_PRIO_IO	/usr/include/bits/confname.h	/^    _PC_PRIO_IO,$/;"	e	language:C	enum:__anon64
+_PC_PRIO_IO	/usr/include/bits/confname.h	49;"	d	language:C
+_PC_REC_INCR_XFER_SIZE	/usr/include/bits/confname.h	/^    _PC_REC_INCR_XFER_SIZE,$/;"	e	language:C	enum:__anon64
+_PC_REC_INCR_XFER_SIZE	/usr/include/bits/confname.h	55;"	d	language:C
+_PC_REC_MAX_XFER_SIZE	/usr/include/bits/confname.h	/^    _PC_REC_MAX_XFER_SIZE,$/;"	e	language:C	enum:__anon64
+_PC_REC_MAX_XFER_SIZE	/usr/include/bits/confname.h	57;"	d	language:C
+_PC_REC_MIN_XFER_SIZE	/usr/include/bits/confname.h	/^    _PC_REC_MIN_XFER_SIZE,$/;"	e	language:C	enum:__anon64
+_PC_REC_MIN_XFER_SIZE	/usr/include/bits/confname.h	59;"	d	language:C
+_PC_REC_XFER_ALIGN	/usr/include/bits/confname.h	/^    _PC_REC_XFER_ALIGN,$/;"	e	language:C	enum:__anon64
+_PC_REC_XFER_ALIGN	/usr/include/bits/confname.h	61;"	d	language:C
+_PC_SOCK_MAXBUF	/usr/include/bits/confname.h	/^    _PC_SOCK_MAXBUF,$/;"	e	language:C	enum:__anon64
+_PC_SOCK_MAXBUF	/usr/include/bits/confname.h	51;"	d	language:C
+_PC_SYMLINK_MAX	/usr/include/bits/confname.h	/^    _PC_SYMLINK_MAX,$/;"	e	language:C	enum:__anon64
+_PC_SYMLINK_MAX	/usr/include/bits/confname.h	65;"	d	language:C
+_PC_SYNC_IO	/usr/include/bits/confname.h	/^    _PC_SYNC_IO,$/;"	e	language:C	enum:__anon64
+_PC_SYNC_IO	/usr/include/bits/confname.h	45;"	d	language:C
+_PC_VDISABLE	/usr/include/bits/confname.h	/^    _PC_VDISABLE,$/;"	e	language:C	enum:__anon64
+_PC_VDISABLE	/usr/include/bits/confname.h	43;"	d	language:C
+_POSIX2_CHAR_TERM	/usr/include/bits/posix_opt.h	176;"	d	language:C
+_POSIX2_C_BIND	/usr/include/unistd.h	71;"	d	language:C
+_POSIX2_C_DEV	/usr/include/unistd.h	75;"	d	language:C
+_POSIX2_LOCALEDEF	/usr/include/unistd.h	83;"	d	language:C
+_POSIX2_SW_DEV	/usr/include/unistd.h	79;"	d	language:C
+_POSIX2_VERSION	/usr/include/unistd.h	67;"	d	language:C
 _POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	language:C	enum:__anon29
-_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	language:C	enum:__anon57
+_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	language:C	enum:__anon88
+_POSIX_ADVISORY_INFO	/usr/include/bits/posix_opt.h	167;"	d	language:C
+_POSIX_ASYNCHRONOUS_IO	/usr/include/bits/posix_opt.h	106;"	d	language:C
+_POSIX_ASYNC_IO	/usr/include/bits/posix_opt.h	107;"	d	language:C
+_POSIX_BARRIERS	/usr/include/bits/posix_opt.h	152;"	d	language:C
+_POSIX_CHOWN_RESTRICTED	/usr/include/bits/posix_opt.h	50;"	d	language:C
+_POSIX_CLOCK_SELECTION	/usr/include/bits/posix_opt.h	164;"	d	language:C
+_POSIX_CPUTIME	/usr/include/bits/posix_opt.h	125;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	159;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	160;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	229;"	d	language:C
@@ -489,11 +965,65 @@ _POSIX_C_SOURCE	/usr/include/features.h	236;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	238;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	240;"	d	language:C
 _POSIX_C_SOURCE	/usr/include/features.h	242;"	d	language:C
+_POSIX_FSYNC	/usr/include/bits/posix_opt.h	35;"	d	language:C
+_POSIX_IPV6	/usr/include/bits/posix_opt.h	170;"	d	language:C
+_POSIX_JOB_CONTROL	/usr/include/bits/posix_opt.h	23;"	d	language:C
+_POSIX_MAPPED_FILES	/usr/include/bits/posix_opt.h	38;"	d	language:C
+_POSIX_MEMLOCK	/usr/include/bits/posix_opt.h	41;"	d	language:C
+_POSIX_MEMLOCK_RANGE	/usr/include/bits/posix_opt.h	44;"	d	language:C
+_POSIX_MEMORY_PROTECTION	/usr/include/bits/posix_opt.h	47;"	d	language:C
+_POSIX_MESSAGE_PASSING	/usr/include/bits/posix_opt.h	155;"	d	language:C
+_POSIX_MONOTONIC_CLOCK	/usr/include/bits/posix_opt.h	161;"	d	language:C
+_POSIX_NO_TRUNC	/usr/include/bits/posix_opt.h	57;"	d	language:C
+_POSIX_PRIORITIZED_IO	/usr/include/bits/posix_opt.h	111;"	d	language:C
+_POSIX_PRIORITY_SCHEDULING	/usr/include/bits/posix_opt.h	29;"	d	language:C
+_POSIX_RAW_SOCKETS	/usr/include/bits/posix_opt.h	173;"	d	language:C
+_POSIX_READER_WRITER_LOCKS	/usr/include/bits/posix_opt.h	134;"	d	language:C
+_POSIX_REALTIME_SIGNALS	/usr/include/bits/posix_opt.h	103;"	d	language:C
+_POSIX_REENTRANT_FUNCTIONS	/usr/include/bits/posix_opt.h	72;"	d	language:C
+_POSIX_REGEXP	/usr/include/bits/posix_opt.h	131;"	d	language:C
+_POSIX_SAVED_IDS	/usr/include/bits/posix_opt.h	26;"	d	language:C
+_POSIX_SEMAPHORES	/usr/include/bits/posix_opt.h	100;"	d	language:C
+_POSIX_SHARED_MEMORY_OBJECTS	/usr/include/bits/posix_opt.h	122;"	d	language:C
+_POSIX_SHELL	/usr/include/bits/posix_opt.h	137;"	d	language:C
 _POSIX_SOURCE	/usr/include/features.h	157;"	d	language:C
 _POSIX_SOURCE	/usr/include/features.h	158;"	d	language:C
 _POSIX_SOURCE	/usr/include/features.h	227;"	d	language:C
 _POSIX_SOURCE	/usr/include/features.h	228;"	d	language:C
 _POSIX_SOURCE	/usr/include/features.h	234;"	d	language:C
+_POSIX_SPAWN	/usr/include/bits/posix_opt.h	146;"	d	language:C
+_POSIX_SPIN_LOCKS	/usr/include/bits/posix_opt.h	143;"	d	language:C
+_POSIX_SPORADIC_SERVER	/usr/include/bits/posix_opt.h	179;"	d	language:C
+_POSIX_SYNCHRONIZED_IO	/usr/include/bits/posix_opt.h	32;"	d	language:C
+_POSIX_THREADS	/usr/include/bits/posix_opt.h	69;"	d	language:C
+_POSIX_THREAD_ATTR_STACKADDR	/usr/include/bits/posix_opt.h	82;"	d	language:C
+_POSIX_THREAD_ATTR_STACKSIZE	/usr/include/bits/posix_opt.h	79;"	d	language:C
+_POSIX_THREAD_CPUTIME	/usr/include/bits/posix_opt.h	128;"	d	language:C
+_POSIX_THREAD_PRIORITY_SCHEDULING	/usr/include/bits/posix_opt.h	76;"	d	language:C
+_POSIX_THREAD_PRIO_INHERIT	/usr/include/bits/posix_opt.h	85;"	d	language:C
+_POSIX_THREAD_PRIO_PROTECT	/usr/include/bits/posix_opt.h	89;"	d	language:C
+_POSIX_THREAD_PROCESS_SHARED	/usr/include/bits/posix_opt.h	158;"	d	language:C
+_POSIX_THREAD_ROBUST_PRIO_INHERIT	/usr/include/bits/posix_opt.h	93;"	d	language:C
+_POSIX_THREAD_ROBUST_PRIO_PROTECT	/usr/include/bits/posix_opt.h	96;"	d	language:C
+_POSIX_THREAD_SAFE_FUNCTIONS	/usr/include/bits/posix_opt.h	73;"	d	language:C
+_POSIX_THREAD_SPORADIC_SERVER	/usr/include/bits/posix_opt.h	180;"	d	language:C
+_POSIX_TIMEOUTS	/usr/include/bits/posix_opt.h	140;"	d	language:C
+_POSIX_TIMERS	/usr/include/bits/posix_opt.h	149;"	d	language:C
+_POSIX_TRACE	/usr/include/bits/posix_opt.h	183;"	d	language:C
+_POSIX_TRACE_EVENT_FILTER	/usr/include/bits/posix_opt.h	184;"	d	language:C
+_POSIX_TRACE_INHERIT	/usr/include/bits/posix_opt.h	185;"	d	language:C
+_POSIX_TRACE_LOG	/usr/include/bits/posix_opt.h	186;"	d	language:C
+_POSIX_TYPED_MEMORY_OBJECTS	/usr/include/bits/posix_opt.h	189;"	d	language:C
+_POSIX_V6_ILP32_OFF32	/usr/include/bits/environments.h	76;"	d	language:C
+_POSIX_V6_ILP32_OFFBIG	/usr/include/bits/environments.h	70;"	d	language:C
+_POSIX_V6_LP64_OFF64	/usr/include/bits/environments.h	62;"	d	language:C
+_POSIX_V6_LPBIG_OFFBIG	/usr/include/bits/environments.h	57;"	d	language:C
+_POSIX_V7_ILP32_OFF32	/usr/include/bits/environments.h	75;"	d	language:C
+_POSIX_V7_ILP32_OFFBIG	/usr/include/bits/environments.h	69;"	d	language:C
+_POSIX_V7_LP64_OFF64	/usr/include/bits/environments.h	61;"	d	language:C
+_POSIX_V7_LPBIG_OFFBIG	/usr/include/bits/environments.h	56;"	d	language:C
+_POSIX_VDISABLE	/usr/include/bits/posix_opt.h	54;"	d	language:C
+_POSIX_VERSION	/usr/include/unistd.h	34;"	d	language:C
 _PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	136;"	d	language:C
 _PTRDIFF_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	68;"	d	language:C
 _PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	140;"	d	language:C
@@ -502,6 +1032,438 @@ _PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	379;"	d	lang
 _PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	79;"	d	language:C
 _PTRDIFF_T_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	95;"	d	language:C
 _RUNE_T_DECLARED	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	314;"	d	language:C
+_SC_2_CHAR_TERM	/usr/include/bits/confname.h	/^    _SC_2_CHAR_TERM,$/;"	e	language:C	enum:__anon65
+_SC_2_CHAR_TERM	/usr/include/bits/confname.h	277;"	d	language:C
+_SC_2_C_BIND	/usr/include/bits/confname.h	/^    _SC_2_C_BIND,$/;"	e	language:C	enum:__anon65
+_SC_2_C_BIND	/usr/include/bits/confname.h	173;"	d	language:C
+_SC_2_C_DEV	/usr/include/bits/confname.h	/^    _SC_2_C_DEV,$/;"	e	language:C	enum:__anon65
+_SC_2_C_DEV	/usr/include/bits/confname.h	175;"	d	language:C
+_SC_2_C_VERSION	/usr/include/bits/confname.h	/^    _SC_2_C_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_2_C_VERSION	/usr/include/bits/confname.h	279;"	d	language:C
+_SC_2_FORT_DEV	/usr/include/bits/confname.h	/^    _SC_2_FORT_DEV,$/;"	e	language:C	enum:__anon65
+_SC_2_FORT_DEV	/usr/include/bits/confname.h	177;"	d	language:C
+_SC_2_FORT_RUN	/usr/include/bits/confname.h	/^    _SC_2_FORT_RUN,$/;"	e	language:C	enum:__anon65
+_SC_2_FORT_RUN	/usr/include/bits/confname.h	179;"	d	language:C
+_SC_2_LOCALEDEF	/usr/include/bits/confname.h	/^    _SC_2_LOCALEDEF,$/;"	e	language:C	enum:__anon65
+_SC_2_LOCALEDEF	/usr/include/bits/confname.h	183;"	d	language:C
+_SC_2_PBS	/usr/include/bits/confname.h	/^    _SC_2_PBS,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS	/usr/include/bits/confname.h	429;"	d	language:C
+_SC_2_PBS_ACCOUNTING	/usr/include/bits/confname.h	/^    _SC_2_PBS_ACCOUNTING,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS_ACCOUNTING	/usr/include/bits/confname.h	431;"	d	language:C
+_SC_2_PBS_CHECKPOINT	/usr/include/bits/confname.h	/^    _SC_2_PBS_CHECKPOINT,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS_CHECKPOINT	/usr/include/bits/confname.h	443;"	d	language:C
+_SC_2_PBS_LOCATE	/usr/include/bits/confname.h	/^    _SC_2_PBS_LOCATE,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS_LOCATE	/usr/include/bits/confname.h	433;"	d	language:C
+_SC_2_PBS_MESSAGE	/usr/include/bits/confname.h	/^    _SC_2_PBS_MESSAGE,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS_MESSAGE	/usr/include/bits/confname.h	435;"	d	language:C
+_SC_2_PBS_TRACK	/usr/include/bits/confname.h	/^    _SC_2_PBS_TRACK,$/;"	e	language:C	enum:__anon65
+_SC_2_PBS_TRACK	/usr/include/bits/confname.h	437;"	d	language:C
+_SC_2_SW_DEV	/usr/include/bits/confname.h	/^    _SC_2_SW_DEV,$/;"	e	language:C	enum:__anon65
+_SC_2_SW_DEV	/usr/include/bits/confname.h	181;"	d	language:C
+_SC_2_UPE	/usr/include/bits/confname.h	/^    _SC_2_UPE,$/;"	e	language:C	enum:__anon65
+_SC_2_UPE	/usr/include/bits/confname.h	281;"	d	language:C
+_SC_2_VERSION	/usr/include/bits/confname.h	/^    _SC_2_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_2_VERSION	/usr/include/bits/confname.h	171;"	d	language:C
+_SC_ADVISORY_INFO	/usr/include/bits/confname.h	/^    _SC_ADVISORY_INFO,$/;"	e	language:C	enum:__anon65
+_SC_ADVISORY_INFO	/usr/include/bits/confname.h	357;"	d	language:C
+_SC_AIO_LISTIO_MAX	/usr/include/bits/confname.h	/^    _SC_AIO_LISTIO_MAX,$/;"	e	language:C	enum:__anon65
+_SC_AIO_LISTIO_MAX	/usr/include/bits/confname.h	120;"	d	language:C
+_SC_AIO_MAX	/usr/include/bits/confname.h	/^    _SC_AIO_MAX,$/;"	e	language:C	enum:__anon65
+_SC_AIO_MAX	/usr/include/bits/confname.h	122;"	d	language:C
+_SC_AIO_PRIO_DELTA_MAX	/usr/include/bits/confname.h	/^    _SC_AIO_PRIO_DELTA_MAX,$/;"	e	language:C	enum:__anon65
+_SC_AIO_PRIO_DELTA_MAX	/usr/include/bits/confname.h	124;"	d	language:C
+_SC_ARG_MAX	/usr/include/bits/confname.h	/^    _SC_ARG_MAX,$/;"	e	language:C	enum:__anon65
+_SC_ARG_MAX	/usr/include/bits/confname.h	74;"	d	language:C
+_SC_ASYNCHRONOUS_IO	/usr/include/bits/confname.h	/^    _SC_ASYNCHRONOUS_IO,$/;"	e	language:C	enum:__anon65
+_SC_ASYNCHRONOUS_IO	/usr/include/bits/confname.h	98;"	d	language:C
+_SC_ATEXIT_MAX	/usr/include/bits/confname.h	/^    _SC_ATEXIT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_ATEXIT_MAX	/usr/include/bits/confname.h	259;"	d	language:C
+_SC_AVPHYS_PAGES	/usr/include/bits/confname.h	/^    _SC_AVPHYS_PAGES,$/;"	e	language:C	enum:__anon65
+_SC_AVPHYS_PAGES	/usr/include/bits/confname.h	257;"	d	language:C
+_SC_BARRIERS	/usr/include/bits/confname.h	/^    _SC_BARRIERS,$/;"	e	language:C	enum:__anon65
+_SC_BARRIERS	/usr/include/bits/confname.h	359;"	d	language:C
+_SC_BASE	/usr/include/bits/confname.h	/^    _SC_BASE,$/;"	e	language:C	enum:__anon65
+_SC_BASE	/usr/include/bits/confname.h	361;"	d	language:C
+_SC_BC_BASE_MAX	/usr/include/bits/confname.h	/^    _SC_BC_BASE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_BC_BASE_MAX	/usr/include/bits/confname.h	150;"	d	language:C
+_SC_BC_DIM_MAX	/usr/include/bits/confname.h	/^    _SC_BC_DIM_MAX,$/;"	e	language:C	enum:__anon65
+_SC_BC_DIM_MAX	/usr/include/bits/confname.h	152;"	d	language:C
+_SC_BC_SCALE_MAX	/usr/include/bits/confname.h	/^    _SC_BC_SCALE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_BC_SCALE_MAX	/usr/include/bits/confname.h	154;"	d	language:C
+_SC_BC_STRING_MAX	/usr/include/bits/confname.h	/^    _SC_BC_STRING_MAX,$/;"	e	language:C	enum:__anon65
+_SC_BC_STRING_MAX	/usr/include/bits/confname.h	156;"	d	language:C
+_SC_CHARCLASS_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_CHARCLASS_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_CHARCLASS_NAME_MAX	/usr/include/bits/confname.h	168;"	d	language:C
+_SC_CHAR_BIT	/usr/include/bits/confname.h	/^    _SC_CHAR_BIT,$/;"	e	language:C	enum:__anon65
+_SC_CHAR_BIT	/usr/include/bits/confname.h	291;"	d	language:C
+_SC_CHAR_MAX	/usr/include/bits/confname.h	/^    _SC_CHAR_MAX,$/;"	e	language:C	enum:__anon65
+_SC_CHAR_MAX	/usr/include/bits/confname.h	293;"	d	language:C
+_SC_CHAR_MIN	/usr/include/bits/confname.h	/^    _SC_CHAR_MIN,$/;"	e	language:C	enum:__anon65
+_SC_CHAR_MIN	/usr/include/bits/confname.h	295;"	d	language:C
+_SC_CHILD_MAX	/usr/include/bits/confname.h	/^    _SC_CHILD_MAX,$/;"	e	language:C	enum:__anon65
+_SC_CHILD_MAX	/usr/include/bits/confname.h	76;"	d	language:C
+_SC_CLK_TCK	/usr/include/bits/confname.h	/^    _SC_CLK_TCK,$/;"	e	language:C	enum:__anon65
+_SC_CLK_TCK	/usr/include/bits/confname.h	78;"	d	language:C
+_SC_CLOCK_SELECTION	/usr/include/bits/confname.h	/^    _SC_CLOCK_SELECTION,$/;"	e	language:C	enum:__anon65
+_SC_CLOCK_SELECTION	/usr/include/bits/confname.h	367;"	d	language:C
+_SC_COLL_WEIGHTS_MAX	/usr/include/bits/confname.h	/^    _SC_COLL_WEIGHTS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_COLL_WEIGHTS_MAX	/usr/include/bits/confname.h	158;"	d	language:C
+_SC_CPUTIME	/usr/include/bits/confname.h	/^    _SC_CPUTIME,$/;"	e	language:C	enum:__anon65
+_SC_CPUTIME	/usr/include/bits/confname.h	369;"	d	language:C
+_SC_C_LANG_SUPPORT	/usr/include/bits/confname.h	/^    _SC_C_LANG_SUPPORT,$/;"	e	language:C	enum:__anon65
+_SC_C_LANG_SUPPORT	/usr/include/bits/confname.h	363;"	d	language:C
+_SC_C_LANG_SUPPORT_R	/usr/include/bits/confname.h	/^    _SC_C_LANG_SUPPORT_R,$/;"	e	language:C	enum:__anon65
+_SC_C_LANG_SUPPORT_R	/usr/include/bits/confname.h	365;"	d	language:C
+_SC_DELAYTIMER_MAX	/usr/include/bits/confname.h	/^    _SC_DELAYTIMER_MAX,$/;"	e	language:C	enum:__anon65
+_SC_DELAYTIMER_MAX	/usr/include/bits/confname.h	126;"	d	language:C
+_SC_DEVICE_IO	/usr/include/bits/confname.h	/^    _SC_DEVICE_IO,$/;"	e	language:C	enum:__anon65
+_SC_DEVICE_IO	/usr/include/bits/confname.h	373;"	d	language:C
+_SC_DEVICE_SPECIFIC	/usr/include/bits/confname.h	/^    _SC_DEVICE_SPECIFIC,$/;"	e	language:C	enum:__anon65
+_SC_DEVICE_SPECIFIC	/usr/include/bits/confname.h	375;"	d	language:C
+_SC_DEVICE_SPECIFIC_R	/usr/include/bits/confname.h	/^    _SC_DEVICE_SPECIFIC_R,$/;"	e	language:C	enum:__anon65
+_SC_DEVICE_SPECIFIC_R	/usr/include/bits/confname.h	377;"	d	language:C
+_SC_EQUIV_CLASS_MAX	/usr/include/bits/confname.h	/^    _SC_EQUIV_CLASS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_EQUIV_CLASS_MAX	/usr/include/bits/confname.h	160;"	d	language:C
+_SC_EXPR_NEST_MAX	/usr/include/bits/confname.h	/^    _SC_EXPR_NEST_MAX,$/;"	e	language:C	enum:__anon65
+_SC_EXPR_NEST_MAX	/usr/include/bits/confname.h	162;"	d	language:C
+_SC_FD_MGMT	/usr/include/bits/confname.h	/^    _SC_FD_MGMT,$/;"	e	language:C	enum:__anon65
+_SC_FD_MGMT	/usr/include/bits/confname.h	379;"	d	language:C
+_SC_FIFO	/usr/include/bits/confname.h	/^    _SC_FIFO,$/;"	e	language:C	enum:__anon65
+_SC_FIFO	/usr/include/bits/confname.h	381;"	d	language:C
+_SC_FILE_ATTRIBUTES	/usr/include/bits/confname.h	/^    _SC_FILE_ATTRIBUTES,$/;"	e	language:C	enum:__anon65
+_SC_FILE_ATTRIBUTES	/usr/include/bits/confname.h	385;"	d	language:C
+_SC_FILE_LOCKING	/usr/include/bits/confname.h	/^    _SC_FILE_LOCKING,$/;"	e	language:C	enum:__anon65
+_SC_FILE_LOCKING	/usr/include/bits/confname.h	387;"	d	language:C
+_SC_FILE_SYSTEM	/usr/include/bits/confname.h	/^    _SC_FILE_SYSTEM,$/;"	e	language:C	enum:__anon65
+_SC_FILE_SYSTEM	/usr/include/bits/confname.h	389;"	d	language:C
+_SC_FSYNC	/usr/include/bits/confname.h	/^    _SC_FSYNC,$/;"	e	language:C	enum:__anon65
+_SC_FSYNC	/usr/include/bits/confname.h	104;"	d	language:C
+_SC_GETGR_R_SIZE_MAX	/usr/include/bits/confname.h	/^    _SC_GETGR_R_SIZE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_GETGR_R_SIZE_MAX	/usr/include/bits/confname.h	222;"	d	language:C
+_SC_GETPW_R_SIZE_MAX	/usr/include/bits/confname.h	/^    _SC_GETPW_R_SIZE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_GETPW_R_SIZE_MAX	/usr/include/bits/confname.h	224;"	d	language:C
+_SC_HOST_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_HOST_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_HOST_NAME_MAX	/usr/include/bits/confname.h	455;"	d	language:C
+_SC_INT_MAX	/usr/include/bits/confname.h	/^    _SC_INT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_INT_MAX	/usr/include/bits/confname.h	297;"	d	language:C
+_SC_INT_MIN	/usr/include/bits/confname.h	/^    _SC_INT_MIN,$/;"	e	language:C	enum:__anon65
+_SC_INT_MIN	/usr/include/bits/confname.h	299;"	d	language:C
+_SC_IOV_MAX	/usr/include/bits/confname.h	/^    _SC_IOV_MAX = _SC_UIO_MAXIOV,$/;"	e	language:C	enum:__anon65
+_SC_IOV_MAX	/usr/include/bits/confname.h	202;"	d	language:C
+_SC_IPV6	/usr/include/bits/confname.h	/^    _SC_IPV6 = _SC_LEVEL1_ICACHE_SIZE + 50,$/;"	e	language:C	enum:__anon65
+_SC_IPV6	/usr/include/bits/confname.h	498;"	d	language:C
+_SC_JOB_CONTROL	/usr/include/bits/confname.h	/^    _SC_JOB_CONTROL,$/;"	e	language:C	enum:__anon65
+_SC_JOB_CONTROL	/usr/include/bits/confname.h	88;"	d	language:C
+_SC_LEVEL1_DCACHE_ASSOC	/usr/include/bits/confname.h	/^    _SC_LEVEL1_DCACHE_ASSOC,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_DCACHE_ASSOC	/usr/include/bits/confname.h	474;"	d	language:C
+_SC_LEVEL1_DCACHE_LINESIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL1_DCACHE_LINESIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_DCACHE_LINESIZE	/usr/include/bits/confname.h	476;"	d	language:C
+_SC_LEVEL1_DCACHE_SIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL1_DCACHE_SIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_DCACHE_SIZE	/usr/include/bits/confname.h	472;"	d	language:C
+_SC_LEVEL1_ICACHE_ASSOC	/usr/include/bits/confname.h	/^    _SC_LEVEL1_ICACHE_ASSOC,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_ICACHE_ASSOC	/usr/include/bits/confname.h	468;"	d	language:C
+_SC_LEVEL1_ICACHE_LINESIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL1_ICACHE_LINESIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_ICACHE_LINESIZE	/usr/include/bits/confname.h	470;"	d	language:C
+_SC_LEVEL1_ICACHE_SIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL1_ICACHE_SIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL1_ICACHE_SIZE	/usr/include/bits/confname.h	466;"	d	language:C
+_SC_LEVEL2_CACHE_ASSOC	/usr/include/bits/confname.h	/^    _SC_LEVEL2_CACHE_ASSOC,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL2_CACHE_ASSOC	/usr/include/bits/confname.h	480;"	d	language:C
+_SC_LEVEL2_CACHE_LINESIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL2_CACHE_LINESIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL2_CACHE_LINESIZE	/usr/include/bits/confname.h	482;"	d	language:C
+_SC_LEVEL2_CACHE_SIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL2_CACHE_SIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL2_CACHE_SIZE	/usr/include/bits/confname.h	478;"	d	language:C
+_SC_LEVEL3_CACHE_ASSOC	/usr/include/bits/confname.h	/^    _SC_LEVEL3_CACHE_ASSOC,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL3_CACHE_ASSOC	/usr/include/bits/confname.h	486;"	d	language:C
+_SC_LEVEL3_CACHE_LINESIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL3_CACHE_LINESIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL3_CACHE_LINESIZE	/usr/include/bits/confname.h	488;"	d	language:C
+_SC_LEVEL3_CACHE_SIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL3_CACHE_SIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL3_CACHE_SIZE	/usr/include/bits/confname.h	484;"	d	language:C
+_SC_LEVEL4_CACHE_ASSOC	/usr/include/bits/confname.h	/^    _SC_LEVEL4_CACHE_ASSOC,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL4_CACHE_ASSOC	/usr/include/bits/confname.h	492;"	d	language:C
+_SC_LEVEL4_CACHE_LINESIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL4_CACHE_LINESIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL4_CACHE_LINESIZE	/usr/include/bits/confname.h	494;"	d	language:C
+_SC_LEVEL4_CACHE_SIZE	/usr/include/bits/confname.h	/^    _SC_LEVEL4_CACHE_SIZE,$/;"	e	language:C	enum:__anon65
+_SC_LEVEL4_CACHE_SIZE	/usr/include/bits/confname.h	490;"	d	language:C
+_SC_LINE_MAX	/usr/include/bits/confname.h	/^    _SC_LINE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_LINE_MAX	/usr/include/bits/confname.h	164;"	d	language:C
+_SC_LOGIN_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_LOGIN_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_LOGIN_NAME_MAX	/usr/include/bits/confname.h	226;"	d	language:C
+_SC_LONG_BIT	/usr/include/bits/confname.h	/^    _SC_LONG_BIT,$/;"	e	language:C	enum:__anon65
+_SC_LONG_BIT	/usr/include/bits/confname.h	301;"	d	language:C
+_SC_MAPPED_FILES	/usr/include/bits/confname.h	/^    _SC_MAPPED_FILES,$/;"	e	language:C	enum:__anon65
+_SC_MAPPED_FILES	/usr/include/bits/confname.h	106;"	d	language:C
+_SC_MB_LEN_MAX	/usr/include/bits/confname.h	/^    _SC_MB_LEN_MAX,$/;"	e	language:C	enum:__anon65
+_SC_MB_LEN_MAX	/usr/include/bits/confname.h	305;"	d	language:C
+_SC_MEMLOCK	/usr/include/bits/confname.h	/^    _SC_MEMLOCK,$/;"	e	language:C	enum:__anon65
+_SC_MEMLOCK	/usr/include/bits/confname.h	108;"	d	language:C
+_SC_MEMLOCK_RANGE	/usr/include/bits/confname.h	/^    _SC_MEMLOCK_RANGE,$/;"	e	language:C	enum:__anon65
+_SC_MEMLOCK_RANGE	/usr/include/bits/confname.h	110;"	d	language:C
+_SC_MEMORY_PROTECTION	/usr/include/bits/confname.h	/^    _SC_MEMORY_PROTECTION,$/;"	e	language:C	enum:__anon65
+_SC_MEMORY_PROTECTION	/usr/include/bits/confname.h	112;"	d	language:C
+_SC_MESSAGE_PASSING	/usr/include/bits/confname.h	/^    _SC_MESSAGE_PASSING,$/;"	e	language:C	enum:__anon65
+_SC_MESSAGE_PASSING	/usr/include/bits/confname.h	114;"	d	language:C
+_SC_MONOTONIC_CLOCK	/usr/include/bits/confname.h	/^    _SC_MONOTONIC_CLOCK,$/;"	e	language:C	enum:__anon65
+_SC_MONOTONIC_CLOCK	/usr/include/bits/confname.h	391;"	d	language:C
+_SC_MQ_OPEN_MAX	/usr/include/bits/confname.h	/^    _SC_MQ_OPEN_MAX,$/;"	e	language:C	enum:__anon65
+_SC_MQ_OPEN_MAX	/usr/include/bits/confname.h	128;"	d	language:C
+_SC_MQ_PRIO_MAX	/usr/include/bits/confname.h	/^    _SC_MQ_PRIO_MAX,$/;"	e	language:C	enum:__anon65
+_SC_MQ_PRIO_MAX	/usr/include/bits/confname.h	130;"	d	language:C
+_SC_MULTI_PROCESS	/usr/include/bits/confname.h	/^    _SC_MULTI_PROCESS,$/;"	e	language:C	enum:__anon65
+_SC_MULTI_PROCESS	/usr/include/bits/confname.h	393;"	d	language:C
+_SC_NETWORKING	/usr/include/bits/confname.h	/^    _SC_NETWORKING,$/;"	e	language:C	enum:__anon65
+_SC_NETWORKING	/usr/include/bits/confname.h	397;"	d	language:C
+_SC_NGROUPS_MAX	/usr/include/bits/confname.h	/^    _SC_NGROUPS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_NGROUPS_MAX	/usr/include/bits/confname.h	80;"	d	language:C
+_SC_NL_ARGMAX	/usr/include/bits/confname.h	/^    _SC_NL_ARGMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_ARGMAX	/usr/include/bits/confname.h	328;"	d	language:C
+_SC_NL_LANGMAX	/usr/include/bits/confname.h	/^    _SC_NL_LANGMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_LANGMAX	/usr/include/bits/confname.h	330;"	d	language:C
+_SC_NL_MSGMAX	/usr/include/bits/confname.h	/^    _SC_NL_MSGMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_MSGMAX	/usr/include/bits/confname.h	332;"	d	language:C
+_SC_NL_NMAX	/usr/include/bits/confname.h	/^    _SC_NL_NMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_NMAX	/usr/include/bits/confname.h	334;"	d	language:C
+_SC_NL_SETMAX	/usr/include/bits/confname.h	/^    _SC_NL_SETMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_SETMAX	/usr/include/bits/confname.h	336;"	d	language:C
+_SC_NL_TEXTMAX	/usr/include/bits/confname.h	/^    _SC_NL_TEXTMAX,$/;"	e	language:C	enum:__anon65
+_SC_NL_TEXTMAX	/usr/include/bits/confname.h	338;"	d	language:C
+_SC_NPROCESSORS_CONF	/usr/include/bits/confname.h	/^    _SC_NPROCESSORS_CONF,$/;"	e	language:C	enum:__anon65
+_SC_NPROCESSORS_CONF	/usr/include/bits/confname.h	251;"	d	language:C
+_SC_NPROCESSORS_ONLN	/usr/include/bits/confname.h	/^    _SC_NPROCESSORS_ONLN,$/;"	e	language:C	enum:__anon65
+_SC_NPROCESSORS_ONLN	/usr/include/bits/confname.h	253;"	d	language:C
+_SC_NZERO	/usr/include/bits/confname.h	/^    _SC_NZERO,$/;"	e	language:C	enum:__anon65
+_SC_NZERO	/usr/include/bits/confname.h	307;"	d	language:C
+_SC_OPEN_MAX	/usr/include/bits/confname.h	/^    _SC_OPEN_MAX,$/;"	e	language:C	enum:__anon65
+_SC_OPEN_MAX	/usr/include/bits/confname.h	82;"	d	language:C
+_SC_PAGESIZE	/usr/include/bits/confname.h	/^    _SC_PAGESIZE,$/;"	e	language:C	enum:__anon65
+_SC_PAGESIZE	/usr/include/bits/confname.h	134;"	d	language:C
+_SC_PAGE_SIZE	/usr/include/bits/confname.h	135;"	d	language:C
+_SC_PASS_MAX	/usr/include/bits/confname.h	/^    _SC_PASS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_PASS_MAX	/usr/include/bits/confname.h	261;"	d	language:C
+_SC_PHYS_PAGES	/usr/include/bits/confname.h	/^    _SC_PHYS_PAGES,$/;"	e	language:C	enum:__anon65
+_SC_PHYS_PAGES	/usr/include/bits/confname.h	255;"	d	language:C
+_SC_PII	/usr/include/bits/confname.h	/^    _SC_PII,$/;"	e	language:C	enum:__anon65
+_SC_PII	/usr/include/bits/confname.h	186;"	d	language:C
+_SC_PII_INTERNET	/usr/include/bits/confname.h	/^    _SC_PII_INTERNET,$/;"	e	language:C	enum:__anon65
+_SC_PII_INTERNET	/usr/include/bits/confname.h	192;"	d	language:C
+_SC_PII_INTERNET_DGRAM	/usr/include/bits/confname.h	/^    _SC_PII_INTERNET_DGRAM,$/;"	e	language:C	enum:__anon65
+_SC_PII_INTERNET_DGRAM	/usr/include/bits/confname.h	206;"	d	language:C
+_SC_PII_INTERNET_STREAM	/usr/include/bits/confname.h	/^    _SC_PII_INTERNET_STREAM,$/;"	e	language:C	enum:__anon65
+_SC_PII_INTERNET_STREAM	/usr/include/bits/confname.h	204;"	d	language:C
+_SC_PII_OSI	/usr/include/bits/confname.h	/^    _SC_PII_OSI,$/;"	e	language:C	enum:__anon65
+_SC_PII_OSI	/usr/include/bits/confname.h	194;"	d	language:C
+_SC_PII_OSI_CLTS	/usr/include/bits/confname.h	/^    _SC_PII_OSI_CLTS,$/;"	e	language:C	enum:__anon65
+_SC_PII_OSI_CLTS	/usr/include/bits/confname.h	210;"	d	language:C
+_SC_PII_OSI_COTS	/usr/include/bits/confname.h	/^    _SC_PII_OSI_COTS,$/;"	e	language:C	enum:__anon65
+_SC_PII_OSI_COTS	/usr/include/bits/confname.h	208;"	d	language:C
+_SC_PII_OSI_M	/usr/include/bits/confname.h	/^    _SC_PII_OSI_M,$/;"	e	language:C	enum:__anon65
+_SC_PII_OSI_M	/usr/include/bits/confname.h	212;"	d	language:C
+_SC_PII_SOCKET	/usr/include/bits/confname.h	/^    _SC_PII_SOCKET,$/;"	e	language:C	enum:__anon65
+_SC_PII_SOCKET	/usr/include/bits/confname.h	190;"	d	language:C
+_SC_PII_XTI	/usr/include/bits/confname.h	/^    _SC_PII_XTI,$/;"	e	language:C	enum:__anon65
+_SC_PII_XTI	/usr/include/bits/confname.h	188;"	d	language:C
+_SC_PIPE	/usr/include/bits/confname.h	/^    _SC_PIPE,$/;"	e	language:C	enum:__anon65
+_SC_PIPE	/usr/include/bits/confname.h	383;"	d	language:C
+_SC_POLL	/usr/include/bits/confname.h	/^    _SC_POLL,$/;"	e	language:C	enum:__anon65
+_SC_POLL	/usr/include/bits/confname.h	196;"	d	language:C
+_SC_PRIORITIZED_IO	/usr/include/bits/confname.h	/^    _SC_PRIORITIZED_IO,$/;"	e	language:C	enum:__anon65
+_SC_PRIORITIZED_IO	/usr/include/bits/confname.h	100;"	d	language:C
+_SC_PRIORITY_SCHEDULING	/usr/include/bits/confname.h	/^    _SC_PRIORITY_SCHEDULING,$/;"	e	language:C	enum:__anon65
+_SC_PRIORITY_SCHEDULING	/usr/include/bits/confname.h	94;"	d	language:C
+_SC_RAW_SOCKETS	/usr/include/bits/confname.h	/^    _SC_RAW_SOCKETS,$/;"	e	language:C	enum:__anon65
+_SC_RAW_SOCKETS	/usr/include/bits/confname.h	500;"	d	language:C
+_SC_READER_WRITER_LOCKS	/usr/include/bits/confname.h	/^    _SC_READER_WRITER_LOCKS,$/;"	e	language:C	enum:__anon65
+_SC_READER_WRITER_LOCKS	/usr/include/bits/confname.h	399;"	d	language:C
+_SC_REALTIME_SIGNALS	/usr/include/bits/confname.h	/^    _SC_REALTIME_SIGNALS,$/;"	e	language:C	enum:__anon65
+_SC_REALTIME_SIGNALS	/usr/include/bits/confname.h	92;"	d	language:C
+_SC_REGEXP	/usr/include/bits/confname.h	/^    _SC_REGEXP,$/;"	e	language:C	enum:__anon65
+_SC_REGEXP	/usr/include/bits/confname.h	403;"	d	language:C
+_SC_REGEX_VERSION	/usr/include/bits/confname.h	/^    _SC_REGEX_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_REGEX_VERSION	/usr/include/bits/confname.h	405;"	d	language:C
+_SC_RE_DUP_MAX	/usr/include/bits/confname.h	/^    _SC_RE_DUP_MAX,$/;"	e	language:C	enum:__anon65
+_SC_RE_DUP_MAX	/usr/include/bits/confname.h	166;"	d	language:C
+_SC_RTSIG_MAX	/usr/include/bits/confname.h	/^    _SC_RTSIG_MAX,$/;"	e	language:C	enum:__anon65
+_SC_RTSIG_MAX	/usr/include/bits/confname.h	137;"	d	language:C
+_SC_SAVED_IDS	/usr/include/bits/confname.h	/^    _SC_SAVED_IDS,$/;"	e	language:C	enum:__anon65
+_SC_SAVED_IDS	/usr/include/bits/confname.h	90;"	d	language:C
+_SC_SCHAR_MAX	/usr/include/bits/confname.h	/^    _SC_SCHAR_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SCHAR_MAX	/usr/include/bits/confname.h	311;"	d	language:C
+_SC_SCHAR_MIN	/usr/include/bits/confname.h	/^    _SC_SCHAR_MIN,$/;"	e	language:C	enum:__anon65
+_SC_SCHAR_MIN	/usr/include/bits/confname.h	313;"	d	language:C
+_SC_SELECT	/usr/include/bits/confname.h	/^    _SC_SELECT,$/;"	e	language:C	enum:__anon65
+_SC_SELECT	/usr/include/bits/confname.h	198;"	d	language:C
+_SC_SEMAPHORES	/usr/include/bits/confname.h	/^    _SC_SEMAPHORES,$/;"	e	language:C	enum:__anon65
+_SC_SEMAPHORES	/usr/include/bits/confname.h	116;"	d	language:C
+_SC_SEM_NSEMS_MAX	/usr/include/bits/confname.h	/^    _SC_SEM_NSEMS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SEM_NSEMS_MAX	/usr/include/bits/confname.h	139;"	d	language:C
+_SC_SEM_VALUE_MAX	/usr/include/bits/confname.h	/^    _SC_SEM_VALUE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SEM_VALUE_MAX	/usr/include/bits/confname.h	141;"	d	language:C
+_SC_SHARED_MEMORY_OBJECTS	/usr/include/bits/confname.h	/^    _SC_SHARED_MEMORY_OBJECTS,$/;"	e	language:C	enum:__anon65
+_SC_SHARED_MEMORY_OBJECTS	/usr/include/bits/confname.h	118;"	d	language:C
+_SC_SHELL	/usr/include/bits/confname.h	/^    _SC_SHELL,$/;"	e	language:C	enum:__anon65
+_SC_SHELL	/usr/include/bits/confname.h	407;"	d	language:C
+_SC_SHRT_MAX	/usr/include/bits/confname.h	/^    _SC_SHRT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SHRT_MAX	/usr/include/bits/confname.h	315;"	d	language:C
+_SC_SHRT_MIN	/usr/include/bits/confname.h	/^    _SC_SHRT_MIN,$/;"	e	language:C	enum:__anon65
+_SC_SHRT_MIN	/usr/include/bits/confname.h	317;"	d	language:C
+_SC_SIGNALS	/usr/include/bits/confname.h	/^    _SC_SIGNALS,$/;"	e	language:C	enum:__anon65
+_SC_SIGNALS	/usr/include/bits/confname.h	409;"	d	language:C
+_SC_SIGQUEUE_MAX	/usr/include/bits/confname.h	/^    _SC_SIGQUEUE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SIGQUEUE_MAX	/usr/include/bits/confname.h	143;"	d	language:C
+_SC_SINGLE_PROCESS	/usr/include/bits/confname.h	/^    _SC_SINGLE_PROCESS,$/;"	e	language:C	enum:__anon65
+_SC_SINGLE_PROCESS	/usr/include/bits/confname.h	395;"	d	language:C
+_SC_SPAWN	/usr/include/bits/confname.h	/^    _SC_SPAWN,$/;"	e	language:C	enum:__anon65
+_SC_SPAWN	/usr/include/bits/confname.h	411;"	d	language:C
+_SC_SPIN_LOCKS	/usr/include/bits/confname.h	/^    _SC_SPIN_LOCKS,$/;"	e	language:C	enum:__anon65
+_SC_SPIN_LOCKS	/usr/include/bits/confname.h	401;"	d	language:C
+_SC_SPORADIC_SERVER	/usr/include/bits/confname.h	/^    _SC_SPORADIC_SERVER,$/;"	e	language:C	enum:__anon65
+_SC_SPORADIC_SERVER	/usr/include/bits/confname.h	413;"	d	language:C
+_SC_SSIZE_MAX	/usr/include/bits/confname.h	/^    _SC_SSIZE_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SSIZE_MAX	/usr/include/bits/confname.h	309;"	d	language:C
+_SC_SS_REPL_MAX	/usr/include/bits/confname.h	/^    _SC_SS_REPL_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SS_REPL_MAX	/usr/include/bits/confname.h	512;"	d	language:C
+_SC_STREAMS	/usr/include/bits/confname.h	/^    _SC_STREAMS,$/;"	e	language:C	enum:__anon65
+_SC_STREAMS	/usr/include/bits/confname.h	441;"	d	language:C
+_SC_STREAM_MAX	/usr/include/bits/confname.h	/^    _SC_STREAM_MAX,$/;"	e	language:C	enum:__anon65
+_SC_STREAM_MAX	/usr/include/bits/confname.h	84;"	d	language:C
+_SC_SYMLOOP_MAX	/usr/include/bits/confname.h	/^    _SC_SYMLOOP_MAX,$/;"	e	language:C	enum:__anon65
+_SC_SYMLOOP_MAX	/usr/include/bits/confname.h	439;"	d	language:C
+_SC_SYNCHRONIZED_IO	/usr/include/bits/confname.h	/^    _SC_SYNCHRONIZED_IO,$/;"	e	language:C	enum:__anon65
+_SC_SYNCHRONIZED_IO	/usr/include/bits/confname.h	102;"	d	language:C
+_SC_SYSTEM_DATABASE	/usr/include/bits/confname.h	/^    _SC_SYSTEM_DATABASE,$/;"	e	language:C	enum:__anon65
+_SC_SYSTEM_DATABASE	/usr/include/bits/confname.h	417;"	d	language:C
+_SC_SYSTEM_DATABASE_R	/usr/include/bits/confname.h	/^    _SC_SYSTEM_DATABASE_R,$/;"	e	language:C	enum:__anon65
+_SC_SYSTEM_DATABASE_R	/usr/include/bits/confname.h	419;"	d	language:C
+_SC_THREADS	/usr/include/bits/confname.h	/^    _SC_THREADS,$/;"	e	language:C	enum:__anon65
+_SC_THREADS	/usr/include/bits/confname.h	218;"	d	language:C
+_SC_THREAD_ATTR_STACKADDR	/usr/include/bits/confname.h	/^    _SC_THREAD_ATTR_STACKADDR,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_ATTR_STACKADDR	/usr/include/bits/confname.h	238;"	d	language:C
+_SC_THREAD_ATTR_STACKSIZE	/usr/include/bits/confname.h	/^    _SC_THREAD_ATTR_STACKSIZE,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_ATTR_STACKSIZE	/usr/include/bits/confname.h	240;"	d	language:C
+_SC_THREAD_CPUTIME	/usr/include/bits/confname.h	/^    _SC_THREAD_CPUTIME,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_CPUTIME	/usr/include/bits/confname.h	371;"	d	language:C
+_SC_THREAD_DESTRUCTOR_ITERATIONS	/usr/include/bits/confname.h	/^    _SC_THREAD_DESTRUCTOR_ITERATIONS,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_DESTRUCTOR_ITERATIONS	/usr/include/bits/confname.h	230;"	d	language:C
+_SC_THREAD_KEYS_MAX	/usr/include/bits/confname.h	/^    _SC_THREAD_KEYS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_KEYS_MAX	/usr/include/bits/confname.h	232;"	d	language:C
+_SC_THREAD_PRIORITY_SCHEDULING	/usr/include/bits/confname.h	/^    _SC_THREAD_PRIORITY_SCHEDULING,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_PRIORITY_SCHEDULING	/usr/include/bits/confname.h	242;"	d	language:C
+_SC_THREAD_PRIO_INHERIT	/usr/include/bits/confname.h	/^    _SC_THREAD_PRIO_INHERIT,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_PRIO_INHERIT	/usr/include/bits/confname.h	244;"	d	language:C
+_SC_THREAD_PRIO_PROTECT	/usr/include/bits/confname.h	/^    _SC_THREAD_PRIO_PROTECT,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_PRIO_PROTECT	/usr/include/bits/confname.h	246;"	d	language:C
+_SC_THREAD_PROCESS_SHARED	/usr/include/bits/confname.h	/^    _SC_THREAD_PROCESS_SHARED,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_PROCESS_SHARED	/usr/include/bits/confname.h	248;"	d	language:C
+_SC_THREAD_ROBUST_PRIO_INHERIT	/usr/include/bits/confname.h	/^    _SC_THREAD_ROBUST_PRIO_INHERIT,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_ROBUST_PRIO_INHERIT	/usr/include/bits/confname.h	527;"	d	language:C
+_SC_THREAD_ROBUST_PRIO_PROTECT	/usr/include/bits/confname.h	/^    _SC_THREAD_ROBUST_PRIO_PROTECT$/;"	e	language:C	enum:__anon65
+_SC_THREAD_ROBUST_PRIO_PROTECT	/usr/include/bits/confname.h	529;"	d	language:C
+_SC_THREAD_SAFE_FUNCTIONS	/usr/include/bits/confname.h	/^    _SC_THREAD_SAFE_FUNCTIONS,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_SAFE_FUNCTIONS	/usr/include/bits/confname.h	220;"	d	language:C
+_SC_THREAD_SPORADIC_SERVER	/usr/include/bits/confname.h	/^    _SC_THREAD_SPORADIC_SERVER,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_SPORADIC_SERVER	/usr/include/bits/confname.h	415;"	d	language:C
+_SC_THREAD_STACK_MIN	/usr/include/bits/confname.h	/^    _SC_THREAD_STACK_MIN,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_STACK_MIN	/usr/include/bits/confname.h	234;"	d	language:C
+_SC_THREAD_THREADS_MAX	/usr/include/bits/confname.h	/^    _SC_THREAD_THREADS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_THREAD_THREADS_MAX	/usr/include/bits/confname.h	236;"	d	language:C
+_SC_TIMEOUTS	/usr/include/bits/confname.h	/^    _SC_TIMEOUTS,$/;"	e	language:C	enum:__anon65
+_SC_TIMEOUTS	/usr/include/bits/confname.h	421;"	d	language:C
+_SC_TIMERS	/usr/include/bits/confname.h	/^    _SC_TIMERS,$/;"	e	language:C	enum:__anon65
+_SC_TIMERS	/usr/include/bits/confname.h	96;"	d	language:C
+_SC_TIMER_MAX	/usr/include/bits/confname.h	/^    _SC_TIMER_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TIMER_MAX	/usr/include/bits/confname.h	145;"	d	language:C
+_SC_TRACE	/usr/include/bits/confname.h	/^    _SC_TRACE,$/;"	e	language:C	enum:__anon65
+_SC_TRACE	/usr/include/bits/confname.h	457;"	d	language:C
+_SC_TRACE_EVENT_FILTER	/usr/include/bits/confname.h	/^    _SC_TRACE_EVENT_FILTER,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_EVENT_FILTER	/usr/include/bits/confname.h	459;"	d	language:C
+_SC_TRACE_EVENT_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_TRACE_EVENT_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_EVENT_NAME_MAX	/usr/include/bits/confname.h	515;"	d	language:C
+_SC_TRACE_INHERIT	/usr/include/bits/confname.h	/^    _SC_TRACE_INHERIT,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_INHERIT	/usr/include/bits/confname.h	461;"	d	language:C
+_SC_TRACE_LOG	/usr/include/bits/confname.h	/^    _SC_TRACE_LOG,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_LOG	/usr/include/bits/confname.h	463;"	d	language:C
+_SC_TRACE_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_TRACE_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_NAME_MAX	/usr/include/bits/confname.h	517;"	d	language:C
+_SC_TRACE_SYS_MAX	/usr/include/bits/confname.h	/^    _SC_TRACE_SYS_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_SYS_MAX	/usr/include/bits/confname.h	519;"	d	language:C
+_SC_TRACE_USER_EVENT_MAX	/usr/include/bits/confname.h	/^    _SC_TRACE_USER_EVENT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TRACE_USER_EVENT_MAX	/usr/include/bits/confname.h	521;"	d	language:C
+_SC_TTY_NAME_MAX	/usr/include/bits/confname.h	/^    _SC_TTY_NAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TTY_NAME_MAX	/usr/include/bits/confname.h	228;"	d	language:C
+_SC_TYPED_MEMORY_OBJECTS	/usr/include/bits/confname.h	/^    _SC_TYPED_MEMORY_OBJECTS,$/;"	e	language:C	enum:__anon65
+_SC_TYPED_MEMORY_OBJECTS	/usr/include/bits/confname.h	423;"	d	language:C
+_SC_TZNAME_MAX	/usr/include/bits/confname.h	/^    _SC_TZNAME_MAX,$/;"	e	language:C	enum:__anon65
+_SC_TZNAME_MAX	/usr/include/bits/confname.h	86;"	d	language:C
+_SC_T_IOV_MAX	/usr/include/bits/confname.h	/^    _SC_T_IOV_MAX,$/;"	e	language:C	enum:__anon65
+_SC_T_IOV_MAX	/usr/include/bits/confname.h	214;"	d	language:C
+_SC_UCHAR_MAX	/usr/include/bits/confname.h	/^    _SC_UCHAR_MAX,$/;"	e	language:C	enum:__anon65
+_SC_UCHAR_MAX	/usr/include/bits/confname.h	319;"	d	language:C
+_SC_UINT_MAX	/usr/include/bits/confname.h	/^    _SC_UINT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_UINT_MAX	/usr/include/bits/confname.h	321;"	d	language:C
+_SC_UIO_MAXIOV	/usr/include/bits/confname.h	/^    _SC_UIO_MAXIOV,$/;"	e	language:C	enum:__anon65
+_SC_UIO_MAXIOV	/usr/include/bits/confname.h	200;"	d	language:C
+_SC_ULONG_MAX	/usr/include/bits/confname.h	/^    _SC_ULONG_MAX,$/;"	e	language:C	enum:__anon65
+_SC_ULONG_MAX	/usr/include/bits/confname.h	323;"	d	language:C
+_SC_USER_GROUPS	/usr/include/bits/confname.h	/^    _SC_USER_GROUPS,$/;"	e	language:C	enum:__anon65
+_SC_USER_GROUPS	/usr/include/bits/confname.h	425;"	d	language:C
+_SC_USER_GROUPS_R	/usr/include/bits/confname.h	/^    _SC_USER_GROUPS_R,$/;"	e	language:C	enum:__anon65
+_SC_USER_GROUPS_R	/usr/include/bits/confname.h	427;"	d	language:C
+_SC_USHRT_MAX	/usr/include/bits/confname.h	/^    _SC_USHRT_MAX,$/;"	e	language:C	enum:__anon65
+_SC_USHRT_MAX	/usr/include/bits/confname.h	325;"	d	language:C
+_SC_V6_ILP32_OFF32	/usr/include/bits/confname.h	/^    _SC_V6_ILP32_OFF32,$/;"	e	language:C	enum:__anon65
+_SC_V6_ILP32_OFF32	/usr/include/bits/confname.h	446;"	d	language:C
+_SC_V6_ILP32_OFFBIG	/usr/include/bits/confname.h	/^    _SC_V6_ILP32_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_V6_ILP32_OFFBIG	/usr/include/bits/confname.h	448;"	d	language:C
+_SC_V6_LP64_OFF64	/usr/include/bits/confname.h	/^    _SC_V6_LP64_OFF64,$/;"	e	language:C	enum:__anon65
+_SC_V6_LP64_OFF64	/usr/include/bits/confname.h	450;"	d	language:C
+_SC_V6_LPBIG_OFFBIG	/usr/include/bits/confname.h	/^    _SC_V6_LPBIG_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_V6_LPBIG_OFFBIG	/usr/include/bits/confname.h	452;"	d	language:C
+_SC_V7_ILP32_OFF32	/usr/include/bits/confname.h	/^    _SC_V7_ILP32_OFF32,$/;"	e	language:C	enum:__anon65
+_SC_V7_ILP32_OFF32	/usr/include/bits/confname.h	503;"	d	language:C
+_SC_V7_ILP32_OFFBIG	/usr/include/bits/confname.h	/^    _SC_V7_ILP32_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_V7_ILP32_OFFBIG	/usr/include/bits/confname.h	505;"	d	language:C
+_SC_V7_LP64_OFF64	/usr/include/bits/confname.h	/^    _SC_V7_LP64_OFF64,$/;"	e	language:C	enum:__anon65
+_SC_V7_LP64_OFF64	/usr/include/bits/confname.h	507;"	d	language:C
+_SC_V7_LPBIG_OFFBIG	/usr/include/bits/confname.h	/^    _SC_V7_LPBIG_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_V7_LPBIG_OFFBIG	/usr/include/bits/confname.h	509;"	d	language:C
+_SC_VERSION	/usr/include/bits/confname.h	/^    _SC_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_VERSION	/usr/include/bits/confname.h	132;"	d	language:C
+_SC_WORD_BIT	/usr/include/bits/confname.h	/^    _SC_WORD_BIT,$/;"	e	language:C	enum:__anon65
+_SC_WORD_BIT	/usr/include/bits/confname.h	303;"	d	language:C
+_SC_XBS5_ILP32_OFF32	/usr/include/bits/confname.h	/^    _SC_XBS5_ILP32_OFF32,$/;"	e	language:C	enum:__anon65
+_SC_XBS5_ILP32_OFF32	/usr/include/bits/confname.h	341;"	d	language:C
+_SC_XBS5_ILP32_OFFBIG	/usr/include/bits/confname.h	/^    _SC_XBS5_ILP32_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_XBS5_ILP32_OFFBIG	/usr/include/bits/confname.h	343;"	d	language:C
+_SC_XBS5_LP64_OFF64	/usr/include/bits/confname.h	/^    _SC_XBS5_LP64_OFF64,$/;"	e	language:C	enum:__anon65
+_SC_XBS5_LP64_OFF64	/usr/include/bits/confname.h	345;"	d	language:C
+_SC_XBS5_LPBIG_OFFBIG	/usr/include/bits/confname.h	/^    _SC_XBS5_LPBIG_OFFBIG,$/;"	e	language:C	enum:__anon65
+_SC_XBS5_LPBIG_OFFBIG	/usr/include/bits/confname.h	347;"	d	language:C
+_SC_XOPEN_CRYPT	/usr/include/bits/confname.h	/^    _SC_XOPEN_CRYPT,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_CRYPT	/usr/include/bits/confname.h	270;"	d	language:C
+_SC_XOPEN_ENH_I18N	/usr/include/bits/confname.h	/^    _SC_XOPEN_ENH_I18N,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_ENH_I18N	/usr/include/bits/confname.h	272;"	d	language:C
+_SC_XOPEN_LEGACY	/usr/include/bits/confname.h	/^    _SC_XOPEN_LEGACY,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_LEGACY	/usr/include/bits/confname.h	350;"	d	language:C
+_SC_XOPEN_REALTIME	/usr/include/bits/confname.h	/^    _SC_XOPEN_REALTIME,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_REALTIME	/usr/include/bits/confname.h	352;"	d	language:C
+_SC_XOPEN_REALTIME_THREADS	/usr/include/bits/confname.h	/^    _SC_XOPEN_REALTIME_THREADS,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_REALTIME_THREADS	/usr/include/bits/confname.h	354;"	d	language:C
+_SC_XOPEN_SHM	/usr/include/bits/confname.h	/^    _SC_XOPEN_SHM,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_SHM	/usr/include/bits/confname.h	274;"	d	language:C
+_SC_XOPEN_STREAMS	/usr/include/bits/confname.h	/^    _SC_XOPEN_STREAMS,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_STREAMS	/usr/include/bits/confname.h	524;"	d	language:C
+_SC_XOPEN_UNIX	/usr/include/bits/confname.h	/^    _SC_XOPEN_UNIX,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_UNIX	/usr/include/bits/confname.h	268;"	d	language:C
+_SC_XOPEN_VERSION	/usr/include/bits/confname.h	/^    _SC_XOPEN_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_VERSION	/usr/include/bits/confname.h	264;"	d	language:C
+_SC_XOPEN_XCU_VERSION	/usr/include/bits/confname.h	/^    _SC_XOPEN_XCU_VERSION,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_XCU_VERSION	/usr/include/bits/confname.h	266;"	d	language:C
+_SC_XOPEN_XPG2	/usr/include/bits/confname.h	/^    _SC_XOPEN_XPG2,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_XPG2	/usr/include/bits/confname.h	284;"	d	language:C
+_SC_XOPEN_XPG3	/usr/include/bits/confname.h	/^    _SC_XOPEN_XPG3,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_XPG3	/usr/include/bits/confname.h	286;"	d	language:C
+_SC_XOPEN_XPG4	/usr/include/bits/confname.h	/^    _SC_XOPEN_XPG4,$/;"	e	language:C	enum:__anon65
+_SC_XOPEN_XPG4	/usr/include/bits/confname.h	288;"	d	language:C
+_SIGNAL_H	/usr/include/signal.h	25;"	d	language:C
 _SIGSET_H_fns	/usr/include/bits/sigset.h	42;"	d	language:C
 _SIGSET_H_types	/usr/include/bits/sigset.h	20;"	d	language:C
 _SIGSET_NWORDS	/usr/include/bits/sigset.h	26;"	d	language:C
@@ -525,7 +1487,7 @@ _STDLIB_H	/usr/include/stdlib.h	37;"	d	language:C
 _STRING_H	/usr/include/string.h	23;"	d	language:C
 _STRUCT_TIMEVAL	/usr/include/bits/time.h	25;"	d	language:C
 _SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	language:C	enum:__anon29
-_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	language:C	enum:__anon57
+_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	language:C	enum:__anon88
 _SVID_SOURCE	/usr/include/features.h	171;"	d	language:C
 _SVID_SOURCE	/usr/include/features.h	172;"	d	language:C
 _SVID_SOURCE	/usr/include/features.h	189;"	d	language:C
@@ -535,6 +1497,7 @@ _SYS_SELECT_H	/usr/include/sys/select.h	22;"	d	language:C
 _SYS_SIZE_T_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	187;"	d	language:C
 _SYS_SYSMACROS_H	/usr/include/sys/sysmacros.h	20;"	d	language:C
 _SYS_TYPES_H	/usr/include/sys/types.h	23;"	d	language:C
+_SYS_UCONTEXT_H	/usr/include/sys/ucontext.h	19;"	d	language:C
 _TIME_H	/usr/include/time.h	26;"	d	language:C
 _TYPE_ptrdiff_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	106;"	d	language:C
 _TYPE_size_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	110;"	d	language:C
@@ -545,6 +1508,7 @@ _T_SIZE	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	189;"	d	language
 _T_SIZE_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	188;"	d	language:C
 _T_WCHAR	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	267;"	d	language:C
 _T_WCHAR_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	266;"	d	language:C
+_UNISTD_H	/usr/include/unistd.h	23;"	d	language:C
 _VA_LIST	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	107;"	d	language:C
 _VA_LIST	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	75;"	d	language:C
 _VA_LIST_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	104;"	d	language:C
@@ -565,13 +1529,32 @@ _WCHAR_T_DEFINED_	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	271;"	
 _WCHAR_T_H	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	273;"	d	language:C
 _WINT_T	/usr/include/wchar.h	60;"	d	language:C
 _WINT_T	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	348;"	d	language:C
+_XBS5_ILP32_OFF32	/usr/include/bits/environments.h	77;"	d	language:C
+_XBS5_ILP32_OFFBIG	/usr/include/bits/environments.h	71;"	d	language:C
+_XBS5_LP64_OFF64	/usr/include/bits/environments.h	63;"	d	language:C
+_XBS5_LPBIG_OFFBIG	/usr/include/bits/environments.h	58;"	d	language:C
 _XLOCALE_H	/usr/include/xlocale.h	21;"	d	language:C
 _XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	language:C	enum:__anon29
-_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	language:C	enum:__anon57
+_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	language:C	enum:__anon88
+_XOPEN_CRYPT	/usr/include/unistd.h	108;"	d	language:C
+_XOPEN_ENH_I18N	/usr/include/unistd.h	112;"	d	language:C
+_XOPEN_LEGACY	/usr/include/unistd.h	115;"	d	language:C
+_XOPEN_REALTIME	/usr/include/bits/posix_opt.h	60;"	d	language:C
+_XOPEN_REALTIME_THREADS	/usr/include/bits/posix_opt.h	63;"	d	language:C
+_XOPEN_SHM	/usr/include/bits/posix_opt.h	66;"	d	language:C
 _XOPEN_SOURCE	/usr/include/features.h	161;"	d	language:C
 _XOPEN_SOURCE	/usr/include/features.h	162;"	d	language:C
 _XOPEN_SOURCE_EXTENDED	/usr/include/features.h	163;"	d	language:C
 _XOPEN_SOURCE_EXTENDED	/usr/include/features.h	164;"	d	language:C
+_XOPEN_UNIX	/usr/include/unistd.h	105;"	d	language:C
+_XOPEN_VERSION	/usr/include/unistd.h	87;"	d	language:C
+_XOPEN_XCU_VERSION	/usr/include/unistd.h	97;"	d	language:C
+_XOPEN_XPG2	/usr/include/unistd.h	100;"	d	language:C
+_XOPEN_XPG3	/usr/include/unistd.h	101;"	d	language:C
+_XOPEN_XPG4	/usr/include/unistd.h	102;"	d	language:C
+_arch	/usr/include/bits/siginfo.h	/^	    unsigned int _arch; \/* AUDIT_ARCH_* of syscall.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon45
+_attribute	/usr/include/bits/siginfo.h	/^	    pthread_attr_t *_attribute;		\/* Thread attributes.  *\/$/;"	m	language:C	struct:sigevent::__anon54::__anon55
+_call_addr	/usr/include/bits/siginfo.h	/^	    void *_call_addr;	\/* Calling user insn.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon45
 _chain	/usr/include/libio.h	/^  struct _IO_FILE *_chain;$/;"	m	language:C	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_FILE
 _codecvt	/usr/include/libio.h	/^  struct _IO_codecvt *_codecvt;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_codecvt
 _codecvt	/usr/include/libio.h	/^  struct _IO_codecvt _codecvt;$/;"	m	language:C	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_codecvt
@@ -580,23 +1563,59 @@ _file	/usr/include/libio.h	/^  struct _IO_FILE _file;$/;"	m	language:C	struct:_I
 _fileno	/usr/include/libio.h	/^  int _fileno;$/;"	m	language:C	struct:_IO_FILE
 _flags	/usr/include/libio.h	/^  int _flags;		\/* High-order word is _IO_MAGIC; rest is flags. *\/$/;"	m	language:C	struct:_IO_FILE
 _flags2	/usr/include/libio.h	/^  int _flags2;$/;"	m	language:C	struct:_IO_FILE
+_fpreg	/usr/include/bits/sigcontext.h	/^struct _fpreg$/;"	s	language:C
+_fpstate	/usr/include/bits/sigcontext.h	/^struct _fpstate$/;"	s	language:C
+_fpx_sw_bytes	/usr/include/bits/sigcontext.h	/^struct _fpx_sw_bytes$/;"	s	language:C
+_fpxreg	/usr/include/bits/sigcontext.h	/^struct _fpxreg$/;"	s	language:C
 _freeres_buf	/usr/include/libio.h	/^  void *_freeres_buf;$/;"	m	language:C	struct:_IO_FILE_complete
 _freeres_list	/usr/include/libio.h	/^  struct _IO_FILE *_freeres_list;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_FILE
 _freeres_size	/usr/include/libio.h	/^  size_t _freeres_size;$/;"	m	language:C	struct:_IO_FILE_complete
+_function	/usr/include/bits/siginfo.h	/^	    void (*_function) (sigval_t);	\/* Function to start.  *\/$/;"	m	language:C	struct:sigevent::__anon54::__anon55
+_fxsr_env	/usr/include/bits/sigcontext.h	/^  __uint32_t		_fxsr_env[6];$/;"	m	language:C	struct:_fpstate
+_fxsr_st	/usr/include/bits/sigcontext.h	/^  struct _fpxreg	_fxsr_st[8];$/;"	m	language:C	struct:_fpstate	typeref:struct:_fpstate::_fpxreg
+_kill	/usr/include/bits/siginfo.h	/^	  } _kill;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon39
+_libc_fpreg	/usr/include/sys/ucontext.h	/^struct _libc_fpreg$/;"	s	language:C
+_libc_fpstate	/usr/include/sys/ucontext.h	/^struct _libc_fpstate$/;"	s	language:C
+_libc_fpxreg	/usr/include/sys/ucontext.h	/^struct _libc_fpxreg$/;"	s	language:C
+_libc_xmmreg	/usr/include/sys/ucontext.h	/^struct _libc_xmmreg$/;"	s	language:C
 _lock	/usr/include/libio.h	/^  _IO_lock_t *_lock;$/;"	m	language:C	struct:_IO_FILE
 _markers	/usr/include/libio.h	/^  struct _IO_marker *_markers;$/;"	m	language:C	struct:_IO_FILE	typeref:struct:_IO_FILE::_IO_marker
 _mode	/usr/include/libio.h	/^  int _mode;$/;"	m	language:C	struct:_IO_FILE_complete
 _next	/usr/include/libio.h	/^  struct _IO_marker *_next;$/;"	m	language:C	struct:_IO_marker	typeref:struct:_IO_marker::_IO_marker
 _offset	/usr/include/libio.h	/^  _IO_off64_t _offset;$/;"	m	language:C	struct:_IO_FILE_complete
 _old_offset	/usr/include/libio.h	/^  _IO_off_t _old_offset; \/* This used to be _offset but it's too small.  *\/$/;"	m	language:C	struct:_IO_FILE
+_pad	/usr/include/bits/siginfo.h	/^	int _pad[__SIGEV_PAD_SIZE];$/;"	m	language:C	union:sigevent::__anon54
+_pad	/usr/include/bits/siginfo.h	/^	int _pad[__SI_PAD_SIZE];$/;"	m	language:C	union:__anon37::__anon38
 _pos	/usr/include/libio.h	/^  int _pos;$/;"	m	language:C	struct:_IO_marker
+_rt	/usr/include/bits/siginfo.h	/^	  } _rt;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon41
 _sbuf	/usr/include/libio.h	/^  struct _IO_FILE *_sbuf;$/;"	m	language:C	struct:_IO_marker	typeref:struct:_IO_marker::_IO_FILE
 _shortbuf	/usr/include/libio.h	/^  char _shortbuf[1];$/;"	m	language:C	struct:_IO_FILE
 _shortbuf	/usr/include/libio.h	/^  wchar_t _shortbuf[1];$/;"	m	language:C	struct:_IO_wide_data
+_sifields	/usr/include/bits/siginfo.h	/^      } _sifields;$/;"	m	language:C	struct:__anon37	typeref:union:__anon37::__anon38
+_sigchld	/usr/include/bits/siginfo.h	/^	  } _sigchld;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon42
+_sigev_thread	/usr/include/bits/siginfo.h	/^	  } _sigev_thread;$/;"	m	language:C	union:sigevent::__anon54	typeref:struct:sigevent::__anon54::__anon55
+_sigev_un	/usr/include/bits/siginfo.h	/^      } _sigev_un;$/;"	m	language:C	struct:sigevent	typeref:union:sigevent::__anon54
+_sigfault	/usr/include/bits/siginfo.h	/^	  } _sigfault;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon43
+_sigpoll	/usr/include/bits/siginfo.h	/^	  } _sigpoll;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon44
+_sigsys	/usr/include/bits/siginfo.h	/^	  } _sigsys;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon45
+_st	/usr/include/bits/sigcontext.h	/^  struct _fpreg	_st[8];$/;"	m	language:C	struct:_fpstate	typeref:struct:_fpstate::_fpreg
+_st	/usr/include/bits/sigcontext.h	/^  struct _fpxreg	_st[8];$/;"	m	language:C	struct:_fpstate	typeref:struct:_fpstate::_fpxreg
+_st	/usr/include/sys/ucontext.h	/^  struct _libc_fpreg _st[8];$/;"	m	language:C	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_fpreg
+_st	/usr/include/sys/ucontext.h	/^  struct _libc_fpxreg	_st[8];$/;"	m	language:C	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_fpxreg
+_syscall	/usr/include/bits/siginfo.h	/^	    int _syscall;	\/* Triggering system call number.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon45
+_tid	/usr/include/bits/siginfo.h	/^	__pid_t _tid;$/;"	m	language:C	union:sigevent::__anon54
+_timer	/usr/include/bits/siginfo.h	/^	  } _timer;$/;"	m	language:C	union:__anon37::__anon38	typeref:struct:__anon37::__anon38::__anon40
 _unused2	/usr/include/libio.h	/^  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];$/;"	m	language:C	struct:_IO_FILE_complete
 _vtable_offset	/usr/include/libio.h	/^  signed char _vtable_offset;$/;"	m	language:C	struct:_IO_FILE
 _wide_data	/usr/include/libio.h	/^  struct _IO_wide_data *_wide_data;$/;"	m	language:C	struct:_IO_FILE_complete	typeref:struct:_IO_FILE_complete::_IO_wide_data
 _wide_vtable	/usr/include/libio.h	/^  const struct _IO_jump_t *_wide_vtable;$/;"	m	language:C	struct:_IO_wide_data	typeref:struct:_IO_wide_data::_IO_jump_t
+_xmm	/usr/include/bits/sigcontext.h	/^  struct _xmmreg	_xmm[16];$/;"	m	language:C	struct:_fpstate	typeref:struct:_fpstate::_xmmreg
+_xmm	/usr/include/bits/sigcontext.h	/^  struct _xmmreg	_xmm[8];$/;"	m	language:C	struct:_fpstate	typeref:struct:_fpstate::_xmmreg
+_xmm	/usr/include/sys/ucontext.h	/^  struct _libc_xmmreg	_xmm[16];$/;"	m	language:C	struct:_libc_fpstate	typeref:struct:_libc_fpstate::_libc_xmmreg
+_xmmreg	/usr/include/bits/sigcontext.h	/^struct _xmmreg$/;"	s	language:C
+_xsave_hdr	/usr/include/bits/sigcontext.h	/^struct _xsave_hdr$/;"	s	language:C
+_xstate	/usr/include/bits/sigcontext.h	/^struct _xstate$/;"	s	language:C
+_ymmh_state	/usr/include/bits/sigcontext.h	/^struct _ymmh_state$/;"	s	language:C
 a	/usr/include/nlopt.h	/^NLOPT_EXTERN(const char *) nlopt_algorithm_name(nlopt_algorithm a);$/;"	v	language:C
 add_cacheval	pcubature.c	/^static int add_cacheval(valcache *vc,$/;"	f	language:C	file:
 af_compile	main.c	/^af_compile(size_t num, ...)$/;"	f	language:C	file:
@@ -609,6 +1628,10 @@ af_leaf	magic.h	/^typedef struct af_leaf$/;"	s	language:C
 af_leaf	magic.h	/^} af_leaf;$/;"	t	language:C	typeref:struct:af_leaf
 af_t	magic.h	/^typedef void af_t(const double *, void *, double *);$/;"	t	language:C
 af_write_t	magic.h	/^typedef void af_write_t(void *);$/;"	t	language:C
+algorithm	magic.h	/^    nlopt_algorithm algorithm;$/;"	m	language:C	struct:params_basis_set
+algorithm	main.c	/^    nlopt_algorithm algorithm;$/;"	m	language:C	struct:algorithm_dict	file:
+algorithm_dict	main.c	/^struct algorithm_dict algorithm_dict[] =$/;"	v	language:C	typeref:struct:algorithm_dict
+algorithm_dict	main.c	/^struct algorithm_dict$/;"	s	language:C	file:
 alloca	/usr/include/alloca.h	29;"	d	language:C
 alloca	/usr/include/alloca.h	35;"	d	language:C
 arg1	/usr/include/math.h	/^    double arg1;$/;"	m	language:C	struct:__exception
@@ -647,45 +1670,95 @@ cookie_io_functions_t	/usr/include/libio.h	/^typedef _IO_cookie_io_functions_t c
 cookie_read_function_t	/usr/include/libio.h	/^typedef __io_read_fn cookie_read_function_t;$/;"	t	language:C
 cookie_seek_function_t	/usr/include/libio.h	/^typedef __io_seek_fn cookie_seek_function_t;$/;"	t	language:C
 cookie_write_function_t	/usr/include/libio.h	/^typedef __io_write_fn cookie_write_function_t;$/;"	t	language:C
+cr2	/usr/include/bits/sigcontext.h	/^  __uint64_t cr2;$/;"	m	language:C	struct:sigcontext
+cr2	/usr/include/bits/sigcontext.h	/^  unsigned long cr2;$/;"	m	language:C	struct:sigcontext
+cr2	/usr/include/sys/ucontext.h	/^    unsigned long int cr2;$/;"	m	language:C	struct:__anon63
+cs	/usr/include/bits/sigcontext.h	/^  unsigned short cs, __csh;$/;"	m	language:C	struct:sigcontext
+cs	/usr/include/bits/sigcontext.h	/^  unsigned short cs;$/;"	m	language:C	struct:sigcontext
+cssel	/usr/include/bits/sigcontext.h	/^  __uint32_t		cssel;$/;"	m	language:C	struct:_fpstate
+cssel	/usr/include/sys/ucontext.h	/^  unsigned long int cssel;$/;"	m	language:C	struct:_libc_fpstate
+cw	/usr/include/bits/sigcontext.h	/^  __uint32_t	cw;$/;"	m	language:C	struct:_fpstate
+cw	/usr/include/sys/ucontext.h	/^  unsigned long int cw;$/;"	m	language:C	struct:_libc_fpstate
+cwd	/usr/include/bits/sigcontext.h	/^  __uint16_t		cwd;$/;"	m	language:C	struct:_fpstate
+cwd	/usr/include/sys/ucontext.h	/^  __uint16_t		cwd;$/;"	m	language:C	struct:_libc_fpstate
 d	/usr/include/bits/pthreadtypes.h	/^      } d;$/;"	m	language:C	union:__anon16::__pthread_mutex_s::__anon17	typeref:struct:__anon16::__pthread_mutex_s::__anon17::__anon18
-d	/usr/include/bits/pthreadtypes.h	/^      } d;$/;"	m	language:C	union:__anon44::__pthread_mutex_s::__anon45	typeref:struct:__anon44::__pthread_mutex_s::__anon45::__anon46
+d	/usr/include/bits/pthreadtypes.h	/^      } d;$/;"	m	language:C	union:__anon75::__pthread_mutex_s::__anon76	typeref:struct:__anon75::__pthread_mutex_s::__anon76::__anon77
+d	magic.h	/^    double d;$/;"	m	language:C	union:time_data
 daddr_t	/usr/include/sys/types.h	/^typedef __daddr_t daddr_t;$/;"	t	language:C
 data_file	magic.h	/^    char data_file[256];\/\/plot data$/;"	m	language:C	struct:params_basis_set
+dataoff	/usr/include/bits/sigcontext.h	/^  __uint32_t		dataoff;$/;"	m	language:C	struct:_fpstate
+dataoff	/usr/include/sys/ucontext.h	/^  unsigned long int dataoff;$/;"	m	language:C	struct:_libc_fpstate
+datasel	/usr/include/bits/sigcontext.h	/^  __uint32_t		datasel;$/;"	m	language:C	struct:_fpstate
+datasel	/usr/include/sys/ucontext.h	/^  unsigned long int datasel;$/;"	m	language:C	struct:_libc_fpstate
 deriv_accuracy	magic.h	/^    size_t deriv_accuracy;\/\/points of integration, for derivative function$/;"	m	language:C	struct:params_basis_set
 deriv_step	magic.h	/^    double deriv_step;\/\/distance between sampling points$/;"	m	language:C	struct:params_basis_set
 deriv_weights	magic.h	/^    double *deriv_weights;\/\/where we store the weights.$/;"	m	language:C	struct:params_basis_set
 destroy	magic.h	/^    af_free_t *destroy;$/;"	m	language:C	struct:params_basis_set
 destroy	magic.h	/^    af_free_t *destroy;$/;"	m	language:C	struct:params_variational_master
 dev_t	/usr/include/sys/types.h	/^typedef __dev_t dev_t;$/;"	t	language:C
-div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	language:C	typeref:struct:__anon36
+div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	language:C	typeref:struct:__anon67
 div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	language:C	typeref:struct:__anon9
 double_t	/usr/include/bits/mathdef.h	/^typedef double double_t;	\/* `double' expressions are evaluated$/;"	t	language:C
 double_t	/usr/include/bits/mathdef.h	/^typedef long double double_t;	\/* `double' expressions are evaluated as$/;"	t	language:C
 drand48_data	/usr/include/stdlib.h	/^struct drand48_data$/;"	s	language:C
+ds	/usr/include/bits/sigcontext.h	/^  unsigned short ds, __dsh;$/;"	m	language:C	struct:sigcontext
+eax	/usr/include/bits/sigcontext.h	/^  unsigned long eax;$/;"	m	language:C	struct:sigcontext
+ebp	/usr/include/bits/sigcontext.h	/^  unsigned long ebp;$/;"	m	language:C	struct:sigcontext
+ebx	/usr/include/bits/sigcontext.h	/^  unsigned long ebx;$/;"	m	language:C	struct:sigcontext
+ecx	/usr/include/bits/sigcontext.h	/^  unsigned long ecx;$/;"	m	language:C	struct:sigcontext
+edi	/usr/include/bits/sigcontext.h	/^  unsigned long edi;$/;"	m	language:C	struct:sigcontext
+edx	/usr/include/bits/sigcontext.h	/^  unsigned long edx;$/;"	m	language:C	struct:sigcontext
+eflags	/usr/include/bits/sigcontext.h	/^  __uint64_t eflags;$/;"	m	language:C	struct:sigcontext
+eflags	/usr/include/bits/sigcontext.h	/^  unsigned long eflags;$/;"	m	language:C	struct:sigcontext
+eip	/usr/include/bits/sigcontext.h	/^  unsigned long eip;$/;"	m	language:C	struct:sigcontext
+element	/usr/include/bits/sigcontext.h	/^  __uint32_t	element[4];$/;"	m	language:C	struct:_xmmreg
+element	/usr/include/sys/ucontext.h	/^  __uint32_t	element[4];$/;"	m	language:C	struct:_libc_xmmreg
 end_ptr	/usr/include/stdlib.h	/^    int32_t *end_ptr;		\/* Pointer behind state table.  *\/$/;"	m	language:C	struct:random_data
 epsrel	magic.h	/^    double epsrel;$/;"	m	language:C	struct:params_basis_set
+err	/usr/include/bits/sigcontext.h	/^  __uint64_t err;$/;"	m	language:C	struct:sigcontext
+err	/usr/include/bits/sigcontext.h	/^  unsigned long err;$/;"	m	language:C	struct:sigcontext
 error	magic.h	/^    char error; \/\/Catching special conditions.$/;"	m	language:C	struct:params_variational_master_mask
 error_norm	include/cubature.h	/^} error_norm;$/;"	t	language:C	typeref:enum:__anon35
-error_norm	include/cubature.h	/^} error_norm;$/;"	t	language:C	typeref:enum:__anon61
+error_norm	include/cubature.h	/^} error_norm;$/;"	t	language:C	typeref:enum:__anon92
+es	/usr/include/bits/sigcontext.h	/^  unsigned short es, __esh;$/;"	m	language:C	struct:sigcontext
+esi	/usr/include/bits/sigcontext.h	/^  unsigned long esi;$/;"	m	language:C	struct:sigcontext
+esp	/usr/include/bits/sigcontext.h	/^  unsigned long esp;$/;"	m	language:C	struct:sigcontext
+esp_at_signal	/usr/include/bits/sigcontext.h	/^  unsigned long esp_at_signal;$/;"	m	language:C	struct:sigcontext
 eval	pcubature.c	/^static unsigned eval(const unsigned *cm, unsigned cmi, double *cval,$/;"	f	language:C	file:
 eval_integral	pcubature.c	/^static void eval_integral(valcache vc, const unsigned *m, $/;"	f	language:C	file:
 evals	pcubature.c	/^static void evals(valcache vc, const unsigned *m, unsigned md,$/;"	f	language:C	file:
+exponent	/usr/include/bits/sigcontext.h	/^  unsigned short exponent;$/;"	m	language:C	struct:_fpreg
+exponent	/usr/include/bits/sigcontext.h	/^  unsigned short exponent;$/;"	m	language:C	struct:_fpxreg
+exponent	/usr/include/sys/ucontext.h	/^  unsigned short int exponent;$/;"	m	language:C	struct:_libc_fpreg
+exponent	/usr/include/sys/ucontext.h	/^  unsigned short int exponent;$/;"	m	language:C	struct:_libc_fpxreg
+extended_size	/usr/include/bits/sigcontext.h	/^  __uint32_t extended_size;$/;"	m	language:C	struct:_fpx_sw_bytes
 f	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	m	language:C	struct:fv_data_s
 f	magic.h	/^    af_t *f;$/;"	m	language:C	struct:af_leaf
 fd_mask	/usr/include/sys/select.h	/^typedef __fd_mask fd_mask;$/;"	t	language:C
 fd_set	/usr/include/sys/select.h	/^  } fd_set;$/;"	t	language:C	typeref:struct:__anon14
-fd_set	/usr/include/sys/select.h	/^  } fd_set;$/;"	t	language:C	typeref:struct:__anon42
+fd_set	/usr/include/sys/select.h	/^  } fd_set;$/;"	t	language:C	typeref:struct:__anon73
 fdata	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	m	language:C	struct:fv_data_s
 fds_bits	/usr/include/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	language:C	struct:__anon14
-fds_bits	/usr/include/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	language:C	struct:__anon42
+fds_bits	/usr/include/sys/select.h	/^    __fd_mask fds_bits[__FD_SETSIZE \/ __NFDBITS];$/;"	m	language:C	struct:__anon73
+flag	/usr/include/getopt.h	/^  int *flag;$/;"	m	language:C	struct:option
 float_t	/usr/include/bits/mathdef.h	/^typedef float float_t;		\/* `float' expressions are evaluated as `float'.  *\/$/;"	t	language:C
 float_t	/usr/include/bits/mathdef.h	/^typedef long double float_t;	\/* `float' expressions are evaluated as$/;"	t	language:C
+fop	/usr/include/bits/sigcontext.h	/^  __uint16_t		fop;$/;"	m	language:C	struct:_fpstate
+fop	/usr/include/sys/ucontext.h	/^  __uint16_t		fop;$/;"	m	language:C	struct:_libc_fpstate
 fpclassify	/usr/include/math.h	210;"	d	language:C
 fpclassify	/usr/include/math.h	213;"	d	language:C
 fpos64_t	/usr/include/stdio.h	/^typedef _G_fpos64_t fpos64_t;$/;"	t	language:C
 fpos_t	/usr/include/stdio.h	/^typedef _G_fpos_t fpos_t;$/;"	t	language:C
+fpregs	/usr/include/sys/ucontext.h	/^    fpregset_t fpregs;$/;"	m	language:C	struct:__anon61
+fpregs	/usr/include/sys/ucontext.h	/^    fpregset_t fpregs;$/;"	m	language:C	struct:__anon63
+fpregset_t	/usr/include/sys/ucontext.h	/^typedef struct _libc_fpstate *fpregset_t;$/;"	t	language:C	typeref:struct:_libc_fpstate
+fpstate	/usr/include/bits/sigcontext.h	/^      struct _fpstate * fpstate;$/;"	m	language:C	union:sigcontext::__anon58	typeref:struct:sigcontext::__anon58::_fpstate
+fpstate	/usr/include/bits/sigcontext.h	/^  struct _fpstate * fpstate;$/;"	m	language:C	struct:sigcontext	typeref:struct:sigcontext::_fpstate
+fpstate	/usr/include/bits/sigcontext.h	/^  struct _fpstate fpstate;$/;"	m	language:C	struct:_xstate	typeref:struct:_xstate::_fpstate
 fptr	/usr/include/stdlib.h	/^    int32_t *fptr;		\/* Front pointer.  *\/$/;"	m	language:C	struct:random_data
 free_cachevals	pcubature.c	/^static void free_cachevals(valcache *v)$/;"	f	language:C	file:
+fs	/usr/include/bits/sigcontext.h	/^  unsigned short fs, __fsh;$/;"	m	language:C	struct:sigcontext
+fs	/usr/include/bits/sigcontext.h	/^  unsigned short fs;$/;"	m	language:C	struct:sigcontext
 fsblkcnt64_t	/usr/include/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt64_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
 fsblkcnt_t	/usr/include/sys/types.h	/^typedef __fsblkcnt64_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
 fsblkcnt_t	/usr/include/sys/types.h	/^typedef __fsblkcnt_t fsblkcnt_t; \/* Type to count file system blocks.  *\/$/;"	t	language:C
@@ -694,19 +1767,33 @@ fsfilcnt64_t	/usr/include/sys/types.h	/^typedef __fsfilcnt64_t fsfilcnt64_t; \/*
 fsfilcnt_t	/usr/include/sys/types.h	/^typedef __fsfilcnt64_t fsfilcnt_t; \/* Type to count file system inodes.  *\/$/;"	t	language:C
 fsfilcnt_t	/usr/include/sys/types.h	/^typedef __fsfilcnt_t fsfilcnt_t; \/* Type to count file system inodes.  *\/$/;"	t	language:C
 fsid_t	/usr/include/sys/types.h	/^typedef __fsid_t fsid_t;$/;"	t	language:C
+ftruncate	/usr/include/unistd.h	1022;"	d	language:C
+ftw	/usr/include/bits/sigcontext.h	/^  __uint16_t		ftw;$/;"	m	language:C	struct:_fpstate
+ftw	/usr/include/sys/ucontext.h	/^  __uint16_t		ftw;$/;"	m	language:C	struct:_libc_fpstate
+fun	main.c	/^fun(const double *x, void *p, double *ret)$/;"	f	language:C
 fv	include/vwrapper.h	/^static int fv(unsigned ndim, size_t npt,$/;"	f	language:C
 fv_data	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	t	language:C	typeref:struct:fv_data_s
 fv_data_s	include/vwrapper.h	/^typedef struct fv_data_s { integrand f; void *fdata; } fv_data;$/;"	s	language:C
 fwscanf	/usr/include/wchar.h	674;"	d	language:C
 getc	/usr/include/stdio.h	543;"	d	language:C
+getopt	/usr/include/getopt.h	165;"	d	language:C
 gid_t	/usr/include/sys/types.h	/^typedef __gid_t gid_t;$/;"	t	language:C
+gid_t	/usr/include/unistd.h	/^typedef __gid_t gid_t;$/;"	t	language:C
 global_pbs	main.c	/^struct params_basis_set global_pbs = {$/;"	v	language:C	typeref:struct:params_basis_set
 global_pvm	main.c	/^struct params_variational_master global_pvm = {$/;"	v	language:C	typeref:struct:params_variational_master
 gnu_dev_major	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_major (unsigned long long int __dev))$/;"	f	language:C
 gnu_dev_makedev	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_makedev (unsigned int __major, unsigned int __minor))$/;"	f	language:C
 gnu_dev_minor	/usr/include/sys/sysmacros.h	/^__NTH (gnu_dev_minor (unsigned long long int __dev))$/;"	f	language:C
+greg_t	/usr/include/sys/ucontext.h	/^__extension__ typedef long long int greg_t;$/;"	t	language:C
+greg_t	/usr/include/sys/ucontext.h	/^typedef int greg_t;$/;"	t	language:C
+gregs	/usr/include/sys/ucontext.h	/^    gregset_t gregs;$/;"	m	language:C	struct:__anon61
+gregs	/usr/include/sys/ucontext.h	/^    gregset_t gregs;$/;"	m	language:C	struct:__anon63
+gregset_t	/usr/include/sys/ucontext.h	/^typedef greg_t gregset_t[NGREG];$/;"	t	language:C
+gs	/usr/include/bits/sigcontext.h	/^  unsigned short gs, __gsh;$/;"	m	language:C	struct:sigcontext
+gs	/usr/include/bits/sigcontext.h	/^  unsigned short gs;$/;"	m	language:C	struct:sigcontext
 gs_known	main.c	/^gs_known(const double *x, pvmm *p, double *ret)$/;"	f	language:C
 gs_learn	main.c	/^gs_learn(pvmm *p)$/;"	f	language:C
+has_arg	/usr/include/getopt.h	/^  int has_arg;$/;"	m	language:C	struct:option
 htobe16	/usr/include/endian.h	63;"	d	language:C
 htobe16	/usr/include/endian.h	79;"	d	language:C
 htobe32	/usr/include/endian.h	68;"	d	language:C
@@ -733,6 +1820,9 @@ int64_t	/usr/include/sys/types.h	/^typedef long int int64_t;$/;"	t	language:C
 int8_t	/usr/include/sys/types.h	/^typedef	char int8_t;$/;"	t	language:C
 integrand	include/cubature.h	/^typedef int (*integrand) (unsigned ndim, const double *x, void *,$/;"	t	language:C
 integrand_v	include/cubature.h	/^typedef int (*integrand_v) (unsigned ndim, size_t npt,$/;"	t	language:C
+intptr_t	/usr/include/unistd.h	/^typedef __intptr_t intptr_t;$/;"	t	language:C
+ipoff	/usr/include/bits/sigcontext.h	/^  __uint32_t		ipoff;$/;"	m	language:C	struct:_fpstate
+ipoff	/usr/include/sys/ucontext.h	/^  unsigned long int ipoff;$/;"	m	language:C	struct:_libc_fpstate
 isfinite	/usr/include/math.h	234;"	d	language:C
 isfinite	/usr/include/math.h	237;"	d	language:C
 isgreater	/usr/include/math.h	416;"	d	language:C
@@ -756,12 +1846,13 @@ isunordered	/usr/include/math.h	421;"	d	language:C
 isunordered	/usr/include/math.h	480;"	d	language:C
 it_interval	/usr/include/time.h	/^    struct timespec it_interval;$/;"	m	language:C	struct:itimerspec	typeref:struct:itimerspec::timespec
 it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	language:C	struct:itimerspec	typeref:struct:itimerspec::timespec
+iter	magic.h	/^    size_t *iter;\/\/count the iterations of each eigenstate calculation$/;"	m	language:C	struct:params_variational_master
 itimerspec	/usr/include/time.h	/^struct itimerspec$/;"	s	language:C
 ket_hamiltonian_wave	main.c	/^ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)$/;"	f	language:C
 key_t	/usr/include/sys/types.h	/^typedef __key_t key_t;$/;"	t	language:C
 lbounds	magic.h	/^    double *lbounds;$/;"	m	language:C	struct:params_variational_workspace
 ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon10
-ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon37
+ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	language:C	typeref:struct:__anon68
 le16toh	/usr/include/endian.h	66;"	d	language:C
 le16toh	/usr/include/endian.h	82;"	d	language:C
 le32toh	/usr/include/endian.h	71;"	d	language:C
@@ -769,10 +1860,14 @@ le32toh	/usr/include/endian.h	87;"	d	language:C
 le64toh	/usr/include/endian.h	76;"	d	language:C
 le64toh	/usr/include/endian.h	92;"	d	language:C
 lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	language:C	typeref:struct:__anon11
-lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	language:C	typeref:struct:__anon38
+lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	language:C	typeref:struct:__anon69
 locale_t	/usr/include/xlocale.h	/^typedef __locale_t locale_t;$/;"	t	language:C
+lockf	/usr/include/unistd.h	1087;"	d	language:C
 loff_t	/usr/include/sys/types.h	/^typedef __loff_t loff_t;$/;"	t	language:C
+lseek	/usr/include/unistd.h	341;"	d	language:C
 m	pcubature.c	/^     unsigned m[MAXDIM];$/;"	m	language:C	struct:cacheval_s	file:
+magic	/usr/include/bits/sigcontext.h	/^  unsigned short magic;$/;"	m	language:C	struct:_fpstate
+magic1	/usr/include/bits/sigcontext.h	/^  __uint32_t magic1;$/;"	m	language:C	struct:_fpx_sw_bytes
 main	main.c	/^main(int argc, char **argv)$/;"	f	language:C
 major	/usr/include/sys/sysmacros.h	61;"	d	language:C
 makedev	/usr/include/sys/sysmacros.h	63;"	d	language:C
@@ -780,13 +1875,15 @@ masks	magic.h	/^    double **masks; \/\/Parameters to the basis set.$/;"	m	langu
 master	main.c	/^master(unsigned n, const double *x, double *grad, pvmm *p)$/;"	f	language:C
 math_errhandling	/usr/include/math.h	280;"	d	language:C
 max_align_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^} max_align_t;$/;"	t	language:C	typeref:struct:__anon1
-max_align_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^} max_align_t;$/;"	t	language:C	typeref:struct:__anon39
+max_align_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^} max_align_t;$/;"	t	language:C	typeref:struct:__anon70
 maxn	magic.h	/^    size_t maxn;$/;"	m	language:C	struct:params_basis_set
 mbrlen	/usr/include/wchar.h	/^__NTH (mbrlen (const char *__restrict __s, size_t __n,$/;"	f	language:C
 mbstate_t	/usr/include/wchar.h	/^typedef __mbstate_t mbstate_t;$/;"	t	language:C
+mcontext_t	/usr/include/sys/ucontext.h	/^  } mcontext_t;$/;"	t	language:C	typeref:struct:__anon63
+mcontext_t	/usr/include/sys/ucontext.h	/^} mcontext_t;$/;"	t	language:C	typeref:struct:__anon61
 method_calculation	main.c	/^method_calculation(struct params_variational_master *pvm)$/;"	f	language:C
-method_experimental	main.c	/^method_experimental(struct params_variational_master *pvm)$/;"	f	language:C
-method_rugid	main.c	/^method_rugid(void)$/;"	f	language:C
+method_rugged	main.c	/^method_rugged(struct params_variational_master *pvm)$/;"	f	language:C
+method_test	main.c	/^method_test(struct params_variational_master *pvm)$/;"	f	language:C
 mi	pcubature.c	/^     unsigned mi;$/;"	m	language:C	struct:cacheval_s	file:
 minor	/usr/include/sys/sysmacros.h	62;"	d	language:C
 mkostemp	/usr/include/stdlib.h	680;"	d	language:C
@@ -795,11 +1892,19 @@ mkstemp	/usr/include/stdlib.h	626;"	d	language:C
 mkstemps	/usr/include/stdlib.h	648;"	d	language:C
 mode_t	/usr/include/sys/types.h	/^typedef __mode_t mode_t;$/;"	t	language:C
 morse_potential	main.c	/^morse_potential(const double *x, pvmm *p, double *ret)$/;"	f	language:C
+mu	magic.h	/^    double mu;\/\/reduced mass of system$/;"	m	language:C	struct:params_basis_set
+mxcr_mask	/usr/include/bits/sigcontext.h	/^  __uint32_t		mxcr_mask;$/;"	m	language:C	struct:_fpstate
+mxcr_mask	/usr/include/sys/ucontext.h	/^  __uint32_t		mxcr_mask;$/;"	m	language:C	struct:_libc_fpstate
+mxcsr	/usr/include/bits/sigcontext.h	/^  __uint32_t		mxcsr;$/;"	m	language:C	struct:_fpstate
+mxcsr	/usr/include/sys/ucontext.h	/^  __uint32_t		mxcsr;$/;"	m	language:C	struct:_libc_fpstate
 n	magic.h	/^    size_t n;$/;"	m	language:C	struct:params_variational_master_mask
-n_exp	magic.h	/^    size_t n_exp;\/\/terms of the exponential expansion$/;"	m	language:C	struct:params_basis_set
-n_pol	magic.h	/^    size_t n_pol;\/\/terms of the polynomial expansion$/;"	m	language:C	struct:params_basis_set
+n_exp	magic.h	/^    size_t n_exp; \/\/Exponential terms will come after the polynomial terms.$/;"	m	language:C	struct:params_variational_master_mask
+n_pol	magic.h	/^    size_t n_pol;$/;"	m	language:C	struct:params_variational_master_mask
+n_vars	magic.h	/^    size_t n_vars;$/;"	m	language:C	struct:params_variational_master_mask
+name	/usr/include/getopt.h	/^  const char *name;$/;"	m	language:C	struct:option
 name	/usr/include/math.h	/^    char *name;$/;"	m	language:C	struct:__exception
 name	magic.h	/^    char name[256];\/\/name of basis set$/;"	m	language:C	struct:params_basis_set
+name	main.c	/^    char *name;$/;"	m	language:C	struct:algorithm_dict	file:
 ncache	pcubature.c	/^     size_t ncache;$/;"	m	language:C	struct:valcache_s	file:
 next	magic.h	/^    struct af_leaf *next;$/;"	m	language:C	struct:af_leaf	typeref:struct:af_leaf::af_leaf
 nlink_t	/usr/include/sys/types.h	/^typedef __nlink_t nlink_t;$/;"	t	language:C
@@ -810,15 +1915,22 @@ nlopt_mfunc	/usr/include/nlopt.h	/^typedef void (*nlopt_mfunc)(unsigned m, doubl
 nlopt_munge	/usr/include/nlopt.h	/^typedef void* (*nlopt_munge)(void *p);$/;"	t	language:C
 nlopt_opt	/usr/include/nlopt.h	/^typedef struct nlopt_opt_s *nlopt_opt;$/;"	t	language:C	typeref:struct:nlopt_opt_s
 nlopt_result	/usr/include/nlopt.h	/^} nlopt_result;$/;"	t	language:C	typeref:enum:__anon34
+no_argument	/usr/include/getopt.h	116;"	d	language:C
 nullptr_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^  typedef decltype(nullptr) nullptr_t;$/;"	t	language:C
 num_cacheval	pcubature.c	/^static size_t num_cacheval(const unsigned *m, unsigned mi, unsigned dim)$/;"	f	language:C	file:
 off64_t	/usr/include/stdio.h	/^typedef __off64_t off64_t;$/;"	t	language:C
 off64_t	/usr/include/sys/types.h	/^typedef __off64_t off64_t;$/;"	t	language:C
+off64_t	/usr/include/unistd.h	/^typedef __off64_t off64_t;$/;"	t	language:C
 off_t	/usr/include/stdio.h	/^typedef __off64_t off_t;$/;"	t	language:C
 off_t	/usr/include/stdio.h	/^typedef __off_t off_t;$/;"	t	language:C
 off_t	/usr/include/sys/types.h	/^typedef __off64_t off_t;$/;"	t	language:C
 off_t	/usr/include/sys/types.h	/^typedef __off_t off_t;$/;"	t	language:C
+off_t	/usr/include/unistd.h	/^typedef __off64_t off_t;$/;"	t	language:C
+off_t	/usr/include/unistd.h	/^typedef __off_t off_t;$/;"	t	language:C
 offsetof	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	413;"	d	language:C
+oldmask	/usr/include/bits/sigcontext.h	/^  __uint64_t oldmask;$/;"	m	language:C	struct:sigcontext
+oldmask	/usr/include/bits/sigcontext.h	/^  unsigned long oldmask;$/;"	m	language:C	struct:sigcontext
+oldmask	/usr/include/sys/ucontext.h	/^    unsigned long int oldmask;$/;"	m	language:C	struct:__anon63
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_ftol_abs(const nlopt_opt opt);$/;"	v	language:C
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_ftol_rel(const nlopt_opt opt);$/;"	v	language:C
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(double) nlopt_get_maxtime(const nlopt_opt opt);$/;"	v	language:C
@@ -836,11 +1948,20 @@ opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_population(const nlo
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(unsigned) nlopt_get_vector_storage(const nlopt_opt opt);$/;"	v	language:C
 opt	/usr/include/nlopt.h	/^NLOPT_EXTERN(void) nlopt_destroy(nlopt_opt opt);$/;"	v	language:C
 opt	magic.h	/^    nlopt_opt opt;$/;"	m	language:C	struct:params_variational_workspace
+option	/usr/include/getopt.h	/^struct option$/;"	s	language:C
+optional_argument	/usr/include/getopt.h	118;"	d	language:C
 p	magic.h	/^    pvmm *p;$/;"	m	language:C	struct:params_variational_workspace
 p	magic.h	/^    void *p;$/;"	m	language:C	struct:af_leaf
+padding	/usr/include/bits/sigcontext.h	/^  __uint32_t		padding[24];$/;"	m	language:C	struct:_fpstate
+padding	/usr/include/bits/sigcontext.h	/^  __uint32_t		padding[56];$/;"	m	language:C	struct:_fpstate
+padding	/usr/include/bits/sigcontext.h	/^  __uint32_t padding[7];$/;"	m	language:C	struct:_fpx_sw_bytes
+padding	/usr/include/bits/sigcontext.h	/^  unsigned short padding[3];$/;"	m	language:C	struct:_fpxreg
+padding	/usr/include/sys/ucontext.h	/^  __uint32_t		padding[24];$/;"	m	language:C	struct:_libc_fpstate
+padding	/usr/include/sys/ucontext.h	/^  unsigned short int padding[3];$/;"	m	language:C	struct:_libc_fpxreg
 params_basis_set	magic.h	/^struct params_basis_set$/;"	s	language:C
 params_basis_set_free	main.c	/^params_basis_set_free(struct params_basis_set *pbs)$/;"	f	language:C
 params_basis_set_init	main.c	/^params_basis_set_init(struct params_basis_set *pbs, char *file)$/;"	f	language:C
+params_basis_set_init_weights	main.c	/^params_basis_set_init_weights(struct params_basis_set *pbs)$/;"	f	language:C
 params_file	magic.h	/^    char params_file[256];\/\/save paramaters after variation$/;"	m	language:C	struct:params_basis_set
 params_variational_master	magic.h	/^struct params_variational_master$/;"	s	language:C
 params_variational_master_free	main.c	/^params_variational_master_free(struct params_variational_master *pvm)$/;"	f	language:C
@@ -848,38 +1969,44 @@ params_variational_master_init	main.c	/^params_variational_master_init(struct pa
 params_variational_master_mask	magic.h	/^typedef struct params_variational_master_mask$/;"	s	language:C
 params_variational_workspace	magic.h	/^struct params_variational_workspace$/;"	s	language:C
 params_variational_workspace_free	main.c	/^params_variational_workspace_free(struct params_variational_workspace *pvw)$/;"	f	language:C	file:
-params_variational_workspace_init	main.c	/^params_variational_workspace_init(struct params_variational_workspace *pvw, struct params_variational_master *pvm)$/;"	f	language:C	file:
+params_variational_workspace_init	main.c	/^params_variational_workspace_init(struct params_variational_workspace *pvw, pvmm *p)$/;"	f	language:C	file:
 pbs	magic.h	/^    struct params_basis_set *pbs;$/;"	m	language:C	struct:params_variational_master	typeref:struct:params_variational_master::params_basis_set
 pcubature	pcubature.c	/^int pcubature(unsigned fdim, integrand f, void *fdata,$/;"	f	language:C
 pcubature_v	pcubature.c	/^int pcubature_v(unsigned fdim, integrand_v f, void *fdata,$/;"	f	language:C
 pcubature_v_buf	pcubature.c	/^int pcubature_v_buf(unsigned fdim, integrand_v f, void *fdata,$/;"	f	language:C
+pid_t	/usr/include/signal.h	/^typedef __pid_t pid_t;$/;"	t	language:C
 pid_t	/usr/include/sys/types.h	/^typedef __pid_t pid_t;$/;"	t	language:C
 pid_t	/usr/include/time.h	/^typedef __pid_t pid_t;$/;"	t	language:C
+pid_t	/usr/include/unistd.h	/^typedef __pid_t pid_t;$/;"	t	language:C
+pread	/usr/include/unistd.h	395;"	d	language:C
 print_data	main.c	/^print_data(struct params_variational_master *pvm)$/;"	f	language:C
+print_elapsed_time	main.c	/^print_elapsed_time(struct params_variational_master *pvm)$/;"	f	language:C
+print_log	main.c	/^print_log(void)$/;"	f	language:C
 print_params	main.c	/^print_params(struct params_variational_master *pvm)$/;"	f	language:C
 print_summary	main.c	/^print_summary(pvmm *p)$/;"	f	language:C
 print_variational_params	main.c	/^print_variational_params(pvmm *p)$/;"	f	language:C
 progress	magic.h	/^    size_t progress; \/\/Count iterations within a calculation.$/;"	m	language:C	struct:params_variational_master
 pthread_attr_t	/usr/include/bits/pthreadtypes.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	language:C	typeref:union:pthread_attr_t
 pthread_attr_t	/usr/include/bits/pthreadtypes.h	/^union pthread_attr_t$/;"	u	language:C
+pthread_attr_t	/usr/include/bits/siginfo.h	/^typedef union pthread_attr_t pthread_attr_t;$/;"	t	language:C	typeref:union:pthread_attr_t
 pthread_barrier_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	language:C	typeref:union:__anon26
-pthread_barrier_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	language:C	typeref:union:__anon54
+pthread_barrier_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrier_t;$/;"	t	language:C	typeref:union:__anon85
 pthread_barrierattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	language:C	typeref:union:__anon27
-pthread_barrierattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	language:C	typeref:union:__anon55
+pthread_barrierattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_barrierattr_t;$/;"	t	language:C	typeref:union:__anon86
 pthread_cond_t	/usr/include/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	language:C	typeref:union:__anon20
-pthread_cond_t	/usr/include/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	language:C	typeref:union:__anon48
+pthread_cond_t	/usr/include/bits/pthreadtypes.h	/^} pthread_cond_t;$/;"	t	language:C	typeref:union:__anon79
 pthread_condattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_condattr_t;$/;"	t	language:C	typeref:union:__anon22
-pthread_condattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_condattr_t;$/;"	t	language:C	typeref:union:__anon50
+pthread_condattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_condattr_t;$/;"	t	language:C	typeref:union:__anon81
 pthread_key_t	/usr/include/bits/pthreadtypes.h	/^typedef unsigned int pthread_key_t;$/;"	t	language:C
 pthread_mutex_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutex_t;$/;"	t	language:C	typeref:union:__anon16
-pthread_mutex_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutex_t;$/;"	t	language:C	typeref:union:__anon44
+pthread_mutex_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutex_t;$/;"	t	language:C	typeref:union:__anon75
 pthread_mutexattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutexattr_t;$/;"	t	language:C	typeref:union:__anon19
-pthread_mutexattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutexattr_t;$/;"	t	language:C	typeref:union:__anon47
+pthread_mutexattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_mutexattr_t;$/;"	t	language:C	typeref:union:__anon78
 pthread_once_t	/usr/include/bits/pthreadtypes.h	/^typedef int pthread_once_t;$/;"	t	language:C
 pthread_rwlock_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlock_t;$/;"	t	language:C	typeref:union:__anon23
-pthread_rwlock_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlock_t;$/;"	t	language:C	typeref:union:__anon51
+pthread_rwlock_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlock_t;$/;"	t	language:C	typeref:union:__anon82
 pthread_rwlockattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlockattr_t;$/;"	t	language:C	typeref:union:__anon25
-pthread_rwlockattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlockattr_t;$/;"	t	language:C	typeref:union:__anon53
+pthread_rwlockattr_t	/usr/include/bits/pthreadtypes.h	/^} pthread_rwlockattr_t;$/;"	t	language:C	typeref:union:__anon84
 pthread_spinlock_t	/usr/include/bits/pthreadtypes.h	/^typedef volatile int pthread_spinlock_t;$/;"	t	language:C
 pthread_t	/usr/include/bits/pthreadtypes.h	/^typedef unsigned long int pthread_t;$/;"	t	language:C
 ptrdiff_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __PTRDIFF_TYPE__ ptrdiff_t;$/;"	t	language:C
@@ -887,48 +2014,160 @@ putc	/usr/include/stdio.h	585;"	d	language:C
 pvm	magic.h	/^    struct params_variational_master *pvm;$/;"	m	language:C	struct:params_variational_master_mask	typeref:struct:params_variational_master_mask::params_variational_master
 pvmm	magic.h	/^    struct params_variational_master_mask *pvmm;$/;"	m	language:C	struct:params_variational_master	typeref:struct:params_variational_master::params_variational_master_mask
 pvmm	magic.h	/^} pvmm;$/;"	t	language:C	typeref:struct:params_variational_master_mask
+pwrite	/usr/include/unistd.h	396;"	d	language:C
 quad_t	/usr/include/sys/types.h	/^typedef __quad_t quad_t;$/;"	t	language:C
-quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	language:C	struct:__anon36
+quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	language:C	struct:__anon67
 quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	language:C	struct:__anon9
 quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon10
-quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon37
+quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon68
 quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon11
-quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon38
+quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	language:C	struct:__anon69
+r10	/usr/include/bits/sigcontext.h	/^  __uint64_t r10;$/;"	m	language:C	struct:sigcontext
+r11	/usr/include/bits/sigcontext.h	/^  __uint64_t r11;$/;"	m	language:C	struct:sigcontext
+r12	/usr/include/bits/sigcontext.h	/^  __uint64_t r12;$/;"	m	language:C	struct:sigcontext
+r13	/usr/include/bits/sigcontext.h	/^  __uint64_t r13;$/;"	m	language:C	struct:sigcontext
+r14	/usr/include/bits/sigcontext.h	/^  __uint64_t r14;$/;"	m	language:C	struct:sigcontext
+r15	/usr/include/bits/sigcontext.h	/^  __uint64_t r15;$/;"	m	language:C	struct:sigcontext
+r8	/usr/include/bits/sigcontext.h	/^  __uint64_t r8;$/;"	m	language:C	struct:sigcontext
+r9	/usr/include/bits/sigcontext.h	/^  __uint64_t r9;$/;"	m	language:C	struct:sigcontext
 rand_deg	/usr/include/stdlib.h	/^    int rand_deg;		\/* Degree of random number generator.  *\/$/;"	m	language:C	struct:random_data
 rand_sep	/usr/include/stdlib.h	/^    int rand_sep;		\/* Distance between front and rear.  *\/$/;"	m	language:C	struct:random_data
 rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number generator.  *\/$/;"	m	language:C	struct:random_data
 random_data	/usr/include/stdlib.h	/^struct random_data$/;"	s	language:C
+rax	/usr/include/bits/sigcontext.h	/^  __uint64_t rax;$/;"	m	language:C	struct:sigcontext
+rbp	/usr/include/bits/sigcontext.h	/^  __uint64_t rbp;$/;"	m	language:C	struct:sigcontext
+rbx	/usr/include/bits/sigcontext.h	/^  __uint64_t rbx;$/;"	m	language:C	struct:sigcontext
+rcx	/usr/include/bits/sigcontext.h	/^  __uint64_t rcx;$/;"	m	language:C	struct:sigcontext
+rdi	/usr/include/bits/sigcontext.h	/^  __uint64_t rdi;$/;"	m	language:C	struct:sigcontext
+rdp	/usr/include/bits/sigcontext.h	/^  __uint64_t		rdp;$/;"	m	language:C	struct:_fpstate
+rdp	/usr/include/sys/ucontext.h	/^  __uint64_t		rdp;$/;"	m	language:C	struct:_libc_fpstate
+rdx	/usr/include/bits/sigcontext.h	/^  __uint64_t rdx;$/;"	m	language:C	struct:sigcontext
 read	/usr/include/libio.h	/^  __io_read_fn *read;		\/* Read bytes.  *\/$/;"	m	language:C	struct:__anon2
 read_params	main.c	/^read_params(struct params_variational_master *pvm)$/;"	f	language:C
 real_deriv_second	main.c	/^real_deriv_second(af_t *f, const double *x, pvmm *p)$/;"	f	language:C
 register_t	/usr/include/sys/types.h	/^typedef int register_t __attribute__ ((__mode__ (__word__)));$/;"	t	language:C
 register_t	/usr/include/sys/types.h	/^typedef int register_t;$/;"	t	language:C
-rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon36
+rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon67
 rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	language:C	struct:__anon9
 rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon10
-rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon37
+rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon68
 rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon11
-rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon38
-reserved_vars	magic.h	/^    size_t reserved_vars;\/\/The number of vars of the basis set. Set at runtime?$/;"	m	language:C	struct:params_basis_set
+rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	language:C	struct:__anon69
+report_algorithm	main.c	/^report_algorithm(struct params_basis_set *pbs)$/;"	f	language:C
+required_argument	/usr/include/getopt.h	117;"	d	language:C
+reserved	/usr/include/bits/sigcontext.h	/^  __uint32_t		reserved;$/;"	m	language:C	struct:_fpstate
+reserved1	/usr/include/bits/sigcontext.h	/^  __uint64_t reserved1[2];$/;"	m	language:C	struct:_xsave_hdr
+reserved2	/usr/include/bits/sigcontext.h	/^  __uint64_t reserved2[5];$/;"	m	language:C	struct:_xsave_hdr
 retval	/usr/include/math.h	/^    double retval;$/;"	m	language:C	struct:__exception
+rip	/usr/include/bits/sigcontext.h	/^  __uint64_t		rip;$/;"	m	language:C	struct:_fpstate
+rip	/usr/include/bits/sigcontext.h	/^  __uint64_t rip;$/;"	m	language:C	struct:sigcontext
+rip	/usr/include/sys/ucontext.h	/^  __uint64_t		rip;$/;"	m	language:C	struct:_libc_fpstate
 rptr	/usr/include/stdlib.h	/^    int32_t *rptr;		\/* Rear pointer.  *\/$/;"	m	language:C	struct:random_data
+rsi	/usr/include/bits/sigcontext.h	/^  __uint64_t rsi;$/;"	m	language:C	struct:sigcontext
+rsp	/usr/include/bits/sigcontext.h	/^  __uint64_t rsp;$/;"	m	language:C	struct:sigcontext
+rugged_write_defaults	main.c	944;"	d	language:C	file:
 run_mode	magic.h	/^    enum run_mode run_mode;\/\/what are we doing$/;"	m	language:C	struct:params_basis_set	typeref:enum:params_basis_set::run_mode
 run_mode	magic.h	/^enum run_mode$/;"	g	language:C
 rune_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef _BSD_RUNE_T_ rune_t;$/;"	t	language:C
 rune_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __rune_t        rune_t;$/;"	t	language:C
+sa_flags	/usr/include/bits/sigaction.h	/^    int sa_flags;$/;"	m	language:C	struct:sigaction
+sa_handler	/usr/include/bits/sigaction.h	/^	__sighandler_t sa_handler;$/;"	m	language:C	union:sigaction::__anon57
+sa_handler	/usr/include/bits/sigaction.h	36;"	d	language:C
+sa_mask	/usr/include/bits/sigaction.h	/^    __sigset_t sa_mask;$/;"	m	language:C	struct:sigaction
+sa_restorer	/usr/include/bits/sigaction.h	/^    void (*sa_restorer) (void);$/;"	m	language:C	struct:sigaction
+sa_sigaction	/usr/include/bits/sigaction.h	/^	void (*sa_sigaction) (int, siginfo_t *, void *);$/;"	m	language:C	union:sigaction::__anon57
+sa_sigaction	/usr/include/bits/sigaction.h	37;"	d	language:C
 scaling_code	magic.h	/^    char scaling_code;\/\/for use in determing variable scaling schemes$/;"	m	language:C	struct:params_basis_set
 scanf	/usr/include/stdio.h	458;"	d	language:C
 seek	/usr/include/libio.h	/^  __io_seek_fn *seek;		\/* Seek\/tell file position.  *\/$/;"	m	language:C	struct:__anon2
+si_addr	/usr/include/bits/siginfo.h	/^	    void *si_addr;	\/* Faulting insn\/memory ref.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon43
+si_addr	/usr/include/bits/siginfo.h	142;"	d	language:C
+si_addr_lsb	/usr/include/bits/siginfo.h	/^	    short int si_addr_lsb;	\/* Valid LSB of the reported address.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon43
+si_addr_lsb	/usr/include/bits/siginfo.h	143;"	d	language:C
+si_arch	/usr/include/bits/siginfo.h	148;"	d	language:C
+si_band	/usr/include/bits/siginfo.h	/^	    long int si_band;	\/* Band event for SIGPOLL.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon44
+si_band	/usr/include/bits/siginfo.h	144;"	d	language:C
+si_call_addr	/usr/include/bits/siginfo.h	146;"	d	language:C
+si_code	/usr/include/bits/siginfo.h	/^    int si_code;		\/* Signal code.  *\/$/;"	m	language:C	struct:__anon37
+si_errno	/usr/include/bits/siginfo.h	/^    int si_errno;		\/* If non-zero, an errno value associated with$/;"	m	language:C	struct:__anon37
+si_fd	/usr/include/bits/siginfo.h	/^	    int si_fd;$/;"	m	language:C	struct:__anon37::__anon38::__anon44
+si_fd	/usr/include/bits/siginfo.h	145;"	d	language:C
+si_int	/usr/include/bits/siginfo.h	140;"	d	language:C
+si_overrun	/usr/include/bits/siginfo.h	/^	    int si_overrun;	\/* Overrun count.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon40
+si_overrun	/usr/include/bits/siginfo.h	135;"	d	language:C
+si_pid	/usr/include/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Sending process ID.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon39
+si_pid	/usr/include/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Sending process ID.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon41
+si_pid	/usr/include/bits/siginfo.h	/^	    __pid_t si_pid;	\/* Which child.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon42
+si_pid	/usr/include/bits/siginfo.h	132;"	d	language:C
+si_ptr	/usr/include/bits/siginfo.h	141;"	d	language:C
+si_signo	/usr/include/bits/siginfo.h	/^    int si_signo;		\/* Signal number.  *\/$/;"	m	language:C	struct:__anon37
+si_sigval	/usr/include/bits/siginfo.h	/^	    sigval_t si_sigval;	\/* Signal value.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon40
+si_sigval	/usr/include/bits/siginfo.h	/^	    sigval_t si_sigval;	\/* Signal value.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon41
+si_status	/usr/include/bits/siginfo.h	/^	    int si_status;	\/* Exit value or signal.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon42
+si_status	/usr/include/bits/siginfo.h	136;"	d	language:C
+si_stime	/usr/include/bits/siginfo.h	/^	    __sigchld_clock_t si_stime;$/;"	m	language:C	struct:__anon37::__anon38::__anon42
+si_stime	/usr/include/bits/siginfo.h	138;"	d	language:C
+si_syscall	/usr/include/bits/siginfo.h	147;"	d	language:C
+si_tid	/usr/include/bits/siginfo.h	/^	    int si_tid;		\/* Timer ID.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon40
+si_timerid	/usr/include/bits/siginfo.h	134;"	d	language:C
+si_uid	/usr/include/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon39
+si_uid	/usr/include/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon41
+si_uid	/usr/include/bits/siginfo.h	/^	    __uid_t si_uid;	\/* Real user ID of sending process.  *\/$/;"	m	language:C	struct:__anon37::__anon38::__anon42
+si_uid	/usr/include/bits/siginfo.h	133;"	d	language:C
+si_utime	/usr/include/bits/siginfo.h	/^	    __sigchld_clock_t si_utime;$/;"	m	language:C	struct:__anon37::__anon38::__anon42
+si_utime	/usr/include/bits/siginfo.h	137;"	d	language:C
+si_value	/usr/include/bits/siginfo.h	139;"	d	language:C
+sig_atomic_t	/usr/include/signal.h	/^typedef __sig_atomic_t sig_atomic_t;$/;"	t	language:C
+sig_handler	main.c	/^void sig_handler(int signo)$/;"	f	language:C
+sig_init	main.c	/^sig_init(void)$/;"	f	language:C
+sig_t	/usr/include/signal.h	/^typedef __sighandler_t sig_t;$/;"	t	language:C
+sigaction	/usr/include/bits/sigaction.h	/^struct sigaction$/;"	s	language:C
+sigaltstack	/usr/include/bits/sigstack.h	/^typedef struct sigaltstack$/;"	s	language:C
+sigcontext	/usr/include/bits/sigcontext.h	/^struct sigcontext$/;"	s	language:C
+sigcontext_struct	/usr/include/bits/sigcontext.h	88;"	d	language:C
+sigev_notify	/usr/include/bits/siginfo.h	/^    int sigev_notify;$/;"	m	language:C	struct:sigevent
+sigev_notify_attributes	/usr/include/bits/siginfo.h	331;"	d	language:C
+sigev_notify_function	/usr/include/bits/siginfo.h	330;"	d	language:C
+sigev_signo	/usr/include/bits/siginfo.h	/^    int sigev_signo;$/;"	m	language:C	struct:sigevent
+sigev_value	/usr/include/bits/siginfo.h	/^    sigval_t sigev_value;$/;"	m	language:C	struct:sigevent
+sigevent	/usr/include/bits/siginfo.h	/^typedef struct sigevent$/;"	s	language:C
+sigevent_t	/usr/include/bits/siginfo.h	/^  } sigevent_t;$/;"	t	language:C	typeref:struct:sigevent
+sighandler_t	/usr/include/signal.h	/^typedef __sighandler_t sighandler_t;$/;"	t	language:C
+sigmask	/usr/include/signal.h	186;"	d	language:C
 signbit	/usr/include/math.h	222;"	d	language:C
 signbit	/usr/include/math.h	225;"	d	language:C
+significand	/usr/include/bits/sigcontext.h	/^  unsigned short significand[4];$/;"	m	language:C	struct:_fpreg
+significand	/usr/include/bits/sigcontext.h	/^  unsigned short significand[4];$/;"	m	language:C	struct:_fpxreg
+significand	/usr/include/sys/ucontext.h	/^  unsigned short int significand[4];$/;"	m	language:C	struct:_libc_fpreg
+significand	/usr/include/sys/ucontext.h	/^  unsigned short int significand[4];$/;"	m	language:C	struct:_libc_fpxreg
+sigpause	/usr/include/signal.h	174;"	d	language:C
+sigset_t	/usr/include/signal.h	/^typedef __sigset_t sigset_t;$/;"	t	language:C
 sigset_t	/usr/include/sys/select.h	/^typedef __sigset_t sigset_t;$/;"	t	language:C
-size_of_mask	main.c	/^size_of_mask(size_t n, size_t reserved_vars)$/;"	f	language:C	file:
+sigstack	/usr/include/bits/sigstack.h	/^struct sigstack$/;"	s	language:C
+sigval	/usr/include/bits/siginfo.h	/^typedef union sigval$/;"	u	language:C
+sigval_t	/usr/include/bits/siginfo.h	/^  } sigval_t;$/;"	t	language:C	typeref:union:sigval
+sigvec	/usr/include/signal.h	/^struct sigvec$/;"	s	language:C
+sival_int	/usr/include/bits/siginfo.h	/^    int sival_int;$/;"	m	language:C	union:sigval
+sival_ptr	/usr/include/bits/siginfo.h	/^    void *sival_ptr;$/;"	m	language:C	union:sigval
 size_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef __SIZE_TYPE__ size_t;$/;"	t	language:C
+snapshot_init	main.c	/^snapshot_init(pvmm *p)$/;"	f	language:C
+snapshot_take	main.c	/^snapshot_take(pvmm *p)$/;"	f	language:C
+socklen_t	/usr/include/unistd.h	/^typedef __socklen_t socklen_t;$/;"	t	language:C
+ss	/usr/include/bits/sigcontext.h	/^  unsigned short ss, __ssh;$/;"	m	language:C	struct:sigcontext
+ss_flags	/usr/include/bits/sigstack.h	/^    int ss_flags;$/;"	m	language:C	struct:sigaltstack
+ss_onstack	/usr/include/bits/sigstack.h	/^    int ss_onstack;		\/* Nonzero if executing on this stack.  *\/$/;"	m	language:C	struct:sigstack
+ss_size	/usr/include/bits/sigstack.h	/^    size_t ss_size;$/;"	m	language:C	struct:sigaltstack
+ss_sp	/usr/include/bits/sigstack.h	/^    void *ss_sp;		\/* Signal stack pointer.  *\/$/;"	m	language:C	struct:sigstack
+ss_sp	/usr/include/bits/sigstack.h	/^    void *ss_sp;$/;"	m	language:C	struct:sigaltstack
 sscanf	/usr/include/stdio.h	459;"	d	language:C
 ssize_t	/usr/include/stdio.h	/^typedef __ssize_t ssize_t;$/;"	t	language:C
 ssize_t	/usr/include/sys/types.h	/^typedef __ssize_t ssize_t;$/;"	t	language:C
+ssize_t	/usr/include/unistd.h	/^typedef __ssize_t ssize_t;$/;"	t	language:C
 ssize_t	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stddef.h	/^typedef long ssize_t;$/;"	t	language:C
+stack_t	/usr/include/bits/sigstack.h	/^  } stack_t;$/;"	t	language:C	typeref:struct:sigaltstack
 state	/usr/include/stdlib.h	/^    int32_t *state;		\/* Array of state values.  *\/$/;"	m	language:C	struct:random_data
+status	/usr/include/bits/sigcontext.h	/^  unsigned short status;$/;"	m	language:C	struct:_fpstate
+status	/usr/include/sys/ucontext.h	/^  unsigned long int status;$/;"	m	language:C	struct:_libc_fpstate
 stderr	/usr/include/stdio.h	174;"	d	language:C
 stdin	/usr/include/stdio.h	172;"	d	language:C
 stdout	/usr/include/stdio.h	173;"	d	language:C
@@ -936,7 +2175,19 @@ strdupa	/usr/include/string.h	190;"	d	language:C
 strndupa	/usr/include/string.h	200;"	d	language:C
 suseconds_t	/usr/include/sys/select.h	/^typedef __suseconds_t suseconds_t;$/;"	t	language:C
 suseconds_t	/usr/include/sys/types.h	/^typedef __suseconds_t suseconds_t;$/;"	t	language:C
+sv_flags	/usr/include/signal.h	/^    int sv_flags;		\/* Flags (see below).  *\/$/;"	m	language:C	struct:sigvec
+sv_handler	/usr/include/signal.h	/^    __sighandler_t sv_handler;	\/* Signal handler.  *\/$/;"	m	language:C	struct:sigvec
+sv_mask	/usr/include/signal.h	/^    int sv_mask;		\/* Mask of signals to be blocked.  *\/$/;"	m	language:C	struct:sigvec
+sv_onstack	/usr/include/signal.h	313;"	d	language:C
+sw	/usr/include/bits/sigcontext.h	/^  __uint32_t		sw;$/;"	m	language:C	struct:_fpstate
+sw	/usr/include/sys/ucontext.h	/^  unsigned long int sw;$/;"	m	language:C	struct:_libc_fpstate
+swd	/usr/include/bits/sigcontext.h	/^  __uint16_t		swd;$/;"	m	language:C	struct:_fpstate
+swd	/usr/include/sys/ucontext.h	/^  __uint16_t		swd;$/;"	m	language:C	struct:_libc_fpstate
 swscanf	/usr/include/wchar.h	676;"	d	language:C
+tag	/usr/include/bits/sigcontext.h	/^  __uint32_t		tag;$/;"	m	language:C	struct:_fpstate
+tag	/usr/include/sys/ucontext.h	/^  unsigned long int tag;$/;"	m	language:C	struct:_libc_fpstate
+time	magic.h	/^    union time_data *time;\/\/count s of each eigenstate calculation$/;"	m	language:C	struct:params_variational_master	typeref:union:params_variational_master::time_data
+time_data	magic.h	/^union time_data$/;"	u	language:C
 time_t	/usr/include/time.h	/^typedef __time_t time_t;$/;"	t	language:C
 timer_t	/usr/include/time.h	/^typedef __timer_t timer_t;$/;"	t	language:C
 timespec	/usr/include/time.h	/^struct timespec$/;"	s	language:C
@@ -953,6 +2204,11 @@ tm_wday	/usr/include/time.h	/^  int tm_wday;			\/* Day of week.	[0-6] *\/$/;"	m	
 tm_yday	/usr/include/time.h	/^  int tm_yday;			\/* Days in year.[0-365]	*\/$/;"	m	language:C	struct:tm
 tm_year	/usr/include/time.h	/^  int tm_year;			\/* Year	- 1900.  *\/$/;"	m	language:C	struct:tm
 tm_zone	/usr/include/time.h	/^  const char *tm_zone;		\/* Timezone abbreviation.  *\/$/;"	m	language:C	struct:tm
+translate_algorithm	main.c	/^translate_algorithm(char *name, struct params_basis_set *pbs)$/;"	f	language:C
+trapno	/usr/include/bits/sigcontext.h	/^  __uint64_t trapno;$/;"	m	language:C	struct:sigcontext
+trapno	/usr/include/bits/sigcontext.h	/^  unsigned long trapno;$/;"	m	language:C	struct:sigcontext
+truncate	/usr/include/unistd.h	1001;"	d	language:C
+ts	magic.h	/^    struct timespec ts;$/;"	m	language:C	union:time_data	typeref:struct:time_data::timespec
 tv_nsec	/usr/include/time.h	/^    __syscall_slong_t tv_nsec;	\/* Nanoseconds.  *\/$/;"	m	language:C	struct:timespec
 tv_sec	/usr/include/bits/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	language:C	struct:timeval
 tv_sec	/usr/include/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	language:C	struct:timespec
@@ -968,10 +2224,20 @@ u_int8_t	/usr/include/sys/types.h	/^typedef	unsigned char u_int8_t;$/;"	t	langua
 u_long	/usr/include/sys/types.h	/^typedef __u_long u_long;$/;"	t	language:C
 u_quad_t	/usr/include/sys/types.h	/^typedef __u_quad_t u_quad_t;$/;"	t	language:C
 u_short	/usr/include/sys/types.h	/^typedef __u_short u_short;$/;"	t	language:C
+uc_flags	/usr/include/sys/ucontext.h	/^    unsigned long int uc_flags;$/;"	m	language:C	struct:ucontext
+uc_link	/usr/include/sys/ucontext.h	/^    struct ucontext *uc_link;$/;"	m	language:C	struct:ucontext	typeref:struct:ucontext::ucontext
+uc_mcontext	/usr/include/sys/ucontext.h	/^    mcontext_t uc_mcontext;$/;"	m	language:C	struct:ucontext
+uc_sigmask	/usr/include/sys/ucontext.h	/^    __sigset_t uc_sigmask;$/;"	m	language:C	struct:ucontext
+uc_stack	/usr/include/sys/ucontext.h	/^    stack_t uc_stack;$/;"	m	language:C	struct:ucontext
+ucontext	/usr/include/sys/ucontext.h	/^typedef struct ucontext$/;"	s	language:C
+ucontext_t	/usr/include/sys/ucontext.h	/^  } ucontext_t;$/;"	t	language:C	typeref:struct:ucontext
+uid_t	/usr/include/signal.h	/^typedef __uid_t uid_t;$/;"	t	language:C
 uid_t	/usr/include/sys/types.h	/^typedef __uid_t uid_t;$/;"	t	language:C
+uid_t	/usr/include/unistd.h	/^typedef __uid_t uid_t;$/;"	t	language:C
 uint	/usr/include/sys/types.h	/^typedef unsigned int uint;$/;"	t	language:C
 ulong	/usr/include/sys/types.h	/^typedef unsigned long int ulong;$/;"	t	language:C
 useconds_t	/usr/include/sys/types.h	/^typedef __useconds_t useconds_t;$/;"	t	language:C
+useconds_t	/usr/include/unistd.h	/^typedef __useconds_t useconds_t;$/;"	t	language:C
 ushort	/usr/include/sys/types.h	/^typedef unsigned short int ushort;$/;"	t	language:C
 va_arg	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	49;"	d	language:C
 va_copy	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	51;"	d	language:C
@@ -979,13 +2245,20 @@ va_end	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	48;"	d	language:C
 va_list	/usr/include/stdio.h	/^typedef _G_va_list va_list;$/;"	t	language:C
 va_list	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	/^typedef __gnuc_va_list va_list;$/;"	t	language:C
 va_start	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.3/include/stdarg.h	47;"	d	language:C
+val	/usr/include/getopt.h	/^  int val;$/;"	m	language:C	struct:option
 val	pcubature.c	/^     double *val;$/;"	m	language:C	struct:cacheval_s	file:
 valcache	pcubature.c	/^} valcache;$/;"	t	language:C	typeref:struct:valcache_s	file:
 valcache_s	pcubature.c	/^typedef struct valcache_s {$/;"	s	language:C	file:
-var_get	main.c	/^var_get(pvmm *p, size_t j)$/;"	f	language:C
-var_getsize	main.c	/^size_t var_getsize(pvmm *p)$/;"	f	language:C
-var_push	main.c	/^var_push(pvmm *p, size_t j, double x)$/;"	f	language:C
-variate_pvmm	main.c	/^variate_pvmm(pvmm *p, struct params_variational_workspace *pvw)$/;"	f	language:C
+var_get	main.c	/^var_get(pvmm *p, var_t type, size_t j)$/;"	f	language:C
+var_get_blind	main.c	/^var_get_blind(pvmm *p, size_t j)$/;"	f	language:C
+var_growth	magic.h	/^    size_t var_growth;$/;"	m	language:C	struct:params_basis_set
+var_nexp_base	magic.h	/^    size_t var_nexp_base;$/;"	m	language:C	struct:params_basis_set
+var_npol_base	magic.h	/^    size_t var_npol_base;$/;"	m	language:C	struct:params_basis_set
+var_nvars	main.c	/^var_nvars(pvmm *p)$/;"	f	language:C
+var_push	main.c	/^var_push(pvmm *p, var_t type, size_t j, double x)$/;"	f	language:C
+var_push_blind	main.c	/^var_push_blind(pvmm *p, size_t j, double x)$/;"	f	language:C
+var_t	magic.h	/^typedef enum { POL, EXP, SPE } var_t;$/;"	t	language:C	typeref:enum:__anon36
+variate_pvmm	main.c	/^variate_pvmm(struct params_variational_workspace *pvw)$/;"	f	language:C
 vfscanf	/usr/include/stdio.h	516;"	d	language:C
 vfwscanf	/usr/include/wchar.h	730;"	d	language:C
 vscanf	/usr/include/stdio.h	517;"	d	language:C
@@ -1008,3 +2281,10 @@ write	/usr/include/libio.h	/^  __io_write_fn *write;		\/* Write bytes.  *\/$/;"	
 wscanf	/usr/include/wchar.h	675;"	d	language:C
 xmax	magic.h	/^    double xmax;$/;"	m	language:C	struct:params_basis_set
 xmin	magic.h	/^    double xmin;\/\/box boundries$/;"	m	language:C	struct:params_basis_set
+xstate_bv	/usr/include/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	language:C	struct:_fpx_sw_bytes
+xstate_bv	/usr/include/bits/sigcontext.h	/^  __uint64_t xstate_bv;$/;"	m	language:C	struct:_xsave_hdr
+xstate_hdr	/usr/include/bits/sigcontext.h	/^  struct _xsave_hdr xstate_hdr;$/;"	m	language:C	struct:_xstate	typeref:struct:_xstate::_xsave_hdr
+xstate_size	/usr/include/bits/sigcontext.h	/^  __uint32_t xstate_size;$/;"	m	language:C	struct:_fpx_sw_bytes
+ymmh	/usr/include/bits/sigcontext.h	/^  struct _ymmh_state ymmh;$/;"	m	language:C	struct:_xstate	typeref:struct:_xstate::_ymmh_state
+ymmh_space	/usr/include/bits/sigcontext.h	/^  __uint32_t ymmh_space[64];$/;"	m	language:C	struct:_ymmh_state
+zerotol	magic.h	/^    double zerotol;$/;"	m	language:C	struct:params_basis_set

@@ -7,6 +7,8 @@ if [[ "$1" == "all" ]]
 fi
 
 
+col=$(cat $1 | tail -1 | wc -w)
+
 fileout="$1"
 fileinp="$1"
 
@@ -19,5 +21,5 @@ set xrange [-2:8]
 set yrange [-2:75]
 
 set output "${fileout}.png"
-plot "$1" u 1:2 w lines title 'Morse Potential', for [i=3:10] "$1" u 1:i w lines  title 'eigenstate '.(i-3)
+plot "$1" u 1:2 w lines title 'Morse Potential', for [i=3:$col] "$1" u 1:i w lines  title 'eigenstate '.(i-3)
 EOF

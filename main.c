@@ -30,6 +30,7 @@
 #include <time.h>
 #define CLOCKTYPE CLOCK_MONOTONIC
 
+//TODO: move init functions out of ui
 
 //make life easy
 struct params_basis_set global_pbs = {
@@ -43,6 +44,13 @@ struct params_variational_master global_pvm = {
 };
 
 //{{{ printing
+
+void
+print_log(void)
+{ /*Print to log. Intended for */
+
+    return;
+}
 
 
 void
@@ -96,8 +104,8 @@ print_variational_params(pvmm *p)
 {
     size_t j;
 
-    braket(p->pvm->pbs, p->pvm->S[p->n][p->n], &p->pvm->S_val[p->n]);
-    braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &p->pvm->H_val[p->n]);
+//    braket(p->pvm->pbs, p->pvm->S[p->n][p->n], &p->pvm->S_val[p->n]);
+//    braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &p->pvm->H_val[p->n]);
     printf("f(%.2zu)[%.4zu]=%#.4E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
     for(j=0;j<var_nvars(p);j++)
         printf("%#.4E ", var_get_blind(p,j));
@@ -546,8 +554,8 @@ ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)
     morse_potential(x, p, &V);
     gs_known(x, p, &tmp);
     V *= tmp;
-    T = - real_deriv_second((af_t *)&gs_known, x, p)/2.0;
-    T *= 1.0/(2.0);//input mass
+    T =  - real_deriv_second((af_t *)&gs_known, x, p)/2.0;
+    T *= 1.0/(2.0 * p->pvm->pbs->mu);//account for mass and handle the rest of the constants #amu
     *ret = T + V;
 
     return;
@@ -633,27 +641,26 @@ master(unsigned n, const double *x, double *grad, pvmm *p)
     (void) x;//we are smarter than the library. #YOLO
 
     double ret;
-    size_t i;
 
     p->pvm->progress++;//keep count of how many iterations we make; TODO: make an array to keep check of each state!
     gs_learn(p);//orthonormalize the new variables.
     braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &ret);
-
-//    for(i=0;i<var_nvars(p);i++)
-//        safe_doubles[i] = var_get_blind(p, i);
 
     if(ZERO_OVERLAP == p->error)
     { //Handle single point constraints.
         ret = HUGE_VAL;//this just werks. It's a minimization algorithm.
         p->error = NO_ERROR;
     }
+
+//    p->pvm->H_val[p->n][p->n] = ret;//This is actually set again outside of the function.
+
+    /*Set some useful variables.*/
+    braket(p->pvm->pbs, p->pvm->S[p->n][p->n], &p->pvm->S_val[p->n]);
+
     print_variational_params(p);
 
     return ret;
 }
-
-
-
 
 static void
 params_variational_workspace_init(struct params_variational_workspace *pvw, pvmm *p)
@@ -667,7 +674,8 @@ params_variational_workspace_init(struct params_variational_workspace *pvw, pvmm
 
     size_t i;
     for(i=0;i<var_nvars(p);i++)
-        pvw->lbounds[i] = p->pvm->pbs->zerotol;
+        pvw->lbounds[i] = -HUGE_VAL;//This turns it off.//p->pvm->pbs->zerotol;
+//        pvw->lbounds[i] = p->pvm->pbs->zerotol;
     pvw->lbounds[TRANSLATION_SHIFT] = -HUGE_VAL; //Free this, because it is not symmetric
 
     nlopt_set_lower_bounds(pvw->opt, pvw->lbounds);
@@ -693,10 +701,6 @@ variate_pvmm(struct params_variational_workspace *pvw)
 
     nlopt_optimize(pvw->opt, pvw->p->pvm->masks[pvw->p->n], &pvw->p->pvm->H_val[pvw->p->n]);
     printf("Convergence met for p->n==%zu.\n", pvw->p->n);
-
-    size_t i;
-//   for(i = 0; i<var_nvars(pvw->p);i++)
-//        var_push_blind(pvw->p, i, safe_doubles[i]);
 
     snapshot_take(pvw->p); //read the timestamp and calculate elapsed time
 
@@ -731,15 +735,16 @@ struct algorithm_dict
 
 struct algorithm_dict algorithm_dict[] =
 {
-    { "NLOPT_GN_DIRECT_L" ,     NLOPT_GN_DIRECT_L },
-    { "NLOPT_GN_ORIG_DIRECT_L", NLOPT_GN_DIRECT_L },
+//    { "NLOPT_GN_DIRECT_L" ,     NLOPT_GN_DIRECT_L },
+//    { "NLOPT_GN_ORIG_DIRECT_L", NLOPT_GN_DIRECT_L },
     { "NLOPT_LN_NELDERMEAD",    NLOPT_LN_NELDERMEAD },
     { "NLOPT_LN_SBPLX",         NLOPT_LN_SBPLX },
     { "NLOPT_LN_PRAXIS",        NLOPT_LN_PRAXIS },
-    { "NLOPT_GN_CRS2_LM",       NLOPT_GN_CRS2_LM },
+//    { "NLOPT_GN_CRS2_LM",       NLOPT_GN_CRS2_LM },
 //    { "NLOPT_GN_ISRES",         NLOPT_GN_ISRES }, Slow convergence.
 //    Run with low accuracy?
-    { "NLOPT_LN_COBYLA",        NLOPT_LN_COBYLA },
+//    { "NLOPT_LN_COBYLA",        NLOPT_LN_COBYLA }, This can be good.
+//    Figure out how to make convergence not suck.
     { "NLOPT_LN_NEWUOA",        NLOPT_LN_NEWUOA },
     { "NLOPT_LN_BOBYQA",        NLOPT_LN_BOBYQA },
 };
@@ -1007,8 +1012,6 @@ method_rugged(struct params_variational_master *pvm)
 }
 
 //}}}
-
-double safe_doubles[100];
 
 
 #include<signal.h>
