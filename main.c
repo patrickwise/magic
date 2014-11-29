@@ -46,8 +46,39 @@ struct params_variational_master global_pvm = {
 //{{{ printing
 
 void
-print_log(void)
-{ /*Print to log. Intended for */
+print_log(struct params_variational_master *pvm)
+{ /*Print to log. Intended for ѕaving diagnostics of the calcluation
+    and a copy of the basis set file */
+    FILE *fp = fopen(pvm->pbs->log_file, "w");
+    if(!fp)
+    {
+        fprintf(stderr, "Could not create file %s.\n", pvm->pbs->log_file);
+        return;
+    }
+
+    size_t i;
+    fprintf(fp, "Elapsed times:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+        fprintf(fp, "%.10G\t", pvm->time[i].d);
+    fprintf(fp, "\n");
+    fprintf(fp, "Interations:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+        fprintf(fp, "%.10zu\t", pvm->iter[i]);
+    fprintf(fp, "\n");
+
+    /*Recreate the run.file*/
+    fprintf(fp, "Run file:\n");
+    fprintf(fp, "%s\n", pvm->pbs->name);
+    fprintf(fp, "%zu\n", pvm->pbs->maxn);
+    fprintf(fp, "%s\n", report_algorithm(pvm->pbs));
+    fprintf(fp, "%E %E %E\n", pvm->pbs->D, pvm->pbs->b, pvm->pbs->mu);
+    fprintf(fp, "%zu %E\n", pvm->pbs->deriv_accuracy, pvm->pbs->deriv_step);
+    fprintf(fp, "%E %E %E %E\n",
+        pvm->pbs->xmin, pvm->pbs->xmax, pvm->pbs->epsrel, pvm->pbs->zerotol);
+    fprintf(fp, "%zu %zu %zu %c\n", pvm->pbs->var_growth, pvm->pbs->var_npol_base,
+        pvm->pbs->var_nexp_base, pvm->pbs->scaling_code);
+
+    fclose(fp);
 
     return;
 }
@@ -815,8 +846,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
         goto error;
     if(3 != fscanf(fp,"%lf %lf %lf\n", &pbs->D, &pbs->b, &pbs->mu))
         goto error;
-    if(2 != fscanf(fp,"%s %s\n", pbs->data_file, pbs->params_file))
-        goto error;
+//    if(2 != fscanf(fp,"%s %s\n", pbs->data_file, pbs->params_file))
+//        goto error;
     if(2 != fscanf(fp, "%zu %lf\n", &pbs->deriv_accuracy, &pbs->deriv_step))
         goto error;
     if(4 != fscanf(fp, "%lf %lf %lf %lf\n",
@@ -828,7 +859,10 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
 
     fclose(fp);
 
-
+    /*translate string input*/
+    sprintf(pbs->data_file,   DYNPREFIX "data_%s.dat",   pbs->name);
+    sprintf(pbs->params_file, DYNPREFIX "params_%s.dat", pbs->name);
+    sprintf(pbs->log_file,    DYNPREFIX "log_%s.dat",    pbs->name);
     translate_algorithm(buf, pbs);
 
     /*setup weights*/
@@ -844,6 +878,8 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
 
     free(x);
 
+    printf("Basis set \"%s\" successfully initiated.\n", pbs->name);
+
     return 0;
 
 error:
@@ -851,6 +887,16 @@ error:
     fclose(fp);
 
     return 1;
+}
+//TODO: move this into the mother function^^^
+void
+params_basis_set_init_paths(struct params_basis_set *pbs)
+{ /*concatenate the paths from the name given and a path set in the Makefile*/
+    sprintf(pbs->data_file,   DYNPREFIX "data_%s.dat",   pbs->name);
+    sprintf(pbs->params_file, DYNPREFIX "params_%s.dat", pbs->name);
+    sprintf(pbs->log_file,    DYNPREFIX "log_%s.dat",    pbs->name);
+
+    return;
 }
 
 void
@@ -926,6 +972,7 @@ method_calculation(struct params_variational_master *pvm)
         print_summary(&pvm->pvmm[i]);
         print_data(pvm);
         print_params(pvm);
+        print_log(pvm);
         params_variational_workspace_free(&pvw);
     }
 
@@ -940,11 +987,7 @@ method_calculation(struct params_variational_master *pvm)
 }
 
 /*Ruggedness testing.*/
-/*It'll be done like an onion, where each type will vay everything
- * under it.*/
-
-
-
+/*We gather the standard deviation of each piece.*/
 
 #define rugged_write_defaults(pvm)              \
     pvm->pbs->maxn            = 4;              \
@@ -956,7 +999,7 @@ method_calculation(struct params_variational_master *pvm)
     pvm->pbs->deriv_step      = 1e-5;           \
     pvm->pbs->deriv_weights   = NULL;           \
     pvm->pbs->xmin            = -3.0;           \
-    pvm->pbs->xmax            = 10.0;           \
+    pvm->pbs->xmax            = 8.0;            \
     pvm->pbs->epsrel          = 1e-4;           \
     pvm->pbs->zerotol         = 1e-5;           \
     pvm->pbs->algorithm       = NLOPT_LN_SBPLX; \
@@ -965,46 +1008,110 @@ method_calculation(struct params_variational_master *pvm)
     pvm->pbs->var_nexp_base   = 2
 
 
+#define method_rugged_aspect(str, payload, kill)                      \
+    for(i=0;i<10&&kill;i++)                                           \
+    {                                                                 \
+        /*create base name*/                                          \
+        sprintf(pvm->pbs->name, "%s_%s", default_base_name, str);     \
+                                                                      \
+        /*write default values to pbs*/                               \
+        rugged_write_defaults(pvm);                                   \
+                                                                      \
+        /*write variable variables to pbs*/                           \
+        payload;                                                      \
+        params_basis_set_init_paths(pvm->pbs);                        \
+        params_basis_set_init_weights(pvm->pbs);                      \
+                                                                      \
+        /*run the actual calculation*/                                \
+        pvm->init(pvm->pbs, pvm);                                     \
+        method_calculation(pvm);                                      \
+                                                                      \
+        /*Flush the arrays.*/                                         \
+        pvm->pbs->destroy(pvm->pbs);                                  \
+        pvm->destroy(pvm);                                            \
+    }
+
 void
 method_rugged(struct params_variational_master *pvm)
 {
     size_t i;
     char *default_base_name = malloc(STRSIZ);
 
-    sprintf(default_base_name, "rugged");
+    sprintf(default_base_name, "rugged"); //This is magic, maybe change?
 
-
+    /*This is wasteful, but we need absolute control. TODO: bypass the
+     * inital initialization.*/
+    pvm->pbs->destroy(pvm->pbs);
     pvm->destroy(pvm);
-    printf("BEGIN\n");
-    /*vary min_algorithm*/
-    for(i=1;i<10;i++)
-    {
-        pvm->pbs->algorithm = algorithm_dict[i].algorithm;                    //These are the only lines
-        /*create base name*/
-        sprintf(pvm->pbs->name, "%s_%s", default_base_name, algorithm_dict[i].name); //that change.
 
-        /*concatenate the output file names*/
-        sprintf(pvm->pbs->data_file,   "dynamic/data_%s.dat",   pvm->pbs->name);
-        sprintf(pvm->pbs->params_file, "dynamic/params_%s.dat", pvm->pbs->name);
+//    /*variate algorithm*/
+//    method_rugged_aspect(algorithm_dict[i].name,
+//        pvm->pbs->algorithm = algorithm_dict[i].algorithm,
+//        algorithm_dict[i].name
+//    );
 
-        /*write default variables to pbs*/
-        rugged_write_defaults(pvm);
+    /*variate scaling code*/
+    char *names_scaling_code[] = { "scaling_code=0", "scaling_code=1", "scaling_code=2", "scaling_code=3", };
+    method_rugged_aspect( names_scaling_code[i],
+        pvm->pbs->scaling_code = '0' + i,
+        names_scaling_code[i]
+    );
 
-        /*write variable variables to pbs*/
-        pvm->pbs->algorithm = algorithm_dict[i].algorithm;                    //These are the only lines
-        params_basis_set_init_weights(pvm->pbs);
-        pvm->init(pvm->pbs, pvm);
+    char *names_accuracy[] = { "DA=8", "DA=12", "DA=16", "DA=20", "DA=24", "DA=28", "DA=32", "DA=36", };
+    method_rugged_aspect( names_accuracy[i],
+        pvm->pbs->deriv_accuracy = 8 + i * 4,
+        names_accuracy[i]
+    );
 
-        /*Clean pvm*/
-//        pvm->destroy(pvm);
-//        pvm->init(pvm->pbs, pvm);
+    char *names_step[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9", };
+    method_rugged_aspect( names_step[i],
+        pvm->pbs->deriv_step = pow(10.0, -(i+3.0)),
+        names_step[i]
+    );
 
-        /*Calculate basis set*/
-        method_calculation(pvm);
+    char *names_xmin[] = { "XMIN=-15", "XMIN=-10", "XMIN=-5", "XMIN=-3", "XMIN=-2", "XMIN=-1", "XMIN=-0.5",};
+    double options_xmin[] = {    -15.0,      -10.0,      -5.0,      -3.0,      -2.0,      -1.0,      -0.5, };
+    method_rugged_aspect( names_xmin[i],
+        pvm->pbs->xmin = options_xmin[i],
+        names_xmin[i]
+    );
 
-        params_basis_set_free(pvm->pbs);
-        pvm->destroy(pvm);
-    }
+    char *names_xmax[] = { "XMAX=25", "XMAX=15", "XMAX=10", "XMAX=6", "XMAX=5", "XMAX=4", "XMAX=3", };
+    double options_xmax[] = {    25.0,      15.0,      10.0,      6.0,      5.0,      4.0,      3.0, };
+    method_rugged_aspect( names_xmax[i],
+        pvm->pbs->xmax = options_xmax[i],
+        names_xmax[i]
+    );
+
+    char *names_epsrel[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9",};
+    method_rugged_aspect( names_epsrel[i],
+        pvm->pbs->epsrel = pow(10.0, -(i+3.0)),
+        names_epsrel[i]
+    );
+
+    char *names_zerotol[] = { "ZT=1e-3", "ZT=1e-4",  "ZT=1e-5", "ZT=1e-6", "ZT=1e-7", "ZT=1e-8", "ZT=1e-9",};
+    method_rugged_aspect( names_zerotol[i],
+        pvm->pbs->zerotol = pow(10.0, -(i+3.0)),
+        names_zerotol[i]
+    );
+
+    char *names_growth[] = { "GROWTH=0", "GROWTH=1", "GROWTH=2", "GROWTH=3", };
+    method_rugged_aspect( names_growth[i],
+        pvm->pbs->var_growth = i,
+        names_growth[i]
+    );
+
+    char *names_npol[] = { "NPOL=0", "NPOL=1", "NPOL=2", "NPOL=3", };
+    method_rugged_aspect( names_npol[i],
+        pvm->pbs->var_npol_base = i,
+        names_npol[i]
+    );
+
+    char *names_nexp[] = { "NEXP=0", "NEXP=1", "NEXP=2", "NEXP=3", };
+    method_rugged_aspect( names_nexp[i],
+        pvm->pbs->var_nexp_base = i,
+        names_nexp[i]
+    );
 
     free(default_base_name);
 
@@ -1012,7 +1119,6 @@ method_rugged(struct params_variational_master *pvm)
 }
 
 //}}}
-
 
 #include<signal.h>
 #include<unistd.h>
@@ -1029,6 +1135,7 @@ void sig_handler(int signo)
     /*save data and exit*/
     print_data(&global_pvm);
     print_params(&global_pvm);
+    print_log(&global_pvm);
 
     exit(0);
     return;

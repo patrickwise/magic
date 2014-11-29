@@ -27,7 +27,8 @@ struct params_basis_set
 {
     char name[256];//name of basis set
     char data_file[256];//plot data
-    char params_file[256];//save paramaters after variation
+    char params_file[256];//save the variable paramaters after variation
+    char log_file[256];//save the basis set parametees
     size_t maxn;
 //    size_t reserved_vars;//The number of vars of the basis set. Set at runtime?
 //    size_t n_pol;//terms of the polynomial expansion

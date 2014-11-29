@@ -23,6 +23,8 @@ FSRC=$(wildcard *.f90)
 SRC = ${wildcard *.c}
 OBJ = ${FSRC:.f90=.o} ${SRC:.c=.o}
 
+DEF = -DDYNPREFIX=\"$(DYNPREFIX)/\"
+
 export CC
 export CFLAGS
 export LDFLAGS
@@ -40,8 +42,8 @@ options:
 
 setup: cubature finitediff
 	@echo setting up build enviroment
-#build .mod files
-	@gfortran ${FSRC} 2> /dev/null
+#build .mod files. This will fail the first time through.
+	@gfortran ${FSRC} 2> /dev/null || true
 
 clean:
 	rm -f ${OBJ}
@@ -85,14 +87,17 @@ tags:
 
 ${OBJ}: config.mk
 
+.c.o:
+	${CC} ${CFLAGS} ${DEF} ${INC} $< -c -o $@
+
 magic: ${OBJ}
 	@echo CC -o $@
-	@${CC} -o $@ ${OBJ} ${LDFLAGS}
+	@${CC} -o $@ ${OBJ} ${LDFLAGS} ${DEF}
 
 install: all
 	@mkdir -p $(PREFIX)/bin
-	@cp -f magic $(PREFIX)/bin
-	@chmod 755 ${PREFIX}/bin/magic
+	@cp -f magic plotter.sh $(PREFIX)/bin
+	@chmod 755 ${PREFIX}/bin/{magic,plotter.sh}
 	@mkdir -p $(DYNPREFIX)
 	@chmod 755 ${DYNPREFIX}
 

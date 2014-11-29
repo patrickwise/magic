@@ -1,16 +1,24 @@
-INSTALL
+SYNOPSIS
+=======================================
+
+
+INSTALLATION
 =======================================
 Run:
 ``` bash
-    # make setup
+    make setup
 ```
 in order to pull in dependency libraries.
 
 Run:
 ``` bash
-    # make all
+    make all
 ```
 in order to build binary.
+
+
+MOTIVATION
+=======================================
 
 
 RUN
@@ -26,8 +34,7 @@ The format of the run.file is:
 |%s               | name of basis set                                                   |
 |%zu              | number of excitation states                                         |
 |%s               | name of nlopt algorithm to use for minimization                     |
-|%lf %lf %lf %lf  | D, b, mu; D and b of the Morse potential and mu is the reduced mass |
-|%s %s            | names of data and parameter output files                            |
+|%lf %lf %lf      | D, b, mu; D and b of the Morse potential and mu is the reduced mass |
 |%zu %lf          | accuracy and the step size of derivatives                           |
 |%lf %lf %lf %lf  | integration parameters: xmin, xmax, epsrel and zero tolerance (s)   |
-|%zu %zu %zu %c   | parameters of basis set function: growth, npol and scaling          |
+|%zu %zu %zu %c   | parameters of basis set function: growth, npol, nexp and scaling    |

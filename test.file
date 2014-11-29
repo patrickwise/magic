@@ -1,8 +1,7 @@
-morse_60_1_symmetric
-8
-NLOPT_LN_PRAXIS
+throw_away
+4
+NLOPT_LN_SBPLX
 60.0 1.0 1.0
-dynamic/data_faster.dat dynamic/params_faster.dat
-24 1e-7
--3.0 8.0 1e-6 1e-7
+24 1e-5
+-3.0 8.0 1e-4 1e-5
 1 2 2 1
