@@ -1,0 +1,21 @@
+#wiki
+
+Energy, 1 hartree
+4.3597443419*10^(-18) J
+219474.631370515 cm^-1
+
+Length, 1 bohr
+5.291772109217*10^-11 m
+0.5291772109217 Angstrom
+
+#hydrogen defaults
+D = 7.6*10^-19 J
+b = 0.0193 pm^-1
+
+
+
+1 pm = 10^-12 m
+1 pm^-1 = 10^10 cm
+
+D = 0.174322 hartree
+b = 1.02131 bohr-1

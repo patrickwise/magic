@@ -13,6 +13,8 @@
 /*Header for this file*/
 #include "magic.h"
 
+#define PRECISION "18" //doubles usually afford 15-17 sig figs
+
 /*Constants that should have no baring on behavior outside of this file.*/
 #define NO_ERROR 0
 #define TRANSLATION_SHIFT 0
@@ -29,6 +31,10 @@
 /*For internal time*/
 #include <time.h>
 #define CLOCKTYPE CLOCK_MONOTONIC
+
+
+/*Hydrogen parameters*/
+#define HYDROGEN_D 7.6
 
 //TODO: move init functions out of ui
 
@@ -59,11 +65,15 @@ print_log(struct params_variational_master *pvm)
     size_t i;
     fprintf(fp, "Elapsed times:\n");
     for(i=0;i<=pvm->pbs->maxn;i++)
-        fprintf(fp, "%.10G\t", pvm->time[i].d);
+        fprintf(fp, "%." PRECISION "G\t", pvm->time[i].d);
     fprintf(fp, "\n");
     fprintf(fp, "Interations:\n");
     for(i=0;i<=pvm->pbs->maxn;i++)
         fprintf(fp, "%.10zu\t", pvm->iter[i]);
+    fprintf(fp, "\n");
+    fprintf(fp, "Energy:\n");
+    for(i=0;i<=pvm->pbs->maxn;i++)
+        fprintf(fp, "%+#." PRECISION "E\t", pvm->H_val[i]);
     fprintf(fp, "\n");
 
     /*Recreate the run.file*/
@@ -118,11 +128,11 @@ print_data(struct params_variational_master *pvm)
     {
         x = -2.0 + i /100.0;
         morse_potential(&x, &pvm->pvmm[0], &V);
-        fprintf(fp, "%g %g ", x, V);
+        fprintf(fp, "%+#." PRECISION "E %+#." PRECISION "E ", x, V);
         for(n=0;n<=pvm->pbs->maxn;n++)
         {
             gs_known(&x, &pvm->pvmm[n], &psi);
-            fprintf(fp, "%g ", pow(psi,2.0) + (pvm->H_val[n] - pvm->H_val[0]));
+            fprintf(fp, "%+#." PRECISION "E ", pow(psi,2.0) /* + (pvm->H_val[n] - pvm->H_val[0])*/);//handle this post facto
         }
         fprintf(fp, "\n");
     }
@@ -137,9 +147,9 @@ print_variational_params(pvmm *p)
 
 //    braket(p->pvm->pbs, p->pvm->S[p->n][p->n], &p->pvm->S_val[p->n]);
 //    braket(p->pvm->pbs, p->pvm->H[p->n][p->n], &p->pvm->H_val[p->n]);
-    printf("f(%.2zu)[%.4zu]=%#.4E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
+    printf("f(%.2zu)[%.4zu]=%+#5E\t", p->n, p->pvm->progress, p->pvm->H_val[p->n]);
     for(j=0;j<var_nvars(p);j++)
-        printf("%#.4E ", var_get_blind(p,j));
+        printf("%+#2.3E ", var_get_blind(p,j));
     printf("\n");
 
     return;
@@ -153,6 +163,7 @@ print_summary(pvmm *p)
 {
     /*Give an update on the state of the calculation.*/
     printf("////////Summary///////////////////////////\n");
+    printf("Name of basis set\t\t=\t%s\n"   , p->pvm->pbs->name);
     printf("f(%.2zu) overlap\t\t=\t%g\n"    , p->n, p->pvm->S_val[p->n]);
     printf("Iterations\t\t=\t%zu\n"         , p->pvm->progress);
     printf("Energy eigenvalue\t=\t%g\n"     , p->pvm->H_val[p->n]);
@@ -182,7 +193,7 @@ print_params(struct params_variational_master *pvm)
     for(i=0; i<=pvm->pbs->maxn; i++)
     {//cycle through excitation states
         for(j=0; j<var_nvars(&pvm->pvmm[i]);j++)
-            fprintf(fp, "%.20E\n", var_get_blind(&pvm->pvmm[i], j));
+            fprintf(fp, "%+#." PRECISION "E\n", var_get_blind(&pvm->pvmm[i], j));
 //        fprintf(fp, "\n");
     }
 
@@ -928,7 +939,7 @@ params_basis_set_free(struct params_basis_set *pbs)
 static inline int
 input_parser(int argc, char **argv, struct params_basis_set *pbs)
 {
-    if(2 >= argc||(1 >= argc && 'r' == argv[1][0]))
+    if(2 >= argc)
     {
         fprintf(stderr, USAGE("%s"), argv[0]);
         return 1;
@@ -988,18 +999,18 @@ method_calculation(struct params_variational_master *pvm)
 
 /*Ruggedness testing.*/
 /*We gather the standard deviation of each piece.*/
-
+/*The morse parameters are based off hydrogen*/
 #define rugged_write_defaults(pvm)              \
     pvm->pbs->maxn            = 4;              \
     pvm->pbs->scaling_code    = '1';            \
-    pvm->pbs->D               = 60.0;           \
-    pvm->pbs->b               = 1.00;           \
-    pvm->pbs->mu              = 1.00;           \
+    pvm->pbs->D               = 0.174322;       \
+    pvm->pbs->b               = 1.02131;        \
+    pvm->pbs->mu              = 918.0;          \
     pvm->pbs->deriv_accuracy  = 24;             \
     pvm->pbs->deriv_step      = 1e-5;           \
     pvm->pbs->deriv_weights   = NULL;           \
-    pvm->pbs->xmin            = -3.0;           \
-    pvm->pbs->xmax            = 8.0;            \
+    pvm->pbs->xmin            = -10.0;          \
+    pvm->pbs->xmax            = 15.0;           \
     pvm->pbs->epsrel          = 1e-4;           \
     pvm->pbs->zerotol         = 1e-5;           \
     pvm->pbs->algorithm       = NLOPT_LN_SBPLX; \
@@ -1032,7 +1043,7 @@ method_calculation(struct params_variational_master *pvm)
     }
 
 void
-method_rugged(struct params_variational_master *pvm)
+method_rugged(struct params_variational_master *pvm, int select)
 {
     size_t i;
     char *default_base_name = malloc(STRSIZ);
@@ -1051,67 +1062,90 @@ method_rugged(struct params_variational_master *pvm)
 //    );
 
     /*variate scaling code*/
-    char *names_scaling_code[] = { "scaling_code=0", "scaling_code=1", "scaling_code=2", "scaling_code=3", };
-    method_rugged_aspect( names_scaling_code[i],
-        pvm->pbs->scaling_code = '0' + i,
-        names_scaling_code[i]
-    );
-
-    char *names_accuracy[] = { "DA=8", "DA=12", "DA=16", "DA=20", "DA=24", "DA=28", "DA=32", "DA=36", };
-    method_rugged_aspect( names_accuracy[i],
-        pvm->pbs->deriv_accuracy = 8 + i * 4,
-        names_accuracy[i]
-    );
-
-    char *names_step[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9", };
-    method_rugged_aspect( names_step[i],
-        pvm->pbs->deriv_step = pow(10.0, -(i+3.0)),
-        names_step[i]
-    );
-
-    char *names_xmin[] = { "XMIN=-15", "XMIN=-10", "XMIN=-5", "XMIN=-3", "XMIN=-2", "XMIN=-1", "XMIN=-0.5",};
-    double options_xmin[] = {    -15.0,      -10.0,      -5.0,      -3.0,      -2.0,      -1.0,      -0.5, };
-    method_rugged_aspect( names_xmin[i],
-        pvm->pbs->xmin = options_xmin[i],
-        names_xmin[i]
-    );
-
-    char *names_xmax[] = { "XMAX=25", "XMAX=15", "XMAX=10", "XMAX=6", "XMAX=5", "XMAX=4", "XMAX=3", };
-    double options_xmax[] = {    25.0,      15.0,      10.0,      6.0,      5.0,      4.0,      3.0, };
-    method_rugged_aspect( names_xmax[i],
-        pvm->pbs->xmax = options_xmax[i],
-        names_xmax[i]
-    );
-
-    char *names_epsrel[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9",};
-    method_rugged_aspect( names_epsrel[i],
-        pvm->pbs->epsrel = pow(10.0, -(i+3.0)),
-        names_epsrel[i]
-    );
-
-    char *names_zerotol[] = { "ZT=1e-3", "ZT=1e-4",  "ZT=1e-5", "ZT=1e-6", "ZT=1e-7", "ZT=1e-8", "ZT=1e-9",};
-    method_rugged_aspect( names_zerotol[i],
-        pvm->pbs->zerotol = pow(10.0, -(i+3.0)),
-        names_zerotol[i]
-    );
-
-    char *names_growth[] = { "GROWTH=0", "GROWTH=1", "GROWTH=2", "GROWTH=3", };
-    method_rugged_aspect( names_growth[i],
-        pvm->pbs->var_growth = i,
-        names_growth[i]
-    );
-
-    char *names_npol[] = { "NPOL=0", "NPOL=1", "NPOL=2", "NPOL=3", };
-    method_rugged_aspect( names_npol[i],
-        pvm->pbs->var_npol_base = i,
-        names_npol[i]
-    );
-
-    char *names_nexp[] = { "NEXP=0", "NEXP=1", "NEXP=2", "NEXP=3", };
-    method_rugged_aspect( names_nexp[i],
-        pvm->pbs->var_nexp_base = i,
-        names_nexp[i]
-    );
+    if(0 == select)
+    {
+        char *names_scaling_code[] = { "scaling_code=0", "scaling_code=1", "scaling_code=2", "scaling_code=3", };
+        method_rugged_aspect( names_scaling_code[i],
+            pvm->pbs->scaling_code = '0' + i,
+            names_scaling_code[i]
+        );
+    }
+    else if(1 == select)
+    {
+        char *names_accuracy[] = { "DA=8", "DA=12", "DA=16", "DA=20", "DA=24", "DA=28", "DA=32", "DA=36", };
+        method_rugged_aspect( names_accuracy[i],
+            pvm->pbs->deriv_accuracy = 8 + i * 4,
+            names_accuracy[i]
+        );
+    }
+    else if(2 == select)
+    {
+        char *names_step[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9", };
+        method_rugged_aspect( names_step[i],
+            pvm->pbs->deriv_step = pow(10.0, -(i+3.0)),
+            names_step[i]
+        );
+    }
+    else if(3 == select)
+    {
+        char *names_xmin[] = { "XMIN=-15", "XMIN=-10", "XMIN=-5", "XMIN=-3", "XMIN=-2", "XMIN=-1", "XMIN=-0.5",};
+        double options_xmin[] = {    -15.0,      -10.0,      -5.0,      -3.0,      -2.0,      -1.0,      -0.5, };
+        method_rugged_aspect( names_xmin[i],
+            pvm->pbs->xmin = options_xmin[i],
+            names_xmin[i]
+        );
+    }
+    else if(4 == select)
+    {
+        char *names_xmax[] = { "XMAX=25", "XMAX=15", "XMAX=10", "XMAX=6", "XMAX=5", "XMAX=4", "XMAX=3", };
+        double options_xmax[] = {    25.0,      15.0,      10.0,      6.0,      5.0,      4.0,      3.0, };
+        method_rugged_aspect( names_xmax[i],
+            pvm->pbs->xmax = options_xmax[i],
+            names_xmax[i]
+        );
+    }
+    else if(5 == select)
+    {
+        char *names_epsrel[] = { "DS=1e-3", "DS=1e-4",  "DS=1e-5", "DS=1e-6", "DS=1e-7", "DS=1e-8", "DS=1e-9",};
+        method_rugged_aspect( names_epsrel[i],
+            pvm->pbs->epsrel = pow(10.0, -(i+3.0)),
+            names_epsrel[i]
+        );
+    }
+    else if(6 == select)
+    {
+        char *names_zerotol[] = { "ZT=1e-3", "ZT=1e-4",  "ZT=1e-5", "ZT=1e-6", "ZT=1e-7", "ZT=1e-8", "ZT=1e-9",};
+        method_rugged_aspect( names_zerotol[i],
+            pvm->pbs->zerotol = pow(10.0, -(i+3.0)),
+            names_zerotol[i]
+        );
+    }
+    else if(7 == select)
+    {
+        char *names_growth[] = { "GROWTH=0", "GROWTH=1", "GROWTH=2", "GROWTH=3", };
+        method_rugged_aspect( names_growth[i],
+            pvm->pbs->var_growth = i,
+            names_growth[i]
+        );
+    }
+    else if(8 == select)
+    {
+        char *names_npol[] = { "NPOL=0", "NPOL=1", "NPOL=2", "NPOL=3", };
+        method_rugged_aspect( names_npol[i],
+            pvm->pbs->var_npol_base = i,
+            names_npol[i]
+        );
+    }
+    else if(9 == select)
+    {
+        char *names_nexp[] = { "NEXP=0", "NEXP=1", "NEXP=2", "NEXP=3", };
+        method_rugged_aspect( names_nexp[i],
+            pvm->pbs->var_nexp_base = i,
+            names_nexp[i]
+        );
+    }
+    else
+        fprintf(stderr, "Select has gone to far.\n");
 
     free(default_base_name);
 
@@ -1206,7 +1240,7 @@ main(int argc, char **argv)
             method_calculation(&global_pvm);
             break;
         case RM_RUN:
-            method_rugged(&global_pvm);
+            method_rugged(&global_pvm, atoi(argv[2]));
             break;
         case RM_EXPERIMENTAL:
             method_test(&global_pvm);
