@@ -132,7 +132,7 @@ print_data(struct params_variational_master *pvm)
         for(n=0;n<=pvm->pbs->maxn;n++)
         {
             gs_known(&x, &pvm->pvmm[n], &psi);
-            fprintf(fp, "%+#." PRECISION "E ", pow(psi,2.0) /* + (pvm->H_val[n] - pvm->H_val[0])*/);//handle this post facto
+            fprintf(fp, "%+#." PRECISION "E ", psi /* + (pvm->H_val[n] - pvm->H_val[0])*/);//handle this post facto
         }
         fprintf(fp, "\n");
     }
@@ -163,7 +163,7 @@ print_summary(pvmm *p)
 {
     /*Give an update on the state of the calculation.*/
     printf("////////Summary///////////////////////////\n");
-    printf("Name of basis set\t\t=\t%s\n"   , p->pvm->pbs->name);
+    printf("Name of basis set\t=\t%s\n"   , p->pvm->pbs->name);
     printf("f(%.2zu) overlap\t\t=\t%g\n"    , p->n, p->pvm->S_val[p->n]);
     printf("Iterations\t\t=\t%zu\n"         , p->pvm->progress);
     printf("Energy eigenvalue\t=\t%g\n"     , p->pvm->H_val[p->n]);
@@ -216,25 +216,70 @@ read_params(struct params_variational_master *pvm)
         return;
     }
 
-
+    printf("Reconstituting basis set from file, %s.\n", pvm->pbs->params_file);
     for(i=0; i<=pvm->pbs->maxn; i++)
     {
         for(j=0;j<var_nvars(&pvm->pvmm[i]);j++)
+        {
             if(1 != fscanf(fp, "%lf", &var))
             {
                 fprintf(stderr, "The params_file, %s, is not of the correct format.\n",
                     pvm->pbs->params_file);
                 exit(1);/*The data file is corrupted. Allow user to delete it.*/
             }
-        var_push_blind(&pvm->pvmm[i], j, var);
+            var_push_blind(&pvm->pvmm[i], j, var);
+        }
     }
 
     /*Restore normalization constants*/
     /*It is easier to do this than actually save them.*/
     for(i=0; i<=pvm->pbs->maxn; i++)
+    {
+        printf("State %zu...\n", i);
         gs_learn(&pvm->pvmm[i]);
+    }
+    printf("Basis set, \"%s\", was restored.\n", pvm->pbs->name);
 
+    return;
 }
+
+
+//TODO: this does not belong here
+void
+method_run(struct params_variational_master *pvm)
+{
+    /*Remember the basis set.*/
+    read_params(pvm);
+    size_t i;
+    double V;
+    double psi;
+    /**/
+    for(i=0;i<=pvm->pbs->maxn;i++)
+    {
+        braket(pvm->pbs, pvm->H[i][i], &pvm->H_val[i]);
+        printf("%g\n", pvm->H_val[i]);
+    }
+
+    FILE *fp = fopen("run.dat", "w");
+    size_t n;
+    double x;
+    for(i=0;i<1000;i++)//TODO: make this configurable
+    {
+        x = -2.0 + i /100.0;
+        morse_potential(&x, &pvm->pvmm[0], &V);
+        fprintf(fp, "%+#." PRECISION "E %+#." PRECISION "E ", x, V);
+        for(n=0;n<=pvm->pbs->maxn;n++)
+        {
+            gs_known(&x, &pvm->pvmm[n], &psi);
+            fprintf(fp, "%+#." PRECISION "E ", pow(psi,2.0) + pvm->H_val[n]);
+        }
+        fprintf(fp, "\n");
+    }
+    fclose(fp);
+
+    return;
+}
+
 
 void
 snapshot_init(pvmm *p)
@@ -389,6 +434,8 @@ var_push(pvmm *p, var_t type, size_t j, double x)
             p->pvm->masks[p->n][j] = x;
             return;
     }
+
+    return;
 }
 
 /*Blind types are here, because I don't want to rewrite the file writing part. #YOLO*/
@@ -401,8 +448,8 @@ var_get_blind(pvmm *p, size_t j)
 void
 var_push_blind(pvmm *p, size_t j, double x)
 {
-    printf("var_push_blind()\n");
     p->pvm->masks[p->n][j] = x;
+
     return;
 }
 
@@ -561,7 +608,7 @@ wave(const double *x, pvmm *p, double *ret)
     else
         poly = y;
     for(i=0; i<p->n_pol; i++) //TODO: clean this up
-        poly += pow(-1.0, i+2.0) * var_get(p, POL, i) * pow(y, (2.0 * (i+1.0)+(p->n%2)));
+        poly += pow(-1.0, i) * var_get(p, POL, i) * pow(y, (2.0 * (i+1.0)+(p->n%2)));
     for(i=0; i<p->n_exp; i++)
     {
         expr -= var_get(p, EXP, i) * pow(y, (i+1.0)*2.0);
@@ -597,7 +644,7 @@ ket_hamiltonian_wave(const double *x, pvmm *p, double *ret)
     gs_known(x, p, &tmp);
     V *= tmp;
     T =  - real_deriv_second((af_t *)&gs_known, x, p)/2.0;
-    T *= 1.0/(2.0 * p->pvm->pbs->mu);//account for mass and handle the rest of the constants #amu
+    T *= 1.0/(p->pvm->pbs->mu);//account for mass and handle the rest of the constants #amu
     *ret = T + V;
 
     return;
@@ -777,8 +824,6 @@ struct algorithm_dict
 
 struct algorithm_dict algorithm_dict[] =
 {
-//    { "NLOPT_GN_DIRECT_L" ,     NLOPT_GN_DIRECT_L },
-//    { "NLOPT_GN_ORIG_DIRECT_L", NLOPT_GN_DIRECT_L },
     { "NLOPT_LN_NELDERMEAD",    NLOPT_LN_NELDERMEAD },
     { "NLOPT_LN_SBPLX",         NLOPT_LN_SBPLX },
     { "NLOPT_LN_PRAXIS",        NLOPT_LN_PRAXIS },
@@ -889,7 +934,7 @@ params_basis_set_init(struct params_basis_set *pbs, char *file)
 
     free(x);
 
-    printf("Basis set \"%s\" successfully initiated.\n", pbs->name);
+    printf("Basis set, \"%s\", file successfully parsed.\n", pbs->name);
 
     return 0;
 
@@ -1007,12 +1052,12 @@ method_calculation(struct params_variational_master *pvm)
     pvm->pbs->b               = 1.02131;        \
     pvm->pbs->mu              = 918.0;          \
     pvm->pbs->deriv_accuracy  = 24;             \
-    pvm->pbs->deriv_step      = 1e-5;           \
+    pvm->pbs->deriv_step      = 1e-6;           \
     pvm->pbs->deriv_weights   = NULL;           \
-    pvm->pbs->xmin            = -10.0;          \
+    pvm->pbs->xmin            = -15.0;          \
     pvm->pbs->xmax            = 15.0;           \
-    pvm->pbs->epsrel          = 1e-4;           \
-    pvm->pbs->zerotol         = 1e-5;           \
+    pvm->pbs->epsrel          = 1e-5;           \
+    pvm->pbs->zerotol         = 1e-6;           \
     pvm->pbs->algorithm       = NLOPT_LN_SBPLX; \
     pvm->pbs->var_growth      = 1;              \
     pvm->pbs->var_npol_base   = 2;              \
@@ -1232,8 +1277,8 @@ main(int argc, char **argv)
 
     /*do stuff here*/
     sig_init(); //gracefully handle signals
-    print_summary(&global_pvm.pvmm[0]);//print a summary to catch errors
-    sig_init(); //gracefully handle signals
+//    print_summary(&global_pvm.pvmm[0]);//print a summary to catch errors
+//    sig_init(); //gracefully handle signals
     switch(global_pbs.run_mode)
     {
         case RM_CALCULATION:
@@ -1243,7 +1288,8 @@ main(int argc, char **argv)
             method_rugged(&global_pvm, atoi(argv[2]));
             break;
         case RM_EXPERIMENTAL:
-            method_test(&global_pvm);
+//            method_test(&global_pvm);
+            method_run(&global_pvm);
             break;
     }
 
